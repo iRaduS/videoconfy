@@ -2146,9 +2146,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 
 __webpack_require__(/*! adapterjs */ "./node_modules/adapterjs/publish/adapter.min.js");
@@ -2193,7 +2190,7 @@ __webpack_require__(/*! adapterjs */ "./node_modules/adapterjs/publish/adapter.m
     },
     enableVideo: {
       type: Boolean,
-      "default": true
+      "default": false
     },
     enableLogs: {
       type: Boolean,
@@ -2225,7 +2222,7 @@ __webpack_require__(/*! adapterjs */ "./node_modules/adapterjs/publish/adapter.m
     };
 
     if (this.stunServer !== null || this.turnServer !== null) {
-      this.rtcmConnection.iceServers = []; // clear all defaults
+      this.rtcmConnection.iceServers = [];
     }
 
     if (this.stunServer !== null) {
@@ -60283,38 +60280,11 @@ var render = function() {
           }),
           0
         )
-      ]),
-      _vm._v(" "),
-      _vm._m(0)
+      ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col video-controls" }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-close-call", attrs: { type: "button" } },
-          [_c("i", { staticClass: "fas fa-phone-slash" })]
-        ),
-        _c(
-          "button",
-          { staticClass: "btn btn-microphone", attrs: { type: "button" } },
-          [_c("i", { staticClass: "fas fa-microphone" })]
-        ),
-        _c(
-          "button",
-          { staticClass: "btn btn-screen-share", attrs: { type: "button" } },
-          [_c("i", { staticClass: "fas fa-desktop" })]
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -72578,11 +72548,9 @@ __webpack_require__.r(__webpack_exports__);
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // window.WebRTC = require('vue-webrtc');
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // window.Vue.use(window.WebRTC);
-
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.component(_components_WebRTC_vue__WEBPACK_IMPORTED_MODULE_0__["default"].name, _components_WebRTC_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /**

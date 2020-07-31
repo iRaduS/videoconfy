@@ -5,11 +5,7 @@
  */
 
 require('./bootstrap');
-
-// window.WebRTC = require('vue-webrtc');
 window.Vue = require('vue');
-
-// window.Vue.use(window.WebRTC);
 
 
 

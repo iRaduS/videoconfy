@@ -10,9 +10,6 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col video-controls"><button class="btn btn-close-call" type="button"><i class="fas fa-phone-slash"></i></button><button class="btn btn-microphone" type="button"><i class="fas fa-microphone"></i></button><button class="btn btn-screen-share" type="button"><i class="fas fa-desktop"></i></button></div>
-            </div>
         </div>
     </section>
 </template>
@@ -60,7 +57,7 @@
       },
       enableVideo: {
         type: Boolean,
-        default: true
+        default: false
       },
       enableLogs: {
         type: Boolean,
@@ -92,7 +89,7 @@
         OfferToReceiveVideo: this.enableVideo
       };
       if ((this.stunServer !== null) || (this.turnServer !== null)) {
-        this.rtcmConnection.iceServers = []; // clear all defaults
+        this.rtcmConnection.iceServers = [];
       }
       if (this.stunServer !== null) {
         this.rtcmConnection.iceServers.push({
