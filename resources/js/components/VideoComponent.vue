@@ -1,13 +1,13 @@
 <template>
     <div class="text-center">
         <div class="alert alert-primary text-center" v-if="this.$data.isSharing">You have shared your screen with success!</div>
-        <webrtc ref="webrtc" width="100%" :room-id="room.secret" :enable-video="false" @share-started="announceShare" @share-stopped="cancelShare" />
-
-        <div class="text-center my-3">
-            <button class="btn btn-danger" @click="shareScreen">Share your screen</button>
-            <button class="btn btn-primary" @click="leaveCall" v-if="this.$data.exited">Cancel the call</button>
-            <a class="btn btn-primary" :href="'/room/join/' + this.$props.room.secret" v-else-if="!this.$data.exited">Rejoin the call</a>
-        </div>
+        <webrtc ref="webrtc" width="100%" :room-id="room.secret" @share-started="announceShare" @share-stopped="cancelShare">
+            <template v-slot:buttons>
+                <button class="btn btn-close-call" @click="leaveCall" v-if="$data.exited"><i class="fas fa-phone-slash"></i></button>
+                <a class="btn btn-close-call" :href="'/room/join/' + $props.room.secret" v-else-if="!$data.exited"><i class="fas fa-phone"></i></a>
+                <button class="btn btn-screen-share" type="button" @click="shareScreen"><i class="fas fa-desktop"></i></button>
+            </template>
+        </webrtc>
     </div>
 </template>
 <script>

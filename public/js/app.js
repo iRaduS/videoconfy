@@ -2146,6 +2146,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 __webpack_require__(/*! adapterjs */ "./node_modules/adapterjs/publish/adapter.min.js");
@@ -60195,41 +60200,51 @@ var render = function() {
       _vm._v(" "),
       _c("webrtc", {
         ref: "webrtc",
-        attrs: {
-          width: "100%",
-          "room-id": _vm.room.secret,
-          "enable-video": false
-        },
+        attrs: { width: "100%", "room-id": _vm.room.secret },
         on: {
           "share-started": _vm.announceShare,
           "share-stopped": _vm.cancelShare
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "text-center my-3" }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", on: { click: _vm.shareScreen } },
-          [_vm._v("Share your screen")]
-        ),
-        _vm._v(" "),
-        this.$data.exited
-          ? _c(
-              "button",
-              { staticClass: "btn btn-primary", on: { click: _vm.leaveCall } },
-              [_vm._v("Cancel the call")]
-            )
-          : !this.$data.exited
-          ? _c(
-              "a",
-              {
-                staticClass: "btn btn-primary",
-                attrs: { href: "/room/join/" + this.$props.room.secret }
-              },
-              [_vm._v("Rejoin the call")]
-            )
-          : _vm._e()
-      ])
+        },
+        scopedSlots: _vm._u([
+          {
+            key: "buttons",
+            fn: function() {
+              return [
+                _vm.$data.exited
+                  ? _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-close-call",
+                        on: { click: _vm.leaveCall }
+                      },
+                      [_c("i", { staticClass: "fas fa-phone-slash" })]
+                    )
+                  : !_vm.$data.exited
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "btn btn-close-call",
+                        attrs: { href: "/room/join/" + _vm.$props.room.secret }
+                      },
+                      [_c("i", { staticClass: "fas fa-phone" })]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-screen-share",
+                    attrs: { type: "button" },
+                    on: { click: _vm.shareScreen }
+                  },
+                  [_c("i", { staticClass: "fas fa-desktop" })]
+                )
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
     ],
     1
   )
@@ -60280,6 +60295,10 @@ var render = function() {
           }),
           0
         )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col video-controls" }, [_vm._t("buttons")], 2)
       ])
     ])
   ])

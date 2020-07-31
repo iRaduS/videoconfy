@@ -10,6 +10,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col video-controls">
+                    <slot name="buttons"></slot>
+                </div>
+            </div>
         </div>
     </section>
 </template>
