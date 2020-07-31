@@ -86,6 +86,24 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/adapterjs/publish/adapter.min.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/adapterjs/publish/adapter.min.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {var require;var require;/*! adapterjs - v0.15.5 - 2020-07-14 */
+var AdapterJS=AdapterJS||window.AdapterJS||{};if(AdapterJS.options=AdapterJS.options||{},AdapterJS.options.getAllCams=!!AdapterJS.options.getAllCams,AdapterJS.options.hidePluginInstallPrompt=!!AdapterJS.options.hidePluginInstallPrompt,AdapterJS.options.forceSafariPlugin=!!AdapterJS.options.forceSafariPlugin,AdapterJS.VERSION="0.15.5",AdapterJS.onwebrtcready=AdapterJS.onwebrtcready||function(isUsingPlugin){},AdapterJS._onwebrtcreadies=[],AdapterJS.webRTCReady=function(baseCallback){if("function"!=typeof baseCallback)throw new Error("Callback provided is not a function");var callback=function(){"function"==typeof window.require&&"function"==typeof AdapterJS._defineMediaSourcePolyfill&&AdapterJS._defineMediaSourcePolyfill(),baseCallback(null!==AdapterJS.WebRTCPlugin.plugin)};!0===AdapterJS.onwebrtcreadyDone?callback():AdapterJS._onwebrtcreadies.push(callback)},AdapterJS.WebRTCPlugin=AdapterJS.WebRTCPlugin||{},AdapterJS.WebRTCPlugin.pluginInfo=AdapterJS.WebRTCPlugin.pluginInfo||{prefix:"Tem",plugName:"TemWebRTCPlugin",pluginId:"plugin0",type:"application/x-temwebrtcplugin",onload:"__TemWebRTCReady0",portalLink:"https://skylink.io/plugin/",downloadLink:null,companyName:"Temasys",downloadLinks:{mac:"https://bit.ly/webrtcpluginpkg",win:"https://bit.ly/webrtcpluginmsi"}},void 0!==AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks&&null!==AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks&&(navigator.platform.match(/^Mac/i)?AdapterJS.WebRTCPlugin.pluginInfo.downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks.mac:navigator.platform.match(/^Win/i)&&(AdapterJS.WebRTCPlugin.pluginInfo.downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks.win)),AdapterJS.WebRTCPlugin.TAGS={NONE:"none",AUDIO:"audio",VIDEO:"video"},AdapterJS.WebRTCPlugin.pageId=Math.random().toString(36).slice(2),AdapterJS.WebRTCPlugin.plugin=null,AdapterJS.WebRTCPlugin.setLogLevel=null,AdapterJS.WebRTCPlugin.defineWebRTCInterface=null,AdapterJS.WebRTCPlugin.isPluginInstalled=null,AdapterJS.WebRTCPlugin.pluginInjectionInterval=null,AdapterJS.WebRTCPlugin.injectPlugin=null,AdapterJS.WebRTCPlugin.PLUGIN_STATES={NONE:0,INITIALIZING:1,INJECTING:2,INJECTED:3,READY:4},AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.NONE,AdapterJS.onwebrtcreadyDone=!1,AdapterJS.WebRTCPlugin.PLUGIN_LOG_LEVELS={NONE:"NONE",ERROR:"ERROR",WARNING:"WARNING",INFO:"INFO",VERBOSE:"VERBOSE",SENSITIVE:"SENSITIVE"},AdapterJS.WebRTCPlugin.WaitForPluginReady=null,AdapterJS.WebRTCPlugin.callWhenPluginReady=null,AdapterJS.documentReady=function(){return"interactive"===document.readyState&&!!document.body||"complete"===document.readyState},window.__TemWebRTCReady0=function(){AdapterJS.documentReady()?(AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY,AdapterJS.maybeThroughWebRTCReady()):setTimeout(__TemWebRTCReady0,100)},AdapterJS.maybeThroughWebRTCReady=function(){AdapterJS.onwebrtcreadyDone||(AdapterJS.onwebrtcreadyDone=!0,AdapterJS._onwebrtcreadies.length?AdapterJS._onwebrtcreadies.forEach(function(callback){"function"==typeof callback&&callback(null!==AdapterJS.WebRTCPlugin.plugin)}):"function"==typeof AdapterJS.onwebrtcready&&AdapterJS.onwebrtcready(null!==AdapterJS.WebRTCPlugin.plugin))},AdapterJS.TEXT={PLUGIN:{REQUIRE_INSTALLATION:"This website requires you to install a WebRTC-enabling plugin to work on this browser.",REQUIRE_RESTART:"Your plugin is being downloaded. Please run the installer, and restart your browser to begin using it.",NOT_SUPPORTED:"Your browser does not support WebRTC.",BUTTON:"Install Now"},REFRESH:{REQUIRE_REFRESH:"Please refresh page",BUTTON:"Refresh Page"}},AdapterJS._iceConnectionStates={starting:"starting",checking:"checking",connected:"connected",completed:"connected",done:"completed",disconnected:"disconnected",failed:"failed",closed:"closed"},AdapterJS._iceConnectionFiredStates=[],AdapterJS.isDefined=null,window.webrtcDetectedType=null,window.MediaStream="function"==typeof MediaStream?MediaStream:null,window.MediaStreamTrack="function"==typeof MediaStreamTrack?MediaStreamTrack:null,window.RTCPeerConnection="function"==typeof RTCPeerConnection?RTCPeerConnection:null,window.RTCSessionDescription="function"==typeof RTCSessionDescription?RTCSessionDescription:null,window.RTCIceCandidate="function"==typeof RTCIceCandidate?RTCIceCandidate:null,window.getUserMedia="function"==typeof getUserMedia?getUserMedia:null,window.attachMediaStream=null,window.reattachMediaStream=null,window.webrtcDetectedBrowser=null,window.webrtcDetectedVersion=null,window.webrtcMinimumVersion=null,window.webrtcDetectedDCSupport=null,AdapterJS.parseWebrtcDetectedBrowser=function(){var hasMatch=null;if(window.opr&&opr.addons||window.opera||navigator.userAgent.indexOf(" OPR/")>=0)hasMatch=navigator.userAgent.match(/OPR\/(\d+)/i)||[],window.webrtcDetectedBrowser="opera",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=26,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport="SCTP";else if(navigator.userAgent.match(/Bowser\/[0-9.]*/g)){hasMatch=navigator.userAgent.match(/Bowser\/[0-9.]*/g)||[];var chromiumVersion=parseInt((navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./i)||[])[2]||"0",10);window.webrtcDetectedBrowser="bowser",window.webrtcDetectedVersion=parseFloat((hasMatch[0]||"0/0").split("/")[1],10),window.webrtcMinimumVersion=0,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport=chromiumVersion>30?"SCTP":"RTP"}else if(navigator.userAgent.indexOf("OPiOS")>0)hasMatch=navigator.userAgent.match(/OPiOS\/([0-9]+)\./),window.webrtcDetectedBrowser="opera",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedDCSupport=null;else if(navigator.userAgent.indexOf("CriOS")>0)hasMatch=navigator.userAgent.match(/CriOS\/([0-9]+)\./)||[],window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedBrowser="chrome",window.webrtcDetectedDCSupport=null;else if(navigator.userAgent.indexOf("FxiOS")>0)hasMatch=navigator.userAgent.match(/FxiOS\/([0-9]+)\./)||[],window.webrtcDetectedBrowser="firefox",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedDCSupport=null;else if(document.documentMode)hasMatch=/\brv[ :]+(\d+)/g.exec(navigator.userAgent)||[],window.webrtcDetectedBrowser="IE",window.webrtcDetectedVersion=parseInt(hasMatch[1],10),window.webrtcMinimumVersion=9,window.webrtcDetectedType="plugin",window.webrtcDetectedDCSupport="SCTP",webrtcDetectedVersion||(hasMatch=/\bMSIE[ :]+(\d+)/g.exec(navigator.userAgent)||[],window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10));else if(window.StyleMedia||navigator.userAgent.match(/Edge\/(\d+).(\d+)$/))hasMatch=navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)||[],window.webrtcDetectedBrowser="edge",window.webrtcDetectedVersion=parseFloat((hasMatch[0]||"0/0").split("/")[1],10),window.webrtcMinimumVersion=13.10547,window.webrtcDetectedType="ms",window.webrtcDetectedDCSupport=null;else if("undefined"!=typeof InstallTrigger||navigator.userAgent.indexOf("irefox")>0)hasMatch=navigator.userAgent.match(/Firefox\/([0-9]+)\./)||[],window.webrtcDetectedBrowser="firefox",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=33,window.webrtcDetectedType="moz",window.webrtcDetectedDCSupport="SCTP";else if(window.chrome&&window.chrome.webstore||navigator.userAgent.indexOf("Chrom")>0)hasMatch=navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./i)||[],window.webrtcDetectedBrowser="chrome",window.webrtcDetectedVersion=parseInt(hasMatch[2]||"0",10),window.webrtcMinimumVersion=38,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport=window.webrtcDetectedVersion>30?"SCTP":"RTP";else if(/constructor/i.test(window.HTMLElement)||function(p){return"[object SafariRemoteNotification]"===p.toString()}(!window.safari||safari.pushNotification)||navigator.userAgent.match(/AppleWebKit\/(\d+)\./)||navigator.userAgent.match(/Version\/(\d+).(\d+)/)){hasMatch=navigator.userAgent.match(/version\/(\d+)\.(\d+)/i)||[];var AppleWebKitBuild=navigator.userAgent.match(/AppleWebKit\/(\d+)/i)||[],isMobile=navigator.userAgent.match(/(iPhone|iPad)/gi),hasNativeImpl=AppleWebKitBuild.length>=1&&AppleWebKitBuild[1]>=604;if(window.webrtcDetectedBrowser="safari",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=7,isMobile)window.webrtcDetectedType=hasNativeImpl?"AppleWebKit":null;else{var majorVersion=window.webrtcDetectedVersion,minorVersion=parseInt(hasMatch[2]||"0",10),nativeImplIsOverridable=11==majorVersion&&minorVersion<2;window.webrtcDetectedType=!hasNativeImpl||AdapterJS.options.forceSafariPlugin&&nativeImplIsOverridable?"plugin":"AppleWebKit"}window.webrtcDetectedDCSupport="SCTP"}AdapterJS.webrtcDetectedBrowser=window.webrtcDetectedBrowser,AdapterJS.webrtcDetectedVersion=window.webrtcDetectedVersion,AdapterJS.webrtcMinimumVersion=window.webrtcMinimumVersion,AdapterJS.webrtcDetectedType=window.webrtcDetectedType,AdapterJS.webrtcDetectedDCSupport=window.webrtcDetectedDCSupport},AdapterJS.addEvent=function(elem,evnt,func){elem.addEventListener?elem.addEventListener(evnt,func,!1):elem.attachEvent?elem.attachEvent("on"+evnt,func):elem[evnt]=func},AdapterJS.renderNotificationBar=function(message,buttonText,buttonCallback){if(AdapterJS.documentReady()){var w=window,i=document.createElement("iframe");i.name="adapterjs-alert",i.style.position="fixed",i.style.top="-41px",i.style.left=0,i.style.right=0,i.style.width="100%",i.style.height="40px",i.style.backgroundColor="#ffffe1",i.style.border="none",i.style.borderBottom="1px solid #888888",i.style.zIndex="9999999","string"==typeof i.style.webkitTransition?i.style.webkitTransition="all .5s ease-out":"string"==typeof i.style.transition&&(i.style.transition="all .5s ease-out"),document.body.appendChild(i);var c=i.contentWindow?i.contentWindow:i.contentDocument.document?i.contentDocument.document:i.contentDocument;c.document.open(),c.document.write('<span style="display: inline-block; font-family: Helvetica, Arial,sans-serif; font-size: .9rem; padding: 4px; vertical-align: middle; cursor: default;">'+message+"</span>"),buttonText&&"function"==typeof buttonCallback?(c.document.write('<button id="okay">'+buttonText+'</button><button id="cancel">Cancel</button>'),c.document.close(),AdapterJS.addEvent(c.document.getElementById("okay"),"click",function(e){e.preventDefault();try{e.cancelBubble=!0}catch(error){}buttonCallback(e)}),AdapterJS.addEvent(c.document.getElementById("cancel"),"click",function(e){w.document.body.removeChild(i)})):c.document.close(),setTimeout(function(){"string"==typeof i.style.webkitTransform?i.style.webkitTransform="translateY(40px)":"string"==typeof i.style.transform?i.style.transform="translateY(40px)":i.style.top="0px"},300)}},window.requestUserMedia="function"==typeof requestUserMedia?requestUserMedia:null,AdapterJS.parseWebrtcDetectedBrowser(),["webkit","moz","ms","AppleWebKit"].indexOf(AdapterJS.webrtcDetectedType)>-1){navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)&&window.RTCPeerConnection&&(window.msRTCPeerConnection=window.RTCPeerConnection),function(f){if(true)module.exports=f();else { var g; }}(function(){return function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a="function"==typeof require&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n||e)},l,l.exports,e,t,n,r)}return n[o].exports}for(var i="function"==typeof require&&require,o=0;o<r.length;o++)s(r[o]);return s}({1:[function(requirecopy,module,exports){function fixStatsType(stat){return{inboundrtp:"inbound-rtp",outboundrtp:"outbound-rtp",candidatepair:"candidate-pair",localcandidate:"local-candidate",remotecandidate:"remote-candidate"}[stat.type]||stat.type}function writeMediaSection(transceiver,caps,type,stream,dtlsRole){var sdp=SDPUtils.writeRtpDescription(transceiver.kind,caps);if(sdp+=SDPUtils.writeIceParameters(transceiver.iceGatherer.getLocalParameters()),sdp+=SDPUtils.writeDtlsParameters(transceiver.dtlsTransport.getLocalParameters(),"offer"===type?"actpass":dtlsRole||"active"),sdp+="a=mid:"+transceiver.mid+"\r\n",transceiver.rtpSender&&transceiver.rtpReceiver?sdp+="a=sendrecv\r\n":transceiver.rtpSender?sdp+="a=sendonly\r\n":transceiver.rtpReceiver?sdp+="a=recvonly\r\n":sdp+="a=inactive\r\n",transceiver.rtpSender){var trackId=transceiver.rtpSender._initialTrackId||transceiver.rtpSender.track.id;transceiver.rtpSender._initialTrackId=trackId;var msid="msid:"+(stream?stream.id:"-")+" "+trackId+"\r\n";sdp+="a="+msid,sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" "+msid,transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" "+msid,sdp+="a=ssrc-group:FID "+transceiver.sendEncodingParameters[0].ssrc+" "+transceiver.sendEncodingParameters[0].rtx.ssrc+"\r\n")}return sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" cname:"+SDPUtils.localCName+"\r\n",transceiver.rtpSender&&transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" cname:"+SDPUtils.localCName+"\r\n"),sdp}function filterIceServers(iceServers,edgeVersion){var hasTurn=!1;return iceServers=JSON.parse(JSON.stringify(iceServers)),iceServers.filter(function(server){if(server&&(server.urls||server.url)){var urls=server.urls||server.url;server.url&&server.urls;var isString="string"==typeof urls;return isString&&(urls=[urls]),urls=urls.filter(function(url){return 0!==url.indexOf("turn:")||-1===url.indexOf("transport=udp")||-1!==url.indexOf("turn:[")||hasTurn?0===url.indexOf("stun:")&&edgeVersion>=14393&&-1===url.indexOf("?transport=udp"):(hasTurn=!0,!0)}),delete server.url,server.urls=isString?urls[0]:urls,!!urls.length}})}function getCommonCapabilities(localCapabilities,remoteCapabilities){var commonCapabilities={codecs:[],headerExtensions:[],fecMechanisms:[]},findCodecByPayloadType=function(pt,codecs){pt=parseInt(pt,10);for(var i=0;i<codecs.length;i++)if(codecs[i].payloadType===pt||codecs[i].preferredPayloadType===pt)return codecs[i]},rtxCapabilityMatches=function(lRtx,rRtx,lCodecs,rCodecs){var lCodec=findCodecByPayloadType(lRtx.parameters.apt,lCodecs),rCodec=findCodecByPayloadType(rRtx.parameters.apt,rCodecs);return lCodec&&rCodec&&lCodec.name.toLowerCase()===rCodec.name.toLowerCase()};return localCapabilities.codecs.forEach(function(lCodec){for(var i=0;i<remoteCapabilities.codecs.length;i++){var rCodec=remoteCapabilities.codecs[i];if(lCodec.name.toLowerCase()===rCodec.name.toLowerCase()&&lCodec.clockRate===rCodec.clockRate){if("rtx"===lCodec.name.toLowerCase()&&lCodec.parameters&&rCodec.parameters.apt&&!rtxCapabilityMatches(lCodec,rCodec,localCapabilities.codecs,remoteCapabilities.codecs))continue;rCodec=JSON.parse(JSON.stringify(rCodec)),rCodec.numChannels=Math.min(lCodec.numChannels,rCodec.numChannels),commonCapabilities.codecs.push(rCodec),rCodec.rtcpFeedback=rCodec.rtcpFeedback.filter(function(fb){for(var j=0;j<lCodec.rtcpFeedback.length;j++)if(lCodec.rtcpFeedback[j].type===fb.type&&lCodec.rtcpFeedback[j].parameter===fb.parameter)return!0;return!1});break}}}),localCapabilities.headerExtensions.forEach(function(lHeaderExtension){for(var i=0;i<remoteCapabilities.headerExtensions.length;i++){var rHeaderExtension=remoteCapabilities.headerExtensions[i];if(lHeaderExtension.uri===rHeaderExtension.uri){commonCapabilities.headerExtensions.push(rHeaderExtension);break}}}),commonCapabilities}function isActionAllowedInSignalingState(action,type,signalingState){return-1!=={offer:{setLocalDescription:["stable","have-local-offer"],setRemoteDescription:["stable","have-remote-offer"]},answer:{setLocalDescription:["have-remote-offer","have-local-pranswer"],setRemoteDescription:["have-local-offer","have-remote-pranswer"]}}[type][action].indexOf(signalingState)}function maybeAddCandidate(iceTransport,candidate){var alreadyAdded=iceTransport.getRemoteCandidates().find(function(remoteCandidate){return candidate.foundation===remoteCandidate.foundation&&candidate.ip===remoteCandidate.ip&&candidate.port===remoteCandidate.port&&candidate.priority===remoteCandidate.priority&&candidate.protocol===remoteCandidate.protocol&&candidate.type===remoteCandidate.type});return alreadyAdded||iceTransport.addRemoteCandidate(candidate),!alreadyAdded}function makeError(name,description){var e=new Error(description);return e.name=name,e.code={NotSupportedError:9,InvalidStateError:11,InvalidAccessError:15,TypeError:void 0,OperationError:void 0}[name],e}var SDPUtils=requirecopy("sdp");module.exports=function(window,edgeVersion){function addTrackToStreamAndFireEvent(track,stream){stream.addTrack(track),stream.dispatchEvent(new window.MediaStreamTrackEvent("addtrack",{track:track}))}function removeTrackFromStreamAndFireEvent(track,stream){stream.removeTrack(track),stream.dispatchEvent(new window.MediaStreamTrackEvent("removetrack",{track:track}))}function fireAddTrack(pc,track,receiver,streams){var trackEvent=new Event("track");trackEvent.track=track,trackEvent.receiver=receiver,trackEvent.transceiver={receiver:receiver},trackEvent.streams=streams,window.setTimeout(function(){pc._dispatchEvent("track",trackEvent)})}var RTCPeerConnection=function(config){var pc=this,_eventTarget=document.createDocumentFragment();if(["addEventListener","removeEventListener","dispatchEvent"].forEach(function(method){pc[method]=_eventTarget[method].bind(_eventTarget)}),this.canTrickleIceCandidates=null,this.needNegotiation=!1,this.localStreams=[],this.remoteStreams=[],this._localDescription=null,this._remoteDescription=null,this.signalingState="stable",this.iceConnectionState="new",this.connectionState="new",this.iceGatheringState="new",config=JSON.parse(JSON.stringify(config||{})),this.usingBundle="max-bundle"===config.bundlePolicy,"negotiate"===config.rtcpMuxPolicy)throw makeError("NotSupportedError","rtcpMuxPolicy 'negotiate' is not supported");switch(config.rtcpMuxPolicy||(config.rtcpMuxPolicy="require"),config.iceTransportPolicy){case"all":case"relay":break;default:config.iceTransportPolicy="all"}switch(config.bundlePolicy){case"balanced":case"max-compat":case"max-bundle":break;default:config.bundlePolicy="balanced"}if(config.iceServers=filterIceServers(config.iceServers||[],edgeVersion),this._iceGatherers=[],config.iceCandidatePoolSize)for(var i=config.iceCandidatePoolSize;i>0;i--)this._iceGatherers.push(new window.RTCIceGatherer({iceServers:config.iceServers,gatherPolicy:config.iceTransportPolicy}));else config.iceCandidatePoolSize=0;this._config=config,this.transceivers=[],this._sdpSessionId=SDPUtils.generateSessionId(),this._sdpSessionVersion=0,this._dtlsRole=void 0,this._isClosed=!1};Object.defineProperty(RTCPeerConnection.prototype,"localDescription",{configurable:!0,get:function(){return this._localDescription}}),Object.defineProperty(RTCPeerConnection.prototype,"remoteDescription",{configurable:!0,get:function(){return this._remoteDescription}}),RTCPeerConnection.prototype.onicecandidate=null,RTCPeerConnection.prototype.onaddstream=null,RTCPeerConnection.prototype.ontrack=null,RTCPeerConnection.prototype.onremovestream=null,RTCPeerConnection.prototype.onsignalingstatechange=null,RTCPeerConnection.prototype.oniceconnectionstatechange=null,RTCPeerConnection.prototype.onconnectionstatechange=null,RTCPeerConnection.prototype.onicegatheringstatechange=null,RTCPeerConnection.prototype.onnegotiationneeded=null,RTCPeerConnection.prototype.ondatachannel=null,RTCPeerConnection.prototype._dispatchEvent=function(name,event){this._isClosed||(this.dispatchEvent(event),"function"==typeof this["on"+name]&&this["on"+name](event))},RTCPeerConnection.prototype._emitGatheringStateChange=function(){var event=new Event("icegatheringstatechange");this._dispatchEvent("icegatheringstatechange",event)},RTCPeerConnection.prototype.getConfiguration=function(){return this._config},RTCPeerConnection.prototype.getLocalStreams=function(){return this.localStreams},RTCPeerConnection.prototype.getRemoteStreams=function(){return this.remoteStreams},RTCPeerConnection.prototype._createTransceiver=function(kind,doNotAdd){var hasBundleTransport=this.transceivers.length>0,transceiver={track:null,iceGatherer:null,iceTransport:null,dtlsTransport:null,localCapabilities:null,remoteCapabilities:null,rtpSender:null,rtpReceiver:null,kind:kind,mid:null,sendEncodingParameters:null,recvEncodingParameters:null,stream:null,associatedRemoteMediaStreams:[],wantReceive:!0};if(this.usingBundle&&hasBundleTransport)transceiver.iceTransport=this.transceivers[0].iceTransport,transceiver.dtlsTransport=this.transceivers[0].dtlsTransport;else{var transports=this._createIceAndDtlsTransports();transceiver.iceTransport=transports.iceTransport,transceiver.dtlsTransport=transports.dtlsTransport}return doNotAdd||this.transceivers.push(transceiver),transceiver},RTCPeerConnection.prototype.addTrack=function(track,stream){if(this._isClosed)throw makeError("InvalidStateError","Attempted to call addTrack on a closed peerconnection.");if(this.transceivers.find(function(s){return s.track===track}))throw makeError("InvalidAccessError","Track already exists.");for(var transceiver,i=0;i<this.transceivers.length;i++)this.transceivers[i].track||this.transceivers[i].kind!==track.kind||(transceiver=this.transceivers[i]);return transceiver||(transceiver=this._createTransceiver(track.kind)),this._maybeFireNegotiationNeeded(),-1===this.localStreams.indexOf(stream)&&this.localStreams.push(stream),transceiver.track=track,transceiver.stream=stream,transceiver.rtpSender=new window.RTCRtpSender(track,transceiver.dtlsTransport),transceiver.rtpSender},RTCPeerConnection.prototype.addStream=function(stream){var pc=this;if(edgeVersion>=15025)stream.getTracks().forEach(function(track){pc.addTrack(track,stream)});else{var clonedStream=stream.clone();stream.getTracks().forEach(function(track,idx){var clonedTrack=clonedStream.getTracks()[idx];track.addEventListener("enabled",function(event){clonedTrack.enabled=event.enabled})}),clonedStream.getTracks().forEach(function(track){pc.addTrack(track,clonedStream)})}},RTCPeerConnection.prototype.removeTrack=function(sender){if(this._isClosed)throw makeError("InvalidStateError","Attempted to call removeTrack on a closed peerconnection.");if(!(sender instanceof window.RTCRtpSender))throw new TypeError("Argument 1 of RTCPeerConnection.removeTrack does not implement interface RTCRtpSender.");var transceiver=this.transceivers.find(function(t){return t.rtpSender===sender});if(!transceiver)throw makeError("InvalidAccessError","Sender was not created by this connection.");var stream=transceiver.stream;transceiver.rtpSender.stop(),transceiver.rtpSender=null,transceiver.track=null,transceiver.stream=null,-1===this.transceivers.map(function(t){return t.stream}).indexOf(stream)&&this.localStreams.indexOf(stream)>-1&&this.localStreams.splice(this.localStreams.indexOf(stream),1),this._maybeFireNegotiationNeeded()},RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;stream.getTracks().forEach(function(track){var sender=pc.getSenders().find(function(s){return s.track===track});sender&&pc.removeTrack(sender)})},RTCPeerConnection.prototype.getSenders=function(){return this.transceivers.filter(function(transceiver){return!!transceiver.rtpSender}).map(function(transceiver){return transceiver.rtpSender})},RTCPeerConnection.prototype.getReceivers=function(){return this.transceivers.filter(function(transceiver){return!!transceiver.rtpReceiver}).map(function(transceiver){return transceiver.rtpReceiver})},RTCPeerConnection.prototype._createIceGatherer=function(sdpMLineIndex,usingBundle){var pc=this;if(usingBundle&&sdpMLineIndex>0)return this.transceivers[0].iceGatherer;if(this._iceGatherers.length)return this._iceGatherers.shift();var iceGatherer=new window.RTCIceGatherer({iceServers:this._config.iceServers,gatherPolicy:this._config.iceTransportPolicy});return Object.defineProperty(iceGatherer,"state",{value:"new",writable:!0}),this.transceivers[sdpMLineIndex].bufferedCandidateEvents=[],this.transceivers[sdpMLineIndex].bufferCandidates=function(event){var end=!event.candidate||0===Object.keys(event.candidate).length;iceGatherer.state=end?"completed":"gathering",null!==pc.transceivers[sdpMLineIndex].bufferedCandidateEvents&&pc.transceivers[sdpMLineIndex].bufferedCandidateEvents.push(event)},iceGatherer.addEventListener("localcandidate",this.transceivers[sdpMLineIndex].bufferCandidates),iceGatherer},RTCPeerConnection.prototype._gather=function(mid,sdpMLineIndex){var pc=this,iceGatherer=this.transceivers[sdpMLineIndex].iceGatherer;if(!iceGatherer.onlocalcandidate){var bufferedCandidateEvents=this.transceivers[sdpMLineIndex].bufferedCandidateEvents;this.transceivers[sdpMLineIndex].bufferedCandidateEvents=null,iceGatherer.removeEventListener("localcandidate",this.transceivers[sdpMLineIndex].bufferCandidates),iceGatherer.onlocalcandidate=function(evt){if(!(pc.usingBundle&&sdpMLineIndex>0)){var event=new Event("icecandidate");event.candidate={sdpMid:mid,sdpMLineIndex:sdpMLineIndex};var cand=evt.candidate,end=!cand||0===Object.keys(cand).length;if(end)"new"!==iceGatherer.state&&"gathering"!==iceGatherer.state||(iceGatherer.state="completed");else{"new"===iceGatherer.state&&(iceGatherer.state="gathering"),cand.component=1,cand.ufrag=iceGatherer.getLocalParameters().usernameFragment;var serializedCandidate=SDPUtils.writeCandidate(cand);event.candidate=Object.assign(event.candidate,SDPUtils.parseCandidate(serializedCandidate)),event.candidate.candidate=serializedCandidate,event.candidate.toJSON=function(){return{candidate:event.candidate.candidate,sdpMid:event.candidate.sdpMid,sdpMLineIndex:event.candidate.sdpMLineIndex,usernameFragment:event.candidate.usernameFragment}}}var sections=SDPUtils.getMediaSections(pc._localDescription.sdp);sections[event.candidate.sdpMLineIndex]+=end?"a=end-of-candidates\r\n":"a="+event.candidate.candidate+"\r\n",pc._localDescription.sdp=SDPUtils.getDescription(pc._localDescription.sdp)+sections.join("");var complete=pc.transceivers.every(function(transceiver){return transceiver.iceGatherer&&"completed"===transceiver.iceGatherer.state});"gathering"!==pc.iceGatheringState&&(pc.iceGatheringState="gathering",pc._emitGatheringStateChange()),end||pc._dispatchEvent("icecandidate",event),complete&&(pc._dispatchEvent("icecandidate",new Event("icecandidate")),pc.iceGatheringState="complete",pc._emitGatheringStateChange())}},window.setTimeout(function(){bufferedCandidateEvents.forEach(function(e){iceGatherer.onlocalcandidate(e)})},0)}},RTCPeerConnection.prototype._createIceAndDtlsTransports=function(){var pc=this,iceTransport=new window.RTCIceTransport(null);iceTransport.onicestatechange=function(){pc._updateIceConnectionState(),pc._updateConnectionState()};var dtlsTransport=new window.RTCDtlsTransport(iceTransport);return dtlsTransport.ondtlsstatechange=function(){pc._updateConnectionState()},dtlsTransport.onerror=function(){Object.defineProperty(dtlsTransport,"state",{value:"failed",writable:!0}),pc._updateConnectionState()},{iceTransport:iceTransport,dtlsTransport:dtlsTransport}},RTCPeerConnection.prototype._disposeIceAndDtlsTransports=function(sdpMLineIndex){var iceGatherer=this.transceivers[sdpMLineIndex].iceGatherer;iceGatherer&&(delete iceGatherer.onlocalcandidate,delete this.transceivers[sdpMLineIndex].iceGatherer);var iceTransport=this.transceivers[sdpMLineIndex].iceTransport;iceTransport&&(delete iceTransport.onicestatechange,delete this.transceivers[sdpMLineIndex].iceTransport);var dtlsTransport=this.transceivers[sdpMLineIndex].dtlsTransport;dtlsTransport&&(delete dtlsTransport.ondtlsstatechange,delete dtlsTransport.onerror,delete this.transceivers[sdpMLineIndex].dtlsTransport)},RTCPeerConnection.prototype._transceive=function(transceiver,send,recv){var params=getCommonCapabilities(transceiver.localCapabilities,transceiver.remoteCapabilities);send&&transceiver.rtpSender&&(params.encodings=transceiver.sendEncodingParameters,params.rtcp={cname:SDPUtils.localCName,compound:transceiver.rtcpParameters.compound},transceiver.recvEncodingParameters.length&&(params.rtcp.ssrc=transceiver.recvEncodingParameters[0].ssrc),transceiver.rtpSender.send(params)),recv&&transceiver.rtpReceiver&&params.codecs.length>0&&("video"===transceiver.kind&&transceiver.recvEncodingParameters&&edgeVersion<15019&&transceiver.recvEncodingParameters.forEach(function(p){delete p.rtx}),transceiver.recvEncodingParameters.length?params.encodings=transceiver.recvEncodingParameters:params.encodings=[{}],params.rtcp={compound:transceiver.rtcpParameters.compound},transceiver.rtcpParameters.cname&&(params.rtcp.cname=transceiver.rtcpParameters.cname),transceiver.sendEncodingParameters.length&&(params.rtcp.ssrc=transceiver.sendEncodingParameters[0].ssrc),transceiver.rtpReceiver.receive(params))},RTCPeerConnection.prototype.setLocalDescription=function(description){var pc=this;if(-1===["offer","answer"].indexOf(description.type))return Promise.reject(makeError("TypeError",'Unsupported type "'+description.type+'"'));if(!isActionAllowedInSignalingState("setLocalDescription",description.type,pc.signalingState)||pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not set local "+description.type+" in state "+pc.signalingState));var sections,sessionpart;if("offer"===description.type)sections=SDPUtils.splitSections(description.sdp),sessionpart=sections.shift(),sections.forEach(function(mediaSection,sdpMLineIndex){var caps=SDPUtils.parseRtpParameters(mediaSection);pc.transceivers[sdpMLineIndex].localCapabilities=caps}),pc.transceivers.forEach(function(transceiver,sdpMLineIndex){pc._gather(transceiver.mid,sdpMLineIndex)});else if("answer"===description.type){sections=SDPUtils.splitSections(pc._remoteDescription.sdp),sessionpart=sections.shift();var isIceLite=SDPUtils.matchPrefix(sessionpart,"a=ice-lite").length>0;sections.forEach(function(mediaSection,sdpMLineIndex){var transceiver=pc.transceivers[sdpMLineIndex],iceGatherer=transceiver.iceGatherer,iceTransport=transceiver.iceTransport,dtlsTransport=transceiver.dtlsTransport,localCapabilities=transceiver.localCapabilities,remoteCapabilities=transceiver.remoteCapabilities;if(!(SDPUtils.isRejected(mediaSection)&&0===SDPUtils.matchPrefix(mediaSection,"a=bundle-only").length||transceiver.rejected)){var remoteIceParameters=SDPUtils.getIceParameters(mediaSection,sessionpart),remoteDtlsParameters=SDPUtils.getDtlsParameters(mediaSection,sessionpart);isIceLite&&(remoteDtlsParameters.role="server"),pc.usingBundle&&0!==sdpMLineIndex||(pc._gather(transceiver.mid,sdpMLineIndex),"new"===iceTransport.state&&iceTransport.start(iceGatherer,remoteIceParameters,isIceLite?"controlling":"controlled"),"new"===dtlsTransport.state&&dtlsTransport.start(remoteDtlsParameters));var params=getCommonCapabilities(localCapabilities,remoteCapabilities);pc._transceive(transceiver,params.codecs.length>0,!1)}})}return pc._localDescription={type:description.type,sdp:description.sdp},"offer"===description.type?pc._updateSignalingState("have-local-offer"):pc._updateSignalingState("stable"),Promise.resolve()},RTCPeerConnection.prototype.setRemoteDescription=function(description){var pc=this;if(-1===["offer","answer"].indexOf(description.type))return Promise.reject(makeError("TypeError",'Unsupported type "'+description.type+'"'))
+;if(!isActionAllowedInSignalingState("setRemoteDescription",description.type,pc.signalingState)||pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not set remote "+description.type+" in state "+pc.signalingState));var streams={};pc.remoteStreams.forEach(function(stream){streams[stream.id]=stream});var receiverList=[],sections=SDPUtils.splitSections(description.sdp),sessionpart=sections.shift(),isIceLite=SDPUtils.matchPrefix(sessionpart,"a=ice-lite").length>0,usingBundle=SDPUtils.matchPrefix(sessionpart,"a=group:BUNDLE ").length>0;pc.usingBundle=usingBundle;var iceOptions=SDPUtils.matchPrefix(sessionpart,"a=ice-options:")[0];return pc.canTrickleIceCandidates=!!iceOptions&&iceOptions.substr(14).split(" ").indexOf("trickle")>=0,sections.forEach(function(mediaSection,sdpMLineIndex){var lines=SDPUtils.splitLines(mediaSection),kind=SDPUtils.getKind(mediaSection),rejected=SDPUtils.isRejected(mediaSection)&&0===SDPUtils.matchPrefix(mediaSection,"a=bundle-only").length,protocol=lines[0].substr(2).split(" ")[2],direction=SDPUtils.getDirection(mediaSection,sessionpart),remoteMsid=SDPUtils.parseMsid(mediaSection),mid=SDPUtils.getMid(mediaSection)||SDPUtils.generateIdentifier();if(rejected||"application"===kind&&("DTLS/SCTP"===protocol||"UDP/DTLS/SCTP"===protocol))return void(pc.transceivers[sdpMLineIndex]={mid:mid,kind:kind,protocol:protocol,rejected:!0});!rejected&&pc.transceivers[sdpMLineIndex]&&pc.transceivers[sdpMLineIndex].rejected&&(pc.transceivers[sdpMLineIndex]=pc._createTransceiver(kind,!0));var transceiver,iceGatherer,iceTransport,dtlsTransport,rtpReceiver,sendEncodingParameters,recvEncodingParameters,localCapabilities,track,remoteIceParameters,remoteDtlsParameters,remoteCapabilities=SDPUtils.parseRtpParameters(mediaSection);rejected||(remoteIceParameters=SDPUtils.getIceParameters(mediaSection,sessionpart),remoteDtlsParameters=SDPUtils.getDtlsParameters(mediaSection,sessionpart),remoteDtlsParameters.role="client"),recvEncodingParameters=SDPUtils.parseRtpEncodingParameters(mediaSection);var rtcpParameters=SDPUtils.parseRtcpParameters(mediaSection),isComplete=SDPUtils.matchPrefix(mediaSection,"a=end-of-candidates",sessionpart).length>0,cands=SDPUtils.matchPrefix(mediaSection,"a=candidate:").map(function(cand){return SDPUtils.parseCandidate(cand)}).filter(function(cand){return 1===cand.component});if(("offer"===description.type||"answer"===description.type)&&!rejected&&usingBundle&&sdpMLineIndex>0&&pc.transceivers[sdpMLineIndex]&&(pc._disposeIceAndDtlsTransports(sdpMLineIndex),pc.transceivers[sdpMLineIndex].iceGatherer=pc.transceivers[0].iceGatherer,pc.transceivers[sdpMLineIndex].iceTransport=pc.transceivers[0].iceTransport,pc.transceivers[sdpMLineIndex].dtlsTransport=pc.transceivers[0].dtlsTransport,pc.transceivers[sdpMLineIndex].rtpSender&&pc.transceivers[sdpMLineIndex].rtpSender.setTransport(pc.transceivers[0].dtlsTransport),pc.transceivers[sdpMLineIndex].rtpReceiver&&pc.transceivers[sdpMLineIndex].rtpReceiver.setTransport(pc.transceivers[0].dtlsTransport)),"offer"!==description.type||rejected)"answer"!==description.type||rejected||(transceiver=pc.transceivers[sdpMLineIndex],iceGatherer=transceiver.iceGatherer,iceTransport=transceiver.iceTransport,dtlsTransport=transceiver.dtlsTransport,rtpReceiver=transceiver.rtpReceiver,sendEncodingParameters=transceiver.sendEncodingParameters,localCapabilities=transceiver.localCapabilities,pc.transceivers[sdpMLineIndex].recvEncodingParameters=recvEncodingParameters,pc.transceivers[sdpMLineIndex].remoteCapabilities=remoteCapabilities,pc.transceivers[sdpMLineIndex].rtcpParameters=rtcpParameters,cands.length&&"new"===iceTransport.state&&(!isIceLite&&!isComplete||usingBundle&&0!==sdpMLineIndex?cands.forEach(function(candidate){maybeAddCandidate(transceiver.iceTransport,candidate)}):iceTransport.setRemoteCandidates(cands)),usingBundle&&0!==sdpMLineIndex||("new"===iceTransport.state&&iceTransport.start(iceGatherer,remoteIceParameters,"controlling"),"new"===dtlsTransport.state&&dtlsTransport.start(remoteDtlsParameters)),pc._transceive(transceiver,"sendrecv"===direction||"recvonly"===direction,"sendrecv"===direction||"sendonly"===direction),!rtpReceiver||"sendrecv"!==direction&&"sendonly"!==direction?delete transceiver.rtpReceiver:(track=rtpReceiver.track,remoteMsid?(streams[remoteMsid.stream]||(streams[remoteMsid.stream]=new window.MediaStream),addTrackToStreamAndFireEvent(track,streams[remoteMsid.stream]),receiverList.push([track,rtpReceiver,streams[remoteMsid.stream]])):(streams.default||(streams.default=new window.MediaStream),addTrackToStreamAndFireEvent(track,streams.default),receiverList.push([track,rtpReceiver,streams.default]))));else{transceiver=pc.transceivers[sdpMLineIndex]||pc._createTransceiver(kind),transceiver.mid=mid,transceiver.iceGatherer||(transceiver.iceGatherer=pc._createIceGatherer(sdpMLineIndex,usingBundle)),cands.length&&"new"===transceiver.iceTransport.state&&(!isComplete||usingBundle&&0!==sdpMLineIndex?cands.forEach(function(candidate){maybeAddCandidate(transceiver.iceTransport,candidate)}):transceiver.iceTransport.setRemoteCandidates(cands)),localCapabilities=window.RTCRtpReceiver.getCapabilities(kind),edgeVersion<15019&&(localCapabilities.codecs=localCapabilities.codecs.filter(function(codec){return"rtx"!==codec.name})),sendEncodingParameters=transceiver.sendEncodingParameters||[{ssrc:1001*(2*sdpMLineIndex+2)}];var isNewTrack=!1;if("sendrecv"===direction||"sendonly"===direction){if(isNewTrack=!transceiver.rtpReceiver,rtpReceiver=transceiver.rtpReceiver||new window.RTCRtpReceiver(transceiver.dtlsTransport,kind),isNewTrack){var stream;track=rtpReceiver.track,remoteMsid&&"-"===remoteMsid.stream||(remoteMsid?(streams[remoteMsid.stream]||(streams[remoteMsid.stream]=new window.MediaStream,Object.defineProperty(streams[remoteMsid.stream],"id",{get:function(){return remoteMsid.stream}})),Object.defineProperty(track,"id",{get:function(){return remoteMsid.track}}),stream=streams[remoteMsid.stream]):(streams.default||(streams.default=new window.MediaStream),stream=streams.default)),stream&&(addTrackToStreamAndFireEvent(track,stream),transceiver.associatedRemoteMediaStreams.push(stream)),receiverList.push([track,rtpReceiver,stream])}}else transceiver.rtpReceiver&&transceiver.rtpReceiver.track&&(transceiver.associatedRemoteMediaStreams.forEach(function(s){var nativeTrack=s.getTracks().find(function(t){return t.id===transceiver.rtpReceiver.track.id});nativeTrack&&removeTrackFromStreamAndFireEvent(nativeTrack,s)}),transceiver.associatedRemoteMediaStreams=[]);transceiver.localCapabilities=localCapabilities,transceiver.remoteCapabilities=remoteCapabilities,transceiver.rtpReceiver=rtpReceiver,transceiver.rtcpParameters=rtcpParameters,transceiver.sendEncodingParameters=sendEncodingParameters,transceiver.recvEncodingParameters=recvEncodingParameters,pc._transceive(pc.transceivers[sdpMLineIndex],!1,isNewTrack)}}),void 0===pc._dtlsRole&&(pc._dtlsRole="offer"===description.type?"active":"passive"),pc._remoteDescription={type:description.type,sdp:description.sdp},"offer"===description.type?pc._updateSignalingState("have-remote-offer"):pc._updateSignalingState("stable"),Object.keys(streams).forEach(function(sid){var stream=streams[sid];if(stream.getTracks().length){if(-1===pc.remoteStreams.indexOf(stream)){pc.remoteStreams.push(stream);var event=new Event("addstream");event.stream=stream,window.setTimeout(function(){pc._dispatchEvent("addstream",event)})}receiverList.forEach(function(item){var track=item[0],receiver=item[1];stream.id===item[2].id&&fireAddTrack(pc,track,receiver,[stream])})}}),receiverList.forEach(function(item){item[2]||fireAddTrack(pc,item[0],item[1],[])}),window.setTimeout(function(){pc&&pc.transceivers&&pc.transceivers.forEach(function(transceiver){transceiver.iceTransport&&"new"===transceiver.iceTransport.state&&transceiver.iceTransport.getRemoteCandidates().length>0&&transceiver.iceTransport.addRemoteCandidate({})})},4e3),Promise.resolve()},RTCPeerConnection.prototype.close=function(){this.transceivers.forEach(function(transceiver){transceiver.iceTransport&&transceiver.iceTransport.stop(),transceiver.dtlsTransport&&transceiver.dtlsTransport.stop(),transceiver.rtpSender&&transceiver.rtpSender.stop(),transceiver.rtpReceiver&&transceiver.rtpReceiver.stop()}),this._isClosed=!0,this._updateSignalingState("closed")},RTCPeerConnection.prototype._updateSignalingState=function(newState){this.signalingState=newState;var event=new Event("signalingstatechange");this._dispatchEvent("signalingstatechange",event)},RTCPeerConnection.prototype._maybeFireNegotiationNeeded=function(){var pc=this;"stable"===this.signalingState&&!0!==this.needNegotiation&&(this.needNegotiation=!0,window.setTimeout(function(){if(pc.needNegotiation){pc.needNegotiation=!1;var event=new Event("negotiationneeded");pc._dispatchEvent("negotiationneeded",event)}},0))},RTCPeerConnection.prototype._updateIceConnectionState=function(){var newState,states={new:0,closed:0,checking:0,connected:0,completed:0,disconnected:0,failed:0};if(this.transceivers.forEach(function(transceiver){states[transceiver.iceTransport.state]++}),newState="new",states.failed>0?newState="failed":states.checking>0?newState="checking":states.disconnected>0?newState="disconnected":states.new>0?newState="new":states.connected>0?newState="connected":states.completed>0&&(newState="completed"),newState!==this.iceConnectionState){this.iceConnectionState=newState;var event=new Event("iceconnectionstatechange");this._dispatchEvent("iceconnectionstatechange",event)}},RTCPeerConnection.prototype._updateConnectionState=function(){var newState,states={new:0,closed:0,connecting:0,connected:0,completed:0,disconnected:0,failed:0};if(this.transceivers.forEach(function(transceiver){states[transceiver.iceTransport.state]++,states[transceiver.dtlsTransport.state]++}),states.connected+=states.completed,newState="new",states.failed>0?newState="failed":states.connecting>0?newState="connecting":states.disconnected>0?newState="disconnected":states.new>0?newState="new":states.connected>0&&(newState="connected"),newState!==this.connectionState){this.connectionState=newState;var event=new Event("connectionstatechange");this._dispatchEvent("connectionstatechange",event)}},RTCPeerConnection.prototype.createOffer=function(){var pc=this;if(pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not call createOffer after close"));var numAudioTracks=pc.transceivers.filter(function(t){return"audio"===t.kind}).length,numVideoTracks=pc.transceivers.filter(function(t){return"video"===t.kind}).length,offerOptions=arguments[0];if(offerOptions){if(offerOptions.mandatory||offerOptions.optional)throw new TypeError("Legacy mandatory/optional constraints not supported.");void 0!==offerOptions.offerToReceiveAudio&&(numAudioTracks=!0===offerOptions.offerToReceiveAudio?1:!1===offerOptions.offerToReceiveAudio?0:offerOptions.offerToReceiveAudio),void 0!==offerOptions.offerToReceiveVideo&&(numVideoTracks=!0===offerOptions.offerToReceiveVideo?1:!1===offerOptions.offerToReceiveVideo?0:offerOptions.offerToReceiveVideo)}for(pc.transceivers.forEach(function(transceiver){"audio"===transceiver.kind?--numAudioTracks<0&&(transceiver.wantReceive=!1):"video"===transceiver.kind&&--numVideoTracks<0&&(transceiver.wantReceive=!1)});numAudioTracks>0||numVideoTracks>0;)numAudioTracks>0&&(pc._createTransceiver("audio"),numAudioTracks--),numVideoTracks>0&&(pc._createTransceiver("video"),numVideoTracks--);var sdp=SDPUtils.writeSessionBoilerplate(pc._sdpSessionId,pc._sdpSessionVersion++);pc.transceivers.forEach(function(transceiver,sdpMLineIndex){var track=transceiver.track,kind=transceiver.kind,mid=transceiver.mid||SDPUtils.generateIdentifier();transceiver.mid=mid,transceiver.iceGatherer||(transceiver.iceGatherer=pc._createIceGatherer(sdpMLineIndex,pc.usingBundle));var localCapabilities=window.RTCRtpSender.getCapabilities(kind);edgeVersion<15019&&(localCapabilities.codecs=localCapabilities.codecs.filter(function(codec){return"rtx"!==codec.name})),localCapabilities.codecs.forEach(function(codec){"H264"===codec.name&&void 0===codec.parameters["level-asymmetry-allowed"]&&(codec.parameters["level-asymmetry-allowed"]="1"),transceiver.remoteCapabilities&&transceiver.remoteCapabilities.codecs&&transceiver.remoteCapabilities.codecs.forEach(function(remoteCodec){codec.name.toLowerCase()===remoteCodec.name.toLowerCase()&&codec.clockRate===remoteCodec.clockRate&&(codec.preferredPayloadType=remoteCodec.payloadType)})}),localCapabilities.headerExtensions.forEach(function(hdrExt){(transceiver.remoteCapabilities&&transceiver.remoteCapabilities.headerExtensions||[]).forEach(function(rHdrExt){hdrExt.uri===rHdrExt.uri&&(hdrExt.id=rHdrExt.id)})});var sendEncodingParameters=transceiver.sendEncodingParameters||[{ssrc:1001*(2*sdpMLineIndex+1)}];track&&edgeVersion>=15019&&"video"===kind&&!sendEncodingParameters[0].rtx&&(sendEncodingParameters[0].rtx={ssrc:sendEncodingParameters[0].ssrc+1}),transceiver.wantReceive&&(transceiver.rtpReceiver=new window.RTCRtpReceiver(transceiver.dtlsTransport,kind)),transceiver.localCapabilities=localCapabilities,transceiver.sendEncodingParameters=sendEncodingParameters}),"max-compat"!==pc._config.bundlePolicy&&(sdp+="a=group:BUNDLE "+pc.transceivers.map(function(t){return t.mid}).join(" ")+"\r\n"),sdp+="a=ice-options:trickle\r\n",pc.transceivers.forEach(function(transceiver,sdpMLineIndex){sdp+=writeMediaSection(transceiver,transceiver.localCapabilities,"offer",transceiver.stream,pc._dtlsRole),sdp+="a=rtcp-rsize\r\n",!transceiver.iceGatherer||"new"===pc.iceGatheringState||0!==sdpMLineIndex&&pc.usingBundle||(transceiver.iceGatherer.getLocalCandidates().forEach(function(cand){cand.component=1,sdp+="a="+SDPUtils.writeCandidate(cand)+"\r\n"}),"completed"===transceiver.iceGatherer.state&&(sdp+="a=end-of-candidates\r\n"))});var desc=new window.RTCSessionDescription({type:"offer",sdp:sdp});return Promise.resolve(desc)},RTCPeerConnection.prototype.createAnswer=function(){var pc=this;if(pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not call createAnswer after close"));if("have-remote-offer"!==pc.signalingState&&"have-local-pranswer"!==pc.signalingState)return Promise.reject(makeError("InvalidStateError","Can not call createAnswer in signalingState "+pc.signalingState));var sdp=SDPUtils.writeSessionBoilerplate(pc._sdpSessionId,pc._sdpSessionVersion++);pc.usingBundle&&(sdp+="a=group:BUNDLE "+pc.transceivers.map(function(t){return t.mid}).join(" ")+"\r\n");var mediaSectionsInOffer=SDPUtils.getMediaSections(pc._remoteDescription.sdp).length;pc.transceivers.forEach(function(transceiver,sdpMLineIndex){if(!(sdpMLineIndex+1>mediaSectionsInOffer)){if(transceiver.rejected)return"application"===transceiver.kind?"DTLS/SCTP"===transceiver.protocol?sdp+="m=application 0 DTLS/SCTP 5000\r\n":sdp+="m=application 0 "+transceiver.protocol+" webrtc-datachannel\r\n":"audio"===transceiver.kind?sdp+="m=audio 0 UDP/TLS/RTP/SAVPF 0\r\na=rtpmap:0 PCMU/8000\r\n":"video"===transceiver.kind&&(sdp+="m=video 0 UDP/TLS/RTP/SAVPF 120\r\na=rtpmap:120 VP8/90000\r\n"),void(sdp+="c=IN IP4 0.0.0.0\r\na=inactive\r\na=mid:"+transceiver.mid+"\r\n");if(transceiver.stream){var localTrack;"audio"===transceiver.kind?localTrack=transceiver.stream.getAudioTracks()[0]:"video"===transceiver.kind&&(localTrack=transceiver.stream.getVideoTracks()[0]),localTrack&&edgeVersion>=15019&&"video"===transceiver.kind&&!transceiver.sendEncodingParameters[0].rtx&&(transceiver.sendEncodingParameters[0].rtx={ssrc:transceiver.sendEncodingParameters[0].ssrc+1})}var commonCapabilities=getCommonCapabilities(transceiver.localCapabilities,transceiver.remoteCapabilities);!commonCapabilities.codecs.filter(function(c){return"rtx"===c.name.toLowerCase()}).length&&transceiver.sendEncodingParameters[0].rtx&&delete transceiver.sendEncodingParameters[0].rtx,sdp+=writeMediaSection(transceiver,commonCapabilities,"answer",transceiver.stream,pc._dtlsRole),transceiver.rtcpParameters&&transceiver.rtcpParameters.reducedSize&&(sdp+="a=rtcp-rsize\r\n")}});var desc=new window.RTCSessionDescription({type:"answer",sdp:sdp});return Promise.resolve(desc)},RTCPeerConnection.prototype.addIceCandidate=function(candidate){var sections,pc=this;return candidate&&void 0===candidate.sdpMLineIndex&&!candidate.sdpMid?Promise.reject(new TypeError("sdpMLineIndex or sdpMid required")):new Promise(function(resolve,reject){if(!pc._remoteDescription)return reject(makeError("InvalidStateError","Can not add ICE candidate without a remote description"));if(candidate&&""!==candidate.candidate){var sdpMLineIndex=candidate.sdpMLineIndex;if(candidate.sdpMid)for(var i=0;i<pc.transceivers.length;i++)if(pc.transceivers[i].mid===candidate.sdpMid){sdpMLineIndex=i;break}var transceiver=pc.transceivers[sdpMLineIndex];if(!transceiver)return reject(makeError("OperationError","Can not add ICE candidate"));if(transceiver.rejected)return resolve();var cand=Object.keys(candidate.candidate).length>0?SDPUtils.parseCandidate(candidate.candidate):{};if("tcp"===cand.protocol&&(0===cand.port||9===cand.port))return resolve();if(cand.component&&1!==cand.component)return resolve();if((0===sdpMLineIndex||sdpMLineIndex>0&&transceiver.iceTransport!==pc.transceivers[0].iceTransport)&&!maybeAddCandidate(transceiver.iceTransport,cand))return reject(makeError("OperationError","Can not add ICE candidate"));var candidateString=candidate.candidate.trim();0===candidateString.indexOf("a=")&&(candidateString=candidateString.substr(2)),sections=SDPUtils.getMediaSections(pc._remoteDescription.sdp),sections[sdpMLineIndex]+="a="+(cand.type?candidateString:"end-of-candidates")+"\r\n",pc._remoteDescription.sdp=SDPUtils.getDescription(pc._remoteDescription.sdp)+sections.join("")}else for(var j=0;j<pc.transceivers.length&&(pc.transceivers[j].rejected||(pc.transceivers[j].iceTransport.addRemoteCandidate({}),sections=SDPUtils.getMediaSections(pc._remoteDescription.sdp),sections[j]+="a=end-of-candidates\r\n",pc._remoteDescription.sdp=SDPUtils.getDescription(pc._remoteDescription.sdp)+sections.join(""),!pc.usingBundle));j++);resolve()})},RTCPeerConnection.prototype.getStats=function(selector){if(selector&&selector instanceof window.MediaStreamTrack){var senderOrReceiver=null;if(this.transceivers.forEach(function(transceiver){transceiver.rtpSender&&transceiver.rtpSender.track===selector?senderOrReceiver=transceiver.rtpSender:transceiver.rtpReceiver&&transceiver.rtpReceiver.track===selector&&(senderOrReceiver=transceiver.rtpReceiver)}),!senderOrReceiver)throw makeError("InvalidAccessError","Invalid selector.");return senderOrReceiver.getStats()}var promises=[];return this.transceivers.forEach(function(transceiver){["rtpSender","rtpReceiver","iceGatherer","iceTransport","dtlsTransport"].forEach(function(method){transceiver[method]&&promises.push(transceiver[method].getStats())})}),Promise.all(promises).then(function(allStats){var results=new Map;return allStats.forEach(function(stats){stats.forEach(function(stat){results.set(stat.id,stat)})}),results})},["RTCRtpSender","RTCRtpReceiver","RTCIceGatherer","RTCIceTransport","RTCDtlsTransport"].forEach(function(ortcObjectName){var obj=window[ortcObjectName];if(obj&&obj.prototype&&obj.prototype.getStats){var nativeGetstats=obj.prototype.getStats;obj.prototype.getStats=function(){return nativeGetstats.apply(this).then(function(nativeStats){var mapStats=new Map;return Object.keys(nativeStats).forEach(function(id){nativeStats[id].type=fixStatsType(nativeStats[id]),mapStats.set(id,nativeStats[id])}),mapStats})}}});var methods=["createOffer","createAnswer"];return methods.forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[0]||"function"==typeof args[1]?nativeMethod.apply(this,[arguments[2]]).then(function(description){"function"==typeof args[0]&&args[0].apply(null,[description])},function(error){"function"==typeof args[1]&&args[1].apply(null,[error])}):nativeMethod.apply(this,arguments)}}),methods=["setLocalDescription","setRemoteDescription","addIceCandidate"],methods.forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[1]||"function"==typeof args[2]?nativeMethod.apply(this,arguments).then(function(){"function"==typeof args[1]&&args[1].apply(null)},function(error){"function"==typeof args[2]&&args[2].apply(null,[error])}):nativeMethod.apply(this,arguments)}}),["getStats"].forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[1]?nativeMethod.apply(this,arguments).then(function(){"function"==typeof args[1]&&args[1].apply(null)}):nativeMethod.apply(this,arguments)}}),RTCPeerConnection}},{sdp:2}],2:[function(requirecopy,module,exports){var SDPUtils={};SDPUtils.generateIdentifier=function(){return Math.random().toString(36).substr(2,10)},SDPUtils.localCName=SDPUtils.generateIdentifier(),SDPUtils.splitLines=function(blob){return blob.trim().split("\n").map(function(line){return line.trim()})},SDPUtils.splitSections=function(blob){return blob.split("\nm=").map(function(part,index){return(index>0?"m="+part:part).trim()+"\r\n"})},SDPUtils.getDescription=function(blob){var sections=SDPUtils.splitSections(blob);return sections&&sections[0]},SDPUtils.getMediaSections=function(blob){var sections=SDPUtils.splitSections(blob);return sections.shift(),sections},SDPUtils.matchPrefix=function(blob,prefix){return SDPUtils.splitLines(blob).filter(function(line){return 0===line.indexOf(prefix)})},SDPUtils.parseCandidate=function(line){var parts;parts=0===line.indexOf("a=candidate:")?line.substring(12).split(" "):line.substring(10).split(" ");for(var candidate={foundation:parts[0],component:parseInt(parts[1],10),protocol:parts[2].toLowerCase(),priority:parseInt(parts[3],10),ip:parts[4],port:parseInt(parts[5],10),type:parts[7]},i=8;i<parts.length;i+=2)switch(parts[i]){case"raddr":candidate.relatedAddress=parts[i+1];break;case"rport":candidate.relatedPort=parseInt(parts[i+1],10);break;case"tcptype":candidate.tcpType=parts[i+1];break;case"ufrag":candidate.ufrag=parts[i+1],candidate.usernameFragment=parts[i+1];break;default:candidate[parts[i]]=parts[i+1]}return candidate},SDPUtils.writeCandidate=function(candidate){var sdp=[];sdp.push(candidate.foundation),sdp.push(candidate.component),sdp.push(candidate.protocol.toUpperCase()),sdp.push(candidate.priority),sdp.push(candidate.ip),sdp.push(candidate.port);var type=candidate.type;return sdp.push("typ"),sdp.push(type),"host"!==type&&candidate.relatedAddress&&candidate.relatedPort&&(sdp.push("raddr"),sdp.push(candidate.relatedAddress),sdp.push("rport"),sdp.push(candidate.relatedPort)),candidate.tcpType&&"tcp"===candidate.protocol.toLowerCase()&&(sdp.push("tcptype"),sdp.push(candidate.tcpType)),(candidate.usernameFragment||candidate.ufrag)&&(sdp.push("ufrag"),sdp.push(candidate.usernameFragment||candidate.ufrag)),"candidate:"+sdp.join(" ")},SDPUtils.parseIceOptions=function(line){return line.substr(14).split(" ")},SDPUtils.parseRtpMap=function(line){var parts=line.substr(9).split(" "),parsed={payloadType:parseInt(parts.shift(),10)};return parts=parts[0].split("/"),parsed.name=parts[0],parsed.clockRate=parseInt(parts[1],10),parsed.channels=3===parts.length?parseInt(parts[2],10):1,parsed.numChannels=parsed.channels,parsed},SDPUtils.writeRtpMap=function(codec){var pt=codec.payloadType;void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType);var channels=codec.channels||codec.numChannels||1;return"a=rtpmap:"+pt+" "+codec.name+"/"+codec.clockRate+(1!==channels?"/"+channels:"")+"\r\n"},SDPUtils.parseExtmap=function(line){var parts=line.substr(9).split(" ");return{id:parseInt(parts[0],10),direction:parts[0].indexOf("/")>0?parts[0].split("/")[1]:"sendrecv",uri:parts[1]}},SDPUtils.writeExtmap=function(headerExtension){return"a=extmap:"+(headerExtension.id||headerExtension.preferredId)+(headerExtension.direction&&"sendrecv"!==headerExtension.direction?"/"+headerExtension.direction:"")+" "+headerExtension.uri+"\r\n"},SDPUtils.parseFmtp=function(line){for(var kv,parsed={},parts=line.substr(line.indexOf(" ")+1).split(";"),j=0;j<parts.length;j++)kv=parts[j].trim().split("="),parsed[kv[0].trim()]=kv[1];return parsed},SDPUtils.writeFmtp=function(codec){var line="",pt=codec.payloadType;if(void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType),codec.parameters&&Object.keys(codec.parameters).length){var params=[];Object.keys(codec.parameters).forEach(function(param){codec.parameters[param]?params.push(param+"="+codec.parameters[param]):params.push(param)}),line+="a=fmtp:"+pt+" "+params.join(";")+"\r\n"}return line},SDPUtils.parseRtcpFb=function(line){var parts=line.substr(line.indexOf(" ")+1).split(" ");return{type:parts.shift(),parameter:parts.join(" ")}},SDPUtils.writeRtcpFb=function(codec){var lines="",pt=codec.payloadType;return void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType),codec.rtcpFeedback&&codec.rtcpFeedback.length&&codec.rtcpFeedback.forEach(function(fb){lines+="a=rtcp-fb:"+pt+" "+fb.type+(fb.parameter&&fb.parameter.length?" "+fb.parameter:"")+"\r\n"}),lines},SDPUtils.parseSsrcMedia=function(line){var sp=line.indexOf(" "),parts={ssrc:parseInt(line.substr(7,sp-7),10)},colon=line.indexOf(":",sp);return colon>-1?(parts.attribute=line.substr(sp+1,colon-sp-1),parts.value=line.substr(colon+1)):parts.attribute=line.substr(sp+1),parts},SDPUtils.parseSsrcGroup=function(line){var parts=line.substr(13).split(" ");return{semantics:parts.shift(),ssrcs:parts.map(function(ssrc){return parseInt(ssrc,10)})}},SDPUtils.getMid=function(mediaSection){var mid=SDPUtils.matchPrefix(mediaSection,"a=mid:")[0];if(mid)return mid.substr(6)},SDPUtils.parseFingerprint=function(line){var parts=line.substr(14).split(" ");return{algorithm:parts[0].toLowerCase(),value:parts[1]}},SDPUtils.getDtlsParameters=function(mediaSection,sessionpart){return{role:"auto",fingerprints:SDPUtils.matchPrefix(mediaSection+sessionpart,"a=fingerprint:").map(SDPUtils.parseFingerprint)}},SDPUtils.writeDtlsParameters=function(params,setupType){var sdp="a=setup:"+setupType+"\r\n";return params.fingerprints.forEach(function(fp){sdp+="a=fingerprint:"+fp.algorithm+" "+fp.value+"\r\n"}),sdp},SDPUtils.getIceParameters=function(mediaSection,sessionpart){var lines=SDPUtils.splitLines(mediaSection);return lines=lines.concat(SDPUtils.splitLines(sessionpart)),{usernameFragment:lines.filter(function(line){return 0===line.indexOf("a=ice-ufrag:")})[0].substr(12),password:lines.filter(function(line){return 0===line.indexOf("a=ice-pwd:")})[0].substr(10)}},SDPUtils.writeIceParameters=function(params){return"a=ice-ufrag:"+params.usernameFragment+"\r\na=ice-pwd:"+params.password+"\r\n"},SDPUtils.parseRtpParameters=function(mediaSection){for(var description={codecs:[],headerExtensions:[],fecMechanisms:[],rtcp:[]},lines=SDPUtils.splitLines(mediaSection),mline=lines[0].split(" "),i=3;i<mline.length;i++){var pt=mline[i],rtpmapline=SDPUtils.matchPrefix(mediaSection,"a=rtpmap:"+pt+" ")[0];if(rtpmapline){var codec=SDPUtils.parseRtpMap(rtpmapline),fmtps=SDPUtils.matchPrefix(mediaSection,"a=fmtp:"+pt+" ");switch(codec.parameters=fmtps.length?SDPUtils.parseFmtp(fmtps[0]):{},codec.rtcpFeedback=SDPUtils.matchPrefix(mediaSection,"a=rtcp-fb:"+pt+" ").map(SDPUtils.parseRtcpFb),description.codecs.push(codec),codec.name.toUpperCase()){case"RED":case"ULPFEC":description.fecMechanisms.push(codec.name.toUpperCase())}}}return SDPUtils.matchPrefix(mediaSection,"a=extmap:").forEach(function(line){description.headerExtensions.push(SDPUtils.parseExtmap(line))}),description},SDPUtils.writeRtpDescription=function(kind,caps){var sdp="";sdp+="m="+kind+" ",sdp+=caps.codecs.length>0?"9":"0",sdp+=" UDP/TLS/RTP/SAVPF ",sdp+=caps.codecs.map(function(codec){return void 0!==codec.preferredPayloadType?codec.preferredPayloadType:codec.payloadType}).join(" ")+"\r\n",sdp+="c=IN IP4 0.0.0.0\r\n",sdp+="a=rtcp:9 IN IP4 0.0.0.0\r\n",caps.codecs.forEach(function(codec){sdp+=SDPUtils.writeRtpMap(codec),sdp+=SDPUtils.writeFmtp(codec),sdp+=SDPUtils.writeRtcpFb(codec)});var maxptime=0;return caps.codecs.forEach(function(codec){codec.maxptime>maxptime&&(maxptime=codec.maxptime)}),maxptime>0&&(sdp+="a=maxptime:"+maxptime+"\r\n"),sdp+="a=rtcp-mux\r\n",caps.headerExtensions&&caps.headerExtensions.forEach(function(extension){sdp+=SDPUtils.writeExtmap(extension)}),sdp},SDPUtils.parseRtpEncodingParameters=function(mediaSection){var secondarySsrc,encodingParameters=[],description=SDPUtils.parseRtpParameters(mediaSection),hasRed=-1!==description.fecMechanisms.indexOf("RED"),hasUlpfec=-1!==description.fecMechanisms.indexOf("ULPFEC"),ssrcs=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(parts){return"cname"===parts.attribute}),primarySsrc=ssrcs.length>0&&ssrcs[0].ssrc,flows=SDPUtils.matchPrefix(mediaSection,"a=ssrc-group:FID").map(function(line){return line.substr(17).split(" ").map(function(part){return parseInt(part,10)})});flows.length>0&&flows[0].length>1&&flows[0][0]===primarySsrc&&(secondarySsrc=flows[0][1]),description.codecs.forEach(function(codec){if("RTX"===codec.name.toUpperCase()&&codec.parameters.apt){var encParam={ssrc:primarySsrc,codecPayloadType:parseInt(codec.parameters.apt,10)};primarySsrc&&secondarySsrc&&(encParam.rtx={ssrc:secondarySsrc}),encodingParameters.push(encParam),hasRed&&(encParam=JSON.parse(JSON.stringify(encParam)),encParam.fec={ssrc:secondarySsrc,mechanism:hasUlpfec?"red+ulpfec":"red"},encodingParameters.push(encParam))}}),0===encodingParameters.length&&primarySsrc&&encodingParameters.push({ssrc:primarySsrc});var bandwidth=SDPUtils.matchPrefix(mediaSection,"b=");return bandwidth.length&&(bandwidth=0===bandwidth[0].indexOf("b=TIAS:")?parseInt(bandwidth[0].substr(7),10):0===bandwidth[0].indexOf("b=AS:")?1e3*parseInt(bandwidth[0].substr(5),10)*.95-16e3:void 0,encodingParameters.forEach(function(params){params.maxBitrate=bandwidth})),encodingParameters},SDPUtils.parseRtcpParameters=function(mediaSection){var rtcpParameters={},remoteSsrc=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(obj){return"cname"===obj.attribute})[0];remoteSsrc&&(rtcpParameters.cname=remoteSsrc.value,rtcpParameters.ssrc=remoteSsrc.ssrc);var rsize=SDPUtils.matchPrefix(mediaSection,"a=rtcp-rsize");rtcpParameters.reducedSize=rsize.length>0,rtcpParameters.compound=0===rsize.length;var mux=SDPUtils.matchPrefix(mediaSection,"a=rtcp-mux");return rtcpParameters.mux=mux.length>0,rtcpParameters},SDPUtils.parseMsid=function(mediaSection){var parts,spec=SDPUtils.matchPrefix(mediaSection,"a=msid:");if(1===spec.length)return parts=spec[0].substr(7).split(" "),{stream:parts[0],track:parts[1]};var planB=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(msidParts){return"msid"===msidParts.attribute});return planB.length>0?(parts=planB[0].value.split(" "),{stream:parts[0],track:parts[1]}):void 0},SDPUtils.generateSessionId=function(){return Math.random().toString().substr(2,21)},SDPUtils.writeSessionBoilerplate=function(sessId,sessVer){var version=void 0!==sessVer?sessVer:2;return"v=0\r\no=thisisadapterortc "+(sessId||SDPUtils.generateSessionId())+" "+version+" IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\n"},SDPUtils.writeMediaSection=function(transceiver,caps,type,stream){var sdp=SDPUtils.writeRtpDescription(transceiver.kind,caps);if(sdp+=SDPUtils.writeIceParameters(transceiver.iceGatherer.getLocalParameters()),sdp+=SDPUtils.writeDtlsParameters(transceiver.dtlsTransport.getLocalParameters(),"offer"===type?"actpass":"active"),sdp+="a=mid:"+transceiver.mid+"\r\n",
+transceiver.direction?sdp+="a="+transceiver.direction+"\r\n":transceiver.rtpSender&&transceiver.rtpReceiver?sdp+="a=sendrecv\r\n":transceiver.rtpSender?sdp+="a=sendonly\r\n":transceiver.rtpReceiver?sdp+="a=recvonly\r\n":sdp+="a=inactive\r\n",transceiver.rtpSender){var msid="msid:"+stream.id+" "+transceiver.rtpSender.track.id+"\r\n";sdp+="a="+msid,sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" "+msid,transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" "+msid,sdp+="a=ssrc-group:FID "+transceiver.sendEncodingParameters[0].ssrc+" "+transceiver.sendEncodingParameters[0].rtx.ssrc+"\r\n")}return sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" cname:"+SDPUtils.localCName+"\r\n",transceiver.rtpSender&&transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" cname:"+SDPUtils.localCName+"\r\n"),sdp},SDPUtils.getDirection=function(mediaSection,sessionpart){for(var lines=SDPUtils.splitLines(mediaSection),i=0;i<lines.length;i++)switch(lines[i]){case"a=sendrecv":case"a=sendonly":case"a=recvonly":case"a=inactive":return lines[i].substr(2)}return sessionpart?SDPUtils.getDirection(sessionpart):"sendrecv"},SDPUtils.getKind=function(mediaSection){return SDPUtils.splitLines(mediaSection)[0].split(" ")[0].substr(2)},SDPUtils.isRejected=function(mediaSection){return"0"===mediaSection.split(" ",2)[1]},SDPUtils.parseMLine=function(mediaSection){var lines=SDPUtils.splitLines(mediaSection),parts=lines[0].substr(2).split(" ");return{kind:parts[0],port:parseInt(parts[1],10),protocol:parts[2],fmt:parts.slice(3).join(" ")}},SDPUtils.parseOLine=function(mediaSection){var line=SDPUtils.matchPrefix(mediaSection,"o=")[0],parts=line.substr(2).split(" ");return{username:parts[0],sessionId:parts[1],sessionVersion:parseInt(parts[2],10),netType:parts[3],addressType:parts[4],address:parts[5]}},SDPUtils.isValidSDP=function(blob){if("string"!=typeof blob||0===blob.length)return!1;for(var lines=SDPUtils.splitLines(blob),i=0;i<lines.length;i++)if(lines[i].length<2||"="!==lines[i].charAt(1))return!1;return!0},"object"==typeof module&&(module.exports=SDPUtils)},{}],3:[function(requirecopy,module,exports){(function(global){var adapterFactory=requirecopy("./adapter_factory.js");module.exports=adapterFactory({window:global.window})}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{"./adapter_factory.js":4}],4:[function(requirecopy,module,exports){var utils=requirecopy("./utils");module.exports=function(dependencies,opts){var window=dependencies&&dependencies.window,options={shimChrome:!0,shimFirefox:!0,shimEdge:!0,shimSafari:!0};for(var key in opts)hasOwnProperty.call(opts,key)&&(options[key]=opts[key]);var logging=utils.log,browserDetails=utils.detectBrowser(window),chromeShim=requirecopy("./chrome/chrome_shim")||null,edgeShim=requirecopy("./edge/edge_shim")||null,firefoxShim=requirecopy("./firefox/firefox_shim")||null,safariShim=requirecopy("./safari/safari_shim")||null,commonShim=requirecopy("./common_shim")||null,adapter={browserDetails:browserDetails,commonShim:commonShim,extractVersion:utils.extractVersion,disableLog:utils.disableLog,disableWarnings:utils.disableWarnings};switch(browserDetails.browser){case"chrome":if(!chromeShim||!chromeShim.shimPeerConnection||!options.shimChrome)return logging("Chrome shim is not included in this adapter release."),adapter;logging("adapter.js shimming chrome."),adapter.browserShim=chromeShim,commonShim.shimCreateObjectURL(window),chromeShim.shimGetUserMedia(window),chromeShim.shimMediaStream(window),chromeShim.shimSourceObject(window),chromeShim.shimPeerConnection(window),chromeShim.shimOnTrack(window),chromeShim.shimAddTrackRemoveTrack(window),chromeShim.shimGetSendersWithDtmf(window),chromeShim.shimSenderReceiverGetStats(window),chromeShim.fixNegotiationNeeded(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"firefox":if(!firefoxShim||!firefoxShim.shimPeerConnection||!options.shimFirefox)return logging("Firefox shim is not included in this adapter release."),adapter;logging("adapter.js shimming firefox."),adapter.browserShim=firefoxShim,commonShim.shimCreateObjectURL(window),firefoxShim.shimGetUserMedia(window),firefoxShim.shimSourceObject(window),firefoxShim.shimPeerConnection(window),firefoxShim.shimOnTrack(window),firefoxShim.shimRemoveStream(window),firefoxShim.shimSenderGetStats(window),firefoxShim.shimReceiverGetStats(window),firefoxShim.shimRTCDataChannel(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"edge":if(!edgeShim||!edgeShim.shimPeerConnection||!options.shimEdge)return logging("MS edge shim is not included in this adapter release."),adapter;logging("adapter.js shimming edge."),adapter.browserShim=edgeShim,commonShim.shimCreateObjectURL(window),edgeShim.shimGetUserMedia(window),edgeShim.shimPeerConnection(window),edgeShim.shimReplaceTrack(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"safari":if(!safariShim||!options.shimSafari)return logging("Safari shim is not included in this adapter release."),adapter;logging("adapter.js shimming safari."),adapter.browserShim=safariShim,commonShim.shimCreateObjectURL(window),safariShim.shimRTCIceServerUrls(window),safariShim.shimCreateOfferLegacy(window),safariShim.shimCallbacksAPI(window),safariShim.shimLocalStreamsAPI(window),safariShim.shimRemoteStreamsAPI(window),safariShim.shimTrackEventTransceiver(window),safariShim.shimGetUserMedia(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;default:logging("Unsupported browser!")}return adapter}},{"./chrome/chrome_shim":5,"./common_shim":7,"./edge/edge_shim":8,"./firefox/firefox_shim":11,"./safari/safari_shim":13,"./utils":14}],5:[function(requirecopy,module,exports){function walkStats(stats,base,resultSet){base&&!resultSet.has(base.id)&&(resultSet.set(base.id,base),Object.keys(base).forEach(function(name){name.endsWith("Id")?walkStats(stats,stats.get(base[name]),resultSet):name.endsWith("Ids")&&base[name].forEach(function(id){walkStats(stats,stats.get(id),resultSet)})}))}function filterStats(result,track,outbound){var streamStatsType=outbound?"outbound-rtp":"inbound-rtp",filteredResult=new Map;if(null===track)return filteredResult;var trackStats=[];return result.forEach(function(value){"track"===value.type&&value.trackIdentifier===track.id&&trackStats.push(value)}),trackStats.forEach(function(trackStat){result.forEach(function(stats){stats.type===streamStatsType&&stats.trackId===trackStat.id&&walkStats(result,stats,filteredResult)})}),filteredResult}var utils=requirecopy("../utils.js"),logging=utils.log;module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimMediaStream:function(window){window.MediaStream=window.MediaStream||window.webkitMediaStream},shimOnTrack:function(window){if("object"!=typeof window||!window.RTCPeerConnection||"ontrack"in window.RTCPeerConnection.prototype)"RTCRtpTransceiver"in window||utils.wrapPeerConnectionEvent(window,"track",function(e){return e.transceiver||(e.transceiver={receiver:e.receiver}),e});else{Object.defineProperty(window.RTCPeerConnection.prototype,"ontrack",{get:function(){return this._ontrack},set:function(f){this._ontrack&&this.removeEventListener("track",this._ontrack),this.addEventListener("track",this._ontrack=f)},enumerable:!0,configurable:!0});var origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;return pc._ontrackpoly||(pc._ontrackpoly=function(e){e.stream.addEventListener("addtrack",function(te){var receiver;receiver=window.RTCPeerConnection.prototype.getReceivers?pc.getReceivers().find(function(r){return r.track&&r.track.id===te.track.id}):{track:te.track};var event=new Event("track");event.track=te.track,event.receiver=receiver,event.transceiver={receiver:receiver},event.streams=[e.stream],pc.dispatchEvent(event)}),e.stream.getTracks().forEach(function(track){var receiver;receiver=window.RTCPeerConnection.prototype.getReceivers?pc.getReceivers().find(function(r){return r.track&&r.track.id===track.id}):{track:track};var event=new Event("track");event.track=track,event.receiver=receiver,event.transceiver={receiver:receiver},event.streams=[e.stream],pc.dispatchEvent(event)})},pc.addEventListener("addstream",pc._ontrackpoly)),origSetRemoteDescription.apply(pc,arguments)}}},shimGetSendersWithDtmf:function(window){if("object"==typeof window&&window.RTCPeerConnection&&!("getSenders"in window.RTCPeerConnection.prototype)&&"createDTMFSender"in window.RTCPeerConnection.prototype){var shimSenderWithDtmf=function(pc,track){return{track:track,get dtmf(){return void 0===this._dtmf&&("audio"===track.kind?this._dtmf=pc.createDTMFSender(track):this._dtmf=null),this._dtmf},_pc:pc}};if(!window.RTCPeerConnection.prototype.getSenders){window.RTCPeerConnection.prototype.getSenders=function(){return this._senders=this._senders||[],this._senders.slice()};var origAddTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addTrack=function(track,stream){var pc=this,sender=origAddTrack.apply(pc,arguments);return sender||(sender=shimSenderWithDtmf(pc,track),pc._senders.push(sender)),sender};var origRemoveTrack=window.RTCPeerConnection.prototype.removeTrack;window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;origRemoveTrack.apply(pc,arguments);var idx=pc._senders.indexOf(sender);-1!==idx&&pc._senders.splice(idx,1)}}var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;pc._senders=pc._senders||[],origAddStream.apply(pc,[stream]),stream.getTracks().forEach(function(track){pc._senders.push(shimSenderWithDtmf(pc,track))})};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;pc._senders=pc._senders||[],origRemoveStream.apply(pc,[stream]),stream.getTracks().forEach(function(track){var sender=pc._senders.find(function(s){return s.track===track});sender&&pc._senders.splice(pc._senders.indexOf(sender),1)})}}else if("object"==typeof window&&window.RTCPeerConnection&&"getSenders"in window.RTCPeerConnection.prototype&&"createDTMFSender"in window.RTCPeerConnection.prototype&&window.RTCRtpSender&&!("dtmf"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders},Object.defineProperty(window.RTCRtpSender.prototype,"dtmf",{get:function(){return void 0===this._dtmf&&("audio"===this.track.kind?this._dtmf=this._pc.createDTMFSender(this.track):this._dtmf=null),this._dtmf}})}},shimSenderReceiverGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&window.RTCRtpReceiver){if(!("getStats"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;origGetSenders&&(window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders});var origAddTrack=window.RTCPeerConnection.prototype.addTrack;origAddTrack&&(window.RTCPeerConnection.prototype.addTrack=function(){var sender=origAddTrack.apply(this,arguments);return sender._pc=this,sender}),window.RTCRtpSender.prototype.getStats=function(){var sender=this;return this._pc.getStats().then(function(result){return filterStats(result,sender.track,!0)})}}if(!("getStats"in window.RTCRtpReceiver.prototype)){var origGetReceivers=window.RTCPeerConnection.prototype.getReceivers;origGetReceivers&&(window.RTCPeerConnection.prototype.getReceivers=function(){var pc=this,receivers=origGetReceivers.apply(pc,[]);return receivers.forEach(function(receiver){receiver._pc=pc}),receivers}),utils.wrapPeerConnectionEvent(window,"track",function(e){return e.receiver._pc=e.srcElement,e}),window.RTCRtpReceiver.prototype.getStats=function(){var receiver=this;return this._pc.getStats().then(function(result){return filterStats(result,receiver.track,!1)})}}if("getStats"in window.RTCRtpSender.prototype&&"getStats"in window.RTCRtpReceiver.prototype){var origGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(){var pc=this;if(arguments.length>0&&arguments[0]instanceof window.MediaStreamTrack){var sender,receiver,err,track=arguments[0];return pc.getSenders().forEach(function(s){s.track===track&&(sender?err=!0:sender=s)}),pc.getReceivers().forEach(function(r){return r.track===track&&(receiver?err=!0:receiver=r),r.track===track}),err||sender&&receiver?Promise.reject(new DOMException("There are more than one sender or receiver for the track.","InvalidAccessError")):sender?sender.getStats():receiver?receiver.getStats():Promise.reject(new DOMException("There is no sender or receiver for the track.","InvalidAccessError"))}return origGetStats.apply(pc,arguments)}}}},shimSourceObject:function(window){var URL=window&&window.URL;"object"==typeof window&&(!window.HTMLMediaElement||"srcObject"in window.HTMLMediaElement.prototype||Object.defineProperty(window.HTMLMediaElement.prototype,"srcObject",{get:function(){return this._srcObject},set:function(stream){var self=this;if(this._srcObject=stream,this.src&&URL.revokeObjectURL(this.src),!stream)return void(this.src="");this.src=URL.createObjectURL(stream),stream.addEventListener("addtrack",function(){self.src&&URL.revokeObjectURL(self.src),self.src=URL.createObjectURL(stream)}),stream.addEventListener("removetrack",function(){self.src&&URL.revokeObjectURL(self.src),self.src=URL.createObjectURL(stream)})}}))},shimAddTrackRemoveTrackWithNative:function(window){window.RTCPeerConnection.prototype.getLocalStreams=function(){var pc=this;return this._shimmedLocalStreams=this._shimmedLocalStreams||{},Object.keys(this._shimmedLocalStreams).map(function(streamId){return pc._shimmedLocalStreams[streamId][0]})};var origAddTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addTrack=function(track,stream){if(!stream)return origAddTrack.apply(this,arguments);this._shimmedLocalStreams=this._shimmedLocalStreams||{};var sender=origAddTrack.apply(this,arguments);return this._shimmedLocalStreams[stream.id]?-1===this._shimmedLocalStreams[stream.id].indexOf(sender)&&this._shimmedLocalStreams[stream.id].push(sender):this._shimmedLocalStreams[stream.id]=[stream,sender],sender};var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;this._shimmedLocalStreams=this._shimmedLocalStreams||{},stream.getTracks().forEach(function(track){if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError")});var existingSenders=pc.getSenders();origAddStream.apply(this,arguments);var newSenders=pc.getSenders().filter(function(newSender){return-1===existingSenders.indexOf(newSender)});this._shimmedLocalStreams[stream.id]=[stream].concat(newSenders)};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){return this._shimmedLocalStreams=this._shimmedLocalStreams||{},delete this._shimmedLocalStreams[stream.id],origRemoveStream.apply(this,arguments)};var origRemoveTrack=window.RTCPeerConnection.prototype.removeTrack;window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;return this._shimmedLocalStreams=this._shimmedLocalStreams||{},sender&&Object.keys(this._shimmedLocalStreams).forEach(function(streamId){var idx=pc._shimmedLocalStreams[streamId].indexOf(sender);-1!==idx&&pc._shimmedLocalStreams[streamId].splice(idx,1),1===pc._shimmedLocalStreams[streamId].length&&delete pc._shimmedLocalStreams[streamId]}),origRemoveTrack.apply(this,arguments)}},shimAddTrackRemoveTrack:function(window){function replaceInternalStreamId(pc,description){var sdp=description.sdp;return Object.keys(pc._reverseStreams||[]).forEach(function(internalId){var externalStream=pc._reverseStreams[internalId],internalStream=pc._streams[externalStream.id];sdp=sdp.replace(new RegExp(internalStream.id,"g"),externalStream.id)}),new RTCSessionDescription({type:description.type,sdp:sdp})}function replaceExternalStreamId(pc,description){var sdp=description.sdp;return Object.keys(pc._reverseStreams||[]).forEach(function(internalId){var externalStream=pc._reverseStreams[internalId],internalStream=pc._streams[externalStream.id];sdp=sdp.replace(new RegExp(externalStream.id,"g"),internalStream.id)}),new RTCSessionDescription({type:description.type,sdp:sdp})}var browserDetails=utils.detectBrowser(window);if(window.RTCPeerConnection.prototype.addTrack&&browserDetails.version>=65)return this.shimAddTrackRemoveTrackWithNative(window);var origGetLocalStreams=window.RTCPeerConnection.prototype.getLocalStreams;window.RTCPeerConnection.prototype.getLocalStreams=function(){var pc=this,nativeStreams=origGetLocalStreams.apply(this);return pc._reverseStreams=pc._reverseStreams||{},nativeStreams.map(function(stream){return pc._reverseStreams[stream.id]})};var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;if(pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{},stream.getTracks().forEach(function(track){if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError")}),!pc._reverseStreams[stream.id]){var newStream=new window.MediaStream(stream.getTracks());pc._streams[stream.id]=newStream,pc._reverseStreams[newStream.id]=stream,stream=newStream}origAddStream.apply(pc,[stream])};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{},origRemoveStream.apply(pc,[pc._streams[stream.id]||stream]),delete pc._reverseStreams[pc._streams[stream.id]?pc._streams[stream.id].id:stream.id],delete pc._streams[stream.id]},window.RTCPeerConnection.prototype.addTrack=function(track,stream){var pc=this;if("closed"===pc.signalingState)throw new DOMException("The RTCPeerConnection's signalingState is 'closed'.","InvalidStateError");var streams=[].slice.call(arguments,1);if(1!==streams.length||!streams[0].getTracks().find(function(t){return t===track}))throw new DOMException("The adapter.js addTrack polyfill only supports a single  stream which is associated with the specified track.","NotSupportedError");if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError");pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{};var oldStream=pc._streams[stream.id];if(oldStream)oldStream.addTrack(track),Promise.resolve().then(function(){pc.dispatchEvent(new Event("negotiationneeded"))});else{var newStream=new window.MediaStream([track]);pc._streams[stream.id]=newStream,pc._reverseStreams[newStream.id]=stream,pc.addStream(newStream)}return pc.getSenders().find(function(s){return s.track===track})},["createOffer","createAnswer"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var pc=this,args=arguments;return arguments.length&&"function"==typeof arguments[0]?nativeMethod.apply(pc,[function(description){var desc=replaceInternalStreamId(pc,description);args[0].apply(null,[desc])},function(err){args[1]&&args[1].apply(null,err)},arguments[2]]):nativeMethod.apply(pc,arguments).then(function(description){return replaceInternalStreamId(pc,description)})}});var origSetLocalDescription=window.RTCPeerConnection.prototype.setLocalDescription;window.RTCPeerConnection.prototype.setLocalDescription=function(){var pc=this;return arguments.length&&arguments[0].type?(arguments[0]=replaceExternalStreamId(pc,arguments[0]),origSetLocalDescription.apply(pc,arguments)):origSetLocalDescription.apply(pc,arguments)};var origLocalDescription=Object.getOwnPropertyDescriptor(window.RTCPeerConnection.prototype,"localDescription");Object.defineProperty(window.RTCPeerConnection.prototype,"localDescription",{get:function(){var pc=this,description=origLocalDescription.get.apply(this);return""===description.type?description:replaceInternalStreamId(pc,description)}}),window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;if("closed"===pc.signalingState)throw new DOMException("The RTCPeerConnection's signalingState is 'closed'.","InvalidStateError");if(!sender._pc)throw new DOMException("Argument 1 of RTCPeerConnection.removeTrack does not implement interface RTCRtpSender.","TypeError");if(sender._pc!==pc)throw new DOMException("Sender was not created by this connection.","InvalidAccessError");pc._streams=pc._streams||{};var stream;Object.keys(pc._streams).forEach(function(streamid){pc._streams[streamid].getTracks().find(function(track){return sender.track===track})&&(stream=pc._streams[streamid])}),stream&&(1===stream.getTracks().length?pc.removeStream(pc._reverseStreams[stream.id]):stream.removeTrack(sender.track),pc.dispatchEvent(new Event("negotiationneeded")))}},shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if(!window.RTCPeerConnection&&window.webkitRTCPeerConnection)window.RTCPeerConnection=function(pcConfig,pcConstraints){return logging("PeerConnection"),pcConfig&&pcConfig.iceTransportPolicy&&(pcConfig.iceTransports=pcConfig.iceTransportPolicy),new window.webkitRTCPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=window.webkitRTCPeerConnection.prototype,window.webkitRTCPeerConnection.generateCertificate&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return window.webkitRTCPeerConnection.generateCertificate}});else{var OrigPeerConnection=window.RTCPeerConnection;window.RTCPeerConnection=function(pcConfig,pcConstraints){if(pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];!server.hasOwnProperty("urls")&&server.hasOwnProperty("url")?(utils.deprecated("RTCIceServer.url","RTCIceServer.urls"),server=JSON.parse(JSON.stringify(server)),server.urls=server.url,newIceServers.push(server)):newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new OrigPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=OrigPeerConnection.prototype,Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return OrigPeerConnection.generateCertificate}})}var origGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(selector,successCallback,errorCallback){var pc=this,args=arguments;if(arguments.length>0&&"function"==typeof selector)return origGetStats.apply(this,arguments);if(0===origGetStats.length&&(0===arguments.length||"function"!=typeof arguments[0]))return origGetStats.apply(this,[]);var fixChromeStats_=function(response){var standardReport={};return response.result().forEach(function(report){var standardStats={id:report.id,timestamp:report.timestamp,type:{localcandidate:"local-candidate",remotecandidate:"remote-candidate"}[report.type]||report.type};report.names().forEach(function(name){standardStats[name]=report.stat(name)}),standardReport[standardStats.id]=standardStats}),standardReport},makeMapStats=function(stats){return new Map(Object.keys(stats).map(function(key){return[key,stats[key]]}))};if(arguments.length>=2){var successCallbackWrapper_=function(response){args[1](makeMapStats(fixChromeStats_(response)))};return origGetStats.apply(this,[successCallbackWrapper_,arguments[0]])}return new Promise(function(resolve,reject){origGetStats.apply(pc,[function(response){resolve(makeMapStats(fixChromeStats_(response)))},reject])}).then(successCallback,errorCallback)},browserDetails.version<51&&["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var args=arguments,pc=this,promise=new Promise(function(resolve,reject){nativeMethod.apply(pc,[args[0],resolve,reject])});return args.length<2?promise:promise.then(function(){args[1].apply(null,[])},function(err){args.length>=3&&args[2].apply(null,[err])})}}),browserDetails.version<52&&["createOffer","createAnswer"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var pc=this;if(arguments.length<1||1===arguments.length&&"object"==typeof arguments[0]){var opts=1===arguments.length?arguments[0]:void 0;return new Promise(function(resolve,reject){nativeMethod.apply(pc,[resolve,reject,opts])})}return nativeMethod.apply(this,arguments)}}),["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){return arguments[0]=new("addIceCandidate"===method?window.RTCIceCandidate:window.RTCSessionDescription)(arguments[0]),nativeMethod.apply(this,arguments)}});var nativeAddIceCandidate=window.RTCPeerConnection.prototype.addIceCandidate;window.RTCPeerConnection.prototype.addIceCandidate=function(){return arguments[0]?nativeAddIceCandidate.apply(this,arguments):(arguments[1]&&arguments[1].apply(null),Promise.resolve())}},fixNegotiationNeeded:function(window){utils.wrapPeerConnectionEvent(window,"negotiationneeded",function(e){if("stable"===e.target.signalingState)return e})},shimGetDisplayMedia:function(window,getSourceId){"getDisplayMedia"in window.navigator||"function"==typeof getSourceId&&(navigator.getDisplayMedia=function(constraints){return getSourceId(constraints).then(function(sourceId){return constraints.video={mandatory:{chromeMediaSource:"desktop",chromeMediaSourceId:sourceId,maxFrameRate:constraints.video.frameRate||3}},navigator.mediaDevices.getUserMedia(constraints)})})}}},{"../utils.js":14,"./getusermedia":6}],6:[function(requirecopy,module,exports){var utils=requirecopy("../utils.js"),logging=utils.log;module.exports=function(window){var browserDetails=utils.detectBrowser(window),navigator=window&&window.navigator,constraintsToChrome_=function(c){if("object"!=typeof c||c.mandatory||c.optional)return c;var cc={};return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key&&"mediaSource"!==key){var r="object"==typeof c[key]?c[key]:{ideal:c[key]};void 0!==r.exact&&"number"==typeof r.exact&&(r.min=r.max=r.exact);var oldname_=function(prefix,name){return prefix?prefix+name.charAt(0).toUpperCase()+name.slice(1):"deviceId"===name?"sourceId":name};if(void 0!==r.ideal){cc.optional=cc.optional||[];var oc={};"number"==typeof r.ideal?(oc[oldname_("min",key)]=r.ideal,cc.optional.push(oc),oc={},oc[oldname_("max",key)]=r.ideal,cc.optional.push(oc)):(oc[oldname_("",key)]=r.ideal,cc.optional.push(oc))}void 0!==r.exact&&"number"!=typeof r.exact?(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname_("",key)]=r.exact):["min","max"].forEach(function(mix){void 0!==r[mix]&&(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname_(mix,key)]=r[mix])})}}),c.advanced&&(cc.optional=(cc.optional||[]).concat(c.advanced)),cc},shimConstraints_=function(constraints,func){if(browserDetails.version>=61)return func(constraints);if((constraints=JSON.parse(JSON.stringify(constraints)))&&"object"==typeof constraints.audio){var remap=function(obj,a,b){a in obj&&!(b in obj)&&(obj[b]=obj[a],delete obj[a])};constraints=JSON.parse(JSON.stringify(constraints)),remap(constraints.audio,"autoGainControl","googAutoGainControl"),remap(constraints.audio,"noiseSuppression","googNoiseSuppression"),constraints.audio=constraintsToChrome_(constraints.audio)}if(constraints&&"object"==typeof constraints.video){var face=constraints.video.facingMode;face=face&&("object"==typeof face?face:{ideal:face});var getSupportedFacingModeLies=browserDetails.version<66;if(face&&("user"===face.exact||"environment"===face.exact||"user"===face.ideal||"environment"===face.ideal)&&(!navigator.mediaDevices.getSupportedConstraints||!navigator.mediaDevices.getSupportedConstraints().facingMode||getSupportedFacingModeLies)){delete constraints.video.facingMode;var matches;if("environment"===face.exact||"environment"===face.ideal?matches=["back","rear"]:"user"!==face.exact&&"user"!==face.ideal||(matches=["front"]),matches)return navigator.mediaDevices.enumerateDevices().then(function(devices){devices=devices.filter(function(d){return"videoinput"===d.kind});var dev=devices.find(function(d){return matches.some(function(match){return-1!==d.label.toLowerCase().indexOf(match)})});return!dev&&devices.length&&-1!==matches.indexOf("back")&&(dev=devices[devices.length-1]),dev&&(constraints.video.deviceId=face.exact?{exact:dev.deviceId}:{ideal:dev.deviceId}),constraints.video=constraintsToChrome_(constraints.video),logging("chrome: "+JSON.stringify(constraints)),func(constraints)})}constraints.video=constraintsToChrome_(constraints.video)}return logging("chrome: "+JSON.stringify(constraints)),func(constraints)},shimError_=function(e){return browserDetails.version>=64?e:{name:{PermissionDeniedError:"NotAllowedError",PermissionDismissedError:"NotAllowedError",InvalidStateError:"NotAllowedError",DevicesNotFoundError:"NotFoundError",ConstraintNotSatisfiedError:"OverconstrainedError",TrackStartError:"NotReadableError",MediaDeviceFailedDueToShutdown:"NotAllowedError",MediaDeviceKillSwitchOn:"NotAllowedError",TabCaptureError:"AbortError",ScreenCaptureError:"AbortError",DeviceCaptureError:"AbortError"}[e.name]||e.name,message:e.message,constraint:e.constraint||e.constraintName,toString:function(){return this.name+(this.message&&": ")+this.message}}},getUserMedia_=function(constraints,onSuccess,onError){shimConstraints_(constraints,function(c){navigator.webkitGetUserMedia(c,onSuccess,function(e){onError&&onError(shimError_(e))})})};navigator.getUserMedia=getUserMedia_;var getUserMediaPromise_=function(constraints){return new Promise(function(resolve,reject){navigator.getUserMedia(constraints,resolve,reject)})};if(navigator.mediaDevices||(navigator.mediaDevices={getUserMedia:getUserMediaPromise_,enumerateDevices:function(){return new Promise(function(resolve){var kinds={audio:"audioinput",video:"videoinput"};return window.MediaStreamTrack.getSources(function(devices){resolve(devices.map(function(device){return{label:device.label,kind:kinds[device.kind],deviceId:device.id,groupId:""}}))})})},getSupportedConstraints:function(){return{deviceId:!0,echoCancellation:!0,facingMode:!0,frameRate:!0,height:!0,width:!0}}}),navigator.mediaDevices.getUserMedia){var origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(cs){return shimConstraints_(cs,function(c){return origGetUserMedia(c).then(function(stream){if(c.audio&&!stream.getAudioTracks().length||c.video&&!stream.getVideoTracks().length)throw stream.getTracks().forEach(function(track){track.stop()}),new DOMException("","NotFoundError");return stream},function(e){return Promise.reject(shimError_(e))})})}}else navigator.mediaDevices.getUserMedia=function(constraints){return getUserMediaPromise_(constraints)}
+;void 0===navigator.mediaDevices.addEventListener&&(navigator.mediaDevices.addEventListener=function(){logging("Dummy mediaDevices.addEventListener called.")}),void 0===navigator.mediaDevices.removeEventListener&&(navigator.mediaDevices.removeEventListener=function(){logging("Dummy mediaDevices.removeEventListener called.")})}},{"../utils.js":14}],7:[function(requirecopy,module,exports){var SDPUtils=requirecopy("sdp"),utils=requirecopy("./utils");module.exports={shimRTCIceCandidate:function(window){if(window.RTCIceCandidate&&!(window.RTCIceCandidate&&"foundation"in window.RTCIceCandidate.prototype)){var NativeRTCIceCandidate=window.RTCIceCandidate;window.RTCIceCandidate=function(args){if("object"==typeof args&&args.candidate&&0===args.candidate.indexOf("a=")&&(args=JSON.parse(JSON.stringify(args)),args.candidate=args.candidate.substr(2)),args.candidate&&args.candidate.length){var nativeCandidate=new NativeRTCIceCandidate(args),parsedCandidate=SDPUtils.parseCandidate(args.candidate),augmentedCandidate=Object.assign(nativeCandidate,parsedCandidate);return augmentedCandidate.toJSON=function(){return{candidate:augmentedCandidate.candidate,sdpMid:augmentedCandidate.sdpMid,sdpMLineIndex:augmentedCandidate.sdpMLineIndex,usernameFragment:augmentedCandidate.usernameFragment}},augmentedCandidate}return new NativeRTCIceCandidate(args)},window.RTCIceCandidate.prototype=NativeRTCIceCandidate.prototype,utils.wrapPeerConnectionEvent(window,"icecandidate",function(e){return e.candidate&&Object.defineProperty(e,"candidate",{value:new window.RTCIceCandidate(e.candidate),writable:"false"}),e})}},shimCreateObjectURL:function(window){var URL=window&&window.URL;if("object"==typeof window&&window.HTMLMediaElement&&"srcObject"in window.HTMLMediaElement.prototype&&URL.createObjectURL&&URL.revokeObjectURL){var nativeCreateObjectURL=URL.createObjectURL.bind(URL),nativeRevokeObjectURL=URL.revokeObjectURL.bind(URL),streams=new Map,newId=0;URL.createObjectURL=function(stream){if("getTracks"in stream){var url="polyblob:"+ ++newId;return streams.set(url,stream),utils.deprecated("URL.createObjectURL(stream)","elem.srcObject = stream"),url}return nativeCreateObjectURL(stream)},URL.revokeObjectURL=function(url){nativeRevokeObjectURL(url),streams.delete(url)};var dsc=Object.getOwnPropertyDescriptor(window.HTMLMediaElement.prototype,"src");Object.defineProperty(window.HTMLMediaElement.prototype,"src",{get:function(){return dsc.get.apply(this)},set:function(url){return this.srcObject=streams.get(url)||null,dsc.set.apply(this,[url])}});var nativeSetAttribute=window.HTMLMediaElement.prototype.setAttribute;window.HTMLMediaElement.prototype.setAttribute=function(){return 2===arguments.length&&"src"===(""+arguments[0]).toLowerCase()&&(this.srcObject=streams.get(arguments[1])||null),nativeSetAttribute.apply(this,arguments)}}},shimMaxMessageSize:function(window){if(!window.RTCSctpTransport&&window.RTCPeerConnection){var browserDetails=utils.detectBrowser(window);"sctp"in window.RTCPeerConnection.prototype||Object.defineProperty(window.RTCPeerConnection.prototype,"sctp",{get:function(){return void 0===this._sctp?null:this._sctp}});var sctpInDescription=function(description){var sections=SDPUtils.splitSections(description.sdp);return sections.shift(),sections.some(function(mediaSection){var mLine=SDPUtils.parseMLine(mediaSection);return mLine&&"application"===mLine.kind&&-1!==mLine.protocol.indexOf("SCTP")})},getRemoteFirefoxVersion=function(description){var match=description.sdp.match(/mozilla...THIS_IS_SDPARTA-(\d+)/);if(null===match||match.length<2)return-1;var version=parseInt(match[1],10);return version!==version?-1:version},getCanSendMaxMessageSize=function(remoteIsFirefox){var canSendMaxMessageSize=65536;return"firefox"===browserDetails.browser&&(canSendMaxMessageSize=browserDetails.version<57?-1===remoteIsFirefox?16384:2147483637:browserDetails.version<60?57===browserDetails.version?65535:65536:2147483637),canSendMaxMessageSize},getMaxMessageSize=function(description,remoteIsFirefox){var maxMessageSize=65536;"firefox"===browserDetails.browser&&57===browserDetails.version&&(maxMessageSize=65535);var match=SDPUtils.matchPrefix(description.sdp,"a=max-message-size:");return match.length>0?maxMessageSize=parseInt(match[0].substr(19),10):"firefox"===browserDetails.browser&&-1!==remoteIsFirefox&&(maxMessageSize=2147483637),maxMessageSize},origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;if(pc._sctp=null,sctpInDescription(arguments[0])){var maxMessageSize,isFirefox=getRemoteFirefoxVersion(arguments[0]),canSendMMS=getCanSendMaxMessageSize(isFirefox),remoteMMS=getMaxMessageSize(arguments[0],isFirefox);maxMessageSize=0===canSendMMS&&0===remoteMMS?Number.POSITIVE_INFINITY:0===canSendMMS||0===remoteMMS?Math.max(canSendMMS,remoteMMS):Math.min(canSendMMS,remoteMMS);var sctp={};Object.defineProperty(sctp,"maxMessageSize",{get:function(){return maxMessageSize}}),pc._sctp=sctp}return origSetRemoteDescription.apply(pc,arguments)}}},shimSendThrowTypeError:function(window){function wrapDcSend(dc,pc){var origDataChannelSend=dc.send;dc.send=function(){var data=arguments[0],length=data.length||data.size||data.byteLength;if("open"===dc.readyState&&pc.sctp&&length>pc.sctp.maxMessageSize)throw new TypeError("Message too large (can send a maximum of "+pc.sctp.maxMessageSize+" bytes)");return origDataChannelSend.apply(dc,arguments)}}if(window.RTCPeerConnection&&"createDataChannel"in window.RTCPeerConnection.prototype){var origCreateDataChannel=window.RTCPeerConnection.prototype.createDataChannel;window.RTCPeerConnection.prototype.createDataChannel=function(){var pc=this,dataChannel=origCreateDataChannel.apply(pc,arguments);return wrapDcSend(dataChannel,pc),dataChannel},utils.wrapPeerConnectionEvent(window,"datachannel",function(e){return wrapDcSend(e.channel,e.target),e})}}}},{"./utils":14,sdp:2}],8:[function(requirecopy,module,exports){var utils=requirecopy("../utils"),filterIceServers=requirecopy("./filtericeservers"),shimRTCPeerConnection=requirecopy("rtcpeerconnection-shim");module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if(window.RTCIceGatherer&&(window.RTCIceCandidate||(window.RTCIceCandidate=function(args){return args}),window.RTCSessionDescription||(window.RTCSessionDescription=function(args){return args}),browserDetails.version<15025)){var origMSTEnabled=Object.getOwnPropertyDescriptor(window.MediaStreamTrack.prototype,"enabled");Object.defineProperty(window.MediaStreamTrack.prototype,"enabled",{set:function(value){origMSTEnabled.set.call(this,value);var ev=new Event("enabled");ev.enabled=value,this.dispatchEvent(ev)}})}!window.RTCRtpSender||"dtmf"in window.RTCRtpSender.prototype||Object.defineProperty(window.RTCRtpSender.prototype,"dtmf",{get:function(){return void 0===this._dtmf&&("audio"===this.track.kind?this._dtmf=new window.RTCDtmfSender(this):"video"===this.track.kind&&(this._dtmf=null)),this._dtmf}}),window.RTCDtmfSender&&!window.RTCDTMFSender&&(window.RTCDTMFSender=window.RTCDtmfSender);var RTCPeerConnectionShim=shimRTCPeerConnection(window,browserDetails.version);window.RTCPeerConnection=function(config){return config&&config.iceServers&&(config.iceServers=filterIceServers(config.iceServers)),new RTCPeerConnectionShim(config)},window.RTCPeerConnection.prototype=RTCPeerConnectionShim.prototype},shimReplaceTrack:function(window){!window.RTCRtpSender||"replaceTrack"in window.RTCRtpSender.prototype||(window.RTCRtpSender.prototype.replaceTrack=window.RTCRtpSender.prototype.setTrack)}}},{"../utils":14,"./filtericeservers":9,"./getusermedia":10,"rtcpeerconnection-shim":1}],9:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports=function(iceServers,edgeVersion){var hasTurn=!1;return iceServers=JSON.parse(JSON.stringify(iceServers)),iceServers.filter(function(server){if(server&&(server.urls||server.url)){var urls=server.urls||server.url;server.url&&!server.urls&&utils.deprecated("RTCIceServer.url","RTCIceServer.urls");var isString="string"==typeof urls;return isString&&(urls=[urls]),urls=urls.filter(function(url){return 0!==url.indexOf("turn:")||-1===url.indexOf("transport=udp")||-1!==url.indexOf("turn:[")||hasTurn?0===url.indexOf("stun:")&&edgeVersion>=14393&&-1===url.indexOf("?transport=udp"):(hasTurn=!0,!0)}),delete server.url,server.urls=isString?urls[0]:urls,!!urls.length}})}},{"../utils":14}],10:[function(requirecopy,module,exports){module.exports=function(window){var navigator=window&&window.navigator,shimError_=function(e){return{name:{PermissionDeniedError:"NotAllowedError"}[e.name]||e.name,message:e.message,constraint:e.constraint,toString:function(){return this.name}}},origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(c){return origGetUserMedia(c).catch(function(e){return Promise.reject(shimError_(e))})}}},{}],11:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimOnTrack:function(window){"object"!=typeof window||!window.RTCPeerConnection||"ontrack"in window.RTCPeerConnection.prototype||Object.defineProperty(window.RTCPeerConnection.prototype,"ontrack",{get:function(){return this._ontrack},set:function(f){this._ontrack&&(this.removeEventListener("track",this._ontrack),this.removeEventListener("addstream",this._ontrackpoly)),this.addEventListener("track",this._ontrack=f),this.addEventListener("addstream",this._ontrackpoly=function(e){e.stream.getTracks().forEach(function(track){var event=new Event("track");event.track=track,event.receiver={track:track},event.transceiver={receiver:event.receiver},event.streams=[e.stream],this.dispatchEvent(event)}.bind(this))}.bind(this))},enumerable:!0,configurable:!0}),"object"==typeof window&&window.RTCTrackEvent&&"receiver"in window.RTCTrackEvent.prototype&&!("transceiver"in window.RTCTrackEvent.prototype)&&Object.defineProperty(window.RTCTrackEvent.prototype,"transceiver",{get:function(){return{receiver:this.receiver}}})},shimSourceObject:function(window){"object"==typeof window&&(!window.HTMLMediaElement||"srcObject"in window.HTMLMediaElement.prototype||Object.defineProperty(window.HTMLMediaElement.prototype,"srcObject",{get:function(){return this.mozSrcObject},set:function(stream){this.mozSrcObject=stream}}))},shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if("object"==typeof window&&(window.RTCPeerConnection||window.mozRTCPeerConnection)){window.RTCPeerConnection||(window.RTCPeerConnection=function(pcConfig,pcConstraints){if(browserDetails.version<38&&pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];if(server.hasOwnProperty("urls"))for(var j=0;j<server.urls.length;j++){var newServer={url:server.urls[j]};0===server.urls[j].indexOf("turn")&&(newServer.username=server.username,newServer.credential=server.credential),newIceServers.push(newServer)}else newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new window.mozRTCPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=window.mozRTCPeerConnection.prototype,window.mozRTCPeerConnection.generateCertificate&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return window.mozRTCPeerConnection.generateCertificate}}),window.RTCSessionDescription=window.mozRTCSessionDescription,window.RTCIceCandidate=window.mozRTCIceCandidate),["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){return arguments[0]=new("addIceCandidate"===method?window.RTCIceCandidate:window.RTCSessionDescription)(arguments[0]),nativeMethod.apply(this,arguments)}});var nativeAddIceCandidate=window.RTCPeerConnection.prototype.addIceCandidate;window.RTCPeerConnection.prototype.addIceCandidate=function(){return arguments[0]?nativeAddIceCandidate.apply(this,arguments):(arguments[1]&&arguments[1].apply(null),Promise.resolve())};var makeMapStats=function(stats){var map=new Map;return Object.keys(stats).forEach(function(key){map.set(key,stats[key]),map[key]=stats[key]}),map},modernStatsTypes={inboundrtp:"inbound-rtp",outboundrtp:"outbound-rtp",candidatepair:"candidate-pair",localcandidate:"local-candidate",remotecandidate:"remote-candidate"},nativeGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(selector,onSucc,onErr){return nativeGetStats.apply(this,[selector||null]).then(function(stats){if(browserDetails.version<48&&(stats=makeMapStats(stats)),browserDetails.version<53&&!onSucc)try{stats.forEach(function(stat){stat.type=modernStatsTypes[stat.type]||stat.type})}catch(e){if("TypeError"!==e.name)throw e;stats.forEach(function(stat,i){stats.set(i,Object.assign({},stat,{type:modernStatsTypes[stat.type]||stat.type}))})}return stats}).then(onSucc,onErr)}}},shimSenderGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&!(window.RTCRtpSender&&"getStats"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;origGetSenders&&(window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders});var origAddTrack=window.RTCPeerConnection.prototype.addTrack;origAddTrack&&(window.RTCPeerConnection.prototype.addTrack=function(){var sender=origAddTrack.apply(this,arguments);return sender._pc=this,sender}),window.RTCRtpSender.prototype.getStats=function(){return this.track?this._pc.getStats(this.track):Promise.resolve(new Map)}}},shimReceiverGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&!(window.RTCRtpSender&&"getStats"in window.RTCRtpReceiver.prototype)){var origGetReceivers=window.RTCPeerConnection.prototype.getReceivers;origGetReceivers&&(window.RTCPeerConnection.prototype.getReceivers=function(){var pc=this,receivers=origGetReceivers.apply(pc,[]);return receivers.forEach(function(receiver){receiver._pc=pc}),receivers}),utils.wrapPeerConnectionEvent(window,"track",function(e){return e.receiver._pc=e.srcElement,e}),window.RTCRtpReceiver.prototype.getStats=function(){return this._pc.getStats(this.track)}}},shimRemoveStream:function(window){!window.RTCPeerConnection||"removeStream"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;utils.deprecated("removeStream","removeTrack"),this.getSenders().forEach(function(sender){sender.track&&-1!==stream.getTracks().indexOf(sender.track)&&pc.removeTrack(sender)})})},shimRTCDataChannel:function(window){window.DataChannel&&!window.RTCDataChannel&&(window.RTCDataChannel=window.DataChannel)},shimGetDisplayMedia:function(window,preferredMediaSource){"getDisplayMedia"in window.navigator||(navigator.getDisplayMedia=function(constraints){if(!constraints||!constraints.video){var err=new DOMException("getDisplayMedia without video constraints is undefined");return err.name="NotFoundError",err.code=8,Promise.reject(err)}return!0===constraints.video?constraints.video={mediaSource:preferredMediaSource}:constraints.video.mediaSource=preferredMediaSource,navigator.mediaDevices.getUserMedia(constraints)})}}},{"../utils":14,"./getusermedia":12}],12:[function(requirecopy,module,exports){var utils=requirecopy("../utils"),logging=utils.log;module.exports=function(window){var browserDetails=utils.detectBrowser(window),navigator=window&&window.navigator,MediaStreamTrack=window&&window.MediaStreamTrack,shimError_=function(e){return{name:{InternalError:"NotReadableError",NotSupportedError:"TypeError",PermissionDeniedError:"NotAllowedError",SecurityError:"NotAllowedError"}[e.name]||e.name,message:{"The operation is insecure.":"The request is not allowed by the user agent or the platform in the current context."}[e.message]||e.message,constraint:e.constraint,toString:function(){return this.name+(this.message&&": ")+this.message}}},getUserMedia_=function(constraints,onSuccess,onError){var constraintsToFF37_=function(c){if("object"!=typeof c||c.require)return c;var require=[];return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key&&"mediaSource"!==key){var r=c[key]="object"==typeof c[key]?c[key]:{ideal:c[key]};if(void 0===r.min&&void 0===r.max&&void 0===r.exact||require.push(key),void 0!==r.exact&&("number"==typeof r.exact?r.min=r.max=r.exact:c[key]=r.exact,delete r.exact),void 0!==r.ideal){c.advanced=c.advanced||[];var oc={};"number"==typeof r.ideal?oc[key]={min:r.ideal,max:r.ideal}:oc[key]=r.ideal,c.advanced.push(oc),delete r.ideal,Object.keys(r).length||delete c[key]}}}),require.length&&(c.require=require),c};return constraints=JSON.parse(JSON.stringify(constraints)),browserDetails.version<38&&(logging("spec: "+JSON.stringify(constraints)),constraints.audio&&(constraints.audio=constraintsToFF37_(constraints.audio)),constraints.video&&(constraints.video=constraintsToFF37_(constraints.video)),logging("ff37: "+JSON.stringify(constraints))),navigator.mozGetUserMedia(constraints,onSuccess,function(e){onError(shimError_(e))})},getUserMediaPromise_=function(constraints){return new Promise(function(resolve,reject){getUserMedia_(constraints,resolve,reject)})};if(navigator.mediaDevices||(navigator.mediaDevices={getUserMedia:getUserMediaPromise_,addEventListener:function(){},removeEventListener:function(){}}),navigator.mediaDevices.enumerateDevices=navigator.mediaDevices.enumerateDevices||function(){return new Promise(function(resolve){resolve([{kind:"audioinput",deviceId:"default",label:"",groupId:""},{kind:"videoinput",deviceId:"default",label:"",groupId:""}])})},browserDetails.version<41){var orgEnumerateDevices=navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices);navigator.mediaDevices.enumerateDevices=function(){return orgEnumerateDevices().then(void 0,function(e){if("NotFoundError"===e.name)return[];throw e})}}if(browserDetails.version<49){var origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(c){return origGetUserMedia(c).then(function(stream){if(c.audio&&!stream.getAudioTracks().length||c.video&&!stream.getVideoTracks().length)throw stream.getTracks().forEach(function(track){track.stop()}),new DOMException("The object can not be found here.","NotFoundError");return stream},function(e){return Promise.reject(shimError_(e))})}}if(!(browserDetails.version>55&&"autoGainControl"in navigator.mediaDevices.getSupportedConstraints())){var remap=function(obj,a,b){a in obj&&!(b in obj)&&(obj[b]=obj[a],delete obj[a])},nativeGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);if(navigator.mediaDevices.getUserMedia=function(c){return"object"==typeof c&&"object"==typeof c.audio&&(c=JSON.parse(JSON.stringify(c)),remap(c.audio,"autoGainControl","mozAutoGainControl"),remap(c.audio,"noiseSuppression","mozNoiseSuppression")),nativeGetUserMedia(c)},MediaStreamTrack&&MediaStreamTrack.prototype.getSettings){var nativeGetSettings=MediaStreamTrack.prototype.getSettings;MediaStreamTrack.prototype.getSettings=function(){var obj=nativeGetSettings.apply(this,arguments);return remap(obj,"mozAutoGainControl","autoGainControl"),remap(obj,"mozNoiseSuppression","noiseSuppression"),obj}}if(MediaStreamTrack&&MediaStreamTrack.prototype.applyConstraints){var nativeApplyConstraints=MediaStreamTrack.prototype.applyConstraints;MediaStreamTrack.prototype.applyConstraints=function(c){return"audio"===this.kind&&"object"==typeof c&&(c=JSON.parse(JSON.stringify(c)),remap(c,"autoGainControl","mozAutoGainControl"),remap(c,"noiseSuppression","mozNoiseSuppression")),nativeApplyConstraints.apply(this,[c])}}}navigator.getUserMedia=function(constraints,onSuccess,onError){if(browserDetails.version<44)return getUserMedia_(constraints,onSuccess,onError);utils.deprecated("navigator.getUserMedia","navigator.mediaDevices.getUserMedia"),navigator.mediaDevices.getUserMedia(constraints).then(onSuccess,onError)}}},{"../utils":14}],13:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports={shimLocalStreamsAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection){if("getLocalStreams"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getLocalStreams=function(){return this._localStreams||(this._localStreams=[]),this._localStreams}),"getStreamById"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getStreamById=function(id){var result=null;return this._localStreams&&this._localStreams.forEach(function(stream){stream.id===id&&(result=stream)}),this._remoteStreams&&this._remoteStreams.forEach(function(stream){stream.id===id&&(result=stream)}),result}),!("addStream"in window.RTCPeerConnection.prototype)){var _addTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addStream=function(stream){this._localStreams||(this._localStreams=[]),-1===this._localStreams.indexOf(stream)&&this._localStreams.push(stream);var pc=this;stream.getTracks().forEach(function(track){_addTrack.call(pc,track,stream)})},window.RTCPeerConnection.prototype.addTrack=function(track,stream){return stream&&(this._localStreams?-1===this._localStreams.indexOf(stream)&&this._localStreams.push(stream):this._localStreams=[stream]),_addTrack.call(this,track,stream)}}"removeStream"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.removeStream=function(stream){this._localStreams||(this._localStreams=[]);var index=this._localStreams.indexOf(stream);if(-1!==index){this._localStreams.splice(index,1);var pc=this,tracks=stream.getTracks();this.getSenders().forEach(function(sender){-1!==tracks.indexOf(sender.track)&&pc.removeTrack(sender)})}})}},shimRemoteStreamsAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection&&("getRemoteStreams"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getRemoteStreams=function(){return this._remoteStreams?this._remoteStreams:[]}),!("onaddstream"in window.RTCPeerConnection.prototype))){Object.defineProperty(window.RTCPeerConnection.prototype,"onaddstream",{get:function(){return this._onaddstream},set:function(f){this._onaddstream&&this.removeEventListener("addstream",this._onaddstream),this.addEventListener("addstream",this._onaddstream=f)}});var origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;return this._onaddstreampoly||this.addEventListener("track",this._onaddstreampoly=function(e){e.streams.forEach(function(stream){if(pc._remoteStreams||(pc._remoteStreams=[]),!(pc._remoteStreams.indexOf(stream)>=0)){pc._remoteStreams.push(stream);var event=new Event("addstream");event.stream=stream,pc.dispatchEvent(event)}})}),origSetRemoteDescription.apply(pc,arguments)}}},shimCallbacksAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection){var prototype=window.RTCPeerConnection.prototype,createOffer=prototype.createOffer,createAnswer=prototype.createAnswer,setLocalDescription=prototype.setLocalDescription,setRemoteDescription=prototype.setRemoteDescription,addIceCandidate=prototype.addIceCandidate;prototype.createOffer=function(successCallback,failureCallback){var options=arguments.length>=2?arguments[2]:arguments[0],promise=createOffer.apply(this,[options]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.createAnswer=function(successCallback,failureCallback){var options=arguments.length>=2?arguments[2]:arguments[0],promise=createAnswer.apply(this,[options]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise};var withCallback=function(description,successCallback,failureCallback){var promise=setLocalDescription.apply(this,[description]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise};prototype.setLocalDescription=withCallback,withCallback=function(description,successCallback,failureCallback){var promise=setRemoteDescription.apply(this,[description]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.setRemoteDescription=withCallback,withCallback=function(candidate,successCallback,failureCallback){var promise=addIceCandidate.apply(this,[candidate]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.addIceCandidate=withCallback}},shimGetUserMedia:function(window){var navigator=window&&window.navigator;navigator.getUserMedia||(navigator.webkitGetUserMedia?navigator.getUserMedia=navigator.webkitGetUserMedia.bind(navigator):navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&(navigator.getUserMedia=function(constraints,cb,errcb){navigator.mediaDevices.getUserMedia(constraints).then(cb,errcb)}.bind(navigator)))},shimRTCIceServerUrls:function(window){var OrigPeerConnection=window.RTCPeerConnection;window.RTCPeerConnection=function(pcConfig,pcConstraints){if(pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];!server.hasOwnProperty("urls")&&server.hasOwnProperty("url")?(utils.deprecated("RTCIceServer.url","RTCIceServer.urls"),server=JSON.parse(JSON.stringify(server)),server.urls=server.url,delete server.url,newIceServers.push(server)):newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new OrigPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=OrigPeerConnection.prototype,"generateCertificate"in window.RTCPeerConnection&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return OrigPeerConnection.generateCertificate}})},shimTrackEventTransceiver:function(window){"object"==typeof window&&window.RTCPeerConnection&&"receiver"in window.RTCTrackEvent.prototype&&!window.RTCTransceiver&&Object.defineProperty(window.RTCTrackEvent.prototype,"transceiver",{get:function(){return{receiver:this.receiver}}})},shimCreateOfferLegacy:function(window){var origCreateOffer=window.RTCPeerConnection.prototype.createOffer;window.RTCPeerConnection.prototype.createOffer=function(offerOptions){var pc=this;if(offerOptions){void 0!==offerOptions.offerToReceiveAudio&&(offerOptions.offerToReceiveAudio=!!offerOptions.offerToReceiveAudio);var audioTransceiver=pc.getTransceivers().find(function(transceiver){return transceiver.sender.track&&"audio"===transceiver.sender.track.kind});!1===offerOptions.offerToReceiveAudio&&audioTransceiver?"sendrecv"===audioTransceiver.direction?audioTransceiver.setDirection?audioTransceiver.setDirection("sendonly"):audioTransceiver.direction="sendonly":"recvonly"===audioTransceiver.direction&&(audioTransceiver.setDirection?audioTransceiver.setDirection("inactive"):audioTransceiver.direction="inactive"):!0!==offerOptions.offerToReceiveAudio||audioTransceiver||pc.addTransceiver("audio"),void 0!==offerOptions.offerToReceiveVideo&&(offerOptions.offerToReceiveVideo=!!offerOptions.offerToReceiveVideo);var videoTransceiver=pc.getTransceivers().find(function(transceiver){return transceiver.sender.track&&"video"===transceiver.sender.track.kind});!1===offerOptions.offerToReceiveVideo&&videoTransceiver?"sendrecv"===videoTransceiver.direction?videoTransceiver.setDirection("sendonly"):"recvonly"===videoTransceiver.direction&&videoTransceiver.setDirection("inactive"):!0!==offerOptions.offerToReceiveVideo||videoTransceiver||pc.addTransceiver("video")}return origCreateOffer.apply(pc,arguments)}}}},{"../utils":14}],14:[function(requirecopy,module,exports){function extractVersion(uastring,expr,pos){var match=uastring.match(expr);return match&&match.length>=pos&&parseInt(match[pos],10)}function wrapPeerConnectionEvent(window,eventNameToWrap,wrapper){if(window.RTCPeerConnection){var proto=window.RTCPeerConnection.prototype,nativeAddEventListener=proto.addEventListener;proto.addEventListener=function(nativeEventName,cb){if(nativeEventName!==eventNameToWrap)return nativeAddEventListener.apply(this,arguments);var wrappedCallback=function(e){var modifiedEvent=wrapper(e);modifiedEvent&&cb(modifiedEvent)};return this._eventMap=this._eventMap||{},this._eventMap[cb]=wrappedCallback,nativeAddEventListener.apply(this,[nativeEventName,wrappedCallback])};var nativeRemoveEventListener=proto.removeEventListener;proto.removeEventListener=function(nativeEventName,cb){if(nativeEventName!==eventNameToWrap||!this._eventMap||!this._eventMap[cb])return nativeRemoveEventListener.apply(this,arguments);var unwrappedCb=this._eventMap[cb];return delete this._eventMap[cb],nativeRemoveEventListener.apply(this,[nativeEventName,unwrappedCb])},Object.defineProperty(proto,"on"+eventNameToWrap,{get:function(){return this["_on"+eventNameToWrap]},set:function(cb){this["_on"+eventNameToWrap]&&(this.removeEventListener(eventNameToWrap,this["_on"+eventNameToWrap]),delete this["_on"+eventNameToWrap]),cb&&this.addEventListener(eventNameToWrap,this["_on"+eventNameToWrap]=cb)},enumerable:!0,configurable:!0})}}var logDisabled_=!0,deprecationWarnings_=!0;module.exports={extractVersion:extractVersion,wrapPeerConnectionEvent:wrapPeerConnectionEvent,disableLog:function(bool){return"boolean"!=typeof bool?new Error("Argument type: "+typeof bool+". Please use a boolean."):(logDisabled_=bool,bool?"adapter.js logging disabled":"adapter.js logging enabled")},disableWarnings:function(bool){return"boolean"!=typeof bool?new Error("Argument type: "+typeof bool+". Please use a boolean."):(deprecationWarnings_=!bool,"adapter.js deprecation warnings "+(bool?"disabled":"enabled"))},log:function(){if("object"==typeof window){if(logDisabled_)return;"undefined"!=typeof console&&console.log}},deprecated:function(oldMethod,newMethod){},detectBrowser:function(window){var navigator=window&&window.navigator,result={};if(result.browser=null,result.version=null,void 0===window||!window.navigator)return result.browser="Not a browser.",result;if(navigator.mozGetUserMedia)result.browser="firefox",result.version=extractVersion(navigator.userAgent,/Firefox\/(\d+)\./,1);else if(navigator.webkitGetUserMedia)result.browser="chrome",result.version=extractVersion(navigator.userAgent,/Chrom(e|ium)\/(\d+)\./,2);else if(navigator.mediaDevices&&navigator.userAgent.match(/Edge\/(\d+).(\d+)$/))result.browser="edge",result.version=extractVersion(navigator.userAgent,/Edge\/(\d+).(\d+)$/,2);else{if(!window.RTCPeerConnection||!navigator.userAgent.match(/AppleWebKit\/(\d+)\./))return result.browser="Not a supported browser.",result;result.browser="safari",result.version=extractVersion(navigator.userAgent,/AppleWebKit\/(\d+)\./,1)}return result}}},{}]},{},[3])(3)}),navigator.mozGetUserMedia?(MediaStreamTrack.getSources=function(successCb){setTimeout(function(){successCb([{kind:"audio",id:"default",label:"",facing:""},{kind:"video",id:"default",label:"",facing:""}])},0)},attachMediaStream=function(element,stream){return element.srcObject=stream,element},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to}):navigator.webkitGetUserMedia?(attachMediaStream=function(element,stream){return AdapterJS.webrtcDetectedVersion>=43?element.srcObject=stream:void 0!==element.src&&(element.src=URL.createObjectURL(stream)),element},reattachMediaStream=function(to,from){return AdapterJS.webrtcDetectedVersion>=43?to.srcObject=from.srcObject:to.src=from.src,to}):"AppleWebKit"===AdapterJS.webrtcDetectedType?(attachMediaStream=function(element,stream){return element.srcObject=stream,element
+},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to},navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&(navigator.getUserMedia=getUserMedia=function(constraints,successCb,errorCb){navigator.mediaDevices.getUserMedia(constraints).then(successCb).catch(errorCb)})):navigator.mediaDevices&&navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)&&(attachMediaStream=function(element,stream){return element.srcObject=stream,element},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to});var attachMediaStream_base=attachMediaStream;"opera"===AdapterJS.webrtcDetectedBrowser&&(attachMediaStream_base=function(element,stream){AdapterJS.webrtcDetectedVersion>38?element.srcObject=stream:void 0!==element.src&&(element.src=URL.createObjectURL(stream))}),attachMediaStream=function(element,stream){return"chrome"!==AdapterJS.webrtcDetectedBrowser&&"opera"!==AdapterJS.webrtcDetectedBrowser||stream?attachMediaStream_base(element,stream):element.src="",element};var reattachMediaStream_base=reattachMediaStream;reattachMediaStream=function(to,from){return reattachMediaStream_base(to,from),to},window.attachMediaStream=attachMediaStream,window.reattachMediaStream=reattachMediaStream,window.getUserMedia=function(constraints,onSuccess,onFailure){navigator.getUserMedia(constraints,onSuccess,onFailure)},AdapterJS.attachMediaStream=attachMediaStream,AdapterJS.reattachMediaStream=reattachMediaStream,AdapterJS.getUserMedia=getUserMedia,"undefined"==typeof Promise&&(requestUserMedia=null),AdapterJS.maybeThroughWebRTCReady()}else"object"==typeof console&&"function"==typeof console.log||(console={}||console,console.log=function(arg){},console.info=function(arg){},console.error=function(arg){},console.dir=function(arg){},console.exception=function(arg){},console.trace=function(arg){},console.warn=function(arg){},console.count=function(arg){},console.debug=function(arg){},console.count=function(arg){},console.time=function(arg){},console.timeEnd=function(arg){},console.group=function(arg){},console.groupCollapsed=function(arg){},console.groupEnd=function(arg){}),AdapterJS.WebRTCPlugin.WaitForPluginReady=function(){for(;AdapterJS.WebRTCPlugin.pluginState!==AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY;);},AdapterJS.WebRTCPlugin.callWhenPluginReady=function(callback){if(AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY)callback();else var checkPluginReadyState=setInterval(function(){AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY&&(clearInterval(checkPluginReadyState),callback())},100)},AdapterJS.WebRTCPlugin.setLogLevel=function(logLevel){AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.setLogLevel(logLevel)})},AdapterJS.WebRTCPlugin.injectPlugin=function(){if(AdapterJS.documentReady()&&AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.INITIALIZING){AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTING;var existing=document.getElementById(AdapterJS.WebRTCPlugin.pluginInfo.pluginId);if(existing)if(AdapterJS.WebRTCPlugin.plugin=existing,AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTED,AdapterJS.WebRTCPlugin.plugin.valid)window[AdapterJS.WebRTCPlugin.pluginInfo.onload]();else var pluginValidInterval=setInterval(function(){AdapterJS.WebRTCPlugin.plugin.valid&&(clearInterval(pluginValidInterval),window[AdapterJS.WebRTCPlugin.pluginInfo.onload]())},100);else{if("IE"===AdapterJS.webrtcDetectedBrowser&&AdapterJS.webrtcDetectedVersion<=10){var frag=document.createDocumentFragment();for(AdapterJS.WebRTCPlugin.plugin=document.createElement("div"),AdapterJS.WebRTCPlugin.plugin.innerHTML='<object id="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'" type="'+AdapterJS.WebRTCPlugin.pluginInfo.type+'" width="1" height="1"><param name="pluginId" value="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'" /> <param name="windowless" value="false" /> <param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'" /> <param name="onload" value="'+AdapterJS.WebRTCPlugin.pluginInfo.onload+'" /><param name="tag" value="'+AdapterJS.WebRTCPlugin.TAGS.NONE+'" />'+(AdapterJS.options.getAllCams?'<param name="forceGetAllCams" value="True" />':"")+"</object>";AdapterJS.WebRTCPlugin.plugin.firstChild;)frag.appendChild(AdapterJS.WebRTCPlugin.plugin.firstChild);document.body.appendChild(frag),AdapterJS.WebRTCPlugin.plugin=document.getElementById(AdapterJS.WebRTCPlugin.pluginInfo.pluginId)}else AdapterJS.WebRTCPlugin.plugin=document.createElement("object"),AdapterJS.WebRTCPlugin.plugin.id=AdapterJS.WebRTCPlugin.pluginInfo.pluginId,"IE"===AdapterJS.webrtcDetectedBrowser?(AdapterJS.WebRTCPlugin.plugin.width="1px",AdapterJS.WebRTCPlugin.plugin.height="1px"):(AdapterJS.WebRTCPlugin.plugin.width="0px",AdapterJS.WebRTCPlugin.plugin.height="0px"),AdapterJS.WebRTCPlugin.plugin.type=AdapterJS.WebRTCPlugin.pluginInfo.type,AdapterJS.WebRTCPlugin.plugin.innerHTML='<param name="onload" value="'+AdapterJS.WebRTCPlugin.pluginInfo.onload+'"><param name="pluginId" value="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'"><param name="windowless" value="false" /> '+(AdapterJS.options.getAllCams?'<param name="forceGetAllCams" value="True" />':"")+'<param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'"><param name="tag" value="'+AdapterJS.WebRTCPlugin.TAGS.NONE+'" />',document.body.appendChild(AdapterJS.WebRTCPlugin.plugin);AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTED}}},AdapterJS.WebRTCPlugin.isPluginInstalled=function(comName,plugName,plugType,installedCb,notInstalledCb){if("IE"!==AdapterJS.webrtcDetectedBrowser){var pluginArray=navigator.mimeTypes;if(void 0!==pluginArray){for(var i=0;i<pluginArray.length;i++)if(pluginArray[i].type.indexOf(plugType)>=0)return void installedCb();notInstalledCb()}else AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.NOT_SUPPORTED)}else{try{new ActiveXObject(comName+"."+plugName)}catch(e){return void notInstalledCb()}installedCb()}},AdapterJS.WebRTCPlugin.defineWebRTCInterface=function(){if(AdapterJS.WebRTCPlugin.pluginState!==AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY){AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INITIALIZING,AdapterJS.isDefined=function(variable){return null!==variable&&void 0!==variable},RTCSessionDescription=function(info){return AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.ConstructSessionDescription(info.type,info.sdp)},MediaStream=function(mediaStreamOrTracks){return AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.MediaStream(mediaStreamOrTracks)},RTCPeerConnection=function(servers,constraints){if(void 0!==servers&&null!==servers&&!Array.isArray(servers.iceServers))throw new Error("Failed to construct 'RTCPeerConnection': Malformed RTCConfiguration");if(void 0!==constraints&&null!==constraints){var invalidConstraits=!1;if(invalidConstraits|="object"!=typeof constraints,invalidConstraits|=constraints.hasOwnProperty("mandatory")&&void 0!==constraints.mandatory&&null!==constraints.mandatory&&constraints.mandatory.constructor!==Object,invalidConstraits|=constraints.hasOwnProperty("optional")&&void 0!==constraints.optional&&null!==constraints.optional&&!Array.isArray(constraints.optional))throw new Error("Failed to construct 'RTCPeerConnection': Malformed constraints object")}AdapterJS.WebRTCPlugin.WaitForPluginReady();var iceServers=null;if(servers&&Array.isArray(servers.iceServers)){iceServers=servers.iceServers;for(var i=0;i<iceServers.length;i++)iceServers[i].urls&&!iceServers[i].url&&(iceServers[i].url=iceServers[i].urls),iceServers[i].hasCredentials=AdapterJS.isDefined(iceServers[i].username)&&AdapterJS.isDefined(iceServers[i].credential)}if(AdapterJS.WebRTCPlugin.plugin.PEER_CONNECTION_VERSION&&AdapterJS.WebRTCPlugin.plugin.PEER_CONNECTION_VERSION>1)return iceServers&&(servers.iceServers=iceServers),AdapterJS.WebRTCPlugin.plugin.PeerConnection(servers);var mandatory=constraints&&constraints.mandatory?constraints.mandatory:null,optional=constraints&&constraints.optional?constraints.optional:null;return AdapterJS.WebRTCPlugin.plugin.PeerConnection(AdapterJS.WebRTCPlugin.pageId,iceServers,mandatory,optional)},MediaStreamTrack=function(){},MediaStreamTrack.getSources=function(callback){AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.GetSources(callback)})};var constraintsToPlugin=function(c){if("object"!=typeof c||c.mandatory||c.optional)return c;var cc={};return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key){if("string"==typeof c[key])return void(cc[key]=c[key]);var r="object"==typeof c[key]?c[key]:{ideal:c[key]};void 0!==r.exact&&"number"==typeof r.exact&&(r.min=r.max=r.exact);var oldname=function(prefix,name){return prefix?prefix+name.charAt(0).toUpperCase()+name.slice(1):"deviceId"===name?"sourceId":name};if("sourceId"===oldname("",key)&&void 0!==r.exact&&(r.ideal=r.exact,r.exact=void 0),void 0!==r.ideal){cc.optional=cc.optional||[];var oc={};"number"==typeof r.ideal?(oc[oldname("min",key)]=r.ideal,cc.optional.push(oc),oc={},oc[oldname("max",key)]=r.ideal,cc.optional.push(oc)):(oc[oldname("",key)]=r.ideal,cc.optional.push(oc))}void 0!==r.exact&&"number"!=typeof r.exact?(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname("",key)]=r.exact):["min","max"].forEach(function(mix){void 0!==r[mix]&&(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname(mix,key)]=r[mix])})}}),c.advanced&&(cc.optional=(cc.optional||[]).concat(c.advanced)),cc};getUserMedia=function(constraints,successCallback,failureCallback){var cc={};cc.audio=!!constraints.audio&&constraintsToPlugin(constraints.audio),cc.video=!!constraints.video&&constraintsToPlugin(constraints.video),AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.getUserMedia(cc,successCallback,failureCallback)})},window.navigator.getUserMedia=getUserMedia,"undefined"!=typeof Promise&&(requestUserMedia=function(constraints){return new Promise(function(resolve,reject){try{getUserMedia(constraints,resolve,reject)}catch(error){reject(error)}})},void 0===navigator.mediaDevices&&(navigator.mediaDevices={}),navigator.mediaDevices.getUserMedia=requestUserMedia,navigator.mediaDevices.enumerateDevices=function(){return new Promise(function(resolve){var kinds={audio:"audioinput",video:"videoinput"};return MediaStreamTrack.getSources(function(devices){resolve(devices.map(function(device){return{label:device.label,kind:kinds[device.kind],id:device.id,deviceId:device.id,groupId:""}}))})})}),attachMediaStream=function(element,stream){if(element&&element.parentNode){var streamId;null===stream?streamId="":(void 0!==stream.enableSoundTracks&&stream.enableSoundTracks(!0),streamId=stream.id);var elementId=0===element.id.length?Math.random().toString(36).slice(2):element.id,nodeName=element.nodeName.toLowerCase();if("object"!==nodeName){var tag;switch(nodeName){case"audio":tag=AdapterJS.WebRTCPlugin.TAGS.AUDIO;break;case"video":tag=AdapterJS.WebRTCPlugin.TAGS.VIDEO;break;default:tag=AdapterJS.WebRTCPlugin.TAGS.NONE}var frag=document.createDocumentFragment(),temp=document.createElement("div"),classHTML="";for(element.className?classHTML='class="'+element.className+'" ':element.attributes&&element.attributes.class&&(classHTML='class="'+element.attributes.class.value+'" '),temp.innerHTML='<object id="'+elementId+'" '+classHTML+'type="'+AdapterJS.WebRTCPlugin.pluginInfo.type+'"><param name="pluginId" value="'+elementId+'" /> <param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'" /> <param name="windowless" value="true" /> <param name="streamId" value="'+streamId+'" /> <param name="tag" value="'+tag+'" /> </object>';temp.firstChild;)frag.appendChild(temp.firstChild);var height="",width="";element.clientWidth||element.clientHeight?(width=element.clientWidth,height=element.clientHeight):(element.width||element.height)&&(width=element.width,height=element.height),element.parentNode.insertBefore(frag,element),frag=document.getElementById(elementId),frag.width=width,frag.height=height,element.parentNode.removeChild(element)}else{for(var children=element.children,i=0;i!==children.length;++i)if("streamId"===children[i].name){children[i].value=streamId;break}element.setStreamId(streamId)}var newElement=document.getElementById(elementId);return AdapterJS.forwardEventHandlers(newElement,element,Object.getPrototypeOf(element)),newElement}},reattachMediaStream=function(to,from){for(var stream=null,children=from.children,i=0;i!==children.length;++i)if("streamId"===children[i].name){AdapterJS.WebRTCPlugin.WaitForPluginReady(),stream=AdapterJS.WebRTCPlugin.plugin.getStreamWithId(AdapterJS.WebRTCPlugin.pageId,children[i].value);break}if(null!==stream)return attachMediaStream(to,stream)},window.attachMediaStream=attachMediaStream,window.reattachMediaStream=reattachMediaStream,window.getUserMedia=getUserMedia,AdapterJS.attachMediaStream=attachMediaStream,AdapterJS.reattachMediaStream=reattachMediaStream,AdapterJS.getUserMedia=getUserMedia,AdapterJS.forwardEventHandlers=function(destElem,srcElem,prototype){var properties=Object.getOwnPropertyNames(prototype);for(var prop in properties)if(prop){var propName=properties[prop];"function"==typeof propName.slice&&"on"===propName.slice(0,2)&&"function"==typeof srcElem[propName]&&AdapterJS.addEvent(destElem,propName.slice(2),srcElem[propName])}var subPrototype=Object.getPrototypeOf(prototype);subPrototype&&AdapterJS.forwardEventHandlers(destElem,srcElem,subPrototype)},RTCIceCandidate=function(candidate){return candidate.sdpMid||(candidate.sdpMid=""),AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.ConstructIceCandidate(candidate.sdpMid,candidate.sdpMLineIndex,candidate.candidate)},AdapterJS.addEvent(document,"readystatechange",AdapterJS.WebRTCPlugin.injectPlugin),AdapterJS.WebRTCPlugin.injectPlugin()}},AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb=AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb||function(){AdapterJS.addEvent(document,"readystatechange",AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv),AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv()},AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv=function(){if(AdapterJS.documentReady()&&(document.removeEventListener("readystatechange",AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv),!AdapterJS.options.hidePluginInstallPrompt)){var downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLink;if(downloadLink){var popupString;AdapterJS.WebRTCPlugin.pluginInfo.companyName?(popupString="This website requires you to install the ",AdapterJS.WebRTCPlugin.pluginInfo.portalLink?popupString+=' <a href="'+AdapterJS.WebRTCPlugin.pluginInfo.portalLink+'" target="_blank">'+AdapterJS.WebRTCPlugin.pluginInfo.companyName+" WebRTC Plugin</a>":popupString+=AdapterJS.WebRTCPlugin.pluginInfo.companyName+" WebRTC Plugin",popupString+=" to work on this browser."):popupString=AdapterJS.TEXT.PLUGIN.REQUIRE_INSTALLATION,AdapterJS.renderNotificationBar(popupString,AdapterJS.TEXT.PLUGIN.BUTTON,function(){if(window.open(downloadLink,"_top"),"safari"===webrtcDetectedBrowser&&11==webrtcDetectedVersion)AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.REQUIRE_RESTART);else var pluginInstallInterval=setInterval(function(){"IE"!==AdapterJS.webrtcDetectedBrowser&&navigator.plugins.refresh(!1),AdapterJS.WebRTCPlugin.isPluginInstalled(AdapterJS.WebRTCPlugin.pluginInfo.prefix,AdapterJS.WebRTCPlugin.pluginInfo.plugName,AdapterJS.WebRTCPlugin.pluginInfo.type,function(){clearInterval(pluginInstallInterval),AdapterJS.WebRTCPlugin.defineWebRTCInterface()},function(){})},500)})}else AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.NOT_SUPPORTED)}},AdapterJS.WebRTCPlugin.isPluginInstalled(AdapterJS.WebRTCPlugin.pluginInfo.prefix,AdapterJS.WebRTCPlugin.pluginInfo.plugName,AdapterJS.WebRTCPlugin.pluginInfo.type,AdapterJS.WebRTCPlugin.defineWebRTCInterface,AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb); true&&(module.exports=AdapterJS);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/after/index.js":
 /*!*************************************!*\
   !*** ./node_modules/after/index.js ***!
@@ -2095,6 +2113,270 @@ window.io = socket_io_client__WEBPACK_IMPORTED_MODULE_0__;
     },
     cancelShare: function cancelShare() {
       this.$data.isSharing = false;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WebRTC.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WebRTC.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var rtcmulticonnection__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rtcmulticonnection */ "./node_modules/rtcmulticonnection/dist/RTCMultiConnection.js");
+/* harmony import */ var rtcmulticonnection__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rtcmulticonnection__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+__webpack_require__(/*! adapterjs */ "./node_modules/adapterjs/publish/adapter.min.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'webrtc',
+  components: {
+    RTCMultiConnection: rtcmulticonnection__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  data: function data() {
+    return {
+      rtcmConnection: null,
+      localVideo: null,
+      videoList: [],
+      canvas: null
+    };
+  },
+  props: {
+    roomId: {
+      type: String,
+      "default": 'public-room'
+    },
+    socketURL: {
+      type: String,
+      "default": 'https://rtcmulticonnection.herokuapp.com:443/'
+    },
+    cameraHeight: {
+      type: [Number, String],
+      "default": 160
+    },
+    autoplay: {
+      type: Boolean,
+      "default": true
+    },
+    screenshotFormat: {
+      type: String,
+      "default": 'image/jpeg'
+    },
+    enableAudio: {
+      type: Boolean,
+      "default": true
+    },
+    enableVideo: {
+      type: Boolean,
+      "default": true
+    },
+    enableLogs: {
+      type: Boolean,
+      "default": false
+    },
+    stunServer: {
+      type: String,
+      "default": null
+    },
+    turnServer: {
+      type: String,
+      "default": null
+    }
+  },
+  watch: {},
+  mounted: function mounted() {
+    var that = this;
+    this.rtcmConnection = new rtcmulticonnection__WEBPACK_IMPORTED_MODULE_0___default.a();
+    this.rtcmConnection.socketURL = this.socketURL;
+    this.rtcmConnection.autoCreateMediaElement = false;
+    this.rtcmConnection.enableLogs = this.enableLogs;
+    this.rtcmConnection.session = {
+      audio: this.enableAudio,
+      video: this.enableVideo
+    };
+    this.rtcmConnection.sdpConstraints.mandatory = {
+      OfferToReceiveAudio: this.enableAudio,
+      OfferToReceiveVideo: this.enableVideo
+    };
+
+    if (this.stunServer !== null || this.turnServer !== null) {
+      this.rtcmConnection.iceServers = []; // clear all defaults
+    }
+
+    if (this.stunServer !== null) {
+      this.rtcmConnection.iceServers.push({
+        urls: this.stunServer
+      });
+    }
+
+    if (this.turnServer !== null) {
+      var parse = this.turnServer.split('%');
+      var username = parse[0].split('@')[0];
+      var password = parse[0].split('@')[1];
+      var turn = parse[1];
+      this.rtcmConnection.iceServers.push({
+        urls: turn,
+        credential: password,
+        username: username
+      });
+    }
+
+    this.rtcmConnection.onstream = function (stream) {
+      var found = that.videoList.find(function (video) {
+        return video.id === stream.streamid;
+      });
+
+      if (found === undefined) {
+        var video = {
+          id: stream.streamid,
+          muted: stream.type === 'local'
+        };
+        that.videoList.push(video);
+
+        if (stream.type === 'local') {
+          that.localVideo = video;
+        }
+      }
+
+      setTimeout(function () {
+        for (var i = 0, len = that.$refs.videos.length; i < len; i++) {
+          if (that.$refs.videos[i].id === stream.streamid) {
+            that.$refs.videos[i].srcObject = stream.stream;
+            break;
+          }
+        }
+      }, 1000);
+      that.$emit('joined-room', stream.streamid);
+    };
+
+    this.rtcmConnection.onstreamended = function (stream) {
+      var newList = [];
+      that.videoList.forEach(function (item) {
+        if (item.id !== stream.streamid) {
+          newList.push(item);
+        }
+      });
+      that.videoList = newList;
+      that.$emit('left-room', stream.streamid);
+    };
+  },
+  methods: {
+    join: function join() {
+      var that = this;
+      this.rtcmConnection.openOrJoin(this.roomId, function (isRoomExist, roomid) {
+        if (isRoomExist === false && that.rtcmConnection.isInitiator === true) {
+          that.$emit('opened-room', roomid);
+        }
+      });
+    },
+    leave: function leave() {
+      this.rtcmConnection.attachStreams.forEach(function (localStream) {
+        localStream.stop();
+      });
+      this.videoList = [];
+    },
+    capture: function capture() {
+      return this.getCanvas().toDataURL(this.screenshotFormat);
+    },
+    getCanvas: function getCanvas() {
+      var video = this.getCurrentVideo();
+
+      if (video !== null && !this.ctx) {
+        var _canvas = document.createElement('canvas');
+
+        _canvas.height = video.clientHeight;
+        _canvas.width = video.clientWidth;
+        this.canvas = _canvas;
+        this.ctx = _canvas.getContext('2d');
+      }
+
+      var ctx = this.ctx,
+          canvas = this.canvas;
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      return canvas;
+    },
+    getCurrentVideo: function getCurrentVideo() {
+      if (this.localVideo === null) {
+        return null;
+      }
+
+      for (var i = 0, len = this.$refs.videos.length; i < len; i++) {
+        if (this.$refs.videos[i].id === this.localVideo.id) return this.$refs.videos[i];
+      }
+
+      return null;
+    },
+    shareScreen: function shareScreen() {
+      var that = this;
+
+      if (navigator.getDisplayMedia || navigator.mediaDevices.getDisplayMedia) {
+        var addStreamStopListener = function addStreamStopListener(stream, callback) {
+          var streamEndedEvent = 'ended';
+
+          if ('oninactive' in stream) {
+            streamEndedEvent = 'inactive';
+          }
+
+          stream.addEventListener(streamEndedEvent, function () {
+            callback();
+
+            callback = function callback() {};
+          }, false);
+        };
+
+        var onGettingSteam = function onGettingSteam(stream) {
+          that.rtcmConnection.addStream(stream);
+          that.$emit('share-started', stream.streamid);
+          addStreamStopListener(stream, function () {
+            that.rtcmConnection.removeStream(stream.streamid);
+            that.$emit('share-stopped', stream.streamid);
+          });
+        };
+
+        var getDisplayMediaError = function getDisplayMediaError(error) {
+          console.log('Media error: ' + JSON.stringify(error));
+        };
+
+        if (navigator.mediaDevices.getDisplayMedia) {
+          navigator.mediaDevices.getDisplayMedia({
+            video: true,
+            audio: false
+          }).then(function (stream) {
+            onGettingSteam(stream);
+          }, getDisplayMediaError)["catch"](getDisplayMediaError);
+        } else if (navigator.getDisplayMedia) {
+          navigator.getDisplayMedia({
+            video: true
+          }).then(function (stream) {
+            onGettingSteam(stream);
+          }, getDisplayMediaError)["catch"](getDisplayMediaError);
+        }
+      }
     }
   }
 });
@@ -50181,4640 +50463,11 @@ runtime.setup(pusher_Pusher);
 
 /***/ }),
 
-/***/ "./node_modules/setimmediate/setImmediate.js":
-/*!***************************************************!*\
-  !*** ./node_modules/setimmediate/setImmediate.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
-    "use strict";
-
-    if (global.setImmediate) {
-        return;
-    }
-
-    var nextHandle = 1; // Spec says greater than zero
-    var tasksByHandle = {};
-    var currentlyRunningATask = false;
-    var doc = global.document;
-    var registerImmediate;
-
-    function setImmediate(callback) {
-      // Callback can either be a function or a string
-      if (typeof callback !== "function") {
-        callback = new Function("" + callback);
-      }
-      // Copy function arguments
-      var args = new Array(arguments.length - 1);
-      for (var i = 0; i < args.length; i++) {
-          args[i] = arguments[i + 1];
-      }
-      // Store and register the task
-      var task = { callback: callback, args: args };
-      tasksByHandle[nextHandle] = task;
-      registerImmediate(nextHandle);
-      return nextHandle++;
-    }
-
-    function clearImmediate(handle) {
-        delete tasksByHandle[handle];
-    }
-
-    function run(task) {
-        var callback = task.callback;
-        var args = task.args;
-        switch (args.length) {
-        case 0:
-            callback();
-            break;
-        case 1:
-            callback(args[0]);
-            break;
-        case 2:
-            callback(args[0], args[1]);
-            break;
-        case 3:
-            callback(args[0], args[1], args[2]);
-            break;
-        default:
-            callback.apply(undefined, args);
-            break;
-        }
-    }
-
-    function runIfPresent(handle) {
-        // From the spec: "Wait until any invocations of this algorithm started before this one have completed."
-        // So if we're currently running a task, we'll need to delay this invocation.
-        if (currentlyRunningATask) {
-            // Delay by doing a setTimeout. setImmediate was tried instead, but in Firefox 7 it generated a
-            // "too much recursion" error.
-            setTimeout(runIfPresent, 0, handle);
-        } else {
-            var task = tasksByHandle[handle];
-            if (task) {
-                currentlyRunningATask = true;
-                try {
-                    run(task);
-                } finally {
-                    clearImmediate(handle);
-                    currentlyRunningATask = false;
-                }
-            }
-        }
-    }
-
-    function installNextTickImplementation() {
-        registerImmediate = function(handle) {
-            process.nextTick(function () { runIfPresent(handle); });
-        };
-    }
-
-    function canUsePostMessage() {
-        // The test against `importScripts` prevents this implementation from being installed inside a web worker,
-        // where `global.postMessage` means something completely different and can't be used for this purpose.
-        if (global.postMessage && !global.importScripts) {
-            var postMessageIsAsynchronous = true;
-            var oldOnMessage = global.onmessage;
-            global.onmessage = function() {
-                postMessageIsAsynchronous = false;
-            };
-            global.postMessage("", "*");
-            global.onmessage = oldOnMessage;
-            return postMessageIsAsynchronous;
-        }
-    }
-
-    function installPostMessageImplementation() {
-        // Installs an event handler on `global` for the `message` event: see
-        // * https://developer.mozilla.org/en/DOM/window.postMessage
-        // * http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#crossDocumentMessages
-
-        var messagePrefix = "setImmediate$" + Math.random() + "$";
-        var onGlobalMessage = function(event) {
-            if (event.source === global &&
-                typeof event.data === "string" &&
-                event.data.indexOf(messagePrefix) === 0) {
-                runIfPresent(+event.data.slice(messagePrefix.length));
-            }
-        };
-
-        if (global.addEventListener) {
-            global.addEventListener("message", onGlobalMessage, false);
-        } else {
-            global.attachEvent("onmessage", onGlobalMessage);
-        }
-
-        registerImmediate = function(handle) {
-            global.postMessage(messagePrefix + handle, "*");
-        };
-    }
-
-    function installMessageChannelImplementation() {
-        var channel = new MessageChannel();
-        channel.port1.onmessage = function(event) {
-            var handle = event.data;
-            runIfPresent(handle);
-        };
-
-        registerImmediate = function(handle) {
-            channel.port2.postMessage(handle);
-        };
-    }
-
-    function installReadyStateChangeImplementation() {
-        var html = doc.documentElement;
-        registerImmediate = function(handle) {
-            // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
-            // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
-            var script = doc.createElement("script");
-            script.onreadystatechange = function () {
-                runIfPresent(handle);
-                script.onreadystatechange = null;
-                html.removeChild(script);
-                script = null;
-            };
-            html.appendChild(script);
-        };
-    }
-
-    function installSetTimeoutImplementation() {
-        registerImmediate = function(handle) {
-            setTimeout(runIfPresent, 0, handle);
-        };
-    }
-
-    // If supported, we should attach to the prototype of global, since that is where setTimeout et al. live.
-    var attachTo = Object.getPrototypeOf && Object.getPrototypeOf(global);
-    attachTo = attachTo && attachTo.setTimeout ? attachTo : global;
-
-    // Don't get fooled by e.g. browserify environments.
-    if ({}.toString.call(global.process) === "[object process]") {
-        // For Node.js before 0.9
-        installNextTickImplementation();
-
-    } else if (canUsePostMessage()) {
-        // For non-IE10 modern browsers
-        installPostMessageImplementation();
-
-    } else if (global.MessageChannel) {
-        // For web workers, where supported
-        installMessageChannelImplementation();
-
-    } else if (doc && "onreadystatechange" in doc.createElement("script")) {
-        // For IE 6–8
-        installReadyStateChangeImplementation();
-
-    } else {
-        // For older browsers
-        installSetTimeoutImplementation();
-    }
-
-    attachTo.setImmediate = setImmediate;
-    attachTo.clearImmediate = clearImmediate;
-}(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/lib/index.js":
-/*!****************************************************!*\
-  !*** ./node_modules/socket.io-client/lib/index.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Module dependencies.
- */
-
-var url = __webpack_require__(/*! ./url */ "./node_modules/socket.io-client/lib/url.js");
-var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
-var Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
-var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client');
-
-/**
- * Module exports.
- */
-
-module.exports = exports = lookup;
-
-/**
- * Managers cache.
- */
-
-var cache = exports.managers = {};
-
-/**
- * Looks up an existing `Manager` for multiplexing.
- * If the user summons:
- *
- *   `io('http://localhost/a');`
- *   `io('http://localhost/b');`
- *
- * We reuse the existing instance based on same scheme/port/host,
- * and we initialize sockets for each namespace.
- *
- * @api public
- */
-
-function lookup (uri, opts) {
-  if (typeof uri === 'object') {
-    opts = uri;
-    uri = undefined;
-  }
-
-  opts = opts || {};
-
-  var parsed = url(uri);
-  var source = parsed.source;
-  var id = parsed.id;
-  var path = parsed.path;
-  var sameNamespace = cache[id] && path in cache[id].nsps;
-  var newConnection = opts.forceNew || opts['force new connection'] ||
-                      false === opts.multiplex || sameNamespace;
-
-  var io;
-
-  if (newConnection) {
-    debug('ignoring socket cache for %s', source);
-    io = Manager(source, opts);
-  } else {
-    if (!cache[id]) {
-      debug('new io instance for %s', source);
-      cache[id] = Manager(source, opts);
-    }
-    io = cache[id];
-  }
-  if (parsed.query && !opts.query) {
-    opts.query = parsed.query;
-  }
-  return io.socket(parsed.path, opts);
-}
-
-/**
- * Protocol version.
- *
- * @api public
- */
-
-exports.protocol = parser.protocol;
-
-/**
- * `connect`.
- *
- * @param {String} uri
- * @api public
- */
-
-exports.connect = lookup;
-
-/**
- * Expose constructors for standalone build.
- *
- * @api public
- */
-
-exports.Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
-exports.Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/lib/manager.js":
-/*!******************************************************!*\
-  !*** ./node_modules/socket.io-client/lib/manager.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Module dependencies.
- */
-
-var eio = __webpack_require__(/*! engine.io-client */ "./node_modules/engine.io-client/lib/index.js");
-var Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
-var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
-var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
-var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
-var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
-var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:manager');
-var indexOf = __webpack_require__(/*! indexof */ "./node_modules/indexof/index.js");
-var Backoff = __webpack_require__(/*! backo2 */ "./node_modules/backo2/index.js");
-
-/**
- * IE6+ hasOwnProperty
- */
-
-var has = Object.prototype.hasOwnProperty;
-
-/**
- * Module exports
- */
-
-module.exports = Manager;
-
-/**
- * `Manager` constructor.
- *
- * @param {String} engine instance or engine uri/opts
- * @param {Object} options
- * @api public
- */
-
-function Manager (uri, opts) {
-  if (!(this instanceof Manager)) return new Manager(uri, opts);
-  if (uri && ('object' === typeof uri)) {
-    opts = uri;
-    uri = undefined;
-  }
-  opts = opts || {};
-
-  opts.path = opts.path || '/socket.io';
-  this.nsps = {};
-  this.subs = [];
-  this.opts = opts;
-  this.reconnection(opts.reconnection !== false);
-  this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
-  this.reconnectionDelay(opts.reconnectionDelay || 1000);
-  this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
-  this.randomizationFactor(opts.randomizationFactor || 0.5);
-  this.backoff = new Backoff({
-    min: this.reconnectionDelay(),
-    max: this.reconnectionDelayMax(),
-    jitter: this.randomizationFactor()
-  });
-  this.timeout(null == opts.timeout ? 20000 : opts.timeout);
-  this.readyState = 'closed';
-  this.uri = uri;
-  this.connecting = [];
-  this.lastPing = null;
-  this.encoding = false;
-  this.packetBuffer = [];
-  var _parser = opts.parser || parser;
-  this.encoder = new _parser.Encoder();
-  this.decoder = new _parser.Decoder();
-  this.autoConnect = opts.autoConnect !== false;
-  if (this.autoConnect) this.open();
-}
-
-/**
- * Propagate given event to sockets and emit on `this`
- *
- * @api private
- */
-
-Manager.prototype.emitAll = function () {
-  this.emit.apply(this, arguments);
-  for (var nsp in this.nsps) {
-    if (has.call(this.nsps, nsp)) {
-      this.nsps[nsp].emit.apply(this.nsps[nsp], arguments);
-    }
-  }
-};
-
-/**
- * Update `socket.id` of all sockets
- *
- * @api private
- */
-
-Manager.prototype.updateSocketIds = function () {
-  for (var nsp in this.nsps) {
-    if (has.call(this.nsps, nsp)) {
-      this.nsps[nsp].id = this.generateId(nsp);
-    }
-  }
-};
-
-/**
- * generate `socket.id` for the given `nsp`
- *
- * @param {String} nsp
- * @return {String}
- * @api private
- */
-
-Manager.prototype.generateId = function (nsp) {
-  return (nsp === '/' ? '' : (nsp + '#')) + this.engine.id;
-};
-
-/**
- * Mix in `Emitter`.
- */
-
-Emitter(Manager.prototype);
-
-/**
- * Sets the `reconnection` config.
- *
- * @param {Boolean} true/false if it should automatically reconnect
- * @return {Manager} self or value
- * @api public
- */
-
-Manager.prototype.reconnection = function (v) {
-  if (!arguments.length) return this._reconnection;
-  this._reconnection = !!v;
-  return this;
-};
-
-/**
- * Sets the reconnection attempts config.
- *
- * @param {Number} max reconnection attempts before giving up
- * @return {Manager} self or value
- * @api public
- */
-
-Manager.prototype.reconnectionAttempts = function (v) {
-  if (!arguments.length) return this._reconnectionAttempts;
-  this._reconnectionAttempts = v;
-  return this;
-};
-
-/**
- * Sets the delay between reconnections.
- *
- * @param {Number} delay
- * @return {Manager} self or value
- * @api public
- */
-
-Manager.prototype.reconnectionDelay = function (v) {
-  if (!arguments.length) return this._reconnectionDelay;
-  this._reconnectionDelay = v;
-  this.backoff && this.backoff.setMin(v);
-  return this;
-};
-
-Manager.prototype.randomizationFactor = function (v) {
-  if (!arguments.length) return this._randomizationFactor;
-  this._randomizationFactor = v;
-  this.backoff && this.backoff.setJitter(v);
-  return this;
-};
-
-/**
- * Sets the maximum delay between reconnections.
- *
- * @param {Number} delay
- * @return {Manager} self or value
- * @api public
- */
-
-Manager.prototype.reconnectionDelayMax = function (v) {
-  if (!arguments.length) return this._reconnectionDelayMax;
-  this._reconnectionDelayMax = v;
-  this.backoff && this.backoff.setMax(v);
-  return this;
-};
-
-/**
- * Sets the connection timeout. `false` to disable
- *
- * @return {Manager} self or value
- * @api public
- */
-
-Manager.prototype.timeout = function (v) {
-  if (!arguments.length) return this._timeout;
-  this._timeout = v;
-  return this;
-};
-
-/**
- * Starts trying to reconnect if reconnection is enabled and we have not
- * started reconnecting yet
- *
- * @api private
- */
-
-Manager.prototype.maybeReconnectOnOpen = function () {
-  // Only try to reconnect if it's the first time we're connecting
-  if (!this.reconnecting && this._reconnection && this.backoff.attempts === 0) {
-    // keeps reconnection from firing twice for the same reconnection loop
-    this.reconnect();
-  }
-};
-
-/**
- * Sets the current transport `socket`.
- *
- * @param {Function} optional, callback
- * @return {Manager} self
- * @api public
- */
-
-Manager.prototype.open =
-Manager.prototype.connect = function (fn, opts) {
-  debug('readyState %s', this.readyState);
-  if (~this.readyState.indexOf('open')) return this;
-
-  debug('opening %s', this.uri);
-  this.engine = eio(this.uri, this.opts);
-  var socket = this.engine;
-  var self = this;
-  this.readyState = 'opening';
-  this.skipReconnect = false;
-
-  // emit `open`
-  var openSub = on(socket, 'open', function () {
-    self.onopen();
-    fn && fn();
-  });
-
-  // emit `connect_error`
-  var errorSub = on(socket, 'error', function (data) {
-    debug('connect_error');
-    self.cleanup();
-    self.readyState = 'closed';
-    self.emitAll('connect_error', data);
-    if (fn) {
-      var err = new Error('Connection error');
-      err.data = data;
-      fn(err);
-    } else {
-      // Only do this if there is no fn to handle the error
-      self.maybeReconnectOnOpen();
-    }
-  });
-
-  // emit `connect_timeout`
-  if (false !== this._timeout) {
-    var timeout = this._timeout;
-    debug('connect attempt will timeout after %d', timeout);
-
-    // set timer
-    var timer = setTimeout(function () {
-      debug('connect attempt timed out after %d', timeout);
-      openSub.destroy();
-      socket.close();
-      socket.emit('error', 'timeout');
-      self.emitAll('connect_timeout', timeout);
-    }, timeout);
-
-    this.subs.push({
-      destroy: function () {
-        clearTimeout(timer);
-      }
-    });
-  }
-
-  this.subs.push(openSub);
-  this.subs.push(errorSub);
-
-  return this;
-};
-
-/**
- * Called upon transport open.
- *
- * @api private
- */
-
-Manager.prototype.onopen = function () {
-  debug('open');
-
-  // clear old subs
-  this.cleanup();
-
-  // mark as open
-  this.readyState = 'open';
-  this.emit('open');
-
-  // add new subs
-  var socket = this.engine;
-  this.subs.push(on(socket, 'data', bind(this, 'ondata')));
-  this.subs.push(on(socket, 'ping', bind(this, 'onping')));
-  this.subs.push(on(socket, 'pong', bind(this, 'onpong')));
-  this.subs.push(on(socket, 'error', bind(this, 'onerror')));
-  this.subs.push(on(socket, 'close', bind(this, 'onclose')));
-  this.subs.push(on(this.decoder, 'decoded', bind(this, 'ondecoded')));
-};
-
-/**
- * Called upon a ping.
- *
- * @api private
- */
-
-Manager.prototype.onping = function () {
-  this.lastPing = new Date();
-  this.emitAll('ping');
-};
-
-/**
- * Called upon a packet.
- *
- * @api private
- */
-
-Manager.prototype.onpong = function () {
-  this.emitAll('pong', new Date() - this.lastPing);
-};
-
-/**
- * Called with data.
- *
- * @api private
- */
-
-Manager.prototype.ondata = function (data) {
-  this.decoder.add(data);
-};
-
-/**
- * Called when parser fully decodes a packet.
- *
- * @api private
- */
-
-Manager.prototype.ondecoded = function (packet) {
-  this.emit('packet', packet);
-};
-
-/**
- * Called upon socket error.
- *
- * @api private
- */
-
-Manager.prototype.onerror = function (err) {
-  debug('error', err);
-  this.emitAll('error', err);
-};
-
-/**
- * Creates a new socket for the given `nsp`.
- *
- * @return {Socket}
- * @api public
- */
-
-Manager.prototype.socket = function (nsp, opts) {
-  var socket = this.nsps[nsp];
-  if (!socket) {
-    socket = new Socket(this, nsp, opts);
-    this.nsps[nsp] = socket;
-    var self = this;
-    socket.on('connecting', onConnecting);
-    socket.on('connect', function () {
-      socket.id = self.generateId(nsp);
-    });
-
-    if (this.autoConnect) {
-      // manually call here since connecting event is fired before listening
-      onConnecting();
-    }
-  }
-
-  function onConnecting () {
-    if (!~indexOf(self.connecting, socket)) {
-      self.connecting.push(socket);
-    }
-  }
-
-  return socket;
-};
-
-/**
- * Called upon a socket close.
- *
- * @param {Socket} socket
- */
-
-Manager.prototype.destroy = function (socket) {
-  var index = indexOf(this.connecting, socket);
-  if (~index) this.connecting.splice(index, 1);
-  if (this.connecting.length) return;
-
-  this.close();
-};
-
-/**
- * Writes a packet.
- *
- * @param {Object} packet
- * @api private
- */
-
-Manager.prototype.packet = function (packet) {
-  debug('writing packet %j', packet);
-  var self = this;
-  if (packet.query && packet.type === 0) packet.nsp += '?' + packet.query;
-
-  if (!self.encoding) {
-    // encode, then write to engine with result
-    self.encoding = true;
-    this.encoder.encode(packet, function (encodedPackets) {
-      for (var i = 0; i < encodedPackets.length; i++) {
-        self.engine.write(encodedPackets[i], packet.options);
-      }
-      self.encoding = false;
-      self.processPacketQueue();
-    });
-  } else { // add packet to the queue
-    self.packetBuffer.push(packet);
-  }
-};
-
-/**
- * If packet buffer is non-empty, begins encoding the
- * next packet in line.
- *
- * @api private
- */
-
-Manager.prototype.processPacketQueue = function () {
-  if (this.packetBuffer.length > 0 && !this.encoding) {
-    var pack = this.packetBuffer.shift();
-    this.packet(pack);
-  }
-};
-
-/**
- * Clean up transport subscriptions and packet buffer.
- *
- * @api private
- */
-
-Manager.prototype.cleanup = function () {
-  debug('cleanup');
-
-  var subsLength = this.subs.length;
-  for (var i = 0; i < subsLength; i++) {
-    var sub = this.subs.shift();
-    sub.destroy();
-  }
-
-  this.packetBuffer = [];
-  this.encoding = false;
-  this.lastPing = null;
-
-  this.decoder.destroy();
-};
-
-/**
- * Close the current socket.
- *
- * @api private
- */
-
-Manager.prototype.close =
-Manager.prototype.disconnect = function () {
-  debug('disconnect');
-  this.skipReconnect = true;
-  this.reconnecting = false;
-  if ('opening' === this.readyState) {
-    // `onclose` will not fire because
-    // an open event never happened
-    this.cleanup();
-  }
-  this.backoff.reset();
-  this.readyState = 'closed';
-  if (this.engine) this.engine.close();
-};
-
-/**
- * Called upon engine close.
- *
- * @api private
- */
-
-Manager.prototype.onclose = function (reason) {
-  debug('onclose');
-
-  this.cleanup();
-  this.backoff.reset();
-  this.readyState = 'closed';
-  this.emit('close', reason);
-
-  if (this._reconnection && !this.skipReconnect) {
-    this.reconnect();
-  }
-};
-
-/**
- * Attempt a reconnection.
- *
- * @api private
- */
-
-Manager.prototype.reconnect = function () {
-  if (this.reconnecting || this.skipReconnect) return this;
-
-  var self = this;
-
-  if (this.backoff.attempts >= this._reconnectionAttempts) {
-    debug('reconnect failed');
-    this.backoff.reset();
-    this.emitAll('reconnect_failed');
-    this.reconnecting = false;
-  } else {
-    var delay = this.backoff.duration();
-    debug('will wait %dms before reconnect attempt', delay);
-
-    this.reconnecting = true;
-    var timer = setTimeout(function () {
-      if (self.skipReconnect) return;
-
-      debug('attempting reconnect');
-      self.emitAll('reconnect_attempt', self.backoff.attempts);
-      self.emitAll('reconnecting', self.backoff.attempts);
-
-      // check again for the case socket closed in above events
-      if (self.skipReconnect) return;
-
-      self.open(function (err) {
-        if (err) {
-          debug('reconnect attempt error');
-          self.reconnecting = false;
-          self.reconnect();
-          self.emitAll('reconnect_error', err.data);
-        } else {
-          debug('reconnect success');
-          self.onreconnect();
-        }
-      });
-    }, delay);
-
-    this.subs.push({
-      destroy: function () {
-        clearTimeout(timer);
-      }
-    });
-  }
-};
-
-/**
- * Called upon successful reconnect.
- *
- * @api private
- */
-
-Manager.prototype.onreconnect = function () {
-  var attempt = this.backoff.attempts;
-  this.reconnecting = false;
-  this.backoff.reset();
-  this.updateSocketIds();
-  this.emitAll('reconnect', attempt);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/lib/on.js":
-/*!*************************************************!*\
-  !*** ./node_modules/socket.io-client/lib/on.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-/**
- * Module exports.
- */
-
-module.exports = on;
-
-/**
- * Helper for subscriptions.
- *
- * @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
- * @param {String} event name
- * @param {Function} callback
- * @api public
- */
-
-function on (obj, ev, fn) {
-  obj.on(ev, fn);
-  return {
-    destroy: function () {
-      obj.removeListener(ev, fn);
-    }
-  };
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/lib/socket.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/socket.io-client/lib/socket.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Module dependencies.
- */
-
-var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
-var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
-var toArray = __webpack_require__(/*! to-array */ "./node_modules/to-array/index.js");
-var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
-var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
-var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:socket');
-var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
-var hasBin = __webpack_require__(/*! has-binary2 */ "./node_modules/has-binary2/index.js");
-
-/**
- * Module exports.
- */
-
-module.exports = exports = Socket;
-
-/**
- * Internal events (blacklisted).
- * These events can't be emitted by the user.
- *
- * @api private
- */
-
-var events = {
-  connect: 1,
-  connect_error: 1,
-  connect_timeout: 1,
-  connecting: 1,
-  disconnect: 1,
-  error: 1,
-  reconnect: 1,
-  reconnect_attempt: 1,
-  reconnect_failed: 1,
-  reconnect_error: 1,
-  reconnecting: 1,
-  ping: 1,
-  pong: 1
-};
-
-/**
- * Shortcut to `Emitter#emit`.
- */
-
-var emit = Emitter.prototype.emit;
-
-/**
- * `Socket` constructor.
- *
- * @api public
- */
-
-function Socket (io, nsp, opts) {
-  this.io = io;
-  this.nsp = nsp;
-  this.json = this; // compat
-  this.ids = 0;
-  this.acks = {};
-  this.receiveBuffer = [];
-  this.sendBuffer = [];
-  this.connected = false;
-  this.disconnected = true;
-  this.flags = {};
-  if (opts && opts.query) {
-    this.query = opts.query;
-  }
-  if (this.io.autoConnect) this.open();
-}
-
-/**
- * Mix in `Emitter`.
- */
-
-Emitter(Socket.prototype);
-
-/**
- * Subscribe to open, close and packet events
- *
- * @api private
- */
-
-Socket.prototype.subEvents = function () {
-  if (this.subs) return;
-
-  var io = this.io;
-  this.subs = [
-    on(io, 'open', bind(this, 'onopen')),
-    on(io, 'packet', bind(this, 'onpacket')),
-    on(io, 'close', bind(this, 'onclose'))
-  ];
-};
-
-/**
- * "Opens" the socket.
- *
- * @api public
- */
-
-Socket.prototype.open =
-Socket.prototype.connect = function () {
-  if (this.connected) return this;
-
-  this.subEvents();
-  this.io.open(); // ensure open
-  if ('open' === this.io.readyState) this.onopen();
-  this.emit('connecting');
-  return this;
-};
-
-/**
- * Sends a `message` event.
- *
- * @return {Socket} self
- * @api public
- */
-
-Socket.prototype.send = function () {
-  var args = toArray(arguments);
-  args.unshift('message');
-  this.emit.apply(this, args);
-  return this;
-};
-
-/**
- * Override `emit`.
- * If the event is in `events`, it's emitted normally.
- *
- * @param {String} event name
- * @return {Socket} self
- * @api public
- */
-
-Socket.prototype.emit = function (ev) {
-  if (events.hasOwnProperty(ev)) {
-    emit.apply(this, arguments);
-    return this;
-  }
-
-  var args = toArray(arguments);
-  var packet = {
-    type: (this.flags.binary !== undefined ? this.flags.binary : hasBin(args)) ? parser.BINARY_EVENT : parser.EVENT,
-    data: args
-  };
-
-  packet.options = {};
-  packet.options.compress = !this.flags || false !== this.flags.compress;
-
-  // event ack callback
-  if ('function' === typeof args[args.length - 1]) {
-    debug('emitting packet with ack id %d', this.ids);
-    this.acks[this.ids] = args.pop();
-    packet.id = this.ids++;
-  }
-
-  if (this.connected) {
-    this.packet(packet);
-  } else {
-    this.sendBuffer.push(packet);
-  }
-
-  this.flags = {};
-
-  return this;
-};
-
-/**
- * Sends a packet.
- *
- * @param {Object} packet
- * @api private
- */
-
-Socket.prototype.packet = function (packet) {
-  packet.nsp = this.nsp;
-  this.io.packet(packet);
-};
-
-/**
- * Called upon engine `open`.
- *
- * @api private
- */
-
-Socket.prototype.onopen = function () {
-  debug('transport is open - connecting');
-
-  // write connect packet if necessary
-  if ('/' !== this.nsp) {
-    if (this.query) {
-      var query = typeof this.query === 'object' ? parseqs.encode(this.query) : this.query;
-      debug('sending connect packet with query %s', query);
-      this.packet({type: parser.CONNECT, query: query});
-    } else {
-      this.packet({type: parser.CONNECT});
-    }
-  }
-};
-
-/**
- * Called upon engine `close`.
- *
- * @param {String} reason
- * @api private
- */
-
-Socket.prototype.onclose = function (reason) {
-  debug('close (%s)', reason);
-  this.connected = false;
-  this.disconnected = true;
-  delete this.id;
-  this.emit('disconnect', reason);
-};
-
-/**
- * Called with socket packet.
- *
- * @param {Object} packet
- * @api private
- */
-
-Socket.prototype.onpacket = function (packet) {
-  var sameNamespace = packet.nsp === this.nsp;
-  var rootNamespaceError = packet.type === parser.ERROR && packet.nsp === '/';
-
-  if (!sameNamespace && !rootNamespaceError) return;
-
-  switch (packet.type) {
-    case parser.CONNECT:
-      this.onconnect();
-      break;
-
-    case parser.EVENT:
-      this.onevent(packet);
-      break;
-
-    case parser.BINARY_EVENT:
-      this.onevent(packet);
-      break;
-
-    case parser.ACK:
-      this.onack(packet);
-      break;
-
-    case parser.BINARY_ACK:
-      this.onack(packet);
-      break;
-
-    case parser.DISCONNECT:
-      this.ondisconnect();
-      break;
-
-    case parser.ERROR:
-      this.emit('error', packet.data);
-      break;
-  }
-};
-
-/**
- * Called upon a server event.
- *
- * @param {Object} packet
- * @api private
- */
-
-Socket.prototype.onevent = function (packet) {
-  var args = packet.data || [];
-  debug('emitting event %j', args);
-
-  if (null != packet.id) {
-    debug('attaching ack callback to event');
-    args.push(this.ack(packet.id));
-  }
-
-  if (this.connected) {
-    emit.apply(this, args);
-  } else {
-    this.receiveBuffer.push(args);
-  }
-};
-
-/**
- * Produces an ack callback to emit with an event.
- *
- * @api private
- */
-
-Socket.prototype.ack = function (id) {
-  var self = this;
-  var sent = false;
-  return function () {
-    // prevent double callbacks
-    if (sent) return;
-    sent = true;
-    var args = toArray(arguments);
-    debug('sending ack %j', args);
-
-    self.packet({
-      type: hasBin(args) ? parser.BINARY_ACK : parser.ACK,
-      id: id,
-      data: args
-    });
-  };
-};
-
-/**
- * Called upon a server acknowlegement.
- *
- * @param {Object} packet
- * @api private
- */
-
-Socket.prototype.onack = function (packet) {
-  var ack = this.acks[packet.id];
-  if ('function' === typeof ack) {
-    debug('calling ack %s with %j', packet.id, packet.data);
-    ack.apply(this, packet.data);
-    delete this.acks[packet.id];
-  } else {
-    debug('bad ack %s', packet.id);
-  }
-};
-
-/**
- * Called upon server connect.
- *
- * @api private
- */
-
-Socket.prototype.onconnect = function () {
-  this.connected = true;
-  this.disconnected = false;
-  this.emit('connect');
-  this.emitBuffered();
-};
-
-/**
- * Emit buffered events (received and emitted).
- *
- * @api private
- */
-
-Socket.prototype.emitBuffered = function () {
-  var i;
-  for (i = 0; i < this.receiveBuffer.length; i++) {
-    emit.apply(this, this.receiveBuffer[i]);
-  }
-  this.receiveBuffer = [];
-
-  for (i = 0; i < this.sendBuffer.length; i++) {
-    this.packet(this.sendBuffer[i]);
-  }
-  this.sendBuffer = [];
-};
-
-/**
- * Called upon server disconnect.
- *
- * @api private
- */
-
-Socket.prototype.ondisconnect = function () {
-  debug('server disconnect (%s)', this.nsp);
-  this.destroy();
-  this.onclose('io server disconnect');
-};
-
-/**
- * Called upon forced client/server side disconnections,
- * this method ensures the manager stops tracking us and
- * that reconnections don't get triggered for this.
- *
- * @api private.
- */
-
-Socket.prototype.destroy = function () {
-  if (this.subs) {
-    // clean subscriptions to avoid reconnections
-    for (var i = 0; i < this.subs.length; i++) {
-      this.subs[i].destroy();
-    }
-    this.subs = null;
-  }
-
-  this.io.destroy(this);
-};
-
-/**
- * Disconnects the socket manually.
- *
- * @return {Socket} self
- * @api public
- */
-
-Socket.prototype.close =
-Socket.prototype.disconnect = function () {
-  if (this.connected) {
-    debug('performing disconnect (%s)', this.nsp);
-    this.packet({ type: parser.DISCONNECT });
-  }
-
-  // remove socket from pool
-  this.destroy();
-
-  if (this.connected) {
-    // fire events
-    this.onclose('io client disconnect');
-  }
-  return this;
-};
-
-/**
- * Sets the compress flag.
- *
- * @param {Boolean} if `true`, compresses the sending data
- * @return {Socket} self
- * @api public
- */
-
-Socket.prototype.compress = function (compress) {
-  this.flags.compress = compress;
-  return this;
-};
-
-/**
- * Sets the binary flag
- *
- * @param {Boolean} whether the emitted data contains binary
- * @return {Socket} self
- * @api public
- */
-
-Socket.prototype.binary = function (binary) {
-  this.flags.binary = binary;
-  return this;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/lib/url.js":
-/*!**************************************************!*\
-  !*** ./node_modules/socket.io-client/lib/url.js ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Module dependencies.
- */
-
-var parseuri = __webpack_require__(/*! parseuri */ "./node_modules/parseuri/index.js");
-var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:url');
-
-/**
- * Module exports.
- */
-
-module.exports = url;
-
-/**
- * URL parser.
- *
- * @param {String} url
- * @param {Object} An object meant to mimic window.location.
- *                 Defaults to window.location.
- * @api public
- */
-
-function url (uri, loc) {
-  var obj = uri;
-
-  // default to window.location
-  loc = loc || (typeof location !== 'undefined' && location);
-  if (null == uri) uri = loc.protocol + '//' + loc.host;
-
-  // relative path support
-  if ('string' === typeof uri) {
-    if ('/' === uri.charAt(0)) {
-      if ('/' === uri.charAt(1)) {
-        uri = loc.protocol + uri;
-      } else {
-        uri = loc.host + uri;
-      }
-    }
-
-    if (!/^(https?|wss?):\/\//.test(uri)) {
-      debug('protocol-less url %s', uri);
-      if ('undefined' !== typeof loc) {
-        uri = loc.protocol + '//' + uri;
-      } else {
-        uri = 'https://' + uri;
-      }
-    }
-
-    // parse
-    debug('parse %s', uri);
-    obj = parseuri(uri);
-  }
-
-  // make sure we treat `localhost:80` and `localhost` equally
-  if (!obj.port) {
-    if (/^(http|ws)$/.test(obj.protocol)) {
-      obj.port = '80';
-    } else if (/^(http|ws)s$/.test(obj.protocol)) {
-      obj.port = '443';
-    }
-  }
-
-  obj.path = obj.path || '/';
-
-  var ipv6 = obj.host.indexOf(':') !== -1;
-  var host = ipv6 ? '[' + obj.host + ']' : obj.host;
-
-  // define unique id
-  obj.id = obj.protocol + '://' + host + ':' + obj.port;
-  // define href
-  obj.href = obj.protocol + '://' + host + (loc && loc.port === obj.port ? '' : (':' + obj.port));
-
-  return obj;
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/component-emitter/index.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/component-emitter/index.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Expose `Emitter`.
- */
-
-if (true) {
-  module.exports = Emitter;
-}
-
-/**
- * Initialize a new `Emitter`.
- *
- * @api public
- */
-
-function Emitter(obj) {
-  if (obj) return mixin(obj);
-};
-
-/**
- * Mixin the emitter properties.
- *
- * @param {Object} obj
- * @return {Object}
- * @api private
- */
-
-function mixin(obj) {
-  for (var key in Emitter.prototype) {
-    obj[key] = Emitter.prototype[key];
-  }
-  return obj;
-}
-
-/**
- * Listen on the given `event` with `fn`.
- *
- * @param {String} event
- * @param {Function} fn
- * @return {Emitter}
- * @api public
- */
-
-Emitter.prototype.on =
-Emitter.prototype.addEventListener = function(event, fn){
-  this._callbacks = this._callbacks || {};
-  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
-    .push(fn);
-  return this;
-};
-
-/**
- * Adds an `event` listener that will be invoked a single
- * time then automatically removed.
- *
- * @param {String} event
- * @param {Function} fn
- * @return {Emitter}
- * @api public
- */
-
-Emitter.prototype.once = function(event, fn){
-  function on() {
-    this.off(event, on);
-    fn.apply(this, arguments);
-  }
-
-  on.fn = fn;
-  this.on(event, on);
-  return this;
-};
-
-/**
- * Remove the given callback for `event` or all
- * registered callbacks.
- *
- * @param {String} event
- * @param {Function} fn
- * @return {Emitter}
- * @api public
- */
-
-Emitter.prototype.off =
-Emitter.prototype.removeListener =
-Emitter.prototype.removeAllListeners =
-Emitter.prototype.removeEventListener = function(event, fn){
-  this._callbacks = this._callbacks || {};
-
-  // all
-  if (0 == arguments.length) {
-    this._callbacks = {};
-    return this;
-  }
-
-  // specific event
-  var callbacks = this._callbacks['$' + event];
-  if (!callbacks) return this;
-
-  // remove all handlers
-  if (1 == arguments.length) {
-    delete this._callbacks['$' + event];
-    return this;
-  }
-
-  // remove specific handler
-  var cb;
-  for (var i = 0; i < callbacks.length; i++) {
-    cb = callbacks[i];
-    if (cb === fn || cb.fn === fn) {
-      callbacks.splice(i, 1);
-      break;
-    }
-  }
-  return this;
-};
-
-/**
- * Emit `event` with the given args.
- *
- * @param {String} event
- * @param {Mixed} ...
- * @return {Emitter}
- */
-
-Emitter.prototype.emit = function(event){
-  this._callbacks = this._callbacks || {};
-  var args = [].slice.call(arguments, 1)
-    , callbacks = this._callbacks['$' + event];
-
-  if (callbacks) {
-    callbacks = callbacks.slice(0);
-    for (var i = 0, len = callbacks.length; i < len; ++i) {
-      callbacks[i].apply(this, args);
-    }
-  }
-
-  return this;
-};
-
-/**
- * Return array of callbacks for `event`.
- *
- * @param {String} event
- * @return {Array}
- * @api public
- */
-
-Emitter.prototype.listeners = function(event){
-  this._callbacks = this._callbacks || {};
-  return this._callbacks['$' + event] || [];
-};
-
-/**
- * Check if this emitter has `event` handlers.
- *
- * @param {String} event
- * @return {Boolean}
- * @api public
- */
-
-Emitter.prototype.hasListeners = function(event){
-  return !! this.listeners(event).length;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/debug/src/browser.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/debug/src/browser.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/* eslint-env browser */
-
-/**
- * This is the web browser implementation of `debug()`.
- */
-
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = [
-	'#0000CC',
-	'#0000FF',
-	'#0033CC',
-	'#0033FF',
-	'#0066CC',
-	'#0066FF',
-	'#0099CC',
-	'#0099FF',
-	'#00CC00',
-	'#00CC33',
-	'#00CC66',
-	'#00CC99',
-	'#00CCCC',
-	'#00CCFF',
-	'#3300CC',
-	'#3300FF',
-	'#3333CC',
-	'#3333FF',
-	'#3366CC',
-	'#3366FF',
-	'#3399CC',
-	'#3399FF',
-	'#33CC00',
-	'#33CC33',
-	'#33CC66',
-	'#33CC99',
-	'#33CCCC',
-	'#33CCFF',
-	'#6600CC',
-	'#6600FF',
-	'#6633CC',
-	'#6633FF',
-	'#66CC00',
-	'#66CC33',
-	'#9900CC',
-	'#9900FF',
-	'#9933CC',
-	'#9933FF',
-	'#99CC00',
-	'#99CC33',
-	'#CC0000',
-	'#CC0033',
-	'#CC0066',
-	'#CC0099',
-	'#CC00CC',
-	'#CC00FF',
-	'#CC3300',
-	'#CC3333',
-	'#CC3366',
-	'#CC3399',
-	'#CC33CC',
-	'#CC33FF',
-	'#CC6600',
-	'#CC6633',
-	'#CC9900',
-	'#CC9933',
-	'#CCCC00',
-	'#CCCC33',
-	'#FF0000',
-	'#FF0033',
-	'#FF0066',
-	'#FF0099',
-	'#FF00CC',
-	'#FF00FF',
-	'#FF3300',
-	'#FF3333',
-	'#FF3366',
-	'#FF3399',
-	'#FF33CC',
-	'#FF33FF',
-	'#FF6600',
-	'#FF6633',
-	'#FF9900',
-	'#FF9933',
-	'#FFCC00',
-	'#FFCC33'
-];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-// eslint-disable-next-line complexity
-function useColors() {
-	// NB: In an Electron preload script, document will be defined but not fully
-	// initialized. Since we know we're in Chrome, we'll just detect this case
-	// explicitly
-	if (typeof window !== 'undefined' && window.process && (window.process.type === 'renderer' || window.process.__nwjs)) {
-		return true;
-	}
-
-	// Internet Explorer and Edge do not support colors.
-	if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
-		return false;
-	}
-
-	// Is webkit? http://stackoverflow.com/a/16459606/376773
-	// document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-	return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-		// Is firebug? http://stackoverflow.com/a/398120/376773
-		(typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
-		// Is firefox >= v31?
-		// https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
-		// Double check webkit in userAgent just in case we are in a worker
-		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
-}
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-	args[0] = (this.useColors ? '%c' : '') +
-		this.namespace +
-		(this.useColors ? ' %c' : ' ') +
-		args[0] +
-		(this.useColors ? '%c ' : ' ') +
-		'+' + module.exports.humanize(this.diff);
-
-	if (!this.useColors) {
-		return;
-	}
-
-	const c = 'color: ' + this.color;
-	args.splice(1, 0, c, 'color: inherit');
-
-	// The final "%c" is somewhat tricky, because there could be other
-	// arguments passed either before or after the %c, so we need to
-	// figure out the correct index to insert the CSS into
-	let index = 0;
-	let lastC = 0;
-	args[0].replace(/%[a-zA-Z%]/g, match => {
-		if (match === '%%') {
-			return;
-		}
-		index++;
-		if (match === '%c') {
-			// We only are interested in the *last* %c
-			// (the user may have provided their own)
-			lastC = index;
-		}
-	});
-
-	args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-function log(...args) {
-	// This hackery is required for IE8/9, where
-	// the `console.log` function doesn't have 'apply'
-	return typeof console === 'object' &&
-		console.log &&
-		console.log(...args);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-function save(namespaces) {
-	try {
-		if (namespaces) {
-			exports.storage.setItem('debug', namespaces);
-		} else {
-			exports.storage.removeItem('debug');
-		}
-	} catch (error) {
-		// Swallow
-		// XXX (@Qix-) should we be logging these?
-	}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-function load() {
-	let r;
-	try {
-		r = exports.storage.getItem('debug');
-	} catch (error) {
-		// Swallow
-		// XXX (@Qix-) should we be logging these?
-	}
-
-	// If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-	if (!r && typeof process !== 'undefined' && 'env' in process) {
-		r = process.env.DEBUG;
-	}
-
-	return r;
-}
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-	try {
-		// TVMLKit (Apple TV JS Runtime) does not have a window object, just localStorage in the global context
-		// The Browser also has localStorage in the global context.
-		return localStorage;
-	} catch (error) {
-		// Swallow
-		// XXX (@Qix-) should we be logging these?
-	}
-}
-
-module.exports = __webpack_require__(/*! ./common */ "./node_modules/socket.io-client/node_modules/debug/src/common.js")(exports);
-
-const {formatters} = module.exports;
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-formatters.j = function (v) {
-	try {
-		return JSON.stringify(v);
-	} catch (error) {
-		return '[UnexpectedJSONParseError]: ' + error.message;
-	}
-};
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/debug/src/common.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/debug/src/common.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * This is the common logic for both the Node.js and web browser
- * implementations of `debug()`.
- */
-
-function setup(env) {
-	createDebug.debug = createDebug;
-	createDebug.default = createDebug;
-	createDebug.coerce = coerce;
-	createDebug.disable = disable;
-	createDebug.enable = enable;
-	createDebug.enabled = enabled;
-	createDebug.humanize = __webpack_require__(/*! ms */ "./node_modules/socket.io-client/node_modules/ms/index.js");
-
-	Object.keys(env).forEach(key => {
-		createDebug[key] = env[key];
-	});
-
-	/**
-	* Active `debug` instances.
-	*/
-	createDebug.instances = [];
-
-	/**
-	* The currently active debug mode names, and names to skip.
-	*/
-
-	createDebug.names = [];
-	createDebug.skips = [];
-
-	/**
-	* Map of special "%n" handling functions, for the debug "format" argument.
-	*
-	* Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
-	*/
-	createDebug.formatters = {};
-
-	/**
-	* Selects a color for a debug namespace
-	* @param {String} namespace The namespace string for the for the debug instance to be colored
-	* @return {Number|String} An ANSI color code for the given namespace
-	* @api private
-	*/
-	function selectColor(namespace) {
-		let hash = 0;
-
-		for (let i = 0; i < namespace.length; i++) {
-			hash = ((hash << 5) - hash) + namespace.charCodeAt(i);
-			hash |= 0; // Convert to 32bit integer
-		}
-
-		return createDebug.colors[Math.abs(hash) % createDebug.colors.length];
-	}
-	createDebug.selectColor = selectColor;
-
-	/**
-	* Create a debugger with the given `namespace`.
-	*
-	* @param {String} namespace
-	* @return {Function}
-	* @api public
-	*/
-	function createDebug(namespace) {
-		let prevTime;
-
-		function debug(...args) {
-			// Disabled?
-			if (!debug.enabled) {
-				return;
-			}
-
-			const self = debug;
-
-			// Set `diff` timestamp
-			const curr = Number(new Date());
-			const ms = curr - (prevTime || curr);
-			self.diff = ms;
-			self.prev = prevTime;
-			self.curr = curr;
-			prevTime = curr;
-
-			args[0] = createDebug.coerce(args[0]);
-
-			if (typeof args[0] !== 'string') {
-				// Anything else let's inspect with %O
-				args.unshift('%O');
-			}
-
-			// Apply any `formatters` transformations
-			let index = 0;
-			args[0] = args[0].replace(/%([a-zA-Z%])/g, (match, format) => {
-				// If we encounter an escaped % then don't increase the array index
-				if (match === '%%') {
-					return match;
-				}
-				index++;
-				const formatter = createDebug.formatters[format];
-				if (typeof formatter === 'function') {
-					const val = args[index];
-					match = formatter.call(self, val);
-
-					// Now we need to remove `args[index]` since it's inlined in the `format`
-					args.splice(index, 1);
-					index--;
-				}
-				return match;
-			});
-
-			// Apply env-specific formatting (colors, etc.)
-			createDebug.formatArgs.call(self, args);
-
-			const logFn = self.log || createDebug.log;
-			logFn.apply(self, args);
-		}
-
-		debug.namespace = namespace;
-		debug.enabled = createDebug.enabled(namespace);
-		debug.useColors = createDebug.useColors();
-		debug.color = selectColor(namespace);
-		debug.destroy = destroy;
-		debug.extend = extend;
-		// Debug.formatArgs = formatArgs;
-		// debug.rawLog = rawLog;
-
-		// env-specific initialization logic for debug instances
-		if (typeof createDebug.init === 'function') {
-			createDebug.init(debug);
-		}
-
-		createDebug.instances.push(debug);
-
-		return debug;
-	}
-
-	function destroy() {
-		const index = createDebug.instances.indexOf(this);
-		if (index !== -1) {
-			createDebug.instances.splice(index, 1);
-			return true;
-		}
-		return false;
-	}
-
-	function extend(namespace, delimiter) {
-		const newDebug = createDebug(this.namespace + (typeof delimiter === 'undefined' ? ':' : delimiter) + namespace);
-		newDebug.log = this.log;
-		return newDebug;
-	}
-
-	/**
-	* Enables a debug mode by namespaces. This can include modes
-	* separated by a colon and wildcards.
-	*
-	* @param {String} namespaces
-	* @api public
-	*/
-	function enable(namespaces) {
-		createDebug.save(namespaces);
-
-		createDebug.names = [];
-		createDebug.skips = [];
-
-		let i;
-		const split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
-		const len = split.length;
-
-		for (i = 0; i < len; i++) {
-			if (!split[i]) {
-				// ignore empty strings
-				continue;
-			}
-
-			namespaces = split[i].replace(/\*/g, '.*?');
-
-			if (namespaces[0] === '-') {
-				createDebug.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
-			} else {
-				createDebug.names.push(new RegExp('^' + namespaces + '$'));
-			}
-		}
-
-		for (i = 0; i < createDebug.instances.length; i++) {
-			const instance = createDebug.instances[i];
-			instance.enabled = createDebug.enabled(instance.namespace);
-		}
-	}
-
-	/**
-	* Disable debug output.
-	*
-	* @return {String} namespaces
-	* @api public
-	*/
-	function disable() {
-		const namespaces = [
-			...createDebug.names.map(toNamespace),
-			...createDebug.skips.map(toNamespace).map(namespace => '-' + namespace)
-		].join(',');
-		createDebug.enable('');
-		return namespaces;
-	}
-
-	/**
-	* Returns true if the given mode name is enabled, false otherwise.
-	*
-	* @param {String} name
-	* @return {Boolean}
-	* @api public
-	*/
-	function enabled(name) {
-		if (name[name.length - 1] === '*') {
-			return true;
-		}
-
-		let i;
-		let len;
-
-		for (i = 0, len = createDebug.skips.length; i < len; i++) {
-			if (createDebug.skips[i].test(name)) {
-				return false;
-			}
-		}
-
-		for (i = 0, len = createDebug.names.length; i < len; i++) {
-			if (createDebug.names[i].test(name)) {
-				return true;
-			}
-		}
-
-		return false;
-	}
-
-	/**
-	* Convert regexp to namespace
-	*
-	* @param {RegExp} regxep
-	* @return {String} namespace
-	* @api private
-	*/
-	function toNamespace(regexp) {
-		return regexp.toString()
-			.substring(2, regexp.toString().length - 2)
-			.replace(/\.\*\?$/, '*');
-	}
-
-	/**
-	* Coerce `val`.
-	*
-	* @param {Mixed} val
-	* @return {Mixed}
-	* @api private
-	*/
-	function coerce(val) {
-		if (val instanceof Error) {
-			return val.stack || val.message;
-		}
-		return val;
-	}
-
-	createDebug.enable(createDebug.load());
-
-	return createDebug;
-}
-
-module.exports = setup;
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/isarray/index.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/isarray/index.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/ms/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/ms/index.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var w = d * 7;
-var y = d * 365.25;
-
-/**
- * Parse or format the given `val`.
- *
- * Options:
- *
- *  - `long` verbose formatting [false]
- *
- * @param {String|Number} val
- * @param {Object} [options]
- * @throws {Error} throw an error if val is not a non-empty string or a number
- * @return {String|Number}
- * @api public
- */
-
-module.exports = function(val, options) {
-  options = options || {};
-  var type = typeof val;
-  if (type === 'string' && val.length > 0) {
-    return parse(val);
-  } else if (type === 'number' && isFinite(val)) {
-    return options.long ? fmtLong(val) : fmtShort(val);
-  }
-  throw new Error(
-    'val is not a non-empty string or a valid number. val=' +
-      JSON.stringify(val)
-  );
-};
-
-/**
- * Parse the given `str` and return milliseconds.
- *
- * @param {String} str
- * @return {Number}
- * @api private
- */
-
-function parse(str) {
-  str = String(str);
-  if (str.length > 100) {
-    return;
-  }
-  var match = /^(-?(?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(
-    str
-  );
-  if (!match) {
-    return;
-  }
-  var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
-  switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
-      return n * y;
-    case 'weeks':
-    case 'week':
-    case 'w':
-      return n * w;
-    case 'days':
-    case 'day':
-    case 'd':
-      return n * d;
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
-      return n * h;
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
-      return n * m;
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
-      return n * s;
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
-      return n;
-    default:
-      return undefined;
-  }
-}
-
-/**
- * Short format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtShort(ms) {
-  var msAbs = Math.abs(ms);
-  if (msAbs >= d) {
-    return Math.round(ms / d) + 'd';
-  }
-  if (msAbs >= h) {
-    return Math.round(ms / h) + 'h';
-  }
-  if (msAbs >= m) {
-    return Math.round(ms / m) + 'm';
-  }
-  if (msAbs >= s) {
-    return Math.round(ms / s) + 's';
-  }
-  return ms + 'ms';
-}
-
-/**
- * Long format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtLong(ms) {
-  var msAbs = Math.abs(ms);
-  if (msAbs >= d) {
-    return plural(ms, msAbs, d, 'day');
-  }
-  if (msAbs >= h) {
-    return plural(ms, msAbs, h, 'hour');
-  }
-  if (msAbs >= m) {
-    return plural(ms, msAbs, m, 'minute');
-  }
-  if (msAbs >= s) {
-    return plural(ms, msAbs, s, 'second');
-  }
-  return ms + ' ms';
-}
-
-/**
- * Pluralization helper.
- */
-
-function plural(ms, msAbs, n, name) {
-  var isPlural = msAbs >= n * 1.5;
-  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*global Blob,File*/
-
-/**
- * Module requirements
- */
-
-var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-client/node_modules/isarray/index.js");
-var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js");
-var toString = Object.prototype.toString;
-var withNativeBlob = typeof Blob === 'function' || (typeof Blob !== 'undefined' && toString.call(Blob) === '[object BlobConstructor]');
-var withNativeFile = typeof File === 'function' || (typeof File !== 'undefined' && toString.call(File) === '[object FileConstructor]');
-
-/**
- * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
- * Anything with blobs or files should be fed through removeBlobs before coming
- * here.
- *
- * @param {Object} packet - socket.io event packet
- * @return {Object} with deconstructed packet and list of buffers
- * @api public
- */
-
-exports.deconstructPacket = function(packet) {
-  var buffers = [];
-  var packetData = packet.data;
-  var pack = packet;
-  pack.data = _deconstructPacket(packetData, buffers);
-  pack.attachments = buffers.length; // number of binary 'attachments'
-  return {packet: pack, buffers: buffers};
-};
-
-function _deconstructPacket(data, buffers) {
-  if (!data) return data;
-
-  if (isBuf(data)) {
-    var placeholder = { _placeholder: true, num: buffers.length };
-    buffers.push(data);
-    return placeholder;
-  } else if (isArray(data)) {
-    var newData = new Array(data.length);
-    for (var i = 0; i < data.length; i++) {
-      newData[i] = _deconstructPacket(data[i], buffers);
-    }
-    return newData;
-  } else if (typeof data === 'object' && !(data instanceof Date)) {
-    var newData = {};
-    for (var key in data) {
-      newData[key] = _deconstructPacket(data[key], buffers);
-    }
-    return newData;
-  }
-  return data;
-}
-
-/**
- * Reconstructs a binary packet from its placeholder packet and buffers
- *
- * @param {Object} packet - event packet with placeholders
- * @param {Array} buffers - binary buffers to put in placeholder positions
- * @return {Object} reconstructed packet
- * @api public
- */
-
-exports.reconstructPacket = function(packet, buffers) {
-  packet.data = _reconstructPacket(packet.data, buffers);
-  packet.attachments = undefined; // no longer useful
-  return packet;
-};
-
-function _reconstructPacket(data, buffers) {
-  if (!data) return data;
-
-  if (data && data._placeholder) {
-    return buffers[data.num]; // appropriate buffer (should be natural order anyway)
-  } else if (isArray(data)) {
-    for (var i = 0; i < data.length; i++) {
-      data[i] = _reconstructPacket(data[i], buffers);
-    }
-  } else if (typeof data === 'object') {
-    for (var key in data) {
-      data[key] = _reconstructPacket(data[key], buffers);
-    }
-  }
-
-  return data;
-}
-
-/**
- * Asynchronously removes Blobs or Files from data via
- * FileReader's readAsArrayBuffer method. Used before encoding
- * data as msgpack. Calls callback with the blobless data.
- *
- * @param {Object} data
- * @param {Function} callback
- * @api private
- */
-
-exports.removeBlobs = function(data, callback) {
-  function _removeBlobs(obj, curKey, containingObject) {
-    if (!obj) return obj;
-
-    // convert any blob
-    if ((withNativeBlob && obj instanceof Blob) ||
-        (withNativeFile && obj instanceof File)) {
-      pendingBlobs++;
-
-      // async filereader
-      var fileReader = new FileReader();
-      fileReader.onload = function() { // this.result == arraybuffer
-        if (containingObject) {
-          containingObject[curKey] = this.result;
-        }
-        else {
-          bloblessData = this.result;
-        }
-
-        // if nothing pending its callback time
-        if(! --pendingBlobs) {
-          callback(bloblessData);
-        }
-      };
-
-      fileReader.readAsArrayBuffer(obj); // blob -> arraybuffer
-    } else if (isArray(obj)) { // handle array
-      for (var i = 0; i < obj.length; i++) {
-        _removeBlobs(obj[i], i, obj);
-      }
-    } else if (typeof obj === 'object' && !isBuf(obj)) { // and object
-      for (var key in obj) {
-        _removeBlobs(obj[key], key, obj);
-      }
-    }
-  }
-
-  var pendingBlobs = 0;
-  var bloblessData = data;
-  _removeBlobs(bloblessData);
-  if (!pendingBlobs) {
-    callback(bloblessData);
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/index.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * Module dependencies.
- */
-
-var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js")('socket.io-parser');
-var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
-var binary = __webpack_require__(/*! ./binary */ "./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js");
-var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-client/node_modules/isarray/index.js");
-var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js");
-
-/**
- * Protocol version.
- *
- * @api public
- */
-
-exports.protocol = 4;
-
-/**
- * Packet types.
- *
- * @api public
- */
-
-exports.types = [
-  'CONNECT',
-  'DISCONNECT',
-  'EVENT',
-  'ACK',
-  'ERROR',
-  'BINARY_EVENT',
-  'BINARY_ACK'
-];
-
-/**
- * Packet type `connect`.
- *
- * @api public
- */
-
-exports.CONNECT = 0;
-
-/**
- * Packet type `disconnect`.
- *
- * @api public
- */
-
-exports.DISCONNECT = 1;
-
-/**
- * Packet type `event`.
- *
- * @api public
- */
-
-exports.EVENT = 2;
-
-/**
- * Packet type `ack`.
- *
- * @api public
- */
-
-exports.ACK = 3;
-
-/**
- * Packet type `error`.
- *
- * @api public
- */
-
-exports.ERROR = 4;
-
-/**
- * Packet type 'binary event'
- *
- * @api public
- */
-
-exports.BINARY_EVENT = 5;
-
-/**
- * Packet type `binary ack`. For acks with binary arguments.
- *
- * @api public
- */
-
-exports.BINARY_ACK = 6;
-
-/**
- * Encoder constructor.
- *
- * @api public
- */
-
-exports.Encoder = Encoder;
-
-/**
- * Decoder constructor.
- *
- * @api public
- */
-
-exports.Decoder = Decoder;
-
-/**
- * A socket.io Encoder instance
- *
- * @api public
- */
-
-function Encoder() {}
-
-var ERROR_PACKET = exports.ERROR + '"encode error"';
-
-/**
- * Encode a packet as a single string if non-binary, or as a
- * buffer sequence, depending on packet type.
- *
- * @param {Object} obj - packet object
- * @param {Function} callback - function to handle encodings (likely engine.write)
- * @return Calls callback with Array of encodings
- * @api public
- */
-
-Encoder.prototype.encode = function(obj, callback){
-  debug('encoding packet %j', obj);
-
-  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
-    encodeAsBinary(obj, callback);
-  } else {
-    var encoding = encodeAsString(obj);
-    callback([encoding]);
-  }
-};
-
-/**
- * Encode packet as string.
- *
- * @param {Object} packet
- * @return {String} encoded
- * @api private
- */
-
-function encodeAsString(obj) {
-
-  // first is type
-  var str = '' + obj.type;
-
-  // attachments if we have them
-  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
-    str += obj.attachments + '-';
-  }
-
-  // if we have a namespace other than `/`
-  // we append it followed by a comma `,`
-  if (obj.nsp && '/' !== obj.nsp) {
-    str += obj.nsp + ',';
-  }
-
-  // immediately followed by the id
-  if (null != obj.id) {
-    str += obj.id;
-  }
-
-  // json data
-  if (null != obj.data) {
-    var payload = tryStringify(obj.data);
-    if (payload !== false) {
-      str += payload;
-    } else {
-      return ERROR_PACKET;
-    }
-  }
-
-  debug('encoded %j as %s', obj, str);
-  return str;
-}
-
-function tryStringify(str) {
-  try {
-    return JSON.stringify(str);
-  } catch(e){
-    return false;
-  }
-}
-
-/**
- * Encode packet as 'buffer sequence' by removing blobs, and
- * deconstructing packet into object with placeholders and
- * a list of buffers.
- *
- * @param {Object} packet
- * @return {Buffer} encoded
- * @api private
- */
-
-function encodeAsBinary(obj, callback) {
-
-  function writeEncoding(bloblessData) {
-    var deconstruction = binary.deconstructPacket(bloblessData);
-    var pack = encodeAsString(deconstruction.packet);
-    var buffers = deconstruction.buffers;
-
-    buffers.unshift(pack); // add packet info to beginning of data list
-    callback(buffers); // write all the buffers
-  }
-
-  binary.removeBlobs(obj, writeEncoding);
-}
-
-/**
- * A socket.io Decoder instance
- *
- * @return {Object} decoder
- * @api public
- */
-
-function Decoder() {
-  this.reconstructor = null;
-}
-
-/**
- * Mix in `Emitter` with Decoder.
- */
-
-Emitter(Decoder.prototype);
-
-/**
- * Decodes an encoded packet string into packet JSON.
- *
- * @param {String} obj - encoded packet
- * @return {Object} packet
- * @api public
- */
-
-Decoder.prototype.add = function(obj) {
-  var packet;
-  if (typeof obj === 'string') {
-    packet = decodeString(obj);
-    if (exports.BINARY_EVENT === packet.type || exports.BINARY_ACK === packet.type) { // binary packet's json
-      this.reconstructor = new BinaryReconstructor(packet);
-
-      // no attachments, labeled binary but no binary data to follow
-      if (this.reconstructor.reconPack.attachments === 0) {
-        this.emit('decoded', packet);
-      }
-    } else { // non-binary full packet
-      this.emit('decoded', packet);
-    }
-  } else if (isBuf(obj) || obj.base64) { // raw binary data
-    if (!this.reconstructor) {
-      throw new Error('got binary data when not reconstructing a packet');
-    } else {
-      packet = this.reconstructor.takeBinaryData(obj);
-      if (packet) { // received final buffer
-        this.reconstructor = null;
-        this.emit('decoded', packet);
-      }
-    }
-  } else {
-    throw new Error('Unknown type: ' + obj);
-  }
-};
-
-/**
- * Decode a packet String (JSON data)
- *
- * @param {String} str
- * @return {Object} packet
- * @api private
- */
-
-function decodeString(str) {
-  var i = 0;
-  // look up type
-  var p = {
-    type: Number(str.charAt(0))
-  };
-
-  if (null == exports.types[p.type]) {
-    return error('unknown packet type ' + p.type);
-  }
-
-  // look up attachments if type binary
-  if (exports.BINARY_EVENT === p.type || exports.BINARY_ACK === p.type) {
-    var buf = '';
-    while (str.charAt(++i) !== '-') {
-      buf += str.charAt(i);
-      if (i == str.length) break;
-    }
-    if (buf != Number(buf) || str.charAt(i) !== '-') {
-      throw new Error('Illegal attachments');
-    }
-    p.attachments = Number(buf);
-  }
-
-  // look up namespace (if any)
-  if ('/' === str.charAt(i + 1)) {
-    p.nsp = '';
-    while (++i) {
-      var c = str.charAt(i);
-      if (',' === c) break;
-      p.nsp += c;
-      if (i === str.length) break;
-    }
-  } else {
-    p.nsp = '/';
-  }
-
-  // look up id
-  var next = str.charAt(i + 1);
-  if ('' !== next && Number(next) == next) {
-    p.id = '';
-    while (++i) {
-      var c = str.charAt(i);
-      if (null == c || Number(c) != c) {
-        --i;
-        break;
-      }
-      p.id += str.charAt(i);
-      if (i === str.length) break;
-    }
-    p.id = Number(p.id);
-  }
-
-  // look up json data
-  if (str.charAt(++i)) {
-    var payload = tryParse(str.substr(i));
-    var isPayloadValid = payload !== false && (p.type === exports.ERROR || isArray(payload));
-    if (isPayloadValid) {
-      p.data = payload;
-    } else {
-      return error('invalid payload');
-    }
-  }
-
-  debug('decoded %s as %j', str, p);
-  return p;
-}
-
-function tryParse(str) {
-  try {
-    return JSON.parse(str);
-  } catch(e){
-    return false;
-  }
-}
-
-/**
- * Deallocates a parser's resources
- *
- * @api public
- */
-
-Decoder.prototype.destroy = function() {
-  if (this.reconstructor) {
-    this.reconstructor.finishedReconstruction();
-  }
-};
-
-/**
- * A manager of a binary event's 'buffer sequence'. Should
- * be constructed whenever a packet of type BINARY_EVENT is
- * decoded.
- *
- * @param {Object} packet
- * @return {BinaryReconstructor} initialized reconstructor
- * @api private
- */
-
-function BinaryReconstructor(packet) {
-  this.reconPack = packet;
-  this.buffers = [];
-}
-
-/**
- * Method to be called when binary data received from connection
- * after a BINARY_EVENT packet.
- *
- * @param {Buffer | ArrayBuffer} binData - the raw binary data received
- * @return {null | Object} returns null if more binary data is expected or
- *   a reconstructed packet object if all buffers have been received.
- * @api private
- */
-
-BinaryReconstructor.prototype.takeBinaryData = function(binData) {
-  this.buffers.push(binData);
-  if (this.buffers.length === this.reconPack.attachments) { // done with buffer list
-    var packet = binary.reconstructPacket(this.reconPack, this.buffers);
-    this.finishedReconstruction();
-    return packet;
-  }
-  return null;
-};
-
-/**
- * Cleans up binary packet reconstruction variables.
- *
- * @api private
- */
-
-BinaryReconstructor.prototype.finishedReconstruction = function() {
-  this.reconPack = null;
-  this.buffers = [];
-};
-
-function error(msg) {
-  return {
-    type: exports.ERROR,
-    data: 'parser error: ' + msg
-  };
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(Buffer) {
-module.exports = isBuf;
-
-var withNativeBuffer = typeof Buffer === 'function' && typeof Buffer.isBuffer === 'function';
-var withNativeArrayBuffer = typeof ArrayBuffer === 'function';
-
-var isView = function (obj) {
-  return typeof ArrayBuffer.isView === 'function' ? ArrayBuffer.isView(obj) : (obj.buffer instanceof ArrayBuffer);
-};
-
-/**
- * Returns true if obj is a buffer or an arraybuffer.
- *
- * @api private
- */
-
-function isBuf(obj) {
-  return (withNativeBuffer && Buffer.isBuffer(obj)) ||
-          (withNativeArrayBuffer && (obj instanceof ArrayBuffer || isView(obj)));
-}
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js":
-/*!*******************************************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js ***!
-  \*******************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(/*! ./debug */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js");
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome
-               && 'undefined' != typeof chrome.storage
-                  ? chrome.storage.local
-                  : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = [
-  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
-  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
-  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
-  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
-  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
-  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
-  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
-  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
-  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
-  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
-  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
-];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // Internet Explorer and Edge do not support colors.
-  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
-    return false;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
-    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
-    // is firefox >= v31?
-    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
-    // double check webkit in userAgent just in case we are in a worker
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function(v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '')
-    + this.namespace
-    + (useColors ? ' %c' : ' ')
-    + args[0]
-    + (useColors ? '%c ' : ' ')
-    + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit')
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function(match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === typeof console
-    && console.log
-    && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch(e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch(e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = process.env.DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../process/browser.js */ "./node_modules/process/browser.js")))
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js":
-/*!*****************************************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/**
- * This is the common logic for both the Node.js and web browser
- * implementations of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
-exports.coerce = coerce;
-exports.disable = disable;
-exports.enable = enable;
-exports.enabled = enabled;
-exports.humanize = __webpack_require__(/*! ms */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js");
-
-/**
- * Active `debug` instances.
- */
-exports.instances = [];
-
-/**
- * The currently active debug mode names, and names to skip.
- */
-
-exports.names = [];
-exports.skips = [];
-
-/**
- * Map of special "%n" handling functions, for the debug "format" argument.
- *
- * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
- */
-
-exports.formatters = {};
-
-/**
- * Select a color.
- * @param {String} namespace
- * @return {Number}
- * @api private
- */
-
-function selectColor(namespace) {
-  var hash = 0, i;
-
-  for (i in namespace) {
-    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
-    hash |= 0; // Convert to 32bit integer
-  }
-
-  return exports.colors[Math.abs(hash) % exports.colors.length];
-}
-
-/**
- * Create a debugger with the given `namespace`.
- *
- * @param {String} namespace
- * @return {Function}
- * @api public
- */
-
-function createDebug(namespace) {
-
-  var prevTime;
-
-  function debug() {
-    // disabled?
-    if (!debug.enabled) return;
-
-    var self = debug;
-
-    // set `diff` timestamp
-    var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
-    self.prev = prevTime;
-    self.curr = curr;
-    prevTime = curr;
-
-    // turn the `arguments` into a proper Array
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-
-    args[0] = exports.coerce(args[0]);
-
-    if ('string' !== typeof args[0]) {
-      // anything else let's inspect with %O
-      args.unshift('%O');
-    }
-
-    // apply any `formatters` transformations
-    var index = 0;
-    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
-      // if we encounter an escaped % then don't increase the array index
-      if (match === '%%') return match;
-      index++;
-      var formatter = exports.formatters[format];
-      if ('function' === typeof formatter) {
-        var val = args[index];
-        match = formatter.call(self, val);
-
-        // now we need to remove `args[index]` since it's inlined in the `format`
-        args.splice(index, 1);
-        index--;
-      }
-      return match;
-    });
-
-    // apply env-specific formatting (colors, etc.)
-    exports.formatArgs.call(self, args);
-
-    var logFn = debug.log || exports.log || console.log.bind(console);
-    logFn.apply(self, args);
-  }
-
-  debug.namespace = namespace;
-  debug.enabled = exports.enabled(namespace);
-  debug.useColors = exports.useColors();
-  debug.color = selectColor(namespace);
-  debug.destroy = destroy;
-
-  // env-specific initialization logic for debug instances
-  if ('function' === typeof exports.init) {
-    exports.init(debug);
-  }
-
-  exports.instances.push(debug);
-
-  return debug;
-}
-
-function destroy () {
-  var index = exports.instances.indexOf(this);
-  if (index !== -1) {
-    exports.instances.splice(index, 1);
-    return true;
-  } else {
-    return false;
-  }
-}
-
-/**
- * Enables a debug mode by namespaces. This can include modes
- * separated by a colon and wildcards.
- *
- * @param {String} namespaces
- * @api public
- */
-
-function enable(namespaces) {
-  exports.save(namespaces);
-
-  exports.names = [];
-  exports.skips = [];
-
-  var i;
-  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
-  var len = split.length;
-
-  for (i = 0; i < len; i++) {
-    if (!split[i]) continue; // ignore empty strings
-    namespaces = split[i].replace(/\*/g, '.*?');
-    if (namespaces[0] === '-') {
-      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
-    } else {
-      exports.names.push(new RegExp('^' + namespaces + '$'));
-    }
-  }
-
-  for (i = 0; i < exports.instances.length; i++) {
-    var instance = exports.instances[i];
-    instance.enabled = exports.enabled(instance.namespace);
-  }
-}
-
-/**
- * Disable debug output.
- *
- * @api public
- */
-
-function disable() {
-  exports.enable('');
-}
-
-/**
- * Returns true if the given mode name is enabled, false otherwise.
- *
- * @param {String} name
- * @return {Boolean}
- * @api public
- */
-
-function enabled(name) {
-  if (name[name.length - 1] === '*') {
-    return true;
-  }
-  var i, len;
-  for (i = 0, len = exports.skips.length; i < len; i++) {
-    if (exports.skips[i].test(name)) {
-      return false;
-    }
-  }
-  for (i = 0, len = exports.names.length; i < len; i++) {
-    if (exports.names[i].test(name)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-/**
- * Coerce `val`.
- *
- * @param {Mixed} val
- * @return {Mixed}
- * @api private
- */
-
-function coerce(val) {
-  if (val instanceof Error) return val.stack || val.message;
-  return val;
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js":
-/*!**********************************************************************************************!*\
-  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js ***!
-  \**********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/**
- * Helpers.
- */
-
-var s = 1000;
-var m = s * 60;
-var h = m * 60;
-var d = h * 24;
-var y = d * 365.25;
-
-/**
- * Parse or format the given `val`.
- *
- * Options:
- *
- *  - `long` verbose formatting [false]
- *
- * @param {String|Number} val
- * @param {Object} [options]
- * @throws {Error} throw an error if val is not a non-empty string or a number
- * @return {String|Number}
- * @api public
- */
-
-module.exports = function(val, options) {
-  options = options || {};
-  var type = typeof val;
-  if (type === 'string' && val.length > 0) {
-    return parse(val);
-  } else if (type === 'number' && isNaN(val) === false) {
-    return options.long ? fmtLong(val) : fmtShort(val);
-  }
-  throw new Error(
-    'val is not a non-empty string or a valid number. val=' +
-      JSON.stringify(val)
-  );
-};
-
-/**
- * Parse the given `str` and return milliseconds.
- *
- * @param {String} str
- * @return {Number}
- * @api private
- */
-
-function parse(str) {
-  str = String(str);
-  if (str.length > 100) {
-    return;
-  }
-  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
-    str
-  );
-  if (!match) {
-    return;
-  }
-  var n = parseFloat(match[1]);
-  var type = (match[2] || 'ms').toLowerCase();
-  switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
-      return n * y;
-    case 'days':
-    case 'day':
-    case 'd':
-      return n * d;
-    case 'hours':
-    case 'hour':
-    case 'hrs':
-    case 'hr':
-    case 'h':
-      return n * h;
-    case 'minutes':
-    case 'minute':
-    case 'mins':
-    case 'min':
-    case 'm':
-      return n * m;
-    case 'seconds':
-    case 'second':
-    case 'secs':
-    case 'sec':
-    case 's':
-      return n * s;
-    case 'milliseconds':
-    case 'millisecond':
-    case 'msecs':
-    case 'msec':
-    case 'ms':
-      return n;
-    default:
-      return undefined;
-  }
-}
-
-/**
- * Short format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtShort(ms) {
-  if (ms >= d) {
-    return Math.round(ms / d) + 'd';
-  }
-  if (ms >= h) {
-    return Math.round(ms / h) + 'h';
-  }
-  if (ms >= m) {
-    return Math.round(ms / m) + 'm';
-  }
-  if (ms >= s) {
-    return Math.round(ms / s) + 's';
-  }
-  return ms + 'ms';
-}
-
-/**
- * Long format for `ms`.
- *
- * @param {Number} ms
- * @return {String}
- * @api private
- */
-
-function fmtLong(ms) {
-  return plural(ms, d, 'day') ||
-    plural(ms, h, 'hour') ||
-    plural(ms, m, 'minute') ||
-    plural(ms, s, 'second') ||
-    ms + ' ms';
-}
-
-/**
- * Pluralization helper.
- */
-
-function plural(ms, n, name) {
-  if (ms < n) {
-    return;
-  }
-  if (ms < n * 1.5) {
-    return Math.floor(ms / n) + ' ' + name;
-  }
-  return Math.ceil(ms / n) + ' ' + name + 's';
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/timers-browserify/main.js":
-/*!************************************************!*\
-  !*** ./node_modules/timers-browserify/main.js ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
-            (typeof self !== "undefined" && self) ||
-            window;
-var apply = Function.prototype.apply;
-
-// DOM APIs, for completeness
-
-exports.setTimeout = function() {
-  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
-};
-exports.setInterval = function() {
-  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
-};
-exports.clearTimeout =
-exports.clearInterval = function(timeout) {
-  if (timeout) {
-    timeout.close();
-  }
-};
-
-function Timeout(id, clearFn) {
-  this._id = id;
-  this._clearFn = clearFn;
-}
-Timeout.prototype.unref = Timeout.prototype.ref = function() {};
-Timeout.prototype.close = function() {
-  this._clearFn.call(scope, this._id);
-};
-
-// Does not start the time, just sets up the members needed.
-exports.enroll = function(item, msecs) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = msecs;
-};
-
-exports.unenroll = function(item) {
-  clearTimeout(item._idleTimeoutId);
-  item._idleTimeout = -1;
-};
-
-exports._unrefActive = exports.active = function(item) {
-  clearTimeout(item._idleTimeoutId);
-
-  var msecs = item._idleTimeout;
-  if (msecs >= 0) {
-    item._idleTimeoutId = setTimeout(function onTimeout() {
-      if (item._onTimeout)
-        item._onTimeout();
-    }, msecs);
-  }
-};
-
-// setimmediate attaches itself to the global object
-__webpack_require__(/*! setimmediate */ "./node_modules/setimmediate/setImmediate.js");
-// On some exotic environments, it's not clear which object `setimmediate` was
-// able to install onto.  Search each possibility in the same order as the
-// `setimmediate` library.
-exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
-                       (typeof global !== "undefined" && global.setImmediate) ||
-                       (this && this.setImmediate);
-exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
-                         (typeof global !== "undefined" && global.clearImmediate) ||
-                         (this && this.clearImmediate);
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
-/***/ "./node_modules/to-array/index.js":
-/*!****************************************!*\
-  !*** ./node_modules/to-array/index.js ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = toArray
-
-function toArray(list, index) {
-    var array = []
-
-    index = index || 0
-
-    for (var i = index || 0; i < list.length; i++) {
-        array[i - index] = list[i]
-    }
-
-    return array
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ChatComponent.vue?vue&type=template&id=80d584ac&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ChatComponent.vue?vue&type=template&id=80d584ac& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "chat-room-section" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c(
-          "div",
-          { staticClass: "col messages" },
-          _vm._l(_vm.conversations, function(conversation) {
-            return _c("div", { staticClass: "message" }, [
-              _c("p", { staticClass: "sender-name" }, [
-                _vm._v(_vm._s(conversation.user.name))
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "m-0" }, [
-                _vm._v(_vm._s(conversation.message))
-              ])
-            ])
-          }),
-          0
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row writing-section" }, [
-        _c("div", { staticClass: "col-11" }, [
-          _c("input", {
-            directives: [
-              {
-                name: "model",
-                rawName: "v-model",
-                value: _vm.message,
-                expression: "message"
-              }
-            ],
-            staticClass: "chat-input form-control",
-            attrs: { type: "text", placeholder: "Enter a message..." },
-            domProps: { value: _vm.message },
-            on: {
-              keyup: function($event) {
-                if (
-                  !$event.type.indexOf("key") &&
-                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
-                ) {
-                  return null
-                }
-                return _vm.storeMessage($event)
-              },
-              input: function($event) {
-                if ($event.target.composing) {
-                  return
-                }
-                _vm.message = $event.target.value
-              }
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-1 p-0" }, [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-send",
-              attrs: { type: "button" },
-              on: {
-                click: function($event) {
-                  $event.preventDefault()
-                  return _vm.storeMessage($event)
-                }
-              }
-            },
-            [_c("i", { staticClass: "fas fa-paper-plane" })]
-          )
-        ])
-      ])
-    ])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/VideoComponent.vue?vue&type=template&id=26d38626&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/VideoComponent.vue?vue&type=template&id=26d38626& ***!
-  \*****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "text-center" },
-    [
-      this.$data.isSharing
-        ? _c("div", { staticClass: "alert alert-primary text-center" }, [
-            _vm._v("You have shared your screen with success!")
-          ])
-        : _vm._e(),
-      _vm._v(" "),
-      _c("vue-webrtc", {
-        ref: "webrtc",
-        attrs: {
-          width: "100%",
-          "room-id": _vm.room.secret,
-          "enable-video": false
-        },
-        on: {
-          "share-started": _vm.announceShare,
-          "share-stopped": _vm.cancelShare
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "text-center my-3" }, [
-        _c(
-          "button",
-          { staticClass: "btn btn-danger", on: { click: _vm.shareScreen } },
-          [_vm._v("Share your screen")]
-        ),
-        _vm._v(" "),
-        this.$data.exited
-          ? _c(
-              "button",
-              { staticClass: "btn btn-primary", on: { click: _vm.leaveCall } },
-              [_vm._v("Cancel the call")]
-            )
-          : !this.$data.exited
-          ? _c(
-              "a",
-              {
-                staticClass: "btn btn-primary",
-                attrs: { href: "/room/join/" + this.$props.room.secret }
-              },
-              [_vm._v("Rejoin the call")]
-            )
-          : _vm._e()
-      ])
-    ],
-    1
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/***/ "./node_modules/rtcmulticonnection/dist/RTCMultiConnection.js":
 /*!********************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  !*** ./node_modules/rtcmulticonnection/dist/RTCMultiConnection.js ***!
   \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent (
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier, /* server only */
-  shadowMode /* vue-cli only */
-) {
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () {
-        injectStyles.call(
-          this,
-          (options.functional ? this.parent : this).$root.$options.shadowRoot
-        )
-      }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functional component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-webrtc/dist/index.js":
-/*!***********************************************!*\
-  !*** ./node_modules/vue-webrtc/dist/index.js ***!
-  \***********************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(true)
-		module.exports = factory();
-	else {}
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-/* styles */
-__webpack_require__(11)
-
-var Component = __webpack_require__(9)(
-  /* script */
-  __webpack_require__(3),
-  /* template */
-  __webpack_require__(10),
-  /* scopeId */
-  "data-v-49ef9b35",
-  /* cssModules */
-  null
-)
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {var require;var require;/*! adapterjs - v0.15.4 - 2019-01-07 */
-var AdapterJS=AdapterJS||window.AdapterJS||{};if(AdapterJS.options=AdapterJS.options||{},AdapterJS.options.getAllCams=!!AdapterJS.options.getAllCams,AdapterJS.options.hidePluginInstallPrompt=!!AdapterJS.options.hidePluginInstallPrompt,AdapterJS.options.forceSafariPlugin=!!AdapterJS.options.forceSafariPlugin,AdapterJS.VERSION="0.15.4",AdapterJS.onwebrtcready=AdapterJS.onwebrtcready||function(isUsingPlugin){},AdapterJS._onwebrtcreadies=[],AdapterJS.webRTCReady=function(baseCallback){if("function"!=typeof baseCallback)throw new Error("Callback provided is not a function");var callback=function(){"function"==typeof window.require&&"function"==typeof AdapterJS._defineMediaSourcePolyfill&&AdapterJS._defineMediaSourcePolyfill(),baseCallback(null!==AdapterJS.WebRTCPlugin.plugin)};!0===AdapterJS.onwebrtcreadyDone?callback():AdapterJS._onwebrtcreadies.push(callback)},AdapterJS.WebRTCPlugin=AdapterJS.WebRTCPlugin||{},AdapterJS.WebRTCPlugin.pluginInfo=AdapterJS.WebRTCPlugin.pluginInfo||{prefix:"Tem",plugName:"TemWebRTCPlugin",pluginId:"plugin0",type:"application/x-temwebrtcplugin",onload:"__TemWebRTCReady0",portalLink:"https://skylink.io/plugin/",downloadLink:null,companyName:"Temasys",downloadLinks:{mac:"https://bit.ly/webrtcpluginpkg",win:"https://bit.ly/webrtcpluginmsi"}},void 0!==AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks&&null!==AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks&&(navigator.platform.match(/^Mac/i)?AdapterJS.WebRTCPlugin.pluginInfo.downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks.mac:navigator.platform.match(/^Win/i)&&(AdapterJS.WebRTCPlugin.pluginInfo.downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLinks.win)),AdapterJS.WebRTCPlugin.TAGS={NONE:"none",AUDIO:"audio",VIDEO:"video"},AdapterJS.WebRTCPlugin.pageId=Math.random().toString(36).slice(2),AdapterJS.WebRTCPlugin.plugin=null,AdapterJS.WebRTCPlugin.setLogLevel=null,AdapterJS.WebRTCPlugin.defineWebRTCInterface=null,AdapterJS.WebRTCPlugin.isPluginInstalled=null,AdapterJS.WebRTCPlugin.pluginInjectionInterval=null,AdapterJS.WebRTCPlugin.injectPlugin=null,AdapterJS.WebRTCPlugin.PLUGIN_STATES={NONE:0,INITIALIZING:1,INJECTING:2,INJECTED:3,READY:4},AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.NONE,AdapterJS.onwebrtcreadyDone=!1,AdapterJS.WebRTCPlugin.PLUGIN_LOG_LEVELS={NONE:"NONE",ERROR:"ERROR",WARNING:"WARNING",INFO:"INFO",VERBOSE:"VERBOSE",SENSITIVE:"SENSITIVE"},AdapterJS.WebRTCPlugin.WaitForPluginReady=null,AdapterJS.WebRTCPlugin.callWhenPluginReady=null,AdapterJS.documentReady=function(){return"interactive"===document.readyState&&!!document.body||"complete"===document.readyState},window.__TemWebRTCReady0=function(){AdapterJS.documentReady()?(AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY,AdapterJS.maybeThroughWebRTCReady()):setTimeout(__TemWebRTCReady0,100)},AdapterJS.maybeThroughWebRTCReady=function(){AdapterJS.onwebrtcreadyDone||(AdapterJS.onwebrtcreadyDone=!0,AdapterJS._onwebrtcreadies.length?AdapterJS._onwebrtcreadies.forEach(function(callback){"function"==typeof callback&&callback(null!==AdapterJS.WebRTCPlugin.plugin)}):"function"==typeof AdapterJS.onwebrtcready&&AdapterJS.onwebrtcready(null!==AdapterJS.WebRTCPlugin.plugin))},AdapterJS.TEXT={PLUGIN:{REQUIRE_INSTALLATION:"This website requires you to install a WebRTC-enabling plugin to work on this browser.",REQUIRE_RESTART:"Your plugin is being downloaded. Please run the installer, and restart your browser to begin using it.",NOT_SUPPORTED:"Your browser does not support WebRTC.",BUTTON:"Install Now"},REFRESH:{REQUIRE_REFRESH:"Please refresh page",BUTTON:"Refresh Page"}},AdapterJS._iceConnectionStates={starting:"starting",checking:"checking",connected:"connected",completed:"connected",done:"completed",disconnected:"disconnected",failed:"failed",closed:"closed"},AdapterJS._iceConnectionFiredStates=[],AdapterJS.isDefined=null,window.webrtcDetectedType=null,window.MediaStream="function"==typeof MediaStream?MediaStream:null,window.RTCPeerConnection="function"==typeof RTCPeerConnection?RTCPeerConnection:null,window.RTCSessionDescription="function"==typeof RTCSessionDescription?RTCSessionDescription:null,window.RTCIceCandidate="function"==typeof RTCIceCandidate?RTCIceCandidate:null,window.getUserMedia="function"==typeof getUserMedia?getUserMedia:null,window.attachMediaStream=null,window.reattachMediaStream=null,window.webrtcDetectedBrowser=null,window.webrtcDetectedVersion=null,window.webrtcMinimumVersion=null,window.webrtcDetectedDCSupport=null,AdapterJS.parseWebrtcDetectedBrowser=function(){var hasMatch=null;if(window.opr&&opr.addons||window.opera||navigator.userAgent.indexOf(" OPR/")>=0)hasMatch=navigator.userAgent.match(/OPR\/(\d+)/i)||[],window.webrtcDetectedBrowser="opera",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=26,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport="SCTP";else if(navigator.userAgent.match(/Bowser\/[0-9.]*/g)){hasMatch=navigator.userAgent.match(/Bowser\/[0-9.]*/g)||[];var chromiumVersion=parseInt((navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./i)||[])[2]||"0",10);window.webrtcDetectedBrowser="bowser",window.webrtcDetectedVersion=parseFloat((hasMatch[0]||"0/0").split("/")[1],10),window.webrtcMinimumVersion=0,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport=chromiumVersion>30?"SCTP":"RTP"}else if(navigator.userAgent.indexOf("OPiOS")>0)hasMatch=navigator.userAgent.match(/OPiOS\/([0-9]+)\./),window.webrtcDetectedBrowser="opera",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedDCSupport=null;else if(navigator.userAgent.indexOf("CriOS")>0)hasMatch=navigator.userAgent.match(/CriOS\/([0-9]+)\./)||[],window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedBrowser="chrome",window.webrtcDetectedDCSupport=null;else if(navigator.userAgent.indexOf("FxiOS")>0)hasMatch=navigator.userAgent.match(/FxiOS\/([0-9]+)\./)||[],window.webrtcDetectedBrowser="firefox",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=0,window.webrtcDetectedType=null,window.webrtcDetectedDCSupport=null;else if(document.documentMode)hasMatch=/\brv[ :]+(\d+)/g.exec(navigator.userAgent)||[],window.webrtcDetectedBrowser="IE",window.webrtcDetectedVersion=parseInt(hasMatch[1],10),window.webrtcMinimumVersion=9,window.webrtcDetectedType="plugin",window.webrtcDetectedDCSupport="SCTP",webrtcDetectedVersion||(hasMatch=/\bMSIE[ :]+(\d+)/g.exec(navigator.userAgent)||[],window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10));else if(window.StyleMedia||navigator.userAgent.match(/Edge\/(\d+).(\d+)$/))hasMatch=navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)||[],window.webrtcDetectedBrowser="edge",window.webrtcDetectedVersion=parseFloat((hasMatch[0]||"0/0").split("/")[1],10),window.webrtcMinimumVersion=13.10547,window.webrtcDetectedType="ms",window.webrtcDetectedDCSupport=null;else if("undefined"!=typeof InstallTrigger||navigator.userAgent.indexOf("irefox")>0)hasMatch=navigator.userAgent.match(/Firefox\/([0-9]+)\./)||[],window.webrtcDetectedBrowser="firefox",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=33,window.webrtcDetectedType="moz",window.webrtcDetectedDCSupport="SCTP";else if(window.chrome&&window.chrome.webstore||navigator.userAgent.indexOf("Chrom")>0)hasMatch=navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./i)||[],window.webrtcDetectedBrowser="chrome",window.webrtcDetectedVersion=parseInt(hasMatch[2]||"0",10),window.webrtcMinimumVersion=38,window.webrtcDetectedType="webkit",window.webrtcDetectedDCSupport=window.webrtcDetectedVersion>30?"SCTP":"RTP";else if(/constructor/i.test(window.HTMLElement)||function(p){return"[object SafariRemoteNotification]"===p.toString()}(!window.safari||safari.pushNotification)||navigator.userAgent.match(/AppleWebKit\/(\d+)\./)||navigator.userAgent.match(/Version\/(\d+).(\d+)/)){hasMatch=navigator.userAgent.match(/version\/(\d+)\.(\d+)/i)||[];var AppleWebKitBuild=navigator.userAgent.match(/AppleWebKit\/(\d+)/i)||[],isMobile=navigator.userAgent.match(/(iPhone|iPad)/gi),hasNativeImpl=AppleWebKitBuild.length>=1&&AppleWebKitBuild[1]>=604;if(window.webrtcDetectedBrowser="safari",window.webrtcDetectedVersion=parseInt(hasMatch[1]||"0",10),window.webrtcMinimumVersion=7,isMobile)window.webrtcDetectedType=hasNativeImpl?"AppleWebKit":null;else{var majorVersion=window.webrtcDetectedVersion,minorVersion=parseInt(hasMatch[2]||"0",10),nativeImplIsOverridable=11==majorVersion&&minorVersion<2;window.webrtcDetectedType=!hasNativeImpl||AdapterJS.options.forceSafariPlugin&&nativeImplIsOverridable?"plugin":"AppleWebKit"}window.webrtcDetectedDCSupport="SCTP"}AdapterJS.webrtcDetectedBrowser=window.webrtcDetectedBrowser,AdapterJS.webrtcDetectedVersion=window.webrtcDetectedVersion,AdapterJS.webrtcMinimumVersion=window.webrtcMinimumVersion,AdapterJS.webrtcDetectedType=window.webrtcDetectedType,AdapterJS.webrtcDetectedDCSupport=window.webrtcDetectedDCSupport},AdapterJS.addEvent=function(elem,evnt,func){elem.addEventListener?elem.addEventListener(evnt,func,!1):elem.attachEvent?elem.attachEvent("on"+evnt,func):elem[evnt]=func},AdapterJS.renderNotificationBar=function(message,buttonText,buttonCallback){if(AdapterJS.documentReady()){var w=window,i=document.createElement("iframe");i.name="adapterjs-alert",i.style.position="fixed",i.style.top="-41px",i.style.left=0,i.style.right=0,i.style.width="100%",i.style.height="40px",i.style.backgroundColor="#ffffe1",i.style.border="none",i.style.borderBottom="1px solid #888888",i.style.zIndex="9999999","string"==typeof i.style.webkitTransition?i.style.webkitTransition="all .5s ease-out":"string"==typeof i.style.transition&&(i.style.transition="all .5s ease-out"),document.body.appendChild(i);var c=i.contentWindow?i.contentWindow:i.contentDocument.document?i.contentDocument.document:i.contentDocument;c.document.open(),c.document.write('<span style="display: inline-block; font-family: Helvetica, Arial,sans-serif; font-size: .9rem; padding: 4px; vertical-align: middle; cursor: default;">'+message+"</span>"),buttonText&&"function"==typeof buttonCallback?(c.document.write('<button id="okay">'+buttonText+'</button><button id="cancel">Cancel</button>'),c.document.close(),AdapterJS.addEvent(c.document.getElementById("okay"),"click",function(e){e.preventDefault();try{e.cancelBubble=!0}catch(error){}buttonCallback(e)}),AdapterJS.addEvent(c.document.getElementById("cancel"),"click",function(e){w.document.body.removeChild(i)})):c.document.close(),setTimeout(function(){"string"==typeof i.style.webkitTransform?i.style.webkitTransform="translateY(40px)":"string"==typeof i.style.transform?i.style.transform="translateY(40px)":i.style.top="0px"},300)}},window.requestUserMedia="function"==typeof requestUserMedia?requestUserMedia:null,AdapterJS.parseWebrtcDetectedBrowser(),["webkit","moz","ms","AppleWebKit"].indexOf(AdapterJS.webrtcDetectedType)>-1){navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)&&window.RTCPeerConnection&&(window.msRTCPeerConnection=window.RTCPeerConnection),function(f){if(true)module.exports=f();else { var g; }}(function(){return function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a="function"==typeof require&&require;if(!u&&a)return require(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n||e)},l,l.exports,e,t,n,r)}return n[o].exports}for(var i="function"==typeof require&&require,o=0;o<r.length;o++)s(r[o]);return s}({1:[function(requirecopy,module,exports){function fixStatsType(stat){return{inboundrtp:"inbound-rtp",outboundrtp:"outbound-rtp",candidatepair:"candidate-pair",localcandidate:"local-candidate",remotecandidate:"remote-candidate"}[stat.type]||stat.type}function writeMediaSection(transceiver,caps,type,stream,dtlsRole){var sdp=SDPUtils.writeRtpDescription(transceiver.kind,caps);if(sdp+=SDPUtils.writeIceParameters(transceiver.iceGatherer.getLocalParameters()),sdp+=SDPUtils.writeDtlsParameters(transceiver.dtlsTransport.getLocalParameters(),"offer"===type?"actpass":dtlsRole||"active"),sdp+="a=mid:"+transceiver.mid+"\r\n",transceiver.rtpSender&&transceiver.rtpReceiver?sdp+="a=sendrecv\r\n":transceiver.rtpSender?sdp+="a=sendonly\r\n":transceiver.rtpReceiver?sdp+="a=recvonly\r\n":sdp+="a=inactive\r\n",transceiver.rtpSender){var trackId=transceiver.rtpSender._initialTrackId||transceiver.rtpSender.track.id;transceiver.rtpSender._initialTrackId=trackId;var msid="msid:"+(stream?stream.id:"-")+" "+trackId+"\r\n";sdp+="a="+msid,sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" "+msid,transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" "+msid,sdp+="a=ssrc-group:FID "+transceiver.sendEncodingParameters[0].ssrc+" "+transceiver.sendEncodingParameters[0].rtx.ssrc+"\r\n")}return sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" cname:"+SDPUtils.localCName+"\r\n",transceiver.rtpSender&&transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" cname:"+SDPUtils.localCName+"\r\n"),sdp}function filterIceServers(iceServers,edgeVersion){var hasTurn=!1;return iceServers=JSON.parse(JSON.stringify(iceServers)),iceServers.filter(function(server){if(server&&(server.urls||server.url)){var urls=server.urls||server.url;server.url&&server.urls;var isString="string"==typeof urls;return isString&&(urls=[urls]),urls=urls.filter(function(url){return 0!==url.indexOf("turn:")||-1===url.indexOf("transport=udp")||-1!==url.indexOf("turn:[")||hasTurn?0===url.indexOf("stun:")&&edgeVersion>=14393&&-1===url.indexOf("?transport=udp"):(hasTurn=!0,!0)}),delete server.url,server.urls=isString?urls[0]:urls,!!urls.length}})}function getCommonCapabilities(localCapabilities,remoteCapabilities){var commonCapabilities={codecs:[],headerExtensions:[],fecMechanisms:[]},findCodecByPayloadType=function(pt,codecs){pt=parseInt(pt,10);for(var i=0;i<codecs.length;i++)if(codecs[i].payloadType===pt||codecs[i].preferredPayloadType===pt)return codecs[i]},rtxCapabilityMatches=function(lRtx,rRtx,lCodecs,rCodecs){var lCodec=findCodecByPayloadType(lRtx.parameters.apt,lCodecs),rCodec=findCodecByPayloadType(rRtx.parameters.apt,rCodecs);return lCodec&&rCodec&&lCodec.name.toLowerCase()===rCodec.name.toLowerCase()};return localCapabilities.codecs.forEach(function(lCodec){for(var i=0;i<remoteCapabilities.codecs.length;i++){var rCodec=remoteCapabilities.codecs[i];if(lCodec.name.toLowerCase()===rCodec.name.toLowerCase()&&lCodec.clockRate===rCodec.clockRate){if("rtx"===lCodec.name.toLowerCase()&&lCodec.parameters&&rCodec.parameters.apt&&!rtxCapabilityMatches(lCodec,rCodec,localCapabilities.codecs,remoteCapabilities.codecs))continue;rCodec=JSON.parse(JSON.stringify(rCodec)),rCodec.numChannels=Math.min(lCodec.numChannels,rCodec.numChannels),commonCapabilities.codecs.push(rCodec),rCodec.rtcpFeedback=rCodec.rtcpFeedback.filter(function(fb){for(var j=0;j<lCodec.rtcpFeedback.length;j++)if(lCodec.rtcpFeedback[j].type===fb.type&&lCodec.rtcpFeedback[j].parameter===fb.parameter)return!0;return!1});break}}}),localCapabilities.headerExtensions.forEach(function(lHeaderExtension){for(var i=0;i<remoteCapabilities.headerExtensions.length;i++){var rHeaderExtension=remoteCapabilities.headerExtensions[i];if(lHeaderExtension.uri===rHeaderExtension.uri){commonCapabilities.headerExtensions.push(rHeaderExtension);break}}}),commonCapabilities}function isActionAllowedInSignalingState(action,type,signalingState){return-1!=={offer:{setLocalDescription:["stable","have-local-offer"],setRemoteDescription:["stable","have-remote-offer"]},answer:{setLocalDescription:["have-remote-offer","have-local-pranswer"],setRemoteDescription:["have-local-offer","have-remote-pranswer"]}}[type][action].indexOf(signalingState)}function maybeAddCandidate(iceTransport,candidate){var alreadyAdded=iceTransport.getRemoteCandidates().find(function(remoteCandidate){return candidate.foundation===remoteCandidate.foundation&&candidate.ip===remoteCandidate.ip&&candidate.port===remoteCandidate.port&&candidate.priority===remoteCandidate.priority&&candidate.protocol===remoteCandidate.protocol&&candidate.type===remoteCandidate.type});return alreadyAdded||iceTransport.addRemoteCandidate(candidate),!alreadyAdded}function makeError(name,description){var e=new Error(description);return e.name=name,e.code={NotSupportedError:9,InvalidStateError:11,InvalidAccessError:15,TypeError:void 0,OperationError:void 0}[name],e}var SDPUtils=requirecopy("sdp");module.exports=function(window,edgeVersion){function addTrackToStreamAndFireEvent(track,stream){stream.addTrack(track),stream.dispatchEvent(new window.MediaStreamTrackEvent("addtrack",{track:track}))}function removeTrackFromStreamAndFireEvent(track,stream){stream.removeTrack(track),stream.dispatchEvent(new window.MediaStreamTrackEvent("removetrack",{track:track}))}function fireAddTrack(pc,track,receiver,streams){var trackEvent=new Event("track");trackEvent.track=track,trackEvent.receiver=receiver,trackEvent.transceiver={receiver:receiver},trackEvent.streams=streams,window.setTimeout(function(){pc._dispatchEvent("track",trackEvent)})}var RTCPeerConnection=function(config){var pc=this,_eventTarget=document.createDocumentFragment();if(["addEventListener","removeEventListener","dispatchEvent"].forEach(function(method){pc[method]=_eventTarget[method].bind(_eventTarget)}),this.canTrickleIceCandidates=null,this.needNegotiation=!1,this.localStreams=[],this.remoteStreams=[],this._localDescription=null,this._remoteDescription=null,this.signalingState="stable",this.iceConnectionState="new",this.connectionState="new",this.iceGatheringState="new",config=JSON.parse(JSON.stringify(config||{})),this.usingBundle="max-bundle"===config.bundlePolicy,"negotiate"===config.rtcpMuxPolicy)throw makeError("NotSupportedError","rtcpMuxPolicy 'negotiate' is not supported");switch(config.rtcpMuxPolicy||(config.rtcpMuxPolicy="require"),config.iceTransportPolicy){case"all":case"relay":break;default:config.iceTransportPolicy="all"}switch(config.bundlePolicy){case"balanced":case"max-compat":case"max-bundle":break;default:config.bundlePolicy="balanced"}if(config.iceServers=filterIceServers(config.iceServers||[],edgeVersion),this._iceGatherers=[],config.iceCandidatePoolSize)for(var i=config.iceCandidatePoolSize;i>0;i--)this._iceGatherers.push(new window.RTCIceGatherer({iceServers:config.iceServers,gatherPolicy:config.iceTransportPolicy}));else config.iceCandidatePoolSize=0;this._config=config,this.transceivers=[],this._sdpSessionId=SDPUtils.generateSessionId(),this._sdpSessionVersion=0,this._dtlsRole=void 0,this._isClosed=!1};Object.defineProperty(RTCPeerConnection.prototype,"localDescription",{configurable:!0,get:function(){return this._localDescription}}),Object.defineProperty(RTCPeerConnection.prototype,"remoteDescription",{configurable:!0,get:function(){return this._remoteDescription}}),RTCPeerConnection.prototype.onicecandidate=null,RTCPeerConnection.prototype.onaddstream=null,RTCPeerConnection.prototype.ontrack=null,RTCPeerConnection.prototype.onremovestream=null,RTCPeerConnection.prototype.onsignalingstatechange=null,RTCPeerConnection.prototype.oniceconnectionstatechange=null,RTCPeerConnection.prototype.onconnectionstatechange=null,RTCPeerConnection.prototype.onicegatheringstatechange=null,RTCPeerConnection.prototype.onnegotiationneeded=null,RTCPeerConnection.prototype.ondatachannel=null,RTCPeerConnection.prototype._dispatchEvent=function(name,event){this._isClosed||(this.dispatchEvent(event),"function"==typeof this["on"+name]&&this["on"+name](event))},RTCPeerConnection.prototype._emitGatheringStateChange=function(){var event=new Event("icegatheringstatechange");this._dispatchEvent("icegatheringstatechange",event)},RTCPeerConnection.prototype.getConfiguration=function(){return this._config},RTCPeerConnection.prototype.getLocalStreams=function(){return this.localStreams},RTCPeerConnection.prototype.getRemoteStreams=function(){return this.remoteStreams},RTCPeerConnection.prototype._createTransceiver=function(kind,doNotAdd){var hasBundleTransport=this.transceivers.length>0,transceiver={track:null,iceGatherer:null,iceTransport:null,dtlsTransport:null,localCapabilities:null,remoteCapabilities:null,rtpSender:null,rtpReceiver:null,kind:kind,mid:null,sendEncodingParameters:null,recvEncodingParameters:null,stream:null,associatedRemoteMediaStreams:[],wantReceive:!0};if(this.usingBundle&&hasBundleTransport)transceiver.iceTransport=this.transceivers[0].iceTransport,transceiver.dtlsTransport=this.transceivers[0].dtlsTransport;else{var transports=this._createIceAndDtlsTransports();transceiver.iceTransport=transports.iceTransport,transceiver.dtlsTransport=transports.dtlsTransport}return doNotAdd||this.transceivers.push(transceiver),transceiver},RTCPeerConnection.prototype.addTrack=function(track,stream){if(this._isClosed)throw makeError("InvalidStateError","Attempted to call addTrack on a closed peerconnection.");if(this.transceivers.find(function(s){return s.track===track}))throw makeError("InvalidAccessError","Track already exists.");for(var transceiver,i=0;i<this.transceivers.length;i++)this.transceivers[i].track||this.transceivers[i].kind!==track.kind||(transceiver=this.transceivers[i]);return transceiver||(transceiver=this._createTransceiver(track.kind)),this._maybeFireNegotiationNeeded(),-1===this.localStreams.indexOf(stream)&&this.localStreams.push(stream),transceiver.track=track,transceiver.stream=stream,transceiver.rtpSender=new window.RTCRtpSender(track,transceiver.dtlsTransport),transceiver.rtpSender},RTCPeerConnection.prototype.addStream=function(stream){var pc=this;if(edgeVersion>=15025)stream.getTracks().forEach(function(track){pc.addTrack(track,stream)});else{var clonedStream=stream.clone();stream.getTracks().forEach(function(track,idx){var clonedTrack=clonedStream.getTracks()[idx];track.addEventListener("enabled",function(event){clonedTrack.enabled=event.enabled})}),clonedStream.getTracks().forEach(function(track){pc.addTrack(track,clonedStream)})}},RTCPeerConnection.prototype.removeTrack=function(sender){if(this._isClosed)throw makeError("InvalidStateError","Attempted to call removeTrack on a closed peerconnection.");if(!(sender instanceof window.RTCRtpSender))throw new TypeError("Argument 1 of RTCPeerConnection.removeTrack does not implement interface RTCRtpSender.");var transceiver=this.transceivers.find(function(t){return t.rtpSender===sender});if(!transceiver)throw makeError("InvalidAccessError","Sender was not created by this connection.");var stream=transceiver.stream;transceiver.rtpSender.stop(),transceiver.rtpSender=null,transceiver.track=null,transceiver.stream=null,-1===this.transceivers.map(function(t){return t.stream}).indexOf(stream)&&this.localStreams.indexOf(stream)>-1&&this.localStreams.splice(this.localStreams.indexOf(stream),1),this._maybeFireNegotiationNeeded()},RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;stream.getTracks().forEach(function(track){var sender=pc.getSenders().find(function(s){return s.track===track});sender&&pc.removeTrack(sender)})},RTCPeerConnection.prototype.getSenders=function(){return this.transceivers.filter(function(transceiver){return!!transceiver.rtpSender}).map(function(transceiver){return transceiver.rtpSender})},RTCPeerConnection.prototype.getReceivers=function(){return this.transceivers.filter(function(transceiver){return!!transceiver.rtpReceiver}).map(function(transceiver){return transceiver.rtpReceiver})},RTCPeerConnection.prototype._createIceGatherer=function(sdpMLineIndex,usingBundle){var pc=this;if(usingBundle&&sdpMLineIndex>0)return this.transceivers[0].iceGatherer;if(this._iceGatherers.length)return this._iceGatherers.shift();var iceGatherer=new window.RTCIceGatherer({iceServers:this._config.iceServers,gatherPolicy:this._config.iceTransportPolicy});return Object.defineProperty(iceGatherer,"state",{value:"new",writable:!0}),this.transceivers[sdpMLineIndex].bufferedCandidateEvents=[],this.transceivers[sdpMLineIndex].bufferCandidates=function(event){var end=!event.candidate||0===Object.keys(event.candidate).length;iceGatherer.state=end?"completed":"gathering",null!==pc.transceivers[sdpMLineIndex].bufferedCandidateEvents&&pc.transceivers[sdpMLineIndex].bufferedCandidateEvents.push(event)},iceGatherer.addEventListener("localcandidate",this.transceivers[sdpMLineIndex].bufferCandidates),iceGatherer},RTCPeerConnection.prototype._gather=function(mid,sdpMLineIndex){var pc=this,iceGatherer=this.transceivers[sdpMLineIndex].iceGatherer;if(!iceGatherer.onlocalcandidate){var bufferedCandidateEvents=this.transceivers[sdpMLineIndex].bufferedCandidateEvents;this.transceivers[sdpMLineIndex].bufferedCandidateEvents=null,iceGatherer.removeEventListener("localcandidate",this.transceivers[sdpMLineIndex].bufferCandidates),iceGatherer.onlocalcandidate=function(evt){if(!(pc.usingBundle&&sdpMLineIndex>0)){var event=new Event("icecandidate");event.candidate={sdpMid:mid,sdpMLineIndex:sdpMLineIndex};var cand=evt.candidate,end=!cand||0===Object.keys(cand).length;if(end)"new"!==iceGatherer.state&&"gathering"!==iceGatherer.state||(iceGatherer.state="completed");else{"new"===iceGatherer.state&&(iceGatherer.state="gathering"),cand.component=1,cand.ufrag=iceGatherer.getLocalParameters().usernameFragment;var serializedCandidate=SDPUtils.writeCandidate(cand);event.candidate=Object.assign(event.candidate,SDPUtils.parseCandidate(serializedCandidate)),event.candidate.candidate=serializedCandidate,event.candidate.toJSON=function(){return{candidate:event.candidate.candidate,sdpMid:event.candidate.sdpMid,sdpMLineIndex:event.candidate.sdpMLineIndex,usernameFragment:event.candidate.usernameFragment}}}var sections=SDPUtils.getMediaSections(pc._localDescription.sdp);sections[event.candidate.sdpMLineIndex]+=end?"a=end-of-candidates\r\n":"a="+event.candidate.candidate+"\r\n",pc._localDescription.sdp=SDPUtils.getDescription(pc._localDescription.sdp)+sections.join("");var complete=pc.transceivers.every(function(transceiver){return transceiver.iceGatherer&&"completed"===transceiver.iceGatherer.state});"gathering"!==pc.iceGatheringState&&(pc.iceGatheringState="gathering",pc._emitGatheringStateChange()),end||pc._dispatchEvent("icecandidate",event),complete&&(pc._dispatchEvent("icecandidate",new Event("icecandidate")),pc.iceGatheringState="complete",pc._emitGatheringStateChange())}},window.setTimeout(function(){bufferedCandidateEvents.forEach(function(e){iceGatherer.onlocalcandidate(e)})},0)}},RTCPeerConnection.prototype._createIceAndDtlsTransports=function(){var pc=this,iceTransport=new window.RTCIceTransport(null);iceTransport.onicestatechange=function(){pc._updateIceConnectionState(),pc._updateConnectionState()};var dtlsTransport=new window.RTCDtlsTransport(iceTransport);return dtlsTransport.ondtlsstatechange=function(){pc._updateConnectionState()},dtlsTransport.onerror=function(){Object.defineProperty(dtlsTransport,"state",{value:"failed",writable:!0}),pc._updateConnectionState()},{iceTransport:iceTransport,dtlsTransport:dtlsTransport}},RTCPeerConnection.prototype._disposeIceAndDtlsTransports=function(sdpMLineIndex){var iceGatherer=this.transceivers[sdpMLineIndex].iceGatherer;iceGatherer&&(delete iceGatherer.onlocalcandidate,delete this.transceivers[sdpMLineIndex].iceGatherer);var iceTransport=this.transceivers[sdpMLineIndex].iceTransport;iceTransport&&(delete iceTransport.onicestatechange,delete this.transceivers[sdpMLineIndex].iceTransport);var dtlsTransport=this.transceivers[sdpMLineIndex].dtlsTransport;dtlsTransport&&(delete dtlsTransport.ondtlsstatechange,delete dtlsTransport.onerror,delete this.transceivers[sdpMLineIndex].dtlsTransport)},RTCPeerConnection.prototype._transceive=function(transceiver,send,recv){var params=getCommonCapabilities(transceiver.localCapabilities,transceiver.remoteCapabilities);send&&transceiver.rtpSender&&(params.encodings=transceiver.sendEncodingParameters,params.rtcp={cname:SDPUtils.localCName,compound:transceiver.rtcpParameters.compound},transceiver.recvEncodingParameters.length&&(params.rtcp.ssrc=transceiver.recvEncodingParameters[0].ssrc),transceiver.rtpSender.send(params)),recv&&transceiver.rtpReceiver&&params.codecs.length>0&&("video"===transceiver.kind&&transceiver.recvEncodingParameters&&edgeVersion<15019&&transceiver.recvEncodingParameters.forEach(function(p){delete p.rtx}),transceiver.recvEncodingParameters.length?params.encodings=transceiver.recvEncodingParameters:params.encodings=[{}],params.rtcp={compound:transceiver.rtcpParameters.compound},transceiver.rtcpParameters.cname&&(params.rtcp.cname=transceiver.rtcpParameters.cname),transceiver.sendEncodingParameters.length&&(params.rtcp.ssrc=transceiver.sendEncodingParameters[0].ssrc),transceiver.rtpReceiver.receive(params))},RTCPeerConnection.prototype.setLocalDescription=function(description){var pc=this;if(-1===["offer","answer"].indexOf(description.type))return Promise.reject(makeError("TypeError",'Unsupported type "'+description.type+'"'));if(!isActionAllowedInSignalingState("setLocalDescription",description.type,pc.signalingState)||pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not set local "+description.type+" in state "+pc.signalingState));var sections,sessionpart;if("offer"===description.type)sections=SDPUtils.splitSections(description.sdp),sessionpart=sections.shift(),sections.forEach(function(mediaSection,sdpMLineIndex){var caps=SDPUtils.parseRtpParameters(mediaSection);pc.transceivers[sdpMLineIndex].localCapabilities=caps}),pc.transceivers.forEach(function(transceiver,sdpMLineIndex){pc._gather(transceiver.mid,sdpMLineIndex)});else if("answer"===description.type){sections=SDPUtils.splitSections(pc._remoteDescription.sdp),sessionpart=sections.shift();var isIceLite=SDPUtils.matchPrefix(sessionpart,"a=ice-lite").length>0;sections.forEach(function(mediaSection,sdpMLineIndex){var transceiver=pc.transceivers[sdpMLineIndex],iceGatherer=transceiver.iceGatherer,iceTransport=transceiver.iceTransport,dtlsTransport=transceiver.dtlsTransport,localCapabilities=transceiver.localCapabilities,remoteCapabilities=transceiver.remoteCapabilities;if(!(SDPUtils.isRejected(mediaSection)&&0===SDPUtils.matchPrefix(mediaSection,"a=bundle-only").length||transceiver.rejected)){var remoteIceParameters=SDPUtils.getIceParameters(mediaSection,sessionpart),remoteDtlsParameters=SDPUtils.getDtlsParameters(mediaSection,sessionpart);isIceLite&&(remoteDtlsParameters.role="server"),pc.usingBundle&&0!==sdpMLineIndex||(pc._gather(transceiver.mid,sdpMLineIndex),"new"===iceTransport.state&&iceTransport.start(iceGatherer,remoteIceParameters,isIceLite?"controlling":"controlled"),"new"===dtlsTransport.state&&dtlsTransport.start(remoteDtlsParameters));var params=getCommonCapabilities(localCapabilities,remoteCapabilities);pc._transceive(transceiver,params.codecs.length>0,!1)}})}return pc._localDescription={type:description.type,sdp:description.sdp},"offer"===description.type?pc._updateSignalingState("have-local-offer"):pc._updateSignalingState("stable"),Promise.resolve()},RTCPeerConnection.prototype.setRemoteDescription=function(description){var pc=this;if(-1===["offer","answer"].indexOf(description.type))return Promise.reject(makeError("TypeError",'Unsupported type "'+description.type+'"'));if(!isActionAllowedInSignalingState("setRemoteDescription",description.type,pc.signalingState)||pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not set remote "+description.type+" in state "+pc.signalingState));var streams={};pc.remoteStreams.forEach(function(stream){
-streams[stream.id]=stream});var receiverList=[],sections=SDPUtils.splitSections(description.sdp),sessionpart=sections.shift(),isIceLite=SDPUtils.matchPrefix(sessionpart,"a=ice-lite").length>0,usingBundle=SDPUtils.matchPrefix(sessionpart,"a=group:BUNDLE ").length>0;pc.usingBundle=usingBundle;var iceOptions=SDPUtils.matchPrefix(sessionpart,"a=ice-options:")[0];return pc.canTrickleIceCandidates=!!iceOptions&&iceOptions.substr(14).split(" ").indexOf("trickle")>=0,sections.forEach(function(mediaSection,sdpMLineIndex){var lines=SDPUtils.splitLines(mediaSection),kind=SDPUtils.getKind(mediaSection),rejected=SDPUtils.isRejected(mediaSection)&&0===SDPUtils.matchPrefix(mediaSection,"a=bundle-only").length,protocol=lines[0].substr(2).split(" ")[2],direction=SDPUtils.getDirection(mediaSection,sessionpart),remoteMsid=SDPUtils.parseMsid(mediaSection),mid=SDPUtils.getMid(mediaSection)||SDPUtils.generateIdentifier();if(rejected||"application"===kind&&("DTLS/SCTP"===protocol||"UDP/DTLS/SCTP"===protocol))return void(pc.transceivers[sdpMLineIndex]={mid:mid,kind:kind,protocol:protocol,rejected:!0});!rejected&&pc.transceivers[sdpMLineIndex]&&pc.transceivers[sdpMLineIndex].rejected&&(pc.transceivers[sdpMLineIndex]=pc._createTransceiver(kind,!0));var transceiver,iceGatherer,iceTransport,dtlsTransport,rtpReceiver,sendEncodingParameters,recvEncodingParameters,localCapabilities,track,remoteIceParameters,remoteDtlsParameters,remoteCapabilities=SDPUtils.parseRtpParameters(mediaSection);rejected||(remoteIceParameters=SDPUtils.getIceParameters(mediaSection,sessionpart),remoteDtlsParameters=SDPUtils.getDtlsParameters(mediaSection,sessionpart),remoteDtlsParameters.role="client"),recvEncodingParameters=SDPUtils.parseRtpEncodingParameters(mediaSection);var rtcpParameters=SDPUtils.parseRtcpParameters(mediaSection),isComplete=SDPUtils.matchPrefix(mediaSection,"a=end-of-candidates",sessionpart).length>0,cands=SDPUtils.matchPrefix(mediaSection,"a=candidate:").map(function(cand){return SDPUtils.parseCandidate(cand)}).filter(function(cand){return 1===cand.component});if(("offer"===description.type||"answer"===description.type)&&!rejected&&usingBundle&&sdpMLineIndex>0&&pc.transceivers[sdpMLineIndex]&&(pc._disposeIceAndDtlsTransports(sdpMLineIndex),pc.transceivers[sdpMLineIndex].iceGatherer=pc.transceivers[0].iceGatherer,pc.transceivers[sdpMLineIndex].iceTransport=pc.transceivers[0].iceTransport,pc.transceivers[sdpMLineIndex].dtlsTransport=pc.transceivers[0].dtlsTransport,pc.transceivers[sdpMLineIndex].rtpSender&&pc.transceivers[sdpMLineIndex].rtpSender.setTransport(pc.transceivers[0].dtlsTransport),pc.transceivers[sdpMLineIndex].rtpReceiver&&pc.transceivers[sdpMLineIndex].rtpReceiver.setTransport(pc.transceivers[0].dtlsTransport)),"offer"!==description.type||rejected)"answer"!==description.type||rejected||(transceiver=pc.transceivers[sdpMLineIndex],iceGatherer=transceiver.iceGatherer,iceTransport=transceiver.iceTransport,dtlsTransport=transceiver.dtlsTransport,rtpReceiver=transceiver.rtpReceiver,sendEncodingParameters=transceiver.sendEncodingParameters,localCapabilities=transceiver.localCapabilities,pc.transceivers[sdpMLineIndex].recvEncodingParameters=recvEncodingParameters,pc.transceivers[sdpMLineIndex].remoteCapabilities=remoteCapabilities,pc.transceivers[sdpMLineIndex].rtcpParameters=rtcpParameters,cands.length&&"new"===iceTransport.state&&(!isIceLite&&!isComplete||usingBundle&&0!==sdpMLineIndex?cands.forEach(function(candidate){maybeAddCandidate(transceiver.iceTransport,candidate)}):iceTransport.setRemoteCandidates(cands)),usingBundle&&0!==sdpMLineIndex||("new"===iceTransport.state&&iceTransport.start(iceGatherer,remoteIceParameters,"controlling"),"new"===dtlsTransport.state&&dtlsTransport.start(remoteDtlsParameters)),pc._transceive(transceiver,"sendrecv"===direction||"recvonly"===direction,"sendrecv"===direction||"sendonly"===direction),!rtpReceiver||"sendrecv"!==direction&&"sendonly"!==direction?delete transceiver.rtpReceiver:(track=rtpReceiver.track,remoteMsid?(streams[remoteMsid.stream]||(streams[remoteMsid.stream]=new window.MediaStream),addTrackToStreamAndFireEvent(track,streams[remoteMsid.stream]),receiverList.push([track,rtpReceiver,streams[remoteMsid.stream]])):(streams.default||(streams.default=new window.MediaStream),addTrackToStreamAndFireEvent(track,streams.default),receiverList.push([track,rtpReceiver,streams.default]))));else{transceiver=pc.transceivers[sdpMLineIndex]||pc._createTransceiver(kind),transceiver.mid=mid,transceiver.iceGatherer||(transceiver.iceGatherer=pc._createIceGatherer(sdpMLineIndex,usingBundle)),cands.length&&"new"===transceiver.iceTransport.state&&(!isComplete||usingBundle&&0!==sdpMLineIndex?cands.forEach(function(candidate){maybeAddCandidate(transceiver.iceTransport,candidate)}):transceiver.iceTransport.setRemoteCandidates(cands)),localCapabilities=window.RTCRtpReceiver.getCapabilities(kind),edgeVersion<15019&&(localCapabilities.codecs=localCapabilities.codecs.filter(function(codec){return"rtx"!==codec.name})),sendEncodingParameters=transceiver.sendEncodingParameters||[{ssrc:1001*(2*sdpMLineIndex+2)}];var isNewTrack=!1;if("sendrecv"===direction||"sendonly"===direction){if(isNewTrack=!transceiver.rtpReceiver,rtpReceiver=transceiver.rtpReceiver||new window.RTCRtpReceiver(transceiver.dtlsTransport,kind),isNewTrack){var stream;track=rtpReceiver.track,remoteMsid&&"-"===remoteMsid.stream||(remoteMsid?(streams[remoteMsid.stream]||(streams[remoteMsid.stream]=new window.MediaStream,Object.defineProperty(streams[remoteMsid.stream],"id",{get:function(){return remoteMsid.stream}})),Object.defineProperty(track,"id",{get:function(){return remoteMsid.track}}),stream=streams[remoteMsid.stream]):(streams.default||(streams.default=new window.MediaStream),stream=streams.default)),stream&&(addTrackToStreamAndFireEvent(track,stream),transceiver.associatedRemoteMediaStreams.push(stream)),receiverList.push([track,rtpReceiver,stream])}}else transceiver.rtpReceiver&&transceiver.rtpReceiver.track&&(transceiver.associatedRemoteMediaStreams.forEach(function(s){var nativeTrack=s.getTracks().find(function(t){return t.id===transceiver.rtpReceiver.track.id});nativeTrack&&removeTrackFromStreamAndFireEvent(nativeTrack,s)}),transceiver.associatedRemoteMediaStreams=[]);transceiver.localCapabilities=localCapabilities,transceiver.remoteCapabilities=remoteCapabilities,transceiver.rtpReceiver=rtpReceiver,transceiver.rtcpParameters=rtcpParameters,transceiver.sendEncodingParameters=sendEncodingParameters,transceiver.recvEncodingParameters=recvEncodingParameters,pc._transceive(pc.transceivers[sdpMLineIndex],!1,isNewTrack)}}),void 0===pc._dtlsRole&&(pc._dtlsRole="offer"===description.type?"active":"passive"),pc._remoteDescription={type:description.type,sdp:description.sdp},"offer"===description.type?pc._updateSignalingState("have-remote-offer"):pc._updateSignalingState("stable"),Object.keys(streams).forEach(function(sid){var stream=streams[sid];if(stream.getTracks().length){if(-1===pc.remoteStreams.indexOf(stream)){pc.remoteStreams.push(stream);var event=new Event("addstream");event.stream=stream,window.setTimeout(function(){pc._dispatchEvent("addstream",event)})}receiverList.forEach(function(item){var track=item[0],receiver=item[1];stream.id===item[2].id&&fireAddTrack(pc,track,receiver,[stream])})}}),receiverList.forEach(function(item){item[2]||fireAddTrack(pc,item[0],item[1],[])}),window.setTimeout(function(){pc&&pc.transceivers&&pc.transceivers.forEach(function(transceiver){transceiver.iceTransport&&"new"===transceiver.iceTransport.state&&transceiver.iceTransport.getRemoteCandidates().length>0&&transceiver.iceTransport.addRemoteCandidate({})})},4e3),Promise.resolve()},RTCPeerConnection.prototype.close=function(){this.transceivers.forEach(function(transceiver){transceiver.iceTransport&&transceiver.iceTransport.stop(),transceiver.dtlsTransport&&transceiver.dtlsTransport.stop(),transceiver.rtpSender&&transceiver.rtpSender.stop(),transceiver.rtpReceiver&&transceiver.rtpReceiver.stop()}),this._isClosed=!0,this._updateSignalingState("closed")},RTCPeerConnection.prototype._updateSignalingState=function(newState){this.signalingState=newState;var event=new Event("signalingstatechange");this._dispatchEvent("signalingstatechange",event)},RTCPeerConnection.prototype._maybeFireNegotiationNeeded=function(){var pc=this;"stable"===this.signalingState&&!0!==this.needNegotiation&&(this.needNegotiation=!0,window.setTimeout(function(){if(pc.needNegotiation){pc.needNegotiation=!1;var event=new Event("negotiationneeded");pc._dispatchEvent("negotiationneeded",event)}},0))},RTCPeerConnection.prototype._updateIceConnectionState=function(){var newState,states={new:0,closed:0,checking:0,connected:0,completed:0,disconnected:0,failed:0};if(this.transceivers.forEach(function(transceiver){states[transceiver.iceTransport.state]++}),newState="new",states.failed>0?newState="failed":states.checking>0?newState="checking":states.disconnected>0?newState="disconnected":states.new>0?newState="new":states.connected>0?newState="connected":states.completed>0&&(newState="completed"),newState!==this.iceConnectionState){this.iceConnectionState=newState;var event=new Event("iceconnectionstatechange");this._dispatchEvent("iceconnectionstatechange",event)}},RTCPeerConnection.prototype._updateConnectionState=function(){var newState,states={new:0,closed:0,connecting:0,connected:0,completed:0,disconnected:0,failed:0};if(this.transceivers.forEach(function(transceiver){states[transceiver.iceTransport.state]++,states[transceiver.dtlsTransport.state]++}),states.connected+=states.completed,newState="new",states.failed>0?newState="failed":states.connecting>0?newState="connecting":states.disconnected>0?newState="disconnected":states.new>0?newState="new":states.connected>0&&(newState="connected"),newState!==this.connectionState){this.connectionState=newState;var event=new Event("connectionstatechange");this._dispatchEvent("connectionstatechange",event)}},RTCPeerConnection.prototype.createOffer=function(){var pc=this;if(pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not call createOffer after close"));var numAudioTracks=pc.transceivers.filter(function(t){return"audio"===t.kind}).length,numVideoTracks=pc.transceivers.filter(function(t){return"video"===t.kind}).length,offerOptions=arguments[0];if(offerOptions){if(offerOptions.mandatory||offerOptions.optional)throw new TypeError("Legacy mandatory/optional constraints not supported.");void 0!==offerOptions.offerToReceiveAudio&&(numAudioTracks=!0===offerOptions.offerToReceiveAudio?1:!1===offerOptions.offerToReceiveAudio?0:offerOptions.offerToReceiveAudio),void 0!==offerOptions.offerToReceiveVideo&&(numVideoTracks=!0===offerOptions.offerToReceiveVideo?1:!1===offerOptions.offerToReceiveVideo?0:offerOptions.offerToReceiveVideo)}for(pc.transceivers.forEach(function(transceiver){"audio"===transceiver.kind?--numAudioTracks<0&&(transceiver.wantReceive=!1):"video"===transceiver.kind&&--numVideoTracks<0&&(transceiver.wantReceive=!1)});numAudioTracks>0||numVideoTracks>0;)numAudioTracks>0&&(pc._createTransceiver("audio"),numAudioTracks--),numVideoTracks>0&&(pc._createTransceiver("video"),numVideoTracks--);var sdp=SDPUtils.writeSessionBoilerplate(pc._sdpSessionId,pc._sdpSessionVersion++);pc.transceivers.forEach(function(transceiver,sdpMLineIndex){var track=transceiver.track,kind=transceiver.kind,mid=transceiver.mid||SDPUtils.generateIdentifier();transceiver.mid=mid,transceiver.iceGatherer||(transceiver.iceGatherer=pc._createIceGatherer(sdpMLineIndex,pc.usingBundle));var localCapabilities=window.RTCRtpSender.getCapabilities(kind);edgeVersion<15019&&(localCapabilities.codecs=localCapabilities.codecs.filter(function(codec){return"rtx"!==codec.name})),localCapabilities.codecs.forEach(function(codec){"H264"===codec.name&&void 0===codec.parameters["level-asymmetry-allowed"]&&(codec.parameters["level-asymmetry-allowed"]="1"),transceiver.remoteCapabilities&&transceiver.remoteCapabilities.codecs&&transceiver.remoteCapabilities.codecs.forEach(function(remoteCodec){codec.name.toLowerCase()===remoteCodec.name.toLowerCase()&&codec.clockRate===remoteCodec.clockRate&&(codec.preferredPayloadType=remoteCodec.payloadType)})}),localCapabilities.headerExtensions.forEach(function(hdrExt){(transceiver.remoteCapabilities&&transceiver.remoteCapabilities.headerExtensions||[]).forEach(function(rHdrExt){hdrExt.uri===rHdrExt.uri&&(hdrExt.id=rHdrExt.id)})});var sendEncodingParameters=transceiver.sendEncodingParameters||[{ssrc:1001*(2*sdpMLineIndex+1)}];track&&edgeVersion>=15019&&"video"===kind&&!sendEncodingParameters[0].rtx&&(sendEncodingParameters[0].rtx={ssrc:sendEncodingParameters[0].ssrc+1}),transceiver.wantReceive&&(transceiver.rtpReceiver=new window.RTCRtpReceiver(transceiver.dtlsTransport,kind)),transceiver.localCapabilities=localCapabilities,transceiver.sendEncodingParameters=sendEncodingParameters}),"max-compat"!==pc._config.bundlePolicy&&(sdp+="a=group:BUNDLE "+pc.transceivers.map(function(t){return t.mid}).join(" ")+"\r\n"),sdp+="a=ice-options:trickle\r\n",pc.transceivers.forEach(function(transceiver,sdpMLineIndex){sdp+=writeMediaSection(transceiver,transceiver.localCapabilities,"offer",transceiver.stream,pc._dtlsRole),sdp+="a=rtcp-rsize\r\n",!transceiver.iceGatherer||"new"===pc.iceGatheringState||0!==sdpMLineIndex&&pc.usingBundle||(transceiver.iceGatherer.getLocalCandidates().forEach(function(cand){cand.component=1,sdp+="a="+SDPUtils.writeCandidate(cand)+"\r\n"}),"completed"===transceiver.iceGatherer.state&&(sdp+="a=end-of-candidates\r\n"))});var desc=new window.RTCSessionDescription({type:"offer",sdp:sdp});return Promise.resolve(desc)},RTCPeerConnection.prototype.createAnswer=function(){var pc=this;if(pc._isClosed)return Promise.reject(makeError("InvalidStateError","Can not call createAnswer after close"));if("have-remote-offer"!==pc.signalingState&&"have-local-pranswer"!==pc.signalingState)return Promise.reject(makeError("InvalidStateError","Can not call createAnswer in signalingState "+pc.signalingState));var sdp=SDPUtils.writeSessionBoilerplate(pc._sdpSessionId,pc._sdpSessionVersion++);pc.usingBundle&&(sdp+="a=group:BUNDLE "+pc.transceivers.map(function(t){return t.mid}).join(" ")+"\r\n");var mediaSectionsInOffer=SDPUtils.getMediaSections(pc._remoteDescription.sdp).length;pc.transceivers.forEach(function(transceiver,sdpMLineIndex){if(!(sdpMLineIndex+1>mediaSectionsInOffer)){if(transceiver.rejected)return"application"===transceiver.kind?"DTLS/SCTP"===transceiver.protocol?sdp+="m=application 0 DTLS/SCTP 5000\r\n":sdp+="m=application 0 "+transceiver.protocol+" webrtc-datachannel\r\n":"audio"===transceiver.kind?sdp+="m=audio 0 UDP/TLS/RTP/SAVPF 0\r\na=rtpmap:0 PCMU/8000\r\n":"video"===transceiver.kind&&(sdp+="m=video 0 UDP/TLS/RTP/SAVPF 120\r\na=rtpmap:120 VP8/90000\r\n"),void(sdp+="c=IN IP4 0.0.0.0\r\na=inactive\r\na=mid:"+transceiver.mid+"\r\n");if(transceiver.stream){var localTrack;"audio"===transceiver.kind?localTrack=transceiver.stream.getAudioTracks()[0]:"video"===transceiver.kind&&(localTrack=transceiver.stream.getVideoTracks()[0]),localTrack&&edgeVersion>=15019&&"video"===transceiver.kind&&!transceiver.sendEncodingParameters[0].rtx&&(transceiver.sendEncodingParameters[0].rtx={ssrc:transceiver.sendEncodingParameters[0].ssrc+1})}var commonCapabilities=getCommonCapabilities(transceiver.localCapabilities,transceiver.remoteCapabilities);!commonCapabilities.codecs.filter(function(c){return"rtx"===c.name.toLowerCase()}).length&&transceiver.sendEncodingParameters[0].rtx&&delete transceiver.sendEncodingParameters[0].rtx,sdp+=writeMediaSection(transceiver,commonCapabilities,"answer",transceiver.stream,pc._dtlsRole),transceiver.rtcpParameters&&transceiver.rtcpParameters.reducedSize&&(sdp+="a=rtcp-rsize\r\n")}});var desc=new window.RTCSessionDescription({type:"answer",sdp:sdp});return Promise.resolve(desc)},RTCPeerConnection.prototype.addIceCandidate=function(candidate){var sections,pc=this;return candidate&&void 0===candidate.sdpMLineIndex&&!candidate.sdpMid?Promise.reject(new TypeError("sdpMLineIndex or sdpMid required")):new Promise(function(resolve,reject){if(!pc._remoteDescription)return reject(makeError("InvalidStateError","Can not add ICE candidate without a remote description"));if(candidate&&""!==candidate.candidate){var sdpMLineIndex=candidate.sdpMLineIndex;if(candidate.sdpMid)for(var i=0;i<pc.transceivers.length;i++)if(pc.transceivers[i].mid===candidate.sdpMid){sdpMLineIndex=i;break}var transceiver=pc.transceivers[sdpMLineIndex];if(!transceiver)return reject(makeError("OperationError","Can not add ICE candidate"));if(transceiver.rejected)return resolve();var cand=Object.keys(candidate.candidate).length>0?SDPUtils.parseCandidate(candidate.candidate):{};if("tcp"===cand.protocol&&(0===cand.port||9===cand.port))return resolve();if(cand.component&&1!==cand.component)return resolve();if((0===sdpMLineIndex||sdpMLineIndex>0&&transceiver.iceTransport!==pc.transceivers[0].iceTransport)&&!maybeAddCandidate(transceiver.iceTransport,cand))return reject(makeError("OperationError","Can not add ICE candidate"));var candidateString=candidate.candidate.trim();0===candidateString.indexOf("a=")&&(candidateString=candidateString.substr(2)),sections=SDPUtils.getMediaSections(pc._remoteDescription.sdp),sections[sdpMLineIndex]+="a="+(cand.type?candidateString:"end-of-candidates")+"\r\n",pc._remoteDescription.sdp=SDPUtils.getDescription(pc._remoteDescription.sdp)+sections.join("")}else for(var j=0;j<pc.transceivers.length&&(pc.transceivers[j].rejected||(pc.transceivers[j].iceTransport.addRemoteCandidate({}),sections=SDPUtils.getMediaSections(pc._remoteDescription.sdp),sections[j]+="a=end-of-candidates\r\n",pc._remoteDescription.sdp=SDPUtils.getDescription(pc._remoteDescription.sdp)+sections.join(""),!pc.usingBundle));j++);resolve()})},RTCPeerConnection.prototype.getStats=function(selector){if(selector&&selector instanceof window.MediaStreamTrack){var senderOrReceiver=null;if(this.transceivers.forEach(function(transceiver){transceiver.rtpSender&&transceiver.rtpSender.track===selector?senderOrReceiver=transceiver.rtpSender:transceiver.rtpReceiver&&transceiver.rtpReceiver.track===selector&&(senderOrReceiver=transceiver.rtpReceiver)}),!senderOrReceiver)throw makeError("InvalidAccessError","Invalid selector.");return senderOrReceiver.getStats()}var promises=[];return this.transceivers.forEach(function(transceiver){["rtpSender","rtpReceiver","iceGatherer","iceTransport","dtlsTransport"].forEach(function(method){transceiver[method]&&promises.push(transceiver[method].getStats())})}),Promise.all(promises).then(function(allStats){var results=new Map;return allStats.forEach(function(stats){stats.forEach(function(stat){results.set(stat.id,stat)})}),results})},["RTCRtpSender","RTCRtpReceiver","RTCIceGatherer","RTCIceTransport","RTCDtlsTransport"].forEach(function(ortcObjectName){var obj=window[ortcObjectName];if(obj&&obj.prototype&&obj.prototype.getStats){var nativeGetstats=obj.prototype.getStats;obj.prototype.getStats=function(){return nativeGetstats.apply(this).then(function(nativeStats){var mapStats=new Map;return Object.keys(nativeStats).forEach(function(id){nativeStats[id].type=fixStatsType(nativeStats[id]),mapStats.set(id,nativeStats[id])}),mapStats})}}});var methods=["createOffer","createAnswer"];return methods.forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[0]||"function"==typeof args[1]?nativeMethod.apply(this,[arguments[2]]).then(function(description){"function"==typeof args[0]&&args[0].apply(null,[description])},function(error){"function"==typeof args[1]&&args[1].apply(null,[error])}):nativeMethod.apply(this,arguments)}}),methods=["setLocalDescription","setRemoteDescription","addIceCandidate"],methods.forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[1]||"function"==typeof args[2]?nativeMethod.apply(this,arguments).then(function(){"function"==typeof args[1]&&args[1].apply(null)},function(error){"function"==typeof args[2]&&args[2].apply(null,[error])}):nativeMethod.apply(this,arguments)}}),["getStats"].forEach(function(method){var nativeMethod=RTCPeerConnection.prototype[method];RTCPeerConnection.prototype[method]=function(){var args=arguments;return"function"==typeof args[1]?nativeMethod.apply(this,arguments).then(function(){"function"==typeof args[1]&&args[1].apply(null)}):nativeMethod.apply(this,arguments)}}),RTCPeerConnection}},{sdp:2}],2:[function(requirecopy,module,exports){var SDPUtils={};SDPUtils.generateIdentifier=function(){return Math.random().toString(36).substr(2,10)},SDPUtils.localCName=SDPUtils.generateIdentifier(),SDPUtils.splitLines=function(blob){return blob.trim().split("\n").map(function(line){return line.trim()})},SDPUtils.splitSections=function(blob){return blob.split("\nm=").map(function(part,index){return(index>0?"m="+part:part).trim()+"\r\n"})},SDPUtils.getDescription=function(blob){var sections=SDPUtils.splitSections(blob);return sections&&sections[0]},SDPUtils.getMediaSections=function(blob){var sections=SDPUtils.splitSections(blob);return sections.shift(),sections},SDPUtils.matchPrefix=function(blob,prefix){return SDPUtils.splitLines(blob).filter(function(line){return 0===line.indexOf(prefix)})},SDPUtils.parseCandidate=function(line){var parts;parts=0===line.indexOf("a=candidate:")?line.substring(12).split(" "):line.substring(10).split(" ");for(var candidate={foundation:parts[0],component:parseInt(parts[1],10),protocol:parts[2].toLowerCase(),priority:parseInt(parts[3],10),ip:parts[4],port:parseInt(parts[5],10),type:parts[7]},i=8;i<parts.length;i+=2)switch(parts[i]){case"raddr":candidate.relatedAddress=parts[i+1];break;case"rport":candidate.relatedPort=parseInt(parts[i+1],10);break;case"tcptype":candidate.tcpType=parts[i+1];break;case"ufrag":candidate.ufrag=parts[i+1],candidate.usernameFragment=parts[i+1];break;default:candidate[parts[i]]=parts[i+1]}return candidate},SDPUtils.writeCandidate=function(candidate){var sdp=[];sdp.push(candidate.foundation),sdp.push(candidate.component),sdp.push(candidate.protocol.toUpperCase()),sdp.push(candidate.priority),sdp.push(candidate.ip),sdp.push(candidate.port);var type=candidate.type;return sdp.push("typ"),sdp.push(type),"host"!==type&&candidate.relatedAddress&&candidate.relatedPort&&(sdp.push("raddr"),sdp.push(candidate.relatedAddress),sdp.push("rport"),sdp.push(candidate.relatedPort)),candidate.tcpType&&"tcp"===candidate.protocol.toLowerCase()&&(sdp.push("tcptype"),sdp.push(candidate.tcpType)),(candidate.usernameFragment||candidate.ufrag)&&(sdp.push("ufrag"),sdp.push(candidate.usernameFragment||candidate.ufrag)),"candidate:"+sdp.join(" ")},SDPUtils.parseIceOptions=function(line){return line.substr(14).split(" ")},SDPUtils.parseRtpMap=function(line){var parts=line.substr(9).split(" "),parsed={payloadType:parseInt(parts.shift(),10)};return parts=parts[0].split("/"),parsed.name=parts[0],parsed.clockRate=parseInt(parts[1],10),parsed.channels=3===parts.length?parseInt(parts[2],10):1,parsed.numChannels=parsed.channels,parsed},SDPUtils.writeRtpMap=function(codec){var pt=codec.payloadType;void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType);var channels=codec.channels||codec.numChannels||1;return"a=rtpmap:"+pt+" "+codec.name+"/"+codec.clockRate+(1!==channels?"/"+channels:"")+"\r\n"},SDPUtils.parseExtmap=function(line){var parts=line.substr(9).split(" ");return{id:parseInt(parts[0],10),direction:parts[0].indexOf("/")>0?parts[0].split("/")[1]:"sendrecv",uri:parts[1]}},SDPUtils.writeExtmap=function(headerExtension){return"a=extmap:"+(headerExtension.id||headerExtension.preferredId)+(headerExtension.direction&&"sendrecv"!==headerExtension.direction?"/"+headerExtension.direction:"")+" "+headerExtension.uri+"\r\n"},SDPUtils.parseFmtp=function(line){for(var kv,parsed={},parts=line.substr(line.indexOf(" ")+1).split(";"),j=0;j<parts.length;j++)kv=parts[j].trim().split("="),parsed[kv[0].trim()]=kv[1];return parsed},SDPUtils.writeFmtp=function(codec){var line="",pt=codec.payloadType;if(void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType),codec.parameters&&Object.keys(codec.parameters).length){var params=[];Object.keys(codec.parameters).forEach(function(param){codec.parameters[param]?params.push(param+"="+codec.parameters[param]):params.push(param)}),line+="a=fmtp:"+pt+" "+params.join(";")+"\r\n"}return line},SDPUtils.parseRtcpFb=function(line){var parts=line.substr(line.indexOf(" ")+1).split(" ");return{type:parts.shift(),parameter:parts.join(" ")}},SDPUtils.writeRtcpFb=function(codec){var lines="",pt=codec.payloadType;return void 0!==codec.preferredPayloadType&&(pt=codec.preferredPayloadType),codec.rtcpFeedback&&codec.rtcpFeedback.length&&codec.rtcpFeedback.forEach(function(fb){lines+="a=rtcp-fb:"+pt+" "+fb.type+(fb.parameter&&fb.parameter.length?" "+fb.parameter:"")+"\r\n"}),lines},SDPUtils.parseSsrcMedia=function(line){var sp=line.indexOf(" "),parts={ssrc:parseInt(line.substr(7,sp-7),10)},colon=line.indexOf(":",sp);return colon>-1?(parts.attribute=line.substr(sp+1,colon-sp-1),parts.value=line.substr(colon+1)):parts.attribute=line.substr(sp+1),parts},SDPUtils.parseSsrcGroup=function(line){var parts=line.substr(13).split(" ");return{semantics:parts.shift(),ssrcs:parts.map(function(ssrc){return parseInt(ssrc,10)})}},SDPUtils.getMid=function(mediaSection){var mid=SDPUtils.matchPrefix(mediaSection,"a=mid:")[0];if(mid)return mid.substr(6)},SDPUtils.parseFingerprint=function(line){var parts=line.substr(14).split(" ");return{algorithm:parts[0].toLowerCase(),value:parts[1]}},SDPUtils.getDtlsParameters=function(mediaSection,sessionpart){return{role:"auto",fingerprints:SDPUtils.matchPrefix(mediaSection+sessionpart,"a=fingerprint:").map(SDPUtils.parseFingerprint)}},SDPUtils.writeDtlsParameters=function(params,setupType){var sdp="a=setup:"+setupType+"\r\n";return params.fingerprints.forEach(function(fp){sdp+="a=fingerprint:"+fp.algorithm+" "+fp.value+"\r\n"}),sdp},SDPUtils.getIceParameters=function(mediaSection,sessionpart){var lines=SDPUtils.splitLines(mediaSection);return lines=lines.concat(SDPUtils.splitLines(sessionpart)),{usernameFragment:lines.filter(function(line){return 0===line.indexOf("a=ice-ufrag:")})[0].substr(12),password:lines.filter(function(line){return 0===line.indexOf("a=ice-pwd:")})[0].substr(10)}},SDPUtils.writeIceParameters=function(params){return"a=ice-ufrag:"+params.usernameFragment+"\r\na=ice-pwd:"+params.password+"\r\n"},SDPUtils.parseRtpParameters=function(mediaSection){for(var description={codecs:[],headerExtensions:[],fecMechanisms:[],rtcp:[]},lines=SDPUtils.splitLines(mediaSection),mline=lines[0].split(" "),i=3;i<mline.length;i++){var pt=mline[i],rtpmapline=SDPUtils.matchPrefix(mediaSection,"a=rtpmap:"+pt+" ")[0];if(rtpmapline){var codec=SDPUtils.parseRtpMap(rtpmapline),fmtps=SDPUtils.matchPrefix(mediaSection,"a=fmtp:"+pt+" ");switch(codec.parameters=fmtps.length?SDPUtils.parseFmtp(fmtps[0]):{},codec.rtcpFeedback=SDPUtils.matchPrefix(mediaSection,"a=rtcp-fb:"+pt+" ").map(SDPUtils.parseRtcpFb),description.codecs.push(codec),codec.name.toUpperCase()){case"RED":case"ULPFEC":description.fecMechanisms.push(codec.name.toUpperCase())}}}return SDPUtils.matchPrefix(mediaSection,"a=extmap:").forEach(function(line){description.headerExtensions.push(SDPUtils.parseExtmap(line))}),description},SDPUtils.writeRtpDescription=function(kind,caps){var sdp="";sdp+="m="+kind+" ",sdp+=caps.codecs.length>0?"9":"0",sdp+=" UDP/TLS/RTP/SAVPF ",sdp+=caps.codecs.map(function(codec){return void 0!==codec.preferredPayloadType?codec.preferredPayloadType:codec.payloadType}).join(" ")+"\r\n",sdp+="c=IN IP4 0.0.0.0\r\n",sdp+="a=rtcp:9 IN IP4 0.0.0.0\r\n",caps.codecs.forEach(function(codec){sdp+=SDPUtils.writeRtpMap(codec),sdp+=SDPUtils.writeFmtp(codec),sdp+=SDPUtils.writeRtcpFb(codec)});var maxptime=0;return caps.codecs.forEach(function(codec){codec.maxptime>maxptime&&(maxptime=codec.maxptime)}),maxptime>0&&(sdp+="a=maxptime:"+maxptime+"\r\n"),sdp+="a=rtcp-mux\r\n",caps.headerExtensions&&caps.headerExtensions.forEach(function(extension){sdp+=SDPUtils.writeExtmap(extension)}),sdp},SDPUtils.parseRtpEncodingParameters=function(mediaSection){var secondarySsrc,encodingParameters=[],description=SDPUtils.parseRtpParameters(mediaSection),hasRed=-1!==description.fecMechanisms.indexOf("RED"),hasUlpfec=-1!==description.fecMechanisms.indexOf("ULPFEC"),ssrcs=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(parts){return"cname"===parts.attribute}),primarySsrc=ssrcs.length>0&&ssrcs[0].ssrc,flows=SDPUtils.matchPrefix(mediaSection,"a=ssrc-group:FID").map(function(line){return line.substr(17).split(" ").map(function(part){return parseInt(part,10)})});flows.length>0&&flows[0].length>1&&flows[0][0]===primarySsrc&&(secondarySsrc=flows[0][1]),description.codecs.forEach(function(codec){if("RTX"===codec.name.toUpperCase()&&codec.parameters.apt){var encParam={ssrc:primarySsrc,codecPayloadType:parseInt(codec.parameters.apt,10)};primarySsrc&&secondarySsrc&&(encParam.rtx={ssrc:secondarySsrc}),encodingParameters.push(encParam),hasRed&&(encParam=JSON.parse(JSON.stringify(encParam)),encParam.fec={ssrc:secondarySsrc,mechanism:hasUlpfec?"red+ulpfec":"red"},encodingParameters.push(encParam))}}),0===encodingParameters.length&&primarySsrc&&encodingParameters.push({ssrc:primarySsrc});var bandwidth=SDPUtils.matchPrefix(mediaSection,"b=");return bandwidth.length&&(bandwidth=0===bandwidth[0].indexOf("b=TIAS:")?parseInt(bandwidth[0].substr(7),10):0===bandwidth[0].indexOf("b=AS:")?1e3*parseInt(bandwidth[0].substr(5),10)*.95-16e3:void 0,encodingParameters.forEach(function(params){params.maxBitrate=bandwidth})),encodingParameters},SDPUtils.parseRtcpParameters=function(mediaSection){var rtcpParameters={},remoteSsrc=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(obj){return"cname"===obj.attribute})[0];remoteSsrc&&(rtcpParameters.cname=remoteSsrc.value,rtcpParameters.ssrc=remoteSsrc.ssrc);var rsize=SDPUtils.matchPrefix(mediaSection,"a=rtcp-rsize");rtcpParameters.reducedSize=rsize.length>0,rtcpParameters.compound=0===rsize.length;var mux=SDPUtils.matchPrefix(mediaSection,"a=rtcp-mux");return rtcpParameters.mux=mux.length>0,rtcpParameters},SDPUtils.parseMsid=function(mediaSection){var parts,spec=SDPUtils.matchPrefix(mediaSection,"a=msid:");if(1===spec.length)return parts=spec[0].substr(7).split(" "),{stream:parts[0],track:parts[1]};var planB=SDPUtils.matchPrefix(mediaSection,"a=ssrc:").map(function(line){return SDPUtils.parseSsrcMedia(line)}).filter(function(msidParts){return"msid"===msidParts.attribute});return planB.length>0?(parts=planB[0].value.split(" "),{stream:parts[0],track:parts[1]}):void 0},SDPUtils.generateSessionId=function(){return Math.random().toString().substr(2,21)},SDPUtils.writeSessionBoilerplate=function(sessId,sessVer){var version=void 0!==sessVer?sessVer:2;return"v=0\r\no=thisisadapterortc "+(sessId||SDPUtils.generateSessionId())+" "+version+" IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\n"},SDPUtils.writeMediaSection=function(transceiver,caps,type,stream){var sdp=SDPUtils.writeRtpDescription(transceiver.kind,caps);if(sdp+=SDPUtils.writeIceParameters(transceiver.iceGatherer.getLocalParameters()),sdp+=SDPUtils.writeDtlsParameters(transceiver.dtlsTransport.getLocalParameters(),"offer"===type?"actpass":"active"),sdp+="a=mid:"+transceiver.mid+"\r\n",transceiver.direction?sdp+="a="+transceiver.direction+"\r\n":transceiver.rtpSender&&transceiver.rtpReceiver?sdp+="a=sendrecv\r\n":transceiver.rtpSender?sdp+="a=sendonly\r\n":transceiver.rtpReceiver?sdp+="a=recvonly\r\n":sdp+="a=inactive\r\n",transceiver.rtpSender){var msid="msid:"+stream.id+" "+transceiver.rtpSender.track.id+"\r\n";sdp+="a="+msid,
-sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" "+msid,transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" "+msid,sdp+="a=ssrc-group:FID "+transceiver.sendEncodingParameters[0].ssrc+" "+transceiver.sendEncodingParameters[0].rtx.ssrc+"\r\n")}return sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].ssrc+" cname:"+SDPUtils.localCName+"\r\n",transceiver.rtpSender&&transceiver.sendEncodingParameters[0].rtx&&(sdp+="a=ssrc:"+transceiver.sendEncodingParameters[0].rtx.ssrc+" cname:"+SDPUtils.localCName+"\r\n"),sdp},SDPUtils.getDirection=function(mediaSection,sessionpart){for(var lines=SDPUtils.splitLines(mediaSection),i=0;i<lines.length;i++)switch(lines[i]){case"a=sendrecv":case"a=sendonly":case"a=recvonly":case"a=inactive":return lines[i].substr(2)}return sessionpart?SDPUtils.getDirection(sessionpart):"sendrecv"},SDPUtils.getKind=function(mediaSection){return SDPUtils.splitLines(mediaSection)[0].split(" ")[0].substr(2)},SDPUtils.isRejected=function(mediaSection){return"0"===mediaSection.split(" ",2)[1]},SDPUtils.parseMLine=function(mediaSection){var lines=SDPUtils.splitLines(mediaSection),parts=lines[0].substr(2).split(" ");return{kind:parts[0],port:parseInt(parts[1],10),protocol:parts[2],fmt:parts.slice(3).join(" ")}},SDPUtils.parseOLine=function(mediaSection){var line=SDPUtils.matchPrefix(mediaSection,"o=")[0],parts=line.substr(2).split(" ");return{username:parts[0],sessionId:parts[1],sessionVersion:parseInt(parts[2],10),netType:parts[3],addressType:parts[4],address:parts[5]}},SDPUtils.isValidSDP=function(blob){if("string"!=typeof blob||0===blob.length)return!1;for(var lines=SDPUtils.splitLines(blob),i=0;i<lines.length;i++)if(lines[i].length<2||"="!==lines[i].charAt(1))return!1;return!0},"object"==typeof module&&(module.exports=SDPUtils)},{}],3:[function(requirecopy,module,exports){(function(global){var adapterFactory=requirecopy("./adapter_factory.js");module.exports=adapterFactory({window:global.window})}).call(this,"undefined"!=typeof global?global:"undefined"!=typeof self?self:"undefined"!=typeof window?window:{})},{"./adapter_factory.js":4}],4:[function(requirecopy,module,exports){var utils=requirecopy("./utils");module.exports=function(dependencies,opts){var window=dependencies&&dependencies.window,options={shimChrome:!0,shimFirefox:!0,shimEdge:!0,shimSafari:!0};for(var key in opts)hasOwnProperty.call(opts,key)&&(options[key]=opts[key]);var logging=utils.log,browserDetails=utils.detectBrowser(window),chromeShim=requirecopy("./chrome/chrome_shim")||null,edgeShim=requirecopy("./edge/edge_shim")||null,firefoxShim=requirecopy("./firefox/firefox_shim")||null,safariShim=requirecopy("./safari/safari_shim")||null,commonShim=requirecopy("./common_shim")||null,adapter={browserDetails:browserDetails,commonShim:commonShim,extractVersion:utils.extractVersion,disableLog:utils.disableLog,disableWarnings:utils.disableWarnings};switch(browserDetails.browser){case"chrome":if(!chromeShim||!chromeShim.shimPeerConnection||!options.shimChrome)return logging("Chrome shim is not included in this adapter release."),adapter;logging("adapter.js shimming chrome."),adapter.browserShim=chromeShim,commonShim.shimCreateObjectURL(window),chromeShim.shimGetUserMedia(window),chromeShim.shimMediaStream(window),chromeShim.shimSourceObject(window),chromeShim.shimPeerConnection(window),chromeShim.shimOnTrack(window),chromeShim.shimAddTrackRemoveTrack(window),chromeShim.shimGetSendersWithDtmf(window),chromeShim.shimSenderReceiverGetStats(window),chromeShim.fixNegotiationNeeded(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"firefox":if(!firefoxShim||!firefoxShim.shimPeerConnection||!options.shimFirefox)return logging("Firefox shim is not included in this adapter release."),adapter;logging("adapter.js shimming firefox."),adapter.browserShim=firefoxShim,commonShim.shimCreateObjectURL(window),firefoxShim.shimGetUserMedia(window),firefoxShim.shimSourceObject(window),firefoxShim.shimPeerConnection(window),firefoxShim.shimOnTrack(window),firefoxShim.shimRemoveStream(window),firefoxShim.shimSenderGetStats(window),firefoxShim.shimReceiverGetStats(window),firefoxShim.shimRTCDataChannel(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"edge":if(!edgeShim||!edgeShim.shimPeerConnection||!options.shimEdge)return logging("MS edge shim is not included in this adapter release."),adapter;logging("adapter.js shimming edge."),adapter.browserShim=edgeShim,commonShim.shimCreateObjectURL(window),edgeShim.shimGetUserMedia(window),edgeShim.shimPeerConnection(window),edgeShim.shimReplaceTrack(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;case"safari":if(!safariShim||!options.shimSafari)return logging("Safari shim is not included in this adapter release."),adapter;logging("adapter.js shimming safari."),adapter.browserShim=safariShim,commonShim.shimCreateObjectURL(window),safariShim.shimRTCIceServerUrls(window),safariShim.shimCreateOfferLegacy(window),safariShim.shimCallbacksAPI(window),safariShim.shimLocalStreamsAPI(window),safariShim.shimRemoteStreamsAPI(window),safariShim.shimTrackEventTransceiver(window),safariShim.shimGetUserMedia(window),commonShim.shimRTCIceCandidate(window),commonShim.shimMaxMessageSize(window),commonShim.shimSendThrowTypeError(window);break;default:logging("Unsupported browser!")}return adapter}},{"./chrome/chrome_shim":5,"./common_shim":7,"./edge/edge_shim":8,"./firefox/firefox_shim":11,"./safari/safari_shim":13,"./utils":14}],5:[function(requirecopy,module,exports){function walkStats(stats,base,resultSet){base&&!resultSet.has(base.id)&&(resultSet.set(base.id,base),Object.keys(base).forEach(function(name){name.endsWith("Id")?walkStats(stats,stats.get(base[name]),resultSet):name.endsWith("Ids")&&base[name].forEach(function(id){walkStats(stats,stats.get(id),resultSet)})}))}function filterStats(result,track,outbound){var streamStatsType=outbound?"outbound-rtp":"inbound-rtp",filteredResult=new Map;if(null===track)return filteredResult;var trackStats=[];return result.forEach(function(value){"track"===value.type&&value.trackIdentifier===track.id&&trackStats.push(value)}),trackStats.forEach(function(trackStat){result.forEach(function(stats){stats.type===streamStatsType&&stats.trackId===trackStat.id&&walkStats(result,stats,filteredResult)})}),filteredResult}var utils=requirecopy("../utils.js"),logging=utils.log;module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimMediaStream:function(window){window.MediaStream=window.MediaStream||window.webkitMediaStream},shimOnTrack:function(window){if("object"!=typeof window||!window.RTCPeerConnection||"ontrack"in window.RTCPeerConnection.prototype)"RTCRtpTransceiver"in window||utils.wrapPeerConnectionEvent(window,"track",function(e){return e.transceiver||(e.transceiver={receiver:e.receiver}),e});else{Object.defineProperty(window.RTCPeerConnection.prototype,"ontrack",{get:function(){return this._ontrack},set:function(f){this._ontrack&&this.removeEventListener("track",this._ontrack),this.addEventListener("track",this._ontrack=f)},enumerable:!0,configurable:!0});var origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;return pc._ontrackpoly||(pc._ontrackpoly=function(e){e.stream.addEventListener("addtrack",function(te){var receiver;receiver=window.RTCPeerConnection.prototype.getReceivers?pc.getReceivers().find(function(r){return r.track&&r.track.id===te.track.id}):{track:te.track};var event=new Event("track");event.track=te.track,event.receiver=receiver,event.transceiver={receiver:receiver},event.streams=[e.stream],pc.dispatchEvent(event)}),e.stream.getTracks().forEach(function(track){var receiver;receiver=window.RTCPeerConnection.prototype.getReceivers?pc.getReceivers().find(function(r){return r.track&&r.track.id===track.id}):{track:track};var event=new Event("track");event.track=track,event.receiver=receiver,event.transceiver={receiver:receiver},event.streams=[e.stream],pc.dispatchEvent(event)})},pc.addEventListener("addstream",pc._ontrackpoly)),origSetRemoteDescription.apply(pc,arguments)}}},shimGetSendersWithDtmf:function(window){if("object"==typeof window&&window.RTCPeerConnection&&!("getSenders"in window.RTCPeerConnection.prototype)&&"createDTMFSender"in window.RTCPeerConnection.prototype){var shimSenderWithDtmf=function(pc,track){return{track:track,get dtmf(){return void 0===this._dtmf&&("audio"===track.kind?this._dtmf=pc.createDTMFSender(track):this._dtmf=null),this._dtmf},_pc:pc}};if(!window.RTCPeerConnection.prototype.getSenders){window.RTCPeerConnection.prototype.getSenders=function(){return this._senders=this._senders||[],this._senders.slice()};var origAddTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addTrack=function(track,stream){var pc=this,sender=origAddTrack.apply(pc,arguments);return sender||(sender=shimSenderWithDtmf(pc,track),pc._senders.push(sender)),sender};var origRemoveTrack=window.RTCPeerConnection.prototype.removeTrack;window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;origRemoveTrack.apply(pc,arguments);var idx=pc._senders.indexOf(sender);-1!==idx&&pc._senders.splice(idx,1)}}var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;pc._senders=pc._senders||[],origAddStream.apply(pc,[stream]),stream.getTracks().forEach(function(track){pc._senders.push(shimSenderWithDtmf(pc,track))})};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;pc._senders=pc._senders||[],origRemoveStream.apply(pc,[stream]),stream.getTracks().forEach(function(track){var sender=pc._senders.find(function(s){return s.track===track});sender&&pc._senders.splice(pc._senders.indexOf(sender),1)})}}else if("object"==typeof window&&window.RTCPeerConnection&&"getSenders"in window.RTCPeerConnection.prototype&&"createDTMFSender"in window.RTCPeerConnection.prototype&&window.RTCRtpSender&&!("dtmf"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders},Object.defineProperty(window.RTCRtpSender.prototype,"dtmf",{get:function(){return void 0===this._dtmf&&("audio"===this.track.kind?this._dtmf=this._pc.createDTMFSender(this.track):this._dtmf=null),this._dtmf}})}},shimSenderReceiverGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&window.RTCRtpReceiver){if(!("getStats"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;origGetSenders&&(window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders});var origAddTrack=window.RTCPeerConnection.prototype.addTrack;origAddTrack&&(window.RTCPeerConnection.prototype.addTrack=function(){var sender=origAddTrack.apply(this,arguments);return sender._pc=this,sender}),window.RTCRtpSender.prototype.getStats=function(){var sender=this;return this._pc.getStats().then(function(result){return filterStats(result,sender.track,!0)})}}if(!("getStats"in window.RTCRtpReceiver.prototype)){var origGetReceivers=window.RTCPeerConnection.prototype.getReceivers;origGetReceivers&&(window.RTCPeerConnection.prototype.getReceivers=function(){var pc=this,receivers=origGetReceivers.apply(pc,[]);return receivers.forEach(function(receiver){receiver._pc=pc}),receivers}),utils.wrapPeerConnectionEvent(window,"track",function(e){return e.receiver._pc=e.srcElement,e}),window.RTCRtpReceiver.prototype.getStats=function(){var receiver=this;return this._pc.getStats().then(function(result){return filterStats(result,receiver.track,!1)})}}if("getStats"in window.RTCRtpSender.prototype&&"getStats"in window.RTCRtpReceiver.prototype){var origGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(){var pc=this;if(arguments.length>0&&arguments[0]instanceof window.MediaStreamTrack){var sender,receiver,err,track=arguments[0];return pc.getSenders().forEach(function(s){s.track===track&&(sender?err=!0:sender=s)}),pc.getReceivers().forEach(function(r){return r.track===track&&(receiver?err=!0:receiver=r),r.track===track}),err||sender&&receiver?Promise.reject(new DOMException("There are more than one sender or receiver for the track.","InvalidAccessError")):sender?sender.getStats():receiver?receiver.getStats():Promise.reject(new DOMException("There is no sender or receiver for the track.","InvalidAccessError"))}return origGetStats.apply(pc,arguments)}}}},shimSourceObject:function(window){var URL=window&&window.URL;"object"==typeof window&&(!window.HTMLMediaElement||"srcObject"in window.HTMLMediaElement.prototype||Object.defineProperty(window.HTMLMediaElement.prototype,"srcObject",{get:function(){return this._srcObject},set:function(stream){var self=this;if(this._srcObject=stream,this.src&&URL.revokeObjectURL(this.src),!stream)return void(this.src="");this.src=URL.createObjectURL(stream),stream.addEventListener("addtrack",function(){self.src&&URL.revokeObjectURL(self.src),self.src=URL.createObjectURL(stream)}),stream.addEventListener("removetrack",function(){self.src&&URL.revokeObjectURL(self.src),self.src=URL.createObjectURL(stream)})}}))},shimAddTrackRemoveTrackWithNative:function(window){window.RTCPeerConnection.prototype.getLocalStreams=function(){var pc=this;return this._shimmedLocalStreams=this._shimmedLocalStreams||{},Object.keys(this._shimmedLocalStreams).map(function(streamId){return pc._shimmedLocalStreams[streamId][0]})};var origAddTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addTrack=function(track,stream){if(!stream)return origAddTrack.apply(this,arguments);this._shimmedLocalStreams=this._shimmedLocalStreams||{};var sender=origAddTrack.apply(this,arguments);return this._shimmedLocalStreams[stream.id]?-1===this._shimmedLocalStreams[stream.id].indexOf(sender)&&this._shimmedLocalStreams[stream.id].push(sender):this._shimmedLocalStreams[stream.id]=[stream,sender],sender};var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;this._shimmedLocalStreams=this._shimmedLocalStreams||{},stream.getTracks().forEach(function(track){if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError")});var existingSenders=pc.getSenders();origAddStream.apply(this,arguments);var newSenders=pc.getSenders().filter(function(newSender){return-1===existingSenders.indexOf(newSender)});this._shimmedLocalStreams[stream.id]=[stream].concat(newSenders)};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){return this._shimmedLocalStreams=this._shimmedLocalStreams||{},delete this._shimmedLocalStreams[stream.id],origRemoveStream.apply(this,arguments)};var origRemoveTrack=window.RTCPeerConnection.prototype.removeTrack;window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;return this._shimmedLocalStreams=this._shimmedLocalStreams||{},sender&&Object.keys(this._shimmedLocalStreams).forEach(function(streamId){var idx=pc._shimmedLocalStreams[streamId].indexOf(sender);-1!==idx&&pc._shimmedLocalStreams[streamId].splice(idx,1),1===pc._shimmedLocalStreams[streamId].length&&delete pc._shimmedLocalStreams[streamId]}),origRemoveTrack.apply(this,arguments)}},shimAddTrackRemoveTrack:function(window){function replaceInternalStreamId(pc,description){var sdp=description.sdp;return Object.keys(pc._reverseStreams||[]).forEach(function(internalId){var externalStream=pc._reverseStreams[internalId],internalStream=pc._streams[externalStream.id];sdp=sdp.replace(new RegExp(internalStream.id,"g"),externalStream.id)}),new RTCSessionDescription({type:description.type,sdp:sdp})}function replaceExternalStreamId(pc,description){var sdp=description.sdp;return Object.keys(pc._reverseStreams||[]).forEach(function(internalId){var externalStream=pc._reverseStreams[internalId],internalStream=pc._streams[externalStream.id];sdp=sdp.replace(new RegExp(externalStream.id,"g"),internalStream.id)}),new RTCSessionDescription({type:description.type,sdp:sdp})}var browserDetails=utils.detectBrowser(window);if(window.RTCPeerConnection.prototype.addTrack&&browserDetails.version>=65)return this.shimAddTrackRemoveTrackWithNative(window);var origGetLocalStreams=window.RTCPeerConnection.prototype.getLocalStreams;window.RTCPeerConnection.prototype.getLocalStreams=function(){var pc=this,nativeStreams=origGetLocalStreams.apply(this);return pc._reverseStreams=pc._reverseStreams||{},nativeStreams.map(function(stream){return pc._reverseStreams[stream.id]})};var origAddStream=window.RTCPeerConnection.prototype.addStream;window.RTCPeerConnection.prototype.addStream=function(stream){var pc=this;if(pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{},stream.getTracks().forEach(function(track){if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError")}),!pc._reverseStreams[stream.id]){var newStream=new window.MediaStream(stream.getTracks());pc._streams[stream.id]=newStream,pc._reverseStreams[newStream.id]=stream,stream=newStream}origAddStream.apply(pc,[stream])};var origRemoveStream=window.RTCPeerConnection.prototype.removeStream;window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{},origRemoveStream.apply(pc,[pc._streams[stream.id]||stream]),delete pc._reverseStreams[pc._streams[stream.id]?pc._streams[stream.id].id:stream.id],delete pc._streams[stream.id]},window.RTCPeerConnection.prototype.addTrack=function(track,stream){var pc=this;if("closed"===pc.signalingState)throw new DOMException("The RTCPeerConnection's signalingState is 'closed'.","InvalidStateError");var streams=[].slice.call(arguments,1);if(1!==streams.length||!streams[0].getTracks().find(function(t){return t===track}))throw new DOMException("The adapter.js addTrack polyfill only supports a single  stream which is associated with the specified track.","NotSupportedError");if(pc.getSenders().find(function(s){return s.track===track}))throw new DOMException("Track already exists.","InvalidAccessError");pc._streams=pc._streams||{},pc._reverseStreams=pc._reverseStreams||{};var oldStream=pc._streams[stream.id];if(oldStream)oldStream.addTrack(track),Promise.resolve().then(function(){pc.dispatchEvent(new Event("negotiationneeded"))});else{var newStream=new window.MediaStream([track]);pc._streams[stream.id]=newStream,pc._reverseStreams[newStream.id]=stream,pc.addStream(newStream)}return pc.getSenders().find(function(s){return s.track===track})},["createOffer","createAnswer"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var pc=this,args=arguments;return arguments.length&&"function"==typeof arguments[0]?nativeMethod.apply(pc,[function(description){var desc=replaceInternalStreamId(pc,description);args[0].apply(null,[desc])},function(err){args[1]&&args[1].apply(null,err)},arguments[2]]):nativeMethod.apply(pc,arguments).then(function(description){return replaceInternalStreamId(pc,description)})}});var origSetLocalDescription=window.RTCPeerConnection.prototype.setLocalDescription;window.RTCPeerConnection.prototype.setLocalDescription=function(){var pc=this;return arguments.length&&arguments[0].type?(arguments[0]=replaceExternalStreamId(pc,arguments[0]),origSetLocalDescription.apply(pc,arguments)):origSetLocalDescription.apply(pc,arguments)};var origLocalDescription=Object.getOwnPropertyDescriptor(window.RTCPeerConnection.prototype,"localDescription");Object.defineProperty(window.RTCPeerConnection.prototype,"localDescription",{get:function(){var pc=this,description=origLocalDescription.get.apply(this);return""===description.type?description:replaceInternalStreamId(pc,description)}}),window.RTCPeerConnection.prototype.removeTrack=function(sender){var pc=this;if("closed"===pc.signalingState)throw new DOMException("The RTCPeerConnection's signalingState is 'closed'.","InvalidStateError");if(!sender._pc)throw new DOMException("Argument 1 of RTCPeerConnection.removeTrack does not implement interface RTCRtpSender.","TypeError");if(sender._pc!==pc)throw new DOMException("Sender was not created by this connection.","InvalidAccessError");pc._streams=pc._streams||{};var stream;Object.keys(pc._streams).forEach(function(streamid){pc._streams[streamid].getTracks().find(function(track){return sender.track===track})&&(stream=pc._streams[streamid])}),stream&&(1===stream.getTracks().length?pc.removeStream(pc._reverseStreams[stream.id]):stream.removeTrack(sender.track),pc.dispatchEvent(new Event("negotiationneeded")))}},shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if(!window.RTCPeerConnection&&window.webkitRTCPeerConnection)window.RTCPeerConnection=function(pcConfig,pcConstraints){return logging("PeerConnection"),pcConfig&&pcConfig.iceTransportPolicy&&(pcConfig.iceTransports=pcConfig.iceTransportPolicy),new window.webkitRTCPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=window.webkitRTCPeerConnection.prototype,window.webkitRTCPeerConnection.generateCertificate&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return window.webkitRTCPeerConnection.generateCertificate}});else{var OrigPeerConnection=window.RTCPeerConnection;window.RTCPeerConnection=function(pcConfig,pcConstraints){if(pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];!server.hasOwnProperty("urls")&&server.hasOwnProperty("url")?(utils.deprecated("RTCIceServer.url","RTCIceServer.urls"),server=JSON.parse(JSON.stringify(server)),server.urls=server.url,newIceServers.push(server)):newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new OrigPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=OrigPeerConnection.prototype,Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return OrigPeerConnection.generateCertificate}})}var origGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(selector,successCallback,errorCallback){var pc=this,args=arguments;if(arguments.length>0&&"function"==typeof selector)return origGetStats.apply(this,arguments);if(0===origGetStats.length&&(0===arguments.length||"function"!=typeof arguments[0]))return origGetStats.apply(this,[]);var fixChromeStats_=function(response){var standardReport={};return response.result().forEach(function(report){var standardStats={id:report.id,timestamp:report.timestamp,type:{localcandidate:"local-candidate",remotecandidate:"remote-candidate"}[report.type]||report.type};report.names().forEach(function(name){standardStats[name]=report.stat(name)}),standardReport[standardStats.id]=standardStats}),standardReport},makeMapStats=function(stats){return new Map(Object.keys(stats).map(function(key){return[key,stats[key]]}))};if(arguments.length>=2){var successCallbackWrapper_=function(response){args[1](makeMapStats(fixChromeStats_(response)))};return origGetStats.apply(this,[successCallbackWrapper_,arguments[0]])}return new Promise(function(resolve,reject){origGetStats.apply(pc,[function(response){resolve(makeMapStats(fixChromeStats_(response)))},reject])}).then(successCallback,errorCallback)},browserDetails.version<51&&["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var args=arguments,pc=this,promise=new Promise(function(resolve,reject){nativeMethod.apply(pc,[args[0],resolve,reject])});return args.length<2?promise:promise.then(function(){args[1].apply(null,[])},function(err){args.length>=3&&args[2].apply(null,[err])})}}),browserDetails.version<52&&["createOffer","createAnswer"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){var pc=this;if(arguments.length<1||1===arguments.length&&"object"==typeof arguments[0]){var opts=1===arguments.length?arguments[0]:void 0;return new Promise(function(resolve,reject){nativeMethod.apply(pc,[resolve,reject,opts])})}return nativeMethod.apply(this,arguments)}}),["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){return arguments[0]=new("addIceCandidate"===method?window.RTCIceCandidate:window.RTCSessionDescription)(arguments[0]),nativeMethod.apply(this,arguments)}});var nativeAddIceCandidate=window.RTCPeerConnection.prototype.addIceCandidate;window.RTCPeerConnection.prototype.addIceCandidate=function(){return arguments[0]?nativeAddIceCandidate.apply(this,arguments):(arguments[1]&&arguments[1].apply(null),Promise.resolve())}},fixNegotiationNeeded:function(window){utils.wrapPeerConnectionEvent(window,"negotiationneeded",function(e){if("stable"===e.target.signalingState)return e})},shimGetDisplayMedia:function(window,getSourceId){"getDisplayMedia"in window.navigator||"function"==typeof getSourceId&&(navigator.getDisplayMedia=function(constraints){return getSourceId(constraints).then(function(sourceId){return constraints.video={mandatory:{chromeMediaSource:"desktop",chromeMediaSourceId:sourceId,maxFrameRate:constraints.video.frameRate||3}},navigator.mediaDevices.getUserMedia(constraints)})})}}},{"../utils.js":14,"./getusermedia":6}],6:[function(requirecopy,module,exports){var utils=requirecopy("../utils.js"),logging=utils.log;module.exports=function(window){var browserDetails=utils.detectBrowser(window),navigator=window&&window.navigator,constraintsToChrome_=function(c){if("object"!=typeof c||c.mandatory||c.optional)return c;var cc={};return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key&&"mediaSource"!==key){var r="object"==typeof c[key]?c[key]:{ideal:c[key]};void 0!==r.exact&&"number"==typeof r.exact&&(r.min=r.max=r.exact);var oldname_=function(prefix,name){return prefix?prefix+name.charAt(0).toUpperCase()+name.slice(1):"deviceId"===name?"sourceId":name};if(void 0!==r.ideal){cc.optional=cc.optional||[];var oc={};"number"==typeof r.ideal?(oc[oldname_("min",key)]=r.ideal,cc.optional.push(oc),oc={},oc[oldname_("max",key)]=r.ideal,cc.optional.push(oc)):(oc[oldname_("",key)]=r.ideal,cc.optional.push(oc))}void 0!==r.exact&&"number"!=typeof r.exact?(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname_("",key)]=r.exact):["min","max"].forEach(function(mix){void 0!==r[mix]&&(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname_(mix,key)]=r[mix])})}}),c.advanced&&(cc.optional=(cc.optional||[]).concat(c.advanced)),cc},shimConstraints_=function(constraints,func){if(browserDetails.version>=61)return func(constraints);if((constraints=JSON.parse(JSON.stringify(constraints)))&&"object"==typeof constraints.audio){var remap=function(obj,a,b){a in obj&&!(b in obj)&&(obj[b]=obj[a],delete obj[a])};constraints=JSON.parse(JSON.stringify(constraints)),remap(constraints.audio,"autoGainControl","googAutoGainControl"),remap(constraints.audio,"noiseSuppression","googNoiseSuppression"),constraints.audio=constraintsToChrome_(constraints.audio)}if(constraints&&"object"==typeof constraints.video){var face=constraints.video.facingMode;face=face&&("object"==typeof face?face:{ideal:face});var getSupportedFacingModeLies=browserDetails.version<66;if(face&&("user"===face.exact||"environment"===face.exact||"user"===face.ideal||"environment"===face.ideal)&&(!navigator.mediaDevices.getSupportedConstraints||!navigator.mediaDevices.getSupportedConstraints().facingMode||getSupportedFacingModeLies)){delete constraints.video.facingMode;var matches;if("environment"===face.exact||"environment"===face.ideal?matches=["back","rear"]:"user"!==face.exact&&"user"!==face.ideal||(matches=["front"]),matches)return navigator.mediaDevices.enumerateDevices().then(function(devices){devices=devices.filter(function(d){return"videoinput"===d.kind});var dev=devices.find(function(d){return matches.some(function(match){return-1!==d.label.toLowerCase().indexOf(match)})});return!dev&&devices.length&&-1!==matches.indexOf("back")&&(dev=devices[devices.length-1]),dev&&(constraints.video.deviceId=face.exact?{exact:dev.deviceId}:{ideal:dev.deviceId}),constraints.video=constraintsToChrome_(constraints.video),logging("chrome: "+JSON.stringify(constraints)),func(constraints)})}constraints.video=constraintsToChrome_(constraints.video)}return logging("chrome: "+JSON.stringify(constraints)),func(constraints)},shimError_=function(e){return browserDetails.version>=64?e:{name:{PermissionDeniedError:"NotAllowedError",PermissionDismissedError:"NotAllowedError",InvalidStateError:"NotAllowedError",DevicesNotFoundError:"NotFoundError",ConstraintNotSatisfiedError:"OverconstrainedError",TrackStartError:"NotReadableError",MediaDeviceFailedDueToShutdown:"NotAllowedError",MediaDeviceKillSwitchOn:"NotAllowedError",TabCaptureError:"AbortError",ScreenCaptureError:"AbortError",DeviceCaptureError:"AbortError"}[e.name]||e.name,message:e.message,constraint:e.constraint||e.constraintName,toString:function(){return this.name+(this.message&&": ")+this.message}}},getUserMedia_=function(constraints,onSuccess,onError){shimConstraints_(constraints,function(c){navigator.webkitGetUserMedia(c,onSuccess,function(e){onError&&onError(shimError_(e))})})};navigator.getUserMedia=getUserMedia_;var getUserMediaPromise_=function(constraints){return new Promise(function(resolve,reject){navigator.getUserMedia(constraints,resolve,reject)})};if(navigator.mediaDevices||(navigator.mediaDevices={getUserMedia:getUserMediaPromise_,enumerateDevices:function(){return new Promise(function(resolve){var kinds={audio:"audioinput",video:"videoinput"};return window.MediaStreamTrack.getSources(function(devices){resolve(devices.map(function(device){return{label:device.label,kind:kinds[device.kind],deviceId:device.id,groupId:""}}))})})},getSupportedConstraints:function(){return{deviceId:!0,echoCancellation:!0,facingMode:!0,frameRate:!0,height:!0,width:!0}}}),navigator.mediaDevices.getUserMedia){var origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(cs){return shimConstraints_(cs,function(c){return origGetUserMedia(c).then(function(stream){if(c.audio&&!stream.getAudioTracks().length||c.video&&!stream.getVideoTracks().length)throw stream.getTracks().forEach(function(track){track.stop()}),new DOMException("","NotFoundError");return stream},function(e){return Promise.reject(shimError_(e))})})}}else navigator.mediaDevices.getUserMedia=function(constraints){return getUserMediaPromise_(constraints)};void 0===navigator.mediaDevices.addEventListener&&(navigator.mediaDevices.addEventListener=function(){logging("Dummy mediaDevices.addEventListener called.")}),void 0===navigator.mediaDevices.removeEventListener&&(navigator.mediaDevices.removeEventListener=function(){logging("Dummy mediaDevices.removeEventListener called.")})}},{"../utils.js":14}],7:[function(requirecopy,module,exports){var SDPUtils=requirecopy("sdp"),utils=requirecopy("./utils")
-;module.exports={shimRTCIceCandidate:function(window){if(window.RTCIceCandidate&&!(window.RTCIceCandidate&&"foundation"in window.RTCIceCandidate.prototype)){var NativeRTCIceCandidate=window.RTCIceCandidate;window.RTCIceCandidate=function(args){if("object"==typeof args&&args.candidate&&0===args.candidate.indexOf("a=")&&(args=JSON.parse(JSON.stringify(args)),args.candidate=args.candidate.substr(2)),args.candidate&&args.candidate.length){var nativeCandidate=new NativeRTCIceCandidate(args),parsedCandidate=SDPUtils.parseCandidate(args.candidate),augmentedCandidate=Object.assign(nativeCandidate,parsedCandidate);return augmentedCandidate.toJSON=function(){return{candidate:augmentedCandidate.candidate,sdpMid:augmentedCandidate.sdpMid,sdpMLineIndex:augmentedCandidate.sdpMLineIndex,usernameFragment:augmentedCandidate.usernameFragment}},augmentedCandidate}return new NativeRTCIceCandidate(args)},window.RTCIceCandidate.prototype=NativeRTCIceCandidate.prototype,utils.wrapPeerConnectionEvent(window,"icecandidate",function(e){return e.candidate&&Object.defineProperty(e,"candidate",{value:new window.RTCIceCandidate(e.candidate),writable:"false"}),e})}},shimCreateObjectURL:function(window){var URL=window&&window.URL;if("object"==typeof window&&window.HTMLMediaElement&&"srcObject"in window.HTMLMediaElement.prototype&&URL.createObjectURL&&URL.revokeObjectURL){var nativeCreateObjectURL=URL.createObjectURL.bind(URL),nativeRevokeObjectURL=URL.revokeObjectURL.bind(URL),streams=new Map,newId=0;URL.createObjectURL=function(stream){if("getTracks"in stream){var url="polyblob:"+ ++newId;return streams.set(url,stream),utils.deprecated("URL.createObjectURL(stream)","elem.srcObject = stream"),url}return nativeCreateObjectURL(stream)},URL.revokeObjectURL=function(url){nativeRevokeObjectURL(url),streams.delete(url)};var dsc=Object.getOwnPropertyDescriptor(window.HTMLMediaElement.prototype,"src");Object.defineProperty(window.HTMLMediaElement.prototype,"src",{get:function(){return dsc.get.apply(this)},set:function(url){return this.srcObject=streams.get(url)||null,dsc.set.apply(this,[url])}});var nativeSetAttribute=window.HTMLMediaElement.prototype.setAttribute;window.HTMLMediaElement.prototype.setAttribute=function(){return 2===arguments.length&&"src"===(""+arguments[0]).toLowerCase()&&(this.srcObject=streams.get(arguments[1])||null),nativeSetAttribute.apply(this,arguments)}}},shimMaxMessageSize:function(window){if(!window.RTCSctpTransport&&window.RTCPeerConnection){var browserDetails=utils.detectBrowser(window);"sctp"in window.RTCPeerConnection.prototype||Object.defineProperty(window.RTCPeerConnection.prototype,"sctp",{get:function(){return void 0===this._sctp?null:this._sctp}});var sctpInDescription=function(description){var sections=SDPUtils.splitSections(description.sdp);return sections.shift(),sections.some(function(mediaSection){var mLine=SDPUtils.parseMLine(mediaSection);return mLine&&"application"===mLine.kind&&-1!==mLine.protocol.indexOf("SCTP")})},getRemoteFirefoxVersion=function(description){var match=description.sdp.match(/mozilla...THIS_IS_SDPARTA-(\d+)/);if(null===match||match.length<2)return-1;var version=parseInt(match[1],10);return version!==version?-1:version},getCanSendMaxMessageSize=function(remoteIsFirefox){var canSendMaxMessageSize=65536;return"firefox"===browserDetails.browser&&(canSendMaxMessageSize=browserDetails.version<57?-1===remoteIsFirefox?16384:2147483637:browserDetails.version<60?57===browserDetails.version?65535:65536:2147483637),canSendMaxMessageSize},getMaxMessageSize=function(description,remoteIsFirefox){var maxMessageSize=65536;"firefox"===browserDetails.browser&&57===browserDetails.version&&(maxMessageSize=65535);var match=SDPUtils.matchPrefix(description.sdp,"a=max-message-size:");return match.length>0?maxMessageSize=parseInt(match[0].substr(19),10):"firefox"===browserDetails.browser&&-1!==remoteIsFirefox&&(maxMessageSize=2147483637),maxMessageSize},origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;if(pc._sctp=null,sctpInDescription(arguments[0])){var maxMessageSize,isFirefox=getRemoteFirefoxVersion(arguments[0]),canSendMMS=getCanSendMaxMessageSize(isFirefox),remoteMMS=getMaxMessageSize(arguments[0],isFirefox);maxMessageSize=0===canSendMMS&&0===remoteMMS?Number.POSITIVE_INFINITY:0===canSendMMS||0===remoteMMS?Math.max(canSendMMS,remoteMMS):Math.min(canSendMMS,remoteMMS);var sctp={};Object.defineProperty(sctp,"maxMessageSize",{get:function(){return maxMessageSize}}),pc._sctp=sctp}return origSetRemoteDescription.apply(pc,arguments)}}},shimSendThrowTypeError:function(window){function wrapDcSend(dc,pc){var origDataChannelSend=dc.send;dc.send=function(){var data=arguments[0],length=data.length||data.size||data.byteLength;if("open"===dc.readyState&&pc.sctp&&length>pc.sctp.maxMessageSize)throw new TypeError("Message too large (can send a maximum of "+pc.sctp.maxMessageSize+" bytes)");return origDataChannelSend.apply(dc,arguments)}}if(window.RTCPeerConnection&&"createDataChannel"in window.RTCPeerConnection.prototype){var origCreateDataChannel=window.RTCPeerConnection.prototype.createDataChannel;window.RTCPeerConnection.prototype.createDataChannel=function(){var pc=this,dataChannel=origCreateDataChannel.apply(pc,arguments);return wrapDcSend(dataChannel,pc),dataChannel},utils.wrapPeerConnectionEvent(window,"datachannel",function(e){return wrapDcSend(e.channel,e.target),e})}}}},{"./utils":14,sdp:2}],8:[function(requirecopy,module,exports){var utils=requirecopy("../utils"),filterIceServers=requirecopy("./filtericeservers"),shimRTCPeerConnection=requirecopy("rtcpeerconnection-shim");module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if(window.RTCIceGatherer&&(window.RTCIceCandidate||(window.RTCIceCandidate=function(args){return args}),window.RTCSessionDescription||(window.RTCSessionDescription=function(args){return args}),browserDetails.version<15025)){var origMSTEnabled=Object.getOwnPropertyDescriptor(window.MediaStreamTrack.prototype,"enabled");Object.defineProperty(window.MediaStreamTrack.prototype,"enabled",{set:function(value){origMSTEnabled.set.call(this,value);var ev=new Event("enabled");ev.enabled=value,this.dispatchEvent(ev)}})}!window.RTCRtpSender||"dtmf"in window.RTCRtpSender.prototype||Object.defineProperty(window.RTCRtpSender.prototype,"dtmf",{get:function(){return void 0===this._dtmf&&("audio"===this.track.kind?this._dtmf=new window.RTCDtmfSender(this):"video"===this.track.kind&&(this._dtmf=null)),this._dtmf}}),window.RTCDtmfSender&&!window.RTCDTMFSender&&(window.RTCDTMFSender=window.RTCDtmfSender);var RTCPeerConnectionShim=shimRTCPeerConnection(window,browserDetails.version);window.RTCPeerConnection=function(config){return config&&config.iceServers&&(config.iceServers=filterIceServers(config.iceServers)),new RTCPeerConnectionShim(config)},window.RTCPeerConnection.prototype=RTCPeerConnectionShim.prototype},shimReplaceTrack:function(window){!window.RTCRtpSender||"replaceTrack"in window.RTCRtpSender.prototype||(window.RTCRtpSender.prototype.replaceTrack=window.RTCRtpSender.prototype.setTrack)}}},{"../utils":14,"./filtericeservers":9,"./getusermedia":10,"rtcpeerconnection-shim":1}],9:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports=function(iceServers,edgeVersion){var hasTurn=!1;return iceServers=JSON.parse(JSON.stringify(iceServers)),iceServers.filter(function(server){if(server&&(server.urls||server.url)){var urls=server.urls||server.url;server.url&&!server.urls&&utils.deprecated("RTCIceServer.url","RTCIceServer.urls");var isString="string"==typeof urls;return isString&&(urls=[urls]),urls=urls.filter(function(url){return 0!==url.indexOf("turn:")||-1===url.indexOf("transport=udp")||-1!==url.indexOf("turn:[")||hasTurn?0===url.indexOf("stun:")&&edgeVersion>=14393&&-1===url.indexOf("?transport=udp"):(hasTurn=!0,!0)}),delete server.url,server.urls=isString?urls[0]:urls,!!urls.length}})}},{"../utils":14}],10:[function(requirecopy,module,exports){module.exports=function(window){var navigator=window&&window.navigator,shimError_=function(e){return{name:{PermissionDeniedError:"NotAllowedError"}[e.name]||e.name,message:e.message,constraint:e.constraint,toString:function(){return this.name}}},origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(c){return origGetUserMedia(c).catch(function(e){return Promise.reject(shimError_(e))})}}},{}],11:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports={shimGetUserMedia:requirecopy("./getusermedia"),shimOnTrack:function(window){"object"!=typeof window||!window.RTCPeerConnection||"ontrack"in window.RTCPeerConnection.prototype||Object.defineProperty(window.RTCPeerConnection.prototype,"ontrack",{get:function(){return this._ontrack},set:function(f){this._ontrack&&(this.removeEventListener("track",this._ontrack),this.removeEventListener("addstream",this._ontrackpoly)),this.addEventListener("track",this._ontrack=f),this.addEventListener("addstream",this._ontrackpoly=function(e){e.stream.getTracks().forEach(function(track){var event=new Event("track");event.track=track,event.receiver={track:track},event.transceiver={receiver:event.receiver},event.streams=[e.stream],this.dispatchEvent(event)}.bind(this))}.bind(this))},enumerable:!0,configurable:!0}),"object"==typeof window&&window.RTCTrackEvent&&"receiver"in window.RTCTrackEvent.prototype&&!("transceiver"in window.RTCTrackEvent.prototype)&&Object.defineProperty(window.RTCTrackEvent.prototype,"transceiver",{get:function(){return{receiver:this.receiver}}})},shimSourceObject:function(window){"object"==typeof window&&(!window.HTMLMediaElement||"srcObject"in window.HTMLMediaElement.prototype||Object.defineProperty(window.HTMLMediaElement.prototype,"srcObject",{get:function(){return this.mozSrcObject},set:function(stream){this.mozSrcObject=stream}}))},shimPeerConnection:function(window){var browserDetails=utils.detectBrowser(window);if("object"==typeof window&&(window.RTCPeerConnection||window.mozRTCPeerConnection)){window.RTCPeerConnection||(window.RTCPeerConnection=function(pcConfig,pcConstraints){if(browserDetails.version<38&&pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];if(server.hasOwnProperty("urls"))for(var j=0;j<server.urls.length;j++){var newServer={url:server.urls[j]};0===server.urls[j].indexOf("turn")&&(newServer.username=server.username,newServer.credential=server.credential),newIceServers.push(newServer)}else newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new window.mozRTCPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=window.mozRTCPeerConnection.prototype,window.mozRTCPeerConnection.generateCertificate&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return window.mozRTCPeerConnection.generateCertificate}}),window.RTCSessionDescription=window.mozRTCSessionDescription,window.RTCIceCandidate=window.mozRTCIceCandidate),["setLocalDescription","setRemoteDescription","addIceCandidate"].forEach(function(method){var nativeMethod=window.RTCPeerConnection.prototype[method];window.RTCPeerConnection.prototype[method]=function(){return arguments[0]=new("addIceCandidate"===method?window.RTCIceCandidate:window.RTCSessionDescription)(arguments[0]),nativeMethod.apply(this,arguments)}});var nativeAddIceCandidate=window.RTCPeerConnection.prototype.addIceCandidate;window.RTCPeerConnection.prototype.addIceCandidate=function(){return arguments[0]?nativeAddIceCandidate.apply(this,arguments):(arguments[1]&&arguments[1].apply(null),Promise.resolve())};var makeMapStats=function(stats){var map=new Map;return Object.keys(stats).forEach(function(key){map.set(key,stats[key]),map[key]=stats[key]}),map},modernStatsTypes={inboundrtp:"inbound-rtp",outboundrtp:"outbound-rtp",candidatepair:"candidate-pair",localcandidate:"local-candidate",remotecandidate:"remote-candidate"},nativeGetStats=window.RTCPeerConnection.prototype.getStats;window.RTCPeerConnection.prototype.getStats=function(selector,onSucc,onErr){return nativeGetStats.apply(this,[selector||null]).then(function(stats){if(browserDetails.version<48&&(stats=makeMapStats(stats)),browserDetails.version<53&&!onSucc)try{stats.forEach(function(stat){stat.type=modernStatsTypes[stat.type]||stat.type})}catch(e){if("TypeError"!==e.name)throw e;stats.forEach(function(stat,i){stats.set(i,Object.assign({},stat,{type:modernStatsTypes[stat.type]||stat.type}))})}return stats}).then(onSucc,onErr)}}},shimSenderGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&!(window.RTCRtpSender&&"getStats"in window.RTCRtpSender.prototype)){var origGetSenders=window.RTCPeerConnection.prototype.getSenders;origGetSenders&&(window.RTCPeerConnection.prototype.getSenders=function(){var pc=this,senders=origGetSenders.apply(pc,[]);return senders.forEach(function(sender){sender._pc=pc}),senders});var origAddTrack=window.RTCPeerConnection.prototype.addTrack;origAddTrack&&(window.RTCPeerConnection.prototype.addTrack=function(){var sender=origAddTrack.apply(this,arguments);return sender._pc=this,sender}),window.RTCRtpSender.prototype.getStats=function(){return this.track?this._pc.getStats(this.track):Promise.resolve(new Map)}}},shimReceiverGetStats:function(window){if("object"==typeof window&&window.RTCPeerConnection&&window.RTCRtpSender&&!(window.RTCRtpSender&&"getStats"in window.RTCRtpReceiver.prototype)){var origGetReceivers=window.RTCPeerConnection.prototype.getReceivers;origGetReceivers&&(window.RTCPeerConnection.prototype.getReceivers=function(){var pc=this,receivers=origGetReceivers.apply(pc,[]);return receivers.forEach(function(receiver){receiver._pc=pc}),receivers}),utils.wrapPeerConnectionEvent(window,"track",function(e){return e.receiver._pc=e.srcElement,e}),window.RTCRtpReceiver.prototype.getStats=function(){return this._pc.getStats(this.track)}}},shimRemoveStream:function(window){!window.RTCPeerConnection||"removeStream"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.removeStream=function(stream){var pc=this;utils.deprecated("removeStream","removeTrack"),this.getSenders().forEach(function(sender){sender.track&&-1!==stream.getTracks().indexOf(sender.track)&&pc.removeTrack(sender)})})},shimRTCDataChannel:function(window){window.DataChannel&&!window.RTCDataChannel&&(window.RTCDataChannel=window.DataChannel)},shimGetDisplayMedia:function(window,preferredMediaSource){"getDisplayMedia"in window.navigator||(navigator.getDisplayMedia=function(constraints){if(!constraints||!constraints.video){var err=new DOMException("getDisplayMedia without video constraints is undefined");return err.name="NotFoundError",err.code=8,Promise.reject(err)}return!0===constraints.video?constraints.video={mediaSource:preferredMediaSource}:constraints.video.mediaSource=preferredMediaSource,navigator.mediaDevices.getUserMedia(constraints)})}}},{"../utils":14,"./getusermedia":12}],12:[function(requirecopy,module,exports){var utils=requirecopy("../utils"),logging=utils.log;module.exports=function(window){var browserDetails=utils.detectBrowser(window),navigator=window&&window.navigator,MediaStreamTrack=window&&window.MediaStreamTrack,shimError_=function(e){return{name:{InternalError:"NotReadableError",NotSupportedError:"TypeError",PermissionDeniedError:"NotAllowedError",SecurityError:"NotAllowedError"}[e.name]||e.name,message:{"The operation is insecure.":"The request is not allowed by the user agent or the platform in the current context."}[e.message]||e.message,constraint:e.constraint,toString:function(){return this.name+(this.message&&": ")+this.message}}},getUserMedia_=function(constraints,onSuccess,onError){var constraintsToFF37_=function(c){if("object"!=typeof c||c.require)return c;var require=[];return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key&&"mediaSource"!==key){var r=c[key]="object"==typeof c[key]?c[key]:{ideal:c[key]};if(void 0===r.min&&void 0===r.max&&void 0===r.exact||require.push(key),void 0!==r.exact&&("number"==typeof r.exact?r.min=r.max=r.exact:c[key]=r.exact,delete r.exact),void 0!==r.ideal){c.advanced=c.advanced||[];var oc={};"number"==typeof r.ideal?oc[key]={min:r.ideal,max:r.ideal}:oc[key]=r.ideal,c.advanced.push(oc),delete r.ideal,Object.keys(r).length||delete c[key]}}}),require.length&&(c.require=require),c};return constraints=JSON.parse(JSON.stringify(constraints)),browserDetails.version<38&&(logging("spec: "+JSON.stringify(constraints)),constraints.audio&&(constraints.audio=constraintsToFF37_(constraints.audio)),constraints.video&&(constraints.video=constraintsToFF37_(constraints.video)),logging("ff37: "+JSON.stringify(constraints))),navigator.mozGetUserMedia(constraints,onSuccess,function(e){onError(shimError_(e))})},getUserMediaPromise_=function(constraints){return new Promise(function(resolve,reject){getUserMedia_(constraints,resolve,reject)})};if(navigator.mediaDevices||(navigator.mediaDevices={getUserMedia:getUserMediaPromise_,addEventListener:function(){},removeEventListener:function(){}}),navigator.mediaDevices.enumerateDevices=navigator.mediaDevices.enumerateDevices||function(){return new Promise(function(resolve){resolve([{kind:"audioinput",deviceId:"default",label:"",groupId:""},{kind:"videoinput",deviceId:"default",label:"",groupId:""}])})},browserDetails.version<41){var orgEnumerateDevices=navigator.mediaDevices.enumerateDevices.bind(navigator.mediaDevices);navigator.mediaDevices.enumerateDevices=function(){return orgEnumerateDevices().then(void 0,function(e){if("NotFoundError"===e.name)return[];throw e})}}if(browserDetails.version<49){var origGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);navigator.mediaDevices.getUserMedia=function(c){return origGetUserMedia(c).then(function(stream){if(c.audio&&!stream.getAudioTracks().length||c.video&&!stream.getVideoTracks().length)throw stream.getTracks().forEach(function(track){track.stop()}),new DOMException("The object can not be found here.","NotFoundError");return stream},function(e){return Promise.reject(shimError_(e))})}}if(!(browserDetails.version>55&&"autoGainControl"in navigator.mediaDevices.getSupportedConstraints())){var remap=function(obj,a,b){a in obj&&!(b in obj)&&(obj[b]=obj[a],delete obj[a])},nativeGetUserMedia=navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);if(navigator.mediaDevices.getUserMedia=function(c){return"object"==typeof c&&"object"==typeof c.audio&&(c=JSON.parse(JSON.stringify(c)),remap(c.audio,"autoGainControl","mozAutoGainControl"),remap(c.audio,"noiseSuppression","mozNoiseSuppression")),nativeGetUserMedia(c)},MediaStreamTrack&&MediaStreamTrack.prototype.getSettings){var nativeGetSettings=MediaStreamTrack.prototype.getSettings;MediaStreamTrack.prototype.getSettings=function(){var obj=nativeGetSettings.apply(this,arguments);return remap(obj,"mozAutoGainControl","autoGainControl"),remap(obj,"mozNoiseSuppression","noiseSuppression"),obj}}if(MediaStreamTrack&&MediaStreamTrack.prototype.applyConstraints){var nativeApplyConstraints=MediaStreamTrack.prototype.applyConstraints;MediaStreamTrack.prototype.applyConstraints=function(c){return"audio"===this.kind&&"object"==typeof c&&(c=JSON.parse(JSON.stringify(c)),remap(c,"autoGainControl","mozAutoGainControl"),remap(c,"noiseSuppression","mozNoiseSuppression")),nativeApplyConstraints.apply(this,[c])}}}navigator.getUserMedia=function(constraints,onSuccess,onError){if(browserDetails.version<44)return getUserMedia_(constraints,onSuccess,onError);utils.deprecated("navigator.getUserMedia","navigator.mediaDevices.getUserMedia"),navigator.mediaDevices.getUserMedia(constraints).then(onSuccess,onError)}}},{"../utils":14}],13:[function(requirecopy,module,exports){var utils=requirecopy("../utils");module.exports={shimLocalStreamsAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection){if("getLocalStreams"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getLocalStreams=function(){return this._localStreams||(this._localStreams=[]),this._localStreams}),"getStreamById"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getStreamById=function(id){var result=null;return this._localStreams&&this._localStreams.forEach(function(stream){stream.id===id&&(result=stream)}),this._remoteStreams&&this._remoteStreams.forEach(function(stream){stream.id===id&&(result=stream)}),result}),!("addStream"in window.RTCPeerConnection.prototype)){var _addTrack=window.RTCPeerConnection.prototype.addTrack;window.RTCPeerConnection.prototype.addStream=function(stream){this._localStreams||(this._localStreams=[]),-1===this._localStreams.indexOf(stream)&&this._localStreams.push(stream);var pc=this;stream.getTracks().forEach(function(track){_addTrack.call(pc,track,stream)})},window.RTCPeerConnection.prototype.addTrack=function(track,stream){return stream&&(this._localStreams?-1===this._localStreams.indexOf(stream)&&this._localStreams.push(stream):this._localStreams=[stream]),_addTrack.call(this,track,stream)}}"removeStream"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.removeStream=function(stream){this._localStreams||(this._localStreams=[]);var index=this._localStreams.indexOf(stream);if(-1!==index){this._localStreams.splice(index,1);var pc=this,tracks=stream.getTracks();this.getSenders().forEach(function(sender){-1!==tracks.indexOf(sender.track)&&pc.removeTrack(sender)})}})}},shimRemoteStreamsAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection&&("getRemoteStreams"in window.RTCPeerConnection.prototype||(window.RTCPeerConnection.prototype.getRemoteStreams=function(){return this._remoteStreams?this._remoteStreams:[]}),!("onaddstream"in window.RTCPeerConnection.prototype))){Object.defineProperty(window.RTCPeerConnection.prototype,"onaddstream",{get:function(){return this._onaddstream},set:function(f){this._onaddstream&&this.removeEventListener("addstream",this._onaddstream),this.addEventListener("addstream",this._onaddstream=f)}});var origSetRemoteDescription=window.RTCPeerConnection.prototype.setRemoteDescription;window.RTCPeerConnection.prototype.setRemoteDescription=function(){var pc=this;return this._onaddstreampoly||this.addEventListener("track",this._onaddstreampoly=function(e){e.streams.forEach(function(stream){if(pc._remoteStreams||(pc._remoteStreams=[]),!(pc._remoteStreams.indexOf(stream)>=0)){pc._remoteStreams.push(stream);var event=new Event("addstream");event.stream=stream,pc.dispatchEvent(event)}})}),origSetRemoteDescription.apply(pc,arguments)}}},shimCallbacksAPI:function(window){if("object"==typeof window&&window.RTCPeerConnection){var prototype=window.RTCPeerConnection.prototype,createOffer=prototype.createOffer,createAnswer=prototype.createAnswer,setLocalDescription=prototype.setLocalDescription,setRemoteDescription=prototype.setRemoteDescription,addIceCandidate=prototype.addIceCandidate;prototype.createOffer=function(successCallback,failureCallback){var options=arguments.length>=2?arguments[2]:arguments[0],promise=createOffer.apply(this,[options]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.createAnswer=function(successCallback,failureCallback){var options=arguments.length>=2?arguments[2]:arguments[0],promise=createAnswer.apply(this,[options]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise};var withCallback=function(description,successCallback,failureCallback){var promise=setLocalDescription.apply(this,[description]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise};prototype.setLocalDescription=withCallback,withCallback=function(description,successCallback,failureCallback){var promise=setRemoteDescription.apply(this,[description]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.setRemoteDescription=withCallback,withCallback=function(candidate,successCallback,failureCallback){var promise=addIceCandidate.apply(this,[candidate]);return failureCallback?(promise.then(successCallback,failureCallback),Promise.resolve()):promise},prototype.addIceCandidate=withCallback}},shimGetUserMedia:function(window){var navigator=window&&window.navigator;navigator.getUserMedia||(navigator.webkitGetUserMedia?navigator.getUserMedia=navigator.webkitGetUserMedia.bind(navigator):navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&(navigator.getUserMedia=function(constraints,cb,errcb){navigator.mediaDevices.getUserMedia(constraints).then(cb,errcb)}.bind(navigator)))},shimRTCIceServerUrls:function(window){var OrigPeerConnection=window.RTCPeerConnection;window.RTCPeerConnection=function(pcConfig,pcConstraints){if(pcConfig&&pcConfig.iceServers){for(var newIceServers=[],i=0;i<pcConfig.iceServers.length;i++){var server=pcConfig.iceServers[i];!server.hasOwnProperty("urls")&&server.hasOwnProperty("url")?(utils.deprecated("RTCIceServer.url","RTCIceServer.urls"),server=JSON.parse(JSON.stringify(server)),server.urls=server.url,delete server.url,newIceServers.push(server)):newIceServers.push(pcConfig.iceServers[i])}pcConfig.iceServers=newIceServers}return new OrigPeerConnection(pcConfig,pcConstraints)},window.RTCPeerConnection.prototype=OrigPeerConnection.prototype,"generateCertificate"in window.RTCPeerConnection&&Object.defineProperty(window.RTCPeerConnection,"generateCertificate",{get:function(){return OrigPeerConnection.generateCertificate}})},shimTrackEventTransceiver:function(window){"object"==typeof window&&window.RTCPeerConnection&&"receiver"in window.RTCTrackEvent.prototype&&!window.RTCTransceiver&&Object.defineProperty(window.RTCTrackEvent.prototype,"transceiver",{get:function(){return{receiver:this.receiver}}})},shimCreateOfferLegacy:function(window){var origCreateOffer=window.RTCPeerConnection.prototype.createOffer;window.RTCPeerConnection.prototype.createOffer=function(offerOptions){var pc=this;if(offerOptions){void 0!==offerOptions.offerToReceiveAudio&&(offerOptions.offerToReceiveAudio=!!offerOptions.offerToReceiveAudio);var audioTransceiver=pc.getTransceivers().find(function(transceiver){return transceiver.sender.track&&"audio"===transceiver.sender.track.kind});!1===offerOptions.offerToReceiveAudio&&audioTransceiver?"sendrecv"===audioTransceiver.direction?audioTransceiver.setDirection?audioTransceiver.setDirection("sendonly"):audioTransceiver.direction="sendonly":"recvonly"===audioTransceiver.direction&&(audioTransceiver.setDirection?audioTransceiver.setDirection("inactive"):audioTransceiver.direction="inactive"):!0!==offerOptions.offerToReceiveAudio||audioTransceiver||pc.addTransceiver("audio"),void 0!==offerOptions.offerToReceiveVideo&&(offerOptions.offerToReceiveVideo=!!offerOptions.offerToReceiveVideo);var videoTransceiver=pc.getTransceivers().find(function(transceiver){return transceiver.sender.track&&"video"===transceiver.sender.track.kind});!1===offerOptions.offerToReceiveVideo&&videoTransceiver?"sendrecv"===videoTransceiver.direction?videoTransceiver.setDirection("sendonly"):"recvonly"===videoTransceiver.direction&&videoTransceiver.setDirection("inactive"):!0!==offerOptions.offerToReceiveVideo||videoTransceiver||pc.addTransceiver("video")}return origCreateOffer.apply(pc,arguments)}}}},{"../utils":14}],14:[function(requirecopy,module,exports){function extractVersion(uastring,expr,pos){var match=uastring.match(expr);return match&&match.length>=pos&&parseInt(match[pos],10)}function wrapPeerConnectionEvent(window,eventNameToWrap,wrapper){if(window.RTCPeerConnection){var proto=window.RTCPeerConnection.prototype,nativeAddEventListener=proto.addEventListener;proto.addEventListener=function(nativeEventName,cb){if(nativeEventName!==eventNameToWrap)return nativeAddEventListener.apply(this,arguments);var wrappedCallback=function(e){var modifiedEvent=wrapper(e);modifiedEvent&&cb(modifiedEvent)};return this._eventMap=this._eventMap||{},this._eventMap[cb]=wrappedCallback,nativeAddEventListener.apply(this,[nativeEventName,wrappedCallback])};var nativeRemoveEventListener=proto.removeEventListener;proto.removeEventListener=function(nativeEventName,cb){if(nativeEventName!==eventNameToWrap||!this._eventMap||!this._eventMap[cb])return nativeRemoveEventListener.apply(this,arguments);var unwrappedCb=this._eventMap[cb];return delete this._eventMap[cb],nativeRemoveEventListener.apply(this,[nativeEventName,unwrappedCb])},Object.defineProperty(proto,"on"+eventNameToWrap,{get:function(){return this["_on"+eventNameToWrap]},set:function(cb){this["_on"+eventNameToWrap]&&(this.removeEventListener(eventNameToWrap,this["_on"+eventNameToWrap]),delete this["_on"+eventNameToWrap]),cb&&this.addEventListener(eventNameToWrap,this["_on"+eventNameToWrap]=cb)},enumerable:!0,configurable:!0})}}var logDisabled_=!0,deprecationWarnings_=!0;module.exports={extractVersion:extractVersion,wrapPeerConnectionEvent:wrapPeerConnectionEvent,disableLog:function(bool){return"boolean"!=typeof bool?new Error("Argument type: "+typeof bool+". Please use a boolean."):(logDisabled_=bool,bool?"adapter.js logging disabled":"adapter.js logging enabled")},disableWarnings:function(bool){return"boolean"!=typeof bool?new Error("Argument type: "+typeof bool+". Please use a boolean."):(deprecationWarnings_=!bool,"adapter.js deprecation warnings "+(bool?"disabled":"enabled"))},log:function(){if("object"==typeof window){if(logDisabled_)return;"undefined"!=typeof console&&console.log}},deprecated:function(oldMethod,newMethod){},detectBrowser:function(window){var navigator=window&&window.navigator,result={};if(result.browser=null,result.version=null,void 0===window||!window.navigator)return result.browser="Not a browser.",result;if(navigator.mozGetUserMedia)result.browser="firefox",result.version=extractVersion(navigator.userAgent,/Firefox\/(\d+)\./,1);else if(navigator.webkitGetUserMedia)result.browser="chrome",result.version=extractVersion(navigator.userAgent,/Chrom(e|ium)\/(\d+)\./,2);else if(navigator.mediaDevices&&navigator.userAgent.match(/Edge\/(\d+).(\d+)$/))result.browser="edge",result.version=extractVersion(navigator.userAgent,/Edge\/(\d+).(\d+)$/,2);else{if(!window.RTCPeerConnection||!navigator.userAgent.match(/AppleWebKit\/(\d+)\./))return result.browser="Not a supported browser.",result;result.browser="safari",result.version=extractVersion(navigator.userAgent,/AppleWebKit\/(\d+)\./,1)}return result}}},{}]},{},[3])(3)}),navigator.mozGetUserMedia?(MediaStreamTrack.getSources=function(successCb){setTimeout(function(){successCb([{kind:"audio",id:"default",label:"",facing:""},{kind:"video",id:"default",label:"",facing:""}])},0)},attachMediaStream=function(element,stream){return element.srcObject=stream,element},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to}):navigator.webkitGetUserMedia?(attachMediaStream=function(element,stream){return AdapterJS.webrtcDetectedVersion>=43?element.srcObject=stream:void 0!==element.src&&(element.src=URL.createObjectURL(stream)),element},reattachMediaStream=function(to,from){return AdapterJS.webrtcDetectedVersion>=43?to.srcObject=from.srcObject:to.src=from.src,to}):"AppleWebKit"===AdapterJS.webrtcDetectedType?(attachMediaStream=function(element,stream){return element.srcObject=stream,element},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to},navigator.mediaDevices&&navigator.mediaDevices.getUserMedia&&(navigator.getUserMedia=getUserMedia=function(constraints,successCb,errorCb){navigator.mediaDevices.getUserMedia(constraints).then(successCb).catch(errorCb)})):navigator.mediaDevices&&navigator.userAgent.match(/Edge\/(\d+).(\d+)$/)&&(attachMediaStream=function(element,stream){return element.srcObject=stream,
-element},reattachMediaStream=function(to,from){return to.srcObject=from.srcObject,to});var attachMediaStream_base=attachMediaStream;"opera"===AdapterJS.webrtcDetectedBrowser&&(attachMediaStream_base=function(element,stream){AdapterJS.webrtcDetectedVersion>38?element.srcObject=stream:void 0!==element.src&&(element.src=URL.createObjectURL(stream))}),attachMediaStream=function(element,stream){return"chrome"!==AdapterJS.webrtcDetectedBrowser&&"opera"!==AdapterJS.webrtcDetectedBrowser||stream?attachMediaStream_base(element,stream):element.src="",element};var reattachMediaStream_base=reattachMediaStream;reattachMediaStream=function(to,from){return reattachMediaStream_base(to,from),to},window.attachMediaStream=attachMediaStream,window.reattachMediaStream=reattachMediaStream,window.getUserMedia=function(constraints,onSuccess,onFailure){navigator.getUserMedia(constraints,onSuccess,onFailure)},AdapterJS.attachMediaStream=attachMediaStream,AdapterJS.reattachMediaStream=reattachMediaStream,AdapterJS.getUserMedia=getUserMedia,"undefined"==typeof Promise&&(requestUserMedia=null),AdapterJS.maybeThroughWebRTCReady()}else"object"==typeof console&&"function"==typeof console.log||(console={}||console,console.log=function(arg){},console.info=function(arg){},console.error=function(arg){},console.dir=function(arg){},console.exception=function(arg){},console.trace=function(arg){},console.warn=function(arg){},console.count=function(arg){},console.debug=function(arg){},console.count=function(arg){},console.time=function(arg){},console.timeEnd=function(arg){},console.group=function(arg){},console.groupCollapsed=function(arg){},console.groupEnd=function(arg){}),AdapterJS.WebRTCPlugin.WaitForPluginReady=function(){for(;AdapterJS.WebRTCPlugin.pluginState!==AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY;);},AdapterJS.WebRTCPlugin.callWhenPluginReady=function(callback){if(AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY)callback();else var checkPluginReadyState=setInterval(function(){AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY&&(clearInterval(checkPluginReadyState),callback())},100)},AdapterJS.WebRTCPlugin.setLogLevel=function(logLevel){AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.setLogLevel(logLevel)})},AdapterJS.WebRTCPlugin.injectPlugin=function(){if(AdapterJS.documentReady()&&AdapterJS.WebRTCPlugin.pluginState===AdapterJS.WebRTCPlugin.PLUGIN_STATES.INITIALIZING){AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTING;var existing=document.getElementById(AdapterJS.WebRTCPlugin.pluginInfo.pluginId);if(existing)if(AdapterJS.WebRTCPlugin.plugin=existing,AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTED,AdapterJS.WebRTCPlugin.plugin.valid)window[AdapterJS.WebRTCPlugin.pluginInfo.onload]();else var pluginValidInterval=setInterval(function(){AdapterJS.WebRTCPlugin.plugin.valid&&(clearInterval(pluginValidInterval),window[AdapterJS.WebRTCPlugin.pluginInfo.onload]())},100);else{if("IE"===AdapterJS.webrtcDetectedBrowser&&AdapterJS.webrtcDetectedVersion<=10){var frag=document.createDocumentFragment();for(AdapterJS.WebRTCPlugin.plugin=document.createElement("div"),AdapterJS.WebRTCPlugin.plugin.innerHTML='<object id="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'" type="'+AdapterJS.WebRTCPlugin.pluginInfo.type+'" width="1" height="1"><param name="pluginId" value="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'" /> <param name="windowless" value="false" /> <param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'" /> <param name="onload" value="'+AdapterJS.WebRTCPlugin.pluginInfo.onload+'" /><param name="tag" value="'+AdapterJS.WebRTCPlugin.TAGS.NONE+'" />'+(AdapterJS.options.getAllCams?'<param name="forceGetAllCams" value="True" />':"")+"</object>";AdapterJS.WebRTCPlugin.plugin.firstChild;)frag.appendChild(AdapterJS.WebRTCPlugin.plugin.firstChild);document.body.appendChild(frag),AdapterJS.WebRTCPlugin.plugin=document.getElementById(AdapterJS.WebRTCPlugin.pluginInfo.pluginId)}else AdapterJS.WebRTCPlugin.plugin=document.createElement("object"),AdapterJS.WebRTCPlugin.plugin.id=AdapterJS.WebRTCPlugin.pluginInfo.pluginId,"IE"===AdapterJS.webrtcDetectedBrowser?(AdapterJS.WebRTCPlugin.plugin.width="1px",AdapterJS.WebRTCPlugin.plugin.height="1px"):(AdapterJS.WebRTCPlugin.plugin.width="0px",AdapterJS.WebRTCPlugin.plugin.height="0px"),AdapterJS.WebRTCPlugin.plugin.type=AdapterJS.WebRTCPlugin.pluginInfo.type,AdapterJS.WebRTCPlugin.plugin.innerHTML='<param name="onload" value="'+AdapterJS.WebRTCPlugin.pluginInfo.onload+'"><param name="pluginId" value="'+AdapterJS.WebRTCPlugin.pluginInfo.pluginId+'"><param name="windowless" value="false" /> '+(AdapterJS.options.getAllCams?'<param name="forceGetAllCams" value="True" />':"")+'<param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'"><param name="tag" value="'+AdapterJS.WebRTCPlugin.TAGS.NONE+'" />',document.body.appendChild(AdapterJS.WebRTCPlugin.plugin);AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INJECTED}}},AdapterJS.WebRTCPlugin.isPluginInstalled=function(comName,plugName,plugType,installedCb,notInstalledCb){if("IE"!==AdapterJS.webrtcDetectedBrowser){var pluginArray=navigator.mimeTypes;if(void 0!==pluginArray){for(var i=0;i<pluginArray.length;i++)if(pluginArray[i].type.indexOf(plugType)>=0)return void installedCb();notInstalledCb()}else AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.NOT_SUPPORTED)}else{try{new ActiveXObject(comName+"."+plugName)}catch(e){return void notInstalledCb()}installedCb()}},AdapterJS.WebRTCPlugin.defineWebRTCInterface=function(){if(AdapterJS.WebRTCPlugin.pluginState!==AdapterJS.WebRTCPlugin.PLUGIN_STATES.READY){AdapterJS.WebRTCPlugin.pluginState=AdapterJS.WebRTCPlugin.PLUGIN_STATES.INITIALIZING,AdapterJS.isDefined=function(variable){return null!==variable&&void 0!==variable},RTCSessionDescription=function(info){return AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.ConstructSessionDescription(info.type,info.sdp)},MediaStream=function(mediaStreamOrTracks){return AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.MediaStream(mediaStreamOrTracks)},RTCPeerConnection=function(servers,constraints){if(void 0!==servers&&null!==servers&&!Array.isArray(servers.iceServers))throw new Error("Failed to construct 'RTCPeerConnection': Malformed RTCConfiguration");if(void 0!==constraints&&null!==constraints){var invalidConstraits=!1;if(invalidConstraits|="object"!=typeof constraints,invalidConstraits|=constraints.hasOwnProperty("mandatory")&&void 0!==constraints.mandatory&&null!==constraints.mandatory&&constraints.mandatory.constructor!==Object,invalidConstraits|=constraints.hasOwnProperty("optional")&&void 0!==constraints.optional&&null!==constraints.optional&&!Array.isArray(constraints.optional))throw new Error("Failed to construct 'RTCPeerConnection': Malformed constraints object")}AdapterJS.WebRTCPlugin.WaitForPluginReady();var iceServers=null;if(servers&&Array.isArray(servers.iceServers)){iceServers=servers.iceServers;for(var i=0;i<iceServers.length;i++)iceServers[i].urls&&!iceServers[i].url&&(iceServers[i].url=iceServers[i].urls),iceServers[i].hasCredentials=AdapterJS.isDefined(iceServers[i].username)&&AdapterJS.isDefined(iceServers[i].credential)}if(AdapterJS.WebRTCPlugin.plugin.PEER_CONNECTION_VERSION&&AdapterJS.WebRTCPlugin.plugin.PEER_CONNECTION_VERSION>1)return iceServers&&(servers.iceServers=iceServers),AdapterJS.WebRTCPlugin.plugin.PeerConnection(servers);var mandatory=constraints&&constraints.mandatory?constraints.mandatory:null,optional=constraints&&constraints.optional?constraints.optional:null;return AdapterJS.WebRTCPlugin.plugin.PeerConnection(AdapterJS.WebRTCPlugin.pageId,iceServers,mandatory,optional)};var MediaStreamTrack=function(){};MediaStreamTrack.getSources=function(callback){AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.GetSources(callback)})};var constraintsToPlugin=function(c){if("object"!=typeof c||c.mandatory||c.optional)return c;var cc={};return Object.keys(c).forEach(function(key){if("require"!==key&&"advanced"!==key){if("string"==typeof c[key])return void(cc[key]=c[key]);var r="object"==typeof c[key]?c[key]:{ideal:c[key]};void 0!==r.exact&&"number"==typeof r.exact&&(r.min=r.max=r.exact);var oldname=function(prefix,name){return prefix?prefix+name.charAt(0).toUpperCase()+name.slice(1):"deviceId"===name?"sourceId":name};if("sourceId"===oldname("",key)&&void 0!==r.exact&&(r.ideal=r.exact,r.exact=void 0),void 0!==r.ideal){cc.optional=cc.optional||[];var oc={};"number"==typeof r.ideal?(oc[oldname("min",key)]=r.ideal,cc.optional.push(oc),oc={},oc[oldname("max",key)]=r.ideal,cc.optional.push(oc)):(oc[oldname("",key)]=r.ideal,cc.optional.push(oc))}void 0!==r.exact&&"number"!=typeof r.exact?(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname("",key)]=r.exact):["min","max"].forEach(function(mix){void 0!==r[mix]&&(cc.mandatory=cc.mandatory||{},cc.mandatory[oldname(mix,key)]=r[mix])})}}),c.advanced&&(cc.optional=(cc.optional||[]).concat(c.advanced)),cc};getUserMedia=function(constraints,successCallback,failureCallback){var cc={};cc.audio=!!constraints.audio&&constraintsToPlugin(constraints.audio),cc.video=!!constraints.video&&constraintsToPlugin(constraints.video),AdapterJS.WebRTCPlugin.callWhenPluginReady(function(){AdapterJS.WebRTCPlugin.plugin.getUserMedia(cc,successCallback,failureCallback)})},window.navigator.getUserMedia=getUserMedia,"undefined"!=typeof Promise&&(requestUserMedia=function(constraints){return new Promise(function(resolve,reject){try{getUserMedia(constraints,resolve,reject)}catch(error){reject(error)}})},void 0===navigator.mediaDevices&&(navigator.mediaDevices={}),navigator.mediaDevices.getUserMedia=requestUserMedia,navigator.mediaDevices.enumerateDevices=function(){return new Promise(function(resolve){var kinds={audio:"audioinput",video:"videoinput"};return MediaStreamTrack.getSources(function(devices){resolve(devices.map(function(device){return{label:device.label,kind:kinds[device.kind],id:device.id,deviceId:device.id,groupId:""}}))})})}),attachMediaStream=function(element,stream){if(element&&element.parentNode){var streamId;null===stream?streamId="":(void 0!==stream.enableSoundTracks&&stream.enableSoundTracks(!0),streamId=stream.id);var elementId=0===element.id.length?Math.random().toString(36).slice(2):element.id,nodeName=element.nodeName.toLowerCase();if("object"!==nodeName){var tag;switch(nodeName){case"audio":tag=AdapterJS.WebRTCPlugin.TAGS.AUDIO;break;case"video":tag=AdapterJS.WebRTCPlugin.TAGS.VIDEO;break;default:tag=AdapterJS.WebRTCPlugin.TAGS.NONE}var frag=document.createDocumentFragment(),temp=document.createElement("div"),classHTML="";for(element.className?classHTML='class="'+element.className+'" ':element.attributes&&element.attributes.class&&(classHTML='class="'+element.attributes.class.value+'" '),temp.innerHTML='<object id="'+elementId+'" '+classHTML+'type="'+AdapterJS.WebRTCPlugin.pluginInfo.type+'"><param name="pluginId" value="'+elementId+'" /> <param name="pageId" value="'+AdapterJS.WebRTCPlugin.pageId+'" /> <param name="windowless" value="true" /> <param name="streamId" value="'+streamId+'" /> <param name="tag" value="'+tag+'" /> </object>';temp.firstChild;)frag.appendChild(temp.firstChild);var height="",width="";element.clientWidth||element.clientHeight?(width=element.clientWidth,height=element.clientHeight):(element.width||element.height)&&(width=element.width,height=element.height),element.parentNode.insertBefore(frag,element),frag=document.getElementById(elementId),frag.width=width,frag.height=height,element.parentNode.removeChild(element)}else{for(var children=element.children,i=0;i!==children.length;++i)if("streamId"===children[i].name){children[i].value=streamId;break}element.setStreamId(streamId)}var newElement=document.getElementById(elementId);return AdapterJS.forwardEventHandlers(newElement,element,Object.getPrototypeOf(element)),newElement}},reattachMediaStream=function(to,from){for(var stream=null,children=from.children,i=0;i!==children.length;++i)if("streamId"===children[i].name){AdapterJS.WebRTCPlugin.WaitForPluginReady(),stream=AdapterJS.WebRTCPlugin.plugin.getStreamWithId(AdapterJS.WebRTCPlugin.pageId,children[i].value);break}if(null!==stream)return attachMediaStream(to,stream)},window.attachMediaStream=attachMediaStream,window.reattachMediaStream=reattachMediaStream,window.getUserMedia=getUserMedia,AdapterJS.attachMediaStream=attachMediaStream,AdapterJS.reattachMediaStream=reattachMediaStream,AdapterJS.getUserMedia=getUserMedia,AdapterJS.forwardEventHandlers=function(destElem,srcElem,prototype){var properties=Object.getOwnPropertyNames(prototype);for(var prop in properties)if(prop){var propName=properties[prop];"function"==typeof propName.slice&&"on"===propName.slice(0,2)&&"function"==typeof srcElem[propName]&&AdapterJS.addEvent(destElem,propName.slice(2),srcElem[propName])}var subPrototype=Object.getPrototypeOf(prototype);subPrototype&&AdapterJS.forwardEventHandlers(destElem,srcElem,subPrototype)},RTCIceCandidate=function(candidate){return candidate.sdpMid||(candidate.sdpMid=""),AdapterJS.WebRTCPlugin.WaitForPluginReady(),AdapterJS.WebRTCPlugin.plugin.ConstructIceCandidate(candidate.sdpMid,candidate.sdpMLineIndex,candidate.candidate)},AdapterJS.addEvent(document,"readystatechange",AdapterJS.WebRTCPlugin.injectPlugin),AdapterJS.WebRTCPlugin.injectPlugin()}},AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb=AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb||function(){AdapterJS.addEvent(document,"readystatechange",AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv),AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv()},AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv=function(){if(AdapterJS.documentReady()&&(document.removeEventListener("readystatechange",AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCbPriv),!AdapterJS.options.hidePluginInstallPrompt)){var downloadLink=AdapterJS.WebRTCPlugin.pluginInfo.downloadLink;if(downloadLink){var popupString;AdapterJS.WebRTCPlugin.pluginInfo.companyName?(popupString="This website requires you to install the ",AdapterJS.WebRTCPlugin.pluginInfo.portalLink?popupString+=' <a href="'+AdapterJS.WebRTCPlugin.pluginInfo.portalLink+'" target="_blank">'+AdapterJS.WebRTCPlugin.pluginInfo.companyName+" WebRTC Plugin</a>":popupString+=AdapterJS.WebRTCPlugin.pluginInfo.companyName+" WebRTC Plugin",popupString+=" to work on this browser."):popupString=AdapterJS.TEXT.PLUGIN.REQUIRE_INSTALLATION,AdapterJS.renderNotificationBar(popupString,AdapterJS.TEXT.PLUGIN.BUTTON,function(){if(window.open(downloadLink,"_top"),"safari"===webrtcDetectedBrowser&&11==webrtcDetectedVersion)AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.REQUIRE_RESTART);else var pluginInstallInterval=setInterval(function(){"IE"!==AdapterJS.webrtcDetectedBrowser&&navigator.plugins.refresh(!1),AdapterJS.WebRTCPlugin.isPluginInstalled(AdapterJS.WebRTCPlugin.pluginInfo.prefix,AdapterJS.WebRTCPlugin.pluginInfo.plugName,AdapterJS.WebRTCPlugin.pluginInfo.type,function(){clearInterval(pluginInstallInterval),AdapterJS.WebRTCPlugin.defineWebRTCInterface()},function(){})},500)})}else AdapterJS.renderNotificationBar(AdapterJS.TEXT.PLUGIN.NOT_SUPPORTED)}},AdapterJS.WebRTCPlugin.isPluginInstalled(AdapterJS.WebRTCPlugin.pluginInfo.prefix,AdapterJS.WebRTCPlugin.pluginInfo.plugName,AdapterJS.WebRTCPlugin.pluginInfo.type,AdapterJS.WebRTCPlugin.defineWebRTCInterface,AdapterJS.WebRTCPlugin.pluginNeededButNotInstalledCb);"undefined"!=typeof exports&&(module.exports=AdapterJS);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _rtcmulticonnection = __webpack_require__(8);
-
-var _rtcmulticonnection2 = _interopRequireDefault(_rtcmulticonnection);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-__webpack_require__(2);
-exports.default = {
-  name: 'vue-webrtc',
-  components: {
-    RTCMultiConnection: _rtcmulticonnection2.default
-  },
-  data: function data() {
-    return {
-      rtcmConnection: null,
-      localVideo: null,
-      videoList: [],
-      canvas: null
-    };
-  },
-
-  props: {
-    roomId: {
-      type: String,
-      default: 'public-room'
-    },
-    socketURL: {
-      type: String,
-      default: 'https://rtcmulticonnection.herokuapp.com:443/'
-    },
-    cameraHeight: {
-      type: [Number, String],
-      default: 160
-    },
-    autoplay: {
-      type: Boolean,
-      default: true
-    },
-    screenshotFormat: {
-      type: String,
-      default: 'image/jpeg'
-    },
-    enableAudio: {
-      type: Boolean,
-      default: true
-    },
-    enableVideo: {
-      type: Boolean,
-      default: true
-    },
-    enableLogs: {
-      type: Boolean,
-      default: false
-    },
-    stunServer: {
-      type: String,
-      default: null
-    },
-    turnServer: {
-      type: String,
-      default: null
-    }
-  },
-  watch: {},
-  mounted: function mounted() {
-    var that = this;
-
-    this.rtcmConnection = new _rtcmulticonnection2.default();
-    this.rtcmConnection.socketURL = this.socketURL;
-    this.rtcmConnection.autoCreateMediaElement = false;
-    this.rtcmConnection.enableLogs = this.enableLogs;
-    this.rtcmConnection.session = {
-      audio: this.enableAudio,
-      video: this.enableVideo
-    };
-    this.rtcmConnection.sdpConstraints.mandatory = {
-      OfferToReceiveAudio: this.enableAudio,
-      OfferToReceiveVideo: this.enableVideo
-    };
-    if (this.stunServer !== null || this.turnServer !== null) {
-      this.rtcmConnection.iceServers = [];
-    }
-    if (this.stunServer !== null) {
-      this.rtcmConnection.iceServers.push({
-        urls: this.stunServer
-      });
-    }
-    if (this.turnServer !== null) {
-      var parse = this.turnServer.split('%');
-      var username = parse[0].split('@')[0];
-      var password = parse[0].split('@')[1];
-      var turn = parse[1];
-      this.rtcmConnection.iceServers.push({
-        urls: turn,
-        credential: password,
-        username: username
-      });
-    }
-    this.rtcmConnection.onstream = function (stream) {
-      var found = that.videoList.find(function (video) {
-        return video.id === stream.streamid;
-      });
-      if (found === undefined) {
-        var video = {
-          id: stream.streamid,
-          muted: stream.type === 'local'
-        };
-
-        that.videoList.push(video);
-
-        if (stream.type === 'local') {
-          that.localVideo = video;
-        }
-      }
-
-      setTimeout(function () {
-        for (var i = 0, len = that.$refs.videos.length; i < len; i++) {
-          if (that.$refs.videos[i].id === stream.streamid) {
-            that.$refs.videos[i].srcObject = stream.stream;
-            break;
-          }
-        }
-      }, 1000);
-
-      that.$emit('joined-room', stream.streamid);
-    };
-    this.rtcmConnection.onstreamended = function (stream) {
-      var newList = [];
-      that.videoList.forEach(function (item) {
-        if (item.id !== stream.streamid) {
-          newList.push(item);
-        }
-      });
-      that.videoList = newList;
-      that.$emit('left-room', stream.streamid);
-    };
-  },
-
-  methods: {
-    join: function join() {
-      var that = this;
-      this.rtcmConnection.openOrJoin(this.roomId, function (isRoomExist, roomid) {
-        if (isRoomExist === false && that.rtcmConnection.isInitiator === true) {
-          that.$emit('opened-room', roomid);
-        }
-      });
-    },
-    leave: function leave() {
-      this.rtcmConnection.attachStreams.forEach(function (localStream) {
-        localStream.stop();
-      });
-      this.videoList = [];
-    },
-    capture: function capture() {
-      return this.getCanvas().toDataURL(this.screenshotFormat);
-    },
-    getCanvas: function getCanvas() {
-      var video = this.getCurrentVideo();
-      if (video !== null && !this.ctx) {
-        var _canvas = document.createElement('canvas');
-        _canvas.height = video.clientHeight;
-        _canvas.width = video.clientWidth;
-        this.canvas = _canvas;
-        this.ctx = _canvas.getContext('2d');
-      }
-      var ctx = this.ctx,
-          canvas = this.canvas;
-
-      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-      return canvas;
-    },
-    getCurrentVideo: function getCurrentVideo() {
-      if (this.localVideo === null) {
-        return null;
-      }
-      for (var i = 0, len = this.$refs.videos.length; i < len; i++) {
-        if (this.$refs.videos[i].id === this.localVideo.id) return this.$refs.videos[i];
-      }
-      return null;
-    },
-    shareScreen: function shareScreen() {
-      var that = this;
-      if (navigator.getDisplayMedia || navigator.mediaDevices.getDisplayMedia) {
-        var addStreamStopListener = function addStreamStopListener(stream, callback) {
-          var streamEndedEvent = 'ended';
-          if ('oninactive' in stream) {
-            streamEndedEvent = 'inactive';
-          }
-          stream.addEventListener(streamEndedEvent, function () {
-            callback();
-            callback = function callback() {};
-          }, false);
-        };
-
-        var onGettingSteam = function onGettingSteam(stream) {
-          that.rtcmConnection.addStream(stream);
-          that.$emit('share-started', stream.streamid);
-
-          addStreamStopListener(stream, function () {
-            that.rtcmConnection.removeStream(stream.streamid);
-            that.$emit('share-stopped', stream.streamid);
-          });
-        };
-
-        var getDisplayMediaError = function getDisplayMediaError(error) {
-          console.log('Media error: ' + JSON.stringify(error));
-        };
-
-        if (navigator.mediaDevices.getDisplayMedia) {
-          navigator.mediaDevices.getDisplayMedia({ video: true, audio: false }).then(function (stream) {
-            onGettingSteam(stream);
-          }, getDisplayMediaError).catch(getDisplayMediaError);
-        } else if (navigator.getDisplayMedia) {
-          navigator.getDisplayMedia({ video: true }).then(function (stream) {
-            onGettingSteam(stream);
-          }, getDisplayMediaError).catch(getDisplayMediaError);
-        }
-      }
-    }
-  }
-};
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _webrtc = __webpack_require__(1);
-
-var _webrtc2 = _interopRequireDefault(_webrtc);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var install = function install(Vue) {
-  var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-  if (install.installed) return;
-  Vue.component(_webrtc2.default.name, _webrtc2.default);
-};
-
-module.exports = {
-  WebRTC: _webrtc2.default,
-  install: install
-};
-
-module.exports.default = module.exports;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(6)();
-// imports
-
-
-// module
-exports.push([module.i, ".video-list[data-v-49ef9b35]{background:#f5f5f5;height:auto}.video-list div[data-v-49ef9b35]{padding:0}.video-item[data-v-49ef9b35]{background:#c5c4c4;display:inline-block}", ""]);
-
-// exports
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function() {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		var result = [];
-		for(var i = 0; i < this.length; i++) {
-			var item = this[i];
-			if(item[2]) {
-				result.push("@media " + item[2] + "{" + item[1] + "}");
-			} else {
-				result.push(item[1]);
-			}
-		}
-		return result.join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-// shim for using process in browser
-var process = module.exports = {};
-
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56866,9 +52519,9 @@ var RTCMultiConnection = function(roomid, forceOptions) {
         }
 
         if (true) {
-            !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+            !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
                 return DetectRTC;
-            }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+            }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
         }
     })();
@@ -60723,372 +56376,4060 @@ if (true /* && !!module.exports*/ ) {
 }
 
 if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
         return RTCMultiConnection;
-    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(7)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js")))
 
 /***/ }),
-/* 9 */
-/***/ (function(module, exports) {
 
-// this module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle
+/***/ "./node_modules/setimmediate/setImmediate.js":
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = function normalizeComponent (
-  rawScriptExports,
-  compiledTemplate,
-  scopeId,
-  cssModules
-) {
-  var esModule
-  var scriptExports = rawScriptExports = rawScriptExports || {}
+/* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
+    "use strict";
 
-  // ES6 modules interop
-  var type = typeof rawScriptExports.default
-  if (type === 'object' || type === 'function') {
-    esModule = rawScriptExports
-    scriptExports = rawScriptExports.default
+    if (global.setImmediate) {
+        return;
+    }
+
+    var nextHandle = 1; // Spec says greater than zero
+    var tasksByHandle = {};
+    var currentlyRunningATask = false;
+    var doc = global.document;
+    var registerImmediate;
+
+    function setImmediate(callback) {
+      // Callback can either be a function or a string
+      if (typeof callback !== "function") {
+        callback = new Function("" + callback);
+      }
+      // Copy function arguments
+      var args = new Array(arguments.length - 1);
+      for (var i = 0; i < args.length; i++) {
+          args[i] = arguments[i + 1];
+      }
+      // Store and register the task
+      var task = { callback: callback, args: args };
+      tasksByHandle[nextHandle] = task;
+      registerImmediate(nextHandle);
+      return nextHandle++;
+    }
+
+    function clearImmediate(handle) {
+        delete tasksByHandle[handle];
+    }
+
+    function run(task) {
+        var callback = task.callback;
+        var args = task.args;
+        switch (args.length) {
+        case 0:
+            callback();
+            break;
+        case 1:
+            callback(args[0]);
+            break;
+        case 2:
+            callback(args[0], args[1]);
+            break;
+        case 3:
+            callback(args[0], args[1], args[2]);
+            break;
+        default:
+            callback.apply(undefined, args);
+            break;
+        }
+    }
+
+    function runIfPresent(handle) {
+        // From the spec: "Wait until any invocations of this algorithm started before this one have completed."
+        // So if we're currently running a task, we'll need to delay this invocation.
+        if (currentlyRunningATask) {
+            // Delay by doing a setTimeout. setImmediate was tried instead, but in Firefox 7 it generated a
+            // "too much recursion" error.
+            setTimeout(runIfPresent, 0, handle);
+        } else {
+            var task = tasksByHandle[handle];
+            if (task) {
+                currentlyRunningATask = true;
+                try {
+                    run(task);
+                } finally {
+                    clearImmediate(handle);
+                    currentlyRunningATask = false;
+                }
+            }
+        }
+    }
+
+    function installNextTickImplementation() {
+        registerImmediate = function(handle) {
+            process.nextTick(function () { runIfPresent(handle); });
+        };
+    }
+
+    function canUsePostMessage() {
+        // The test against `importScripts` prevents this implementation from being installed inside a web worker,
+        // where `global.postMessage` means something completely different and can't be used for this purpose.
+        if (global.postMessage && !global.importScripts) {
+            var postMessageIsAsynchronous = true;
+            var oldOnMessage = global.onmessage;
+            global.onmessage = function() {
+                postMessageIsAsynchronous = false;
+            };
+            global.postMessage("", "*");
+            global.onmessage = oldOnMessage;
+            return postMessageIsAsynchronous;
+        }
+    }
+
+    function installPostMessageImplementation() {
+        // Installs an event handler on `global` for the `message` event: see
+        // * https://developer.mozilla.org/en/DOM/window.postMessage
+        // * http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#crossDocumentMessages
+
+        var messagePrefix = "setImmediate$" + Math.random() + "$";
+        var onGlobalMessage = function(event) {
+            if (event.source === global &&
+                typeof event.data === "string" &&
+                event.data.indexOf(messagePrefix) === 0) {
+                runIfPresent(+event.data.slice(messagePrefix.length));
+            }
+        };
+
+        if (global.addEventListener) {
+            global.addEventListener("message", onGlobalMessage, false);
+        } else {
+            global.attachEvent("onmessage", onGlobalMessage);
+        }
+
+        registerImmediate = function(handle) {
+            global.postMessage(messagePrefix + handle, "*");
+        };
+    }
+
+    function installMessageChannelImplementation() {
+        var channel = new MessageChannel();
+        channel.port1.onmessage = function(event) {
+            var handle = event.data;
+            runIfPresent(handle);
+        };
+
+        registerImmediate = function(handle) {
+            channel.port2.postMessage(handle);
+        };
+    }
+
+    function installReadyStateChangeImplementation() {
+        var html = doc.documentElement;
+        registerImmediate = function(handle) {
+            // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
+            // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
+            var script = doc.createElement("script");
+            script.onreadystatechange = function () {
+                runIfPresent(handle);
+                script.onreadystatechange = null;
+                html.removeChild(script);
+                script = null;
+            };
+            html.appendChild(script);
+        };
+    }
+
+    function installSetTimeoutImplementation() {
+        registerImmediate = function(handle) {
+            setTimeout(runIfPresent, 0, handle);
+        };
+    }
+
+    // If supported, we should attach to the prototype of global, since that is where setTimeout et al. live.
+    var attachTo = Object.getPrototypeOf && Object.getPrototypeOf(global);
+    attachTo = attachTo && attachTo.setTimeout ? attachTo : global;
+
+    // Don't get fooled by e.g. browserify environments.
+    if ({}.toString.call(global.process) === "[object process]") {
+        // For Node.js before 0.9
+        installNextTickImplementation();
+
+    } else if (canUsePostMessage()) {
+        // For non-IE10 modern browsers
+        installPostMessageImplementation();
+
+    } else if (global.MessageChannel) {
+        // For web workers, where supported
+        installMessageChannelImplementation();
+
+    } else if (doc && "onreadystatechange" in doc.createElement("script")) {
+        // For IE 6–8
+        installReadyStateChangeImplementation();
+
+    } else {
+        // For older browsers
+        installSetTimeoutImplementation();
+    }
+
+    attachTo.setImmediate = setImmediate;
+    attachTo.clearImmediate = clearImmediate;
+}(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var url = __webpack_require__(/*! ./url */ "./node_modules/socket.io-client/lib/url.js");
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
+var Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client');
+
+/**
+ * Module exports.
+ */
+
+module.exports = exports = lookup;
+
+/**
+ * Managers cache.
+ */
+
+var cache = exports.managers = {};
+
+/**
+ * Looks up an existing `Manager` for multiplexing.
+ * If the user summons:
+ *
+ *   `io('http://localhost/a');`
+ *   `io('http://localhost/b');`
+ *
+ * We reuse the existing instance based on same scheme/port/host,
+ * and we initialize sockets for each namespace.
+ *
+ * @api public
+ */
+
+function lookup (uri, opts) {
+  if (typeof uri === 'object') {
+    opts = uri;
+    uri = undefined;
   }
 
+  opts = opts || {};
+
+  var parsed = url(uri);
+  var source = parsed.source;
+  var id = parsed.id;
+  var path = parsed.path;
+  var sameNamespace = cache[id] && path in cache[id].nsps;
+  var newConnection = opts.forceNew || opts['force new connection'] ||
+                      false === opts.multiplex || sameNamespace;
+
+  var io;
+
+  if (newConnection) {
+    debug('ignoring socket cache for %s', source);
+    io = Manager(source, opts);
+  } else {
+    if (!cache[id]) {
+      debug('new io instance for %s', source);
+      cache[id] = Manager(source, opts);
+    }
+    io = cache[id];
+  }
+  if (parsed.query && !opts.query) {
+    opts.query = parsed.query;
+  }
+  return io.socket(parsed.path, opts);
+}
+
+/**
+ * Protocol version.
+ *
+ * @api public
+ */
+
+exports.protocol = parser.protocol;
+
+/**
+ * `connect`.
+ *
+ * @param {String} uri
+ * @api public
+ */
+
+exports.connect = lookup;
+
+/**
+ * Expose constructors for standalone build.
+ *
+ * @api public
+ */
+
+exports.Manager = __webpack_require__(/*! ./manager */ "./node_modules/socket.io-client/lib/manager.js");
+exports.Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/manager.js":
+/*!******************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/manager.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var eio = __webpack_require__(/*! engine.io-client */ "./node_modules/engine.io-client/lib/index.js");
+var Socket = __webpack_require__(/*! ./socket */ "./node_modules/socket.io-client/lib/socket.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
+var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
+var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:manager');
+var indexOf = __webpack_require__(/*! indexof */ "./node_modules/indexof/index.js");
+var Backoff = __webpack_require__(/*! backo2 */ "./node_modules/backo2/index.js");
+
+/**
+ * IE6+ hasOwnProperty
+ */
+
+var has = Object.prototype.hasOwnProperty;
+
+/**
+ * Module exports
+ */
+
+module.exports = Manager;
+
+/**
+ * `Manager` constructor.
+ *
+ * @param {String} engine instance or engine uri/opts
+ * @param {Object} options
+ * @api public
+ */
+
+function Manager (uri, opts) {
+  if (!(this instanceof Manager)) return new Manager(uri, opts);
+  if (uri && ('object' === typeof uri)) {
+    opts = uri;
+    uri = undefined;
+  }
+  opts = opts || {};
+
+  opts.path = opts.path || '/socket.io';
+  this.nsps = {};
+  this.subs = [];
+  this.opts = opts;
+  this.reconnection(opts.reconnection !== false);
+  this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
+  this.reconnectionDelay(opts.reconnectionDelay || 1000);
+  this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
+  this.randomizationFactor(opts.randomizationFactor || 0.5);
+  this.backoff = new Backoff({
+    min: this.reconnectionDelay(),
+    max: this.reconnectionDelayMax(),
+    jitter: this.randomizationFactor()
+  });
+  this.timeout(null == opts.timeout ? 20000 : opts.timeout);
+  this.readyState = 'closed';
+  this.uri = uri;
+  this.connecting = [];
+  this.lastPing = null;
+  this.encoding = false;
+  this.packetBuffer = [];
+  var _parser = opts.parser || parser;
+  this.encoder = new _parser.Encoder();
+  this.decoder = new _parser.Decoder();
+  this.autoConnect = opts.autoConnect !== false;
+  if (this.autoConnect) this.open();
+}
+
+/**
+ * Propagate given event to sockets and emit on `this`
+ *
+ * @api private
+ */
+
+Manager.prototype.emitAll = function () {
+  this.emit.apply(this, arguments);
+  for (var nsp in this.nsps) {
+    if (has.call(this.nsps, nsp)) {
+      this.nsps[nsp].emit.apply(this.nsps[nsp], arguments);
+    }
+  }
+};
+
+/**
+ * Update `socket.id` of all sockets
+ *
+ * @api private
+ */
+
+Manager.prototype.updateSocketIds = function () {
+  for (var nsp in this.nsps) {
+    if (has.call(this.nsps, nsp)) {
+      this.nsps[nsp].id = this.generateId(nsp);
+    }
+  }
+};
+
+/**
+ * generate `socket.id` for the given `nsp`
+ *
+ * @param {String} nsp
+ * @return {String}
+ * @api private
+ */
+
+Manager.prototype.generateId = function (nsp) {
+  return (nsp === '/' ? '' : (nsp + '#')) + this.engine.id;
+};
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Manager.prototype);
+
+/**
+ * Sets the `reconnection` config.
+ *
+ * @param {Boolean} true/false if it should automatically reconnect
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnection = function (v) {
+  if (!arguments.length) return this._reconnection;
+  this._reconnection = !!v;
+  return this;
+};
+
+/**
+ * Sets the reconnection attempts config.
+ *
+ * @param {Number} max reconnection attempts before giving up
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionAttempts = function (v) {
+  if (!arguments.length) return this._reconnectionAttempts;
+  this._reconnectionAttempts = v;
+  return this;
+};
+
+/**
+ * Sets the delay between reconnections.
+ *
+ * @param {Number} delay
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionDelay = function (v) {
+  if (!arguments.length) return this._reconnectionDelay;
+  this._reconnectionDelay = v;
+  this.backoff && this.backoff.setMin(v);
+  return this;
+};
+
+Manager.prototype.randomizationFactor = function (v) {
+  if (!arguments.length) return this._randomizationFactor;
+  this._randomizationFactor = v;
+  this.backoff && this.backoff.setJitter(v);
+  return this;
+};
+
+/**
+ * Sets the maximum delay between reconnections.
+ *
+ * @param {Number} delay
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.reconnectionDelayMax = function (v) {
+  if (!arguments.length) return this._reconnectionDelayMax;
+  this._reconnectionDelayMax = v;
+  this.backoff && this.backoff.setMax(v);
+  return this;
+};
+
+/**
+ * Sets the connection timeout. `false` to disable
+ *
+ * @return {Manager} self or value
+ * @api public
+ */
+
+Manager.prototype.timeout = function (v) {
+  if (!arguments.length) return this._timeout;
+  this._timeout = v;
+  return this;
+};
+
+/**
+ * Starts trying to reconnect if reconnection is enabled and we have not
+ * started reconnecting yet
+ *
+ * @api private
+ */
+
+Manager.prototype.maybeReconnectOnOpen = function () {
+  // Only try to reconnect if it's the first time we're connecting
+  if (!this.reconnecting && this._reconnection && this.backoff.attempts === 0) {
+    // keeps reconnection from firing twice for the same reconnection loop
+    this.reconnect();
+  }
+};
+
+/**
+ * Sets the current transport `socket`.
+ *
+ * @param {Function} optional, callback
+ * @return {Manager} self
+ * @api public
+ */
+
+Manager.prototype.open =
+Manager.prototype.connect = function (fn, opts) {
+  debug('readyState %s', this.readyState);
+  if (~this.readyState.indexOf('open')) return this;
+
+  debug('opening %s', this.uri);
+  this.engine = eio(this.uri, this.opts);
+  var socket = this.engine;
+  var self = this;
+  this.readyState = 'opening';
+  this.skipReconnect = false;
+
+  // emit `open`
+  var openSub = on(socket, 'open', function () {
+    self.onopen();
+    fn && fn();
+  });
+
+  // emit `connect_error`
+  var errorSub = on(socket, 'error', function (data) {
+    debug('connect_error');
+    self.cleanup();
+    self.readyState = 'closed';
+    self.emitAll('connect_error', data);
+    if (fn) {
+      var err = new Error('Connection error');
+      err.data = data;
+      fn(err);
+    } else {
+      // Only do this if there is no fn to handle the error
+      self.maybeReconnectOnOpen();
+    }
+  });
+
+  // emit `connect_timeout`
+  if (false !== this._timeout) {
+    var timeout = this._timeout;
+    debug('connect attempt will timeout after %d', timeout);
+
+    // set timer
+    var timer = setTimeout(function () {
+      debug('connect attempt timed out after %d', timeout);
+      openSub.destroy();
+      socket.close();
+      socket.emit('error', 'timeout');
+      self.emitAll('connect_timeout', timeout);
+    }, timeout);
+
+    this.subs.push({
+      destroy: function () {
+        clearTimeout(timer);
+      }
+    });
+  }
+
+  this.subs.push(openSub);
+  this.subs.push(errorSub);
+
+  return this;
+};
+
+/**
+ * Called upon transport open.
+ *
+ * @api private
+ */
+
+Manager.prototype.onopen = function () {
+  debug('open');
+
+  // clear old subs
+  this.cleanup();
+
+  // mark as open
+  this.readyState = 'open';
+  this.emit('open');
+
+  // add new subs
+  var socket = this.engine;
+  this.subs.push(on(socket, 'data', bind(this, 'ondata')));
+  this.subs.push(on(socket, 'ping', bind(this, 'onping')));
+  this.subs.push(on(socket, 'pong', bind(this, 'onpong')));
+  this.subs.push(on(socket, 'error', bind(this, 'onerror')));
+  this.subs.push(on(socket, 'close', bind(this, 'onclose')));
+  this.subs.push(on(this.decoder, 'decoded', bind(this, 'ondecoded')));
+};
+
+/**
+ * Called upon a ping.
+ *
+ * @api private
+ */
+
+Manager.prototype.onping = function () {
+  this.lastPing = new Date();
+  this.emitAll('ping');
+};
+
+/**
+ * Called upon a packet.
+ *
+ * @api private
+ */
+
+Manager.prototype.onpong = function () {
+  this.emitAll('pong', new Date() - this.lastPing);
+};
+
+/**
+ * Called with data.
+ *
+ * @api private
+ */
+
+Manager.prototype.ondata = function (data) {
+  this.decoder.add(data);
+};
+
+/**
+ * Called when parser fully decodes a packet.
+ *
+ * @api private
+ */
+
+Manager.prototype.ondecoded = function (packet) {
+  this.emit('packet', packet);
+};
+
+/**
+ * Called upon socket error.
+ *
+ * @api private
+ */
+
+Manager.prototype.onerror = function (err) {
+  debug('error', err);
+  this.emitAll('error', err);
+};
+
+/**
+ * Creates a new socket for the given `nsp`.
+ *
+ * @return {Socket}
+ * @api public
+ */
+
+Manager.prototype.socket = function (nsp, opts) {
+  var socket = this.nsps[nsp];
+  if (!socket) {
+    socket = new Socket(this, nsp, opts);
+    this.nsps[nsp] = socket;
+    var self = this;
+    socket.on('connecting', onConnecting);
+    socket.on('connect', function () {
+      socket.id = self.generateId(nsp);
+    });
+
+    if (this.autoConnect) {
+      // manually call here since connecting event is fired before listening
+      onConnecting();
+    }
+  }
+
+  function onConnecting () {
+    if (!~indexOf(self.connecting, socket)) {
+      self.connecting.push(socket);
+    }
+  }
+
+  return socket;
+};
+
+/**
+ * Called upon a socket close.
+ *
+ * @param {Socket} socket
+ */
+
+Manager.prototype.destroy = function (socket) {
+  var index = indexOf(this.connecting, socket);
+  if (~index) this.connecting.splice(index, 1);
+  if (this.connecting.length) return;
+
+  this.close();
+};
+
+/**
+ * Writes a packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Manager.prototype.packet = function (packet) {
+  debug('writing packet %j', packet);
+  var self = this;
+  if (packet.query && packet.type === 0) packet.nsp += '?' + packet.query;
+
+  if (!self.encoding) {
+    // encode, then write to engine with result
+    self.encoding = true;
+    this.encoder.encode(packet, function (encodedPackets) {
+      for (var i = 0; i < encodedPackets.length; i++) {
+        self.engine.write(encodedPackets[i], packet.options);
+      }
+      self.encoding = false;
+      self.processPacketQueue();
+    });
+  } else { // add packet to the queue
+    self.packetBuffer.push(packet);
+  }
+};
+
+/**
+ * If packet buffer is non-empty, begins encoding the
+ * next packet in line.
+ *
+ * @api private
+ */
+
+Manager.prototype.processPacketQueue = function () {
+  if (this.packetBuffer.length > 0 && !this.encoding) {
+    var pack = this.packetBuffer.shift();
+    this.packet(pack);
+  }
+};
+
+/**
+ * Clean up transport subscriptions and packet buffer.
+ *
+ * @api private
+ */
+
+Manager.prototype.cleanup = function () {
+  debug('cleanup');
+
+  var subsLength = this.subs.length;
+  for (var i = 0; i < subsLength; i++) {
+    var sub = this.subs.shift();
+    sub.destroy();
+  }
+
+  this.packetBuffer = [];
+  this.encoding = false;
+  this.lastPing = null;
+
+  this.decoder.destroy();
+};
+
+/**
+ * Close the current socket.
+ *
+ * @api private
+ */
+
+Manager.prototype.close =
+Manager.prototype.disconnect = function () {
+  debug('disconnect');
+  this.skipReconnect = true;
+  this.reconnecting = false;
+  if ('opening' === this.readyState) {
+    // `onclose` will not fire because
+    // an open event never happened
+    this.cleanup();
+  }
+  this.backoff.reset();
+  this.readyState = 'closed';
+  if (this.engine) this.engine.close();
+};
+
+/**
+ * Called upon engine close.
+ *
+ * @api private
+ */
+
+Manager.prototype.onclose = function (reason) {
+  debug('onclose');
+
+  this.cleanup();
+  this.backoff.reset();
+  this.readyState = 'closed';
+  this.emit('close', reason);
+
+  if (this._reconnection && !this.skipReconnect) {
+    this.reconnect();
+  }
+};
+
+/**
+ * Attempt a reconnection.
+ *
+ * @api private
+ */
+
+Manager.prototype.reconnect = function () {
+  if (this.reconnecting || this.skipReconnect) return this;
+
+  var self = this;
+
+  if (this.backoff.attempts >= this._reconnectionAttempts) {
+    debug('reconnect failed');
+    this.backoff.reset();
+    this.emitAll('reconnect_failed');
+    this.reconnecting = false;
+  } else {
+    var delay = this.backoff.duration();
+    debug('will wait %dms before reconnect attempt', delay);
+
+    this.reconnecting = true;
+    var timer = setTimeout(function () {
+      if (self.skipReconnect) return;
+
+      debug('attempting reconnect');
+      self.emitAll('reconnect_attempt', self.backoff.attempts);
+      self.emitAll('reconnecting', self.backoff.attempts);
+
+      // check again for the case socket closed in above events
+      if (self.skipReconnect) return;
+
+      self.open(function (err) {
+        if (err) {
+          debug('reconnect attempt error');
+          self.reconnecting = false;
+          self.reconnect();
+          self.emitAll('reconnect_error', err.data);
+        } else {
+          debug('reconnect success');
+          self.onreconnect();
+        }
+      });
+    }, delay);
+
+    this.subs.push({
+      destroy: function () {
+        clearTimeout(timer);
+      }
+    });
+  }
+};
+
+/**
+ * Called upon successful reconnect.
+ *
+ * @api private
+ */
+
+Manager.prototype.onreconnect = function () {
+  var attempt = this.backoff.attempts;
+  this.reconnecting = false;
+  this.backoff.reset();
+  this.updateSocketIds();
+  this.emitAll('reconnect', attempt);
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/on.js":
+/*!*************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/on.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+/**
+ * Module exports.
+ */
+
+module.exports = on;
+
+/**
+ * Helper for subscriptions.
+ *
+ * @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
+ * @param {String} event name
+ * @param {Function} callback
+ * @api public
+ */
+
+function on (obj, ev, fn) {
+  obj.on(ev, fn);
+  return {
+    destroy: function () {
+      obj.removeListener(ev, fn);
+    }
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/socket.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/socket.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var parser = __webpack_require__(/*! socket.io-parser */ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js");
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
+var toArray = __webpack_require__(/*! to-array */ "./node_modules/to-array/index.js");
+var on = __webpack_require__(/*! ./on */ "./node_modules/socket.io-client/lib/on.js");
+var bind = __webpack_require__(/*! component-bind */ "./node_modules/component-bind/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:socket');
+var parseqs = __webpack_require__(/*! parseqs */ "./node_modules/parseqs/index.js");
+var hasBin = __webpack_require__(/*! has-binary2 */ "./node_modules/has-binary2/index.js");
+
+/**
+ * Module exports.
+ */
+
+module.exports = exports = Socket;
+
+/**
+ * Internal events (blacklisted).
+ * These events can't be emitted by the user.
+ *
+ * @api private
+ */
+
+var events = {
+  connect: 1,
+  connect_error: 1,
+  connect_timeout: 1,
+  connecting: 1,
+  disconnect: 1,
+  error: 1,
+  reconnect: 1,
+  reconnect_attempt: 1,
+  reconnect_failed: 1,
+  reconnect_error: 1,
+  reconnecting: 1,
+  ping: 1,
+  pong: 1
+};
+
+/**
+ * Shortcut to `Emitter#emit`.
+ */
+
+var emit = Emitter.prototype.emit;
+
+/**
+ * `Socket` constructor.
+ *
+ * @api public
+ */
+
+function Socket (io, nsp, opts) {
+  this.io = io;
+  this.nsp = nsp;
+  this.json = this; // compat
+  this.ids = 0;
+  this.acks = {};
+  this.receiveBuffer = [];
+  this.sendBuffer = [];
+  this.connected = false;
+  this.disconnected = true;
+  this.flags = {};
+  if (opts && opts.query) {
+    this.query = opts.query;
+  }
+  if (this.io.autoConnect) this.open();
+}
+
+/**
+ * Mix in `Emitter`.
+ */
+
+Emitter(Socket.prototype);
+
+/**
+ * Subscribe to open, close and packet events
+ *
+ * @api private
+ */
+
+Socket.prototype.subEvents = function () {
+  if (this.subs) return;
+
+  var io = this.io;
+  this.subs = [
+    on(io, 'open', bind(this, 'onopen')),
+    on(io, 'packet', bind(this, 'onpacket')),
+    on(io, 'close', bind(this, 'onclose'))
+  ];
+};
+
+/**
+ * "Opens" the socket.
+ *
+ * @api public
+ */
+
+Socket.prototype.open =
+Socket.prototype.connect = function () {
+  if (this.connected) return this;
+
+  this.subEvents();
+  this.io.open(); // ensure open
+  if ('open' === this.io.readyState) this.onopen();
+  this.emit('connecting');
+  return this;
+};
+
+/**
+ * Sends a `message` event.
+ *
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.send = function () {
+  var args = toArray(arguments);
+  args.unshift('message');
+  this.emit.apply(this, args);
+  return this;
+};
+
+/**
+ * Override `emit`.
+ * If the event is in `events`, it's emitted normally.
+ *
+ * @param {String} event name
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.emit = function (ev) {
+  if (events.hasOwnProperty(ev)) {
+    emit.apply(this, arguments);
+    return this;
+  }
+
+  var args = toArray(arguments);
+  var packet = {
+    type: (this.flags.binary !== undefined ? this.flags.binary : hasBin(args)) ? parser.BINARY_EVENT : parser.EVENT,
+    data: args
+  };
+
+  packet.options = {};
+  packet.options.compress = !this.flags || false !== this.flags.compress;
+
+  // event ack callback
+  if ('function' === typeof args[args.length - 1]) {
+    debug('emitting packet with ack id %d', this.ids);
+    this.acks[this.ids] = args.pop();
+    packet.id = this.ids++;
+  }
+
+  if (this.connected) {
+    this.packet(packet);
+  } else {
+    this.sendBuffer.push(packet);
+  }
+
+  this.flags = {};
+
+  return this;
+};
+
+/**
+ * Sends a packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.packet = function (packet) {
+  packet.nsp = this.nsp;
+  this.io.packet(packet);
+};
+
+/**
+ * Called upon engine `open`.
+ *
+ * @api private
+ */
+
+Socket.prototype.onopen = function () {
+  debug('transport is open - connecting');
+
+  // write connect packet if necessary
+  if ('/' !== this.nsp) {
+    if (this.query) {
+      var query = typeof this.query === 'object' ? parseqs.encode(this.query) : this.query;
+      debug('sending connect packet with query %s', query);
+      this.packet({type: parser.CONNECT, query: query});
+    } else {
+      this.packet({type: parser.CONNECT});
+    }
+  }
+};
+
+/**
+ * Called upon engine `close`.
+ *
+ * @param {String} reason
+ * @api private
+ */
+
+Socket.prototype.onclose = function (reason) {
+  debug('close (%s)', reason);
+  this.connected = false;
+  this.disconnected = true;
+  delete this.id;
+  this.emit('disconnect', reason);
+};
+
+/**
+ * Called with socket packet.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onpacket = function (packet) {
+  var sameNamespace = packet.nsp === this.nsp;
+  var rootNamespaceError = packet.type === parser.ERROR && packet.nsp === '/';
+
+  if (!sameNamespace && !rootNamespaceError) return;
+
+  switch (packet.type) {
+    case parser.CONNECT:
+      this.onconnect();
+      break;
+
+    case parser.EVENT:
+      this.onevent(packet);
+      break;
+
+    case parser.BINARY_EVENT:
+      this.onevent(packet);
+      break;
+
+    case parser.ACK:
+      this.onack(packet);
+      break;
+
+    case parser.BINARY_ACK:
+      this.onack(packet);
+      break;
+
+    case parser.DISCONNECT:
+      this.ondisconnect();
+      break;
+
+    case parser.ERROR:
+      this.emit('error', packet.data);
+      break;
+  }
+};
+
+/**
+ * Called upon a server event.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onevent = function (packet) {
+  var args = packet.data || [];
+  debug('emitting event %j', args);
+
+  if (null != packet.id) {
+    debug('attaching ack callback to event');
+    args.push(this.ack(packet.id));
+  }
+
+  if (this.connected) {
+    emit.apply(this, args);
+  } else {
+    this.receiveBuffer.push(args);
+  }
+};
+
+/**
+ * Produces an ack callback to emit with an event.
+ *
+ * @api private
+ */
+
+Socket.prototype.ack = function (id) {
+  var self = this;
+  var sent = false;
+  return function () {
+    // prevent double callbacks
+    if (sent) return;
+    sent = true;
+    var args = toArray(arguments);
+    debug('sending ack %j', args);
+
+    self.packet({
+      type: hasBin(args) ? parser.BINARY_ACK : parser.ACK,
+      id: id,
+      data: args
+    });
+  };
+};
+
+/**
+ * Called upon a server acknowlegement.
+ *
+ * @param {Object} packet
+ * @api private
+ */
+
+Socket.prototype.onack = function (packet) {
+  var ack = this.acks[packet.id];
+  if ('function' === typeof ack) {
+    debug('calling ack %s with %j', packet.id, packet.data);
+    ack.apply(this, packet.data);
+    delete this.acks[packet.id];
+  } else {
+    debug('bad ack %s', packet.id);
+  }
+};
+
+/**
+ * Called upon server connect.
+ *
+ * @api private
+ */
+
+Socket.prototype.onconnect = function () {
+  this.connected = true;
+  this.disconnected = false;
+  this.emit('connect');
+  this.emitBuffered();
+};
+
+/**
+ * Emit buffered events (received and emitted).
+ *
+ * @api private
+ */
+
+Socket.prototype.emitBuffered = function () {
+  var i;
+  for (i = 0; i < this.receiveBuffer.length; i++) {
+    emit.apply(this, this.receiveBuffer[i]);
+  }
+  this.receiveBuffer = [];
+
+  for (i = 0; i < this.sendBuffer.length; i++) {
+    this.packet(this.sendBuffer[i]);
+  }
+  this.sendBuffer = [];
+};
+
+/**
+ * Called upon server disconnect.
+ *
+ * @api private
+ */
+
+Socket.prototype.ondisconnect = function () {
+  debug('server disconnect (%s)', this.nsp);
+  this.destroy();
+  this.onclose('io server disconnect');
+};
+
+/**
+ * Called upon forced client/server side disconnections,
+ * this method ensures the manager stops tracking us and
+ * that reconnections don't get triggered for this.
+ *
+ * @api private.
+ */
+
+Socket.prototype.destroy = function () {
+  if (this.subs) {
+    // clean subscriptions to avoid reconnections
+    for (var i = 0; i < this.subs.length; i++) {
+      this.subs[i].destroy();
+    }
+    this.subs = null;
+  }
+
+  this.io.destroy(this);
+};
+
+/**
+ * Disconnects the socket manually.
+ *
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.close =
+Socket.prototype.disconnect = function () {
+  if (this.connected) {
+    debug('performing disconnect (%s)', this.nsp);
+    this.packet({ type: parser.DISCONNECT });
+  }
+
+  // remove socket from pool
+  this.destroy();
+
+  if (this.connected) {
+    // fire events
+    this.onclose('io client disconnect');
+  }
+  return this;
+};
+
+/**
+ * Sets the compress flag.
+ *
+ * @param {Boolean} if `true`, compresses the sending data
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.compress = function (compress) {
+  this.flags.compress = compress;
+  return this;
+};
+
+/**
+ * Sets the binary flag
+ *
+ * @param {Boolean} whether the emitted data contains binary
+ * @return {Socket} self
+ * @api public
+ */
+
+Socket.prototype.binary = function (binary) {
+  this.flags.binary = binary;
+  return this;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/lib/url.js":
+/*!**************************************************!*\
+  !*** ./node_modules/socket.io-client/lib/url.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var parseuri = __webpack_require__(/*! parseuri */ "./node_modules/parseuri/index.js");
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/debug/src/browser.js")('socket.io-client:url');
+
+/**
+ * Module exports.
+ */
+
+module.exports = url;
+
+/**
+ * URL parser.
+ *
+ * @param {String} url
+ * @param {Object} An object meant to mimic window.location.
+ *                 Defaults to window.location.
+ * @api public
+ */
+
+function url (uri, loc) {
+  var obj = uri;
+
+  // default to window.location
+  loc = loc || (typeof location !== 'undefined' && location);
+  if (null == uri) uri = loc.protocol + '//' + loc.host;
+
+  // relative path support
+  if ('string' === typeof uri) {
+    if ('/' === uri.charAt(0)) {
+      if ('/' === uri.charAt(1)) {
+        uri = loc.protocol + uri;
+      } else {
+        uri = loc.host + uri;
+      }
+    }
+
+    if (!/^(https?|wss?):\/\//.test(uri)) {
+      debug('protocol-less url %s', uri);
+      if ('undefined' !== typeof loc) {
+        uri = loc.protocol + '//' + uri;
+      } else {
+        uri = 'https://' + uri;
+      }
+    }
+
+    // parse
+    debug('parse %s', uri);
+    obj = parseuri(uri);
+  }
+
+  // make sure we treat `localhost:80` and `localhost` equally
+  if (!obj.port) {
+    if (/^(http|ws)$/.test(obj.protocol)) {
+      obj.port = '80';
+    } else if (/^(http|ws)s$/.test(obj.protocol)) {
+      obj.port = '443';
+    }
+  }
+
+  obj.path = obj.path || '/';
+
+  var ipv6 = obj.host.indexOf(':') !== -1;
+  var host = ipv6 ? '[' + obj.host + ']' : obj.host;
+
+  // define unique id
+  obj.id = obj.protocol + '://' + host + ':' + obj.port;
+  // define href
+  obj.href = obj.protocol + '://' + host + (loc && loc.port === obj.port ? '' : (':' + obj.port));
+
+  return obj;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/component-emitter/index.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/component-emitter/index.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Expose `Emitter`.
+ */
+
+if (true) {
+  module.exports = Emitter;
+}
+
+/**
+ * Initialize a new `Emitter`.
+ *
+ * @api public
+ */
+
+function Emitter(obj) {
+  if (obj) return mixin(obj);
+};
+
+/**
+ * Mixin the emitter properties.
+ *
+ * @param {Object} obj
+ * @return {Object}
+ * @api private
+ */
+
+function mixin(obj) {
+  for (var key in Emitter.prototype) {
+    obj[key] = Emitter.prototype[key];
+  }
+  return obj;
+}
+
+/**
+ * Listen on the given `event` with `fn`.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.on =
+Emitter.prototype.addEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+    .push(fn);
+  return this;
+};
+
+/**
+ * Adds an `event` listener that will be invoked a single
+ * time then automatically removed.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.once = function(event, fn){
+  function on() {
+    this.off(event, on);
+    fn.apply(this, arguments);
+  }
+
+  on.fn = fn;
+  this.on(event, on);
+  return this;
+};
+
+/**
+ * Remove the given callback for `event` or all
+ * registered callbacks.
+ *
+ * @param {String} event
+ * @param {Function} fn
+ * @return {Emitter}
+ * @api public
+ */
+
+Emitter.prototype.off =
+Emitter.prototype.removeListener =
+Emitter.prototype.removeAllListeners =
+Emitter.prototype.removeEventListener = function(event, fn){
+  this._callbacks = this._callbacks || {};
+
+  // all
+  if (0 == arguments.length) {
+    this._callbacks = {};
+    return this;
+  }
+
+  // specific event
+  var callbacks = this._callbacks['$' + event];
+  if (!callbacks) return this;
+
+  // remove all handlers
+  if (1 == arguments.length) {
+    delete this._callbacks['$' + event];
+    return this;
+  }
+
+  // remove specific handler
+  var cb;
+  for (var i = 0; i < callbacks.length; i++) {
+    cb = callbacks[i];
+    if (cb === fn || cb.fn === fn) {
+      callbacks.splice(i, 1);
+      break;
+    }
+  }
+  return this;
+};
+
+/**
+ * Emit `event` with the given args.
+ *
+ * @param {String} event
+ * @param {Mixed} ...
+ * @return {Emitter}
+ */
+
+Emitter.prototype.emit = function(event){
+  this._callbacks = this._callbacks || {};
+  var args = [].slice.call(arguments, 1)
+    , callbacks = this._callbacks['$' + event];
+
+  if (callbacks) {
+    callbacks = callbacks.slice(0);
+    for (var i = 0, len = callbacks.length; i < len; ++i) {
+      callbacks[i].apply(this, args);
+    }
+  }
+
+  return this;
+};
+
+/**
+ * Return array of callbacks for `event`.
+ *
+ * @param {String} event
+ * @return {Array}
+ * @api public
+ */
+
+Emitter.prototype.listeners = function(event){
+  this._callbacks = this._callbacks || {};
+  return this._callbacks['$' + event] || [];
+};
+
+/**
+ * Check if this emitter has `event` handlers.
+ *
+ * @param {String} event
+ * @return {Boolean}
+ * @api public
+ */
+
+Emitter.prototype.hasListeners = function(event){
+  return !! this.listeners(event).length;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/debug/src/browser.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/debug/src/browser.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/* eslint-env browser */
+
+/**
+ * This is the web browser implementation of `debug()`.
+ */
+
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+	'#0000CC',
+	'#0000FF',
+	'#0033CC',
+	'#0033FF',
+	'#0066CC',
+	'#0066FF',
+	'#0099CC',
+	'#0099FF',
+	'#00CC00',
+	'#00CC33',
+	'#00CC66',
+	'#00CC99',
+	'#00CCCC',
+	'#00CCFF',
+	'#3300CC',
+	'#3300FF',
+	'#3333CC',
+	'#3333FF',
+	'#3366CC',
+	'#3366FF',
+	'#3399CC',
+	'#3399FF',
+	'#33CC00',
+	'#33CC33',
+	'#33CC66',
+	'#33CC99',
+	'#33CCCC',
+	'#33CCFF',
+	'#6600CC',
+	'#6600FF',
+	'#6633CC',
+	'#6633FF',
+	'#66CC00',
+	'#66CC33',
+	'#9900CC',
+	'#9900FF',
+	'#9933CC',
+	'#9933FF',
+	'#99CC00',
+	'#99CC33',
+	'#CC0000',
+	'#CC0033',
+	'#CC0066',
+	'#CC0099',
+	'#CC00CC',
+	'#CC00FF',
+	'#CC3300',
+	'#CC3333',
+	'#CC3366',
+	'#CC3399',
+	'#CC33CC',
+	'#CC33FF',
+	'#CC6600',
+	'#CC6633',
+	'#CC9900',
+	'#CC9933',
+	'#CCCC00',
+	'#CCCC33',
+	'#FF0000',
+	'#FF0033',
+	'#FF0066',
+	'#FF0099',
+	'#FF00CC',
+	'#FF00FF',
+	'#FF3300',
+	'#FF3333',
+	'#FF3366',
+	'#FF3399',
+	'#FF33CC',
+	'#FF33FF',
+	'#FF6600',
+	'#FF6633',
+	'#FF9900',
+	'#FF9933',
+	'#FFCC00',
+	'#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+// eslint-disable-next-line complexity
+function useColors() {
+	// NB: In an Electron preload script, document will be defined but not fully
+	// initialized. Since we know we're in Chrome, we'll just detect this case
+	// explicitly
+	if (typeof window !== 'undefined' && window.process && (window.process.type === 'renderer' || window.process.__nwjs)) {
+		return true;
+	}
+
+	// Internet Explorer and Edge do not support colors.
+	if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+		return false;
+	}
+
+	// Is webkit? http://stackoverflow.com/a/16459606/376773
+	// document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+	return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+		// Is firebug? http://stackoverflow.com/a/398120/376773
+		(typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+		// Is firefox >= v31?
+		// https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+		// Double check webkit in userAgent just in case we are in a worker
+		(typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+	args[0] = (this.useColors ? '%c' : '') +
+		this.namespace +
+		(this.useColors ? ' %c' : ' ') +
+		args[0] +
+		(this.useColors ? '%c ' : ' ') +
+		'+' + module.exports.humanize(this.diff);
+
+	if (!this.useColors) {
+		return;
+	}
+
+	const c = 'color: ' + this.color;
+	args.splice(1, 0, c, 'color: inherit');
+
+	// The final "%c" is somewhat tricky, because there could be other
+	// arguments passed either before or after the %c, so we need to
+	// figure out the correct index to insert the CSS into
+	let index = 0;
+	let lastC = 0;
+	args[0].replace(/%[a-zA-Z%]/g, match => {
+		if (match === '%%') {
+			return;
+		}
+		index++;
+		if (match === '%c') {
+			// We only are interested in the *last* %c
+			// (the user may have provided their own)
+			lastC = index;
+		}
+	});
+
+	args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+function log(...args) {
+	// This hackery is required for IE8/9, where
+	// the `console.log` function doesn't have 'apply'
+	return typeof console === 'object' &&
+		console.log &&
+		console.log(...args);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+function save(namespaces) {
+	try {
+		if (namespaces) {
+			exports.storage.setItem('debug', namespaces);
+		} else {
+			exports.storage.removeItem('debug');
+		}
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+function load() {
+	let r;
+	try {
+		r = exports.storage.getItem('debug');
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+
+	// If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+	if (!r && typeof process !== 'undefined' && 'env' in process) {
+		r = process.env.DEBUG;
+	}
+
+	return r;
+}
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+	try {
+		// TVMLKit (Apple TV JS Runtime) does not have a window object, just localStorage in the global context
+		// The Browser also has localStorage in the global context.
+		return localStorage;
+	} catch (error) {
+		// Swallow
+		// XXX (@Qix-) should we be logging these?
+	}
+}
+
+module.exports = __webpack_require__(/*! ./common */ "./node_modules/socket.io-client/node_modules/debug/src/common.js")(exports);
+
+const {formatters} = module.exports;
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+formatters.j = function (v) {
+	try {
+		return JSON.stringify(v);
+	} catch (error) {
+		return '[UnexpectedJSONParseError]: ' + error.message;
+	}
+};
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/debug/src/common.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/debug/src/common.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ */
+
+function setup(env) {
+	createDebug.debug = createDebug;
+	createDebug.default = createDebug;
+	createDebug.coerce = coerce;
+	createDebug.disable = disable;
+	createDebug.enable = enable;
+	createDebug.enabled = enabled;
+	createDebug.humanize = __webpack_require__(/*! ms */ "./node_modules/socket.io-client/node_modules/ms/index.js");
+
+	Object.keys(env).forEach(key => {
+		createDebug[key] = env[key];
+	});
+
+	/**
+	* Active `debug` instances.
+	*/
+	createDebug.instances = [];
+
+	/**
+	* The currently active debug mode names, and names to skip.
+	*/
+
+	createDebug.names = [];
+	createDebug.skips = [];
+
+	/**
+	* Map of special "%n" handling functions, for the debug "format" argument.
+	*
+	* Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+	*/
+	createDebug.formatters = {};
+
+	/**
+	* Selects a color for a debug namespace
+	* @param {String} namespace The namespace string for the for the debug instance to be colored
+	* @return {Number|String} An ANSI color code for the given namespace
+	* @api private
+	*/
+	function selectColor(namespace) {
+		let hash = 0;
+
+		for (let i = 0; i < namespace.length; i++) {
+			hash = ((hash << 5) - hash) + namespace.charCodeAt(i);
+			hash |= 0; // Convert to 32bit integer
+		}
+
+		return createDebug.colors[Math.abs(hash) % createDebug.colors.length];
+	}
+	createDebug.selectColor = selectColor;
+
+	/**
+	* Create a debugger with the given `namespace`.
+	*
+	* @param {String} namespace
+	* @return {Function}
+	* @api public
+	*/
+	function createDebug(namespace) {
+		let prevTime;
+
+		function debug(...args) {
+			// Disabled?
+			if (!debug.enabled) {
+				return;
+			}
+
+			const self = debug;
+
+			// Set `diff` timestamp
+			const curr = Number(new Date());
+			const ms = curr - (prevTime || curr);
+			self.diff = ms;
+			self.prev = prevTime;
+			self.curr = curr;
+			prevTime = curr;
+
+			args[0] = createDebug.coerce(args[0]);
+
+			if (typeof args[0] !== 'string') {
+				// Anything else let's inspect with %O
+				args.unshift('%O');
+			}
+
+			// Apply any `formatters` transformations
+			let index = 0;
+			args[0] = args[0].replace(/%([a-zA-Z%])/g, (match, format) => {
+				// If we encounter an escaped % then don't increase the array index
+				if (match === '%%') {
+					return match;
+				}
+				index++;
+				const formatter = createDebug.formatters[format];
+				if (typeof formatter === 'function') {
+					const val = args[index];
+					match = formatter.call(self, val);
+
+					// Now we need to remove `args[index]` since it's inlined in the `format`
+					args.splice(index, 1);
+					index--;
+				}
+				return match;
+			});
+
+			// Apply env-specific formatting (colors, etc.)
+			createDebug.formatArgs.call(self, args);
+
+			const logFn = self.log || createDebug.log;
+			logFn.apply(self, args);
+		}
+
+		debug.namespace = namespace;
+		debug.enabled = createDebug.enabled(namespace);
+		debug.useColors = createDebug.useColors();
+		debug.color = selectColor(namespace);
+		debug.destroy = destroy;
+		debug.extend = extend;
+		// Debug.formatArgs = formatArgs;
+		// debug.rawLog = rawLog;
+
+		// env-specific initialization logic for debug instances
+		if (typeof createDebug.init === 'function') {
+			createDebug.init(debug);
+		}
+
+		createDebug.instances.push(debug);
+
+		return debug;
+	}
+
+	function destroy() {
+		const index = createDebug.instances.indexOf(this);
+		if (index !== -1) {
+			createDebug.instances.splice(index, 1);
+			return true;
+		}
+		return false;
+	}
+
+	function extend(namespace, delimiter) {
+		const newDebug = createDebug(this.namespace + (typeof delimiter === 'undefined' ? ':' : delimiter) + namespace);
+		newDebug.log = this.log;
+		return newDebug;
+	}
+
+	/**
+	* Enables a debug mode by namespaces. This can include modes
+	* separated by a colon and wildcards.
+	*
+	* @param {String} namespaces
+	* @api public
+	*/
+	function enable(namespaces) {
+		createDebug.save(namespaces);
+
+		createDebug.names = [];
+		createDebug.skips = [];
+
+		let i;
+		const split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+		const len = split.length;
+
+		for (i = 0; i < len; i++) {
+			if (!split[i]) {
+				// ignore empty strings
+				continue;
+			}
+
+			namespaces = split[i].replace(/\*/g, '.*?');
+
+			if (namespaces[0] === '-') {
+				createDebug.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+			} else {
+				createDebug.names.push(new RegExp('^' + namespaces + '$'));
+			}
+		}
+
+		for (i = 0; i < createDebug.instances.length; i++) {
+			const instance = createDebug.instances[i];
+			instance.enabled = createDebug.enabled(instance.namespace);
+		}
+	}
+
+	/**
+	* Disable debug output.
+	*
+	* @return {String} namespaces
+	* @api public
+	*/
+	function disable() {
+		const namespaces = [
+			...createDebug.names.map(toNamespace),
+			...createDebug.skips.map(toNamespace).map(namespace => '-' + namespace)
+		].join(',');
+		createDebug.enable('');
+		return namespaces;
+	}
+
+	/**
+	* Returns true if the given mode name is enabled, false otherwise.
+	*
+	* @param {String} name
+	* @return {Boolean}
+	* @api public
+	*/
+	function enabled(name) {
+		if (name[name.length - 1] === '*') {
+			return true;
+		}
+
+		let i;
+		let len;
+
+		for (i = 0, len = createDebug.skips.length; i < len; i++) {
+			if (createDebug.skips[i].test(name)) {
+				return false;
+			}
+		}
+
+		for (i = 0, len = createDebug.names.length; i < len; i++) {
+			if (createDebug.names[i].test(name)) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	* Convert regexp to namespace
+	*
+	* @param {RegExp} regxep
+	* @return {String} namespace
+	* @api private
+	*/
+	function toNamespace(regexp) {
+		return regexp.toString()
+			.substring(2, regexp.toString().length - 2)
+			.replace(/\.\*\?$/, '*');
+	}
+
+	/**
+	* Coerce `val`.
+	*
+	* @param {Mixed} val
+	* @return {Mixed}
+	* @api private
+	*/
+	function coerce(val) {
+		if (val instanceof Error) {
+			return val.stack || val.message;
+		}
+		return val;
+	}
+
+	createDebug.enable(createDebug.load());
+
+	return createDebug;
+}
+
+module.exports = setup;
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/isarray/index.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/isarray/index.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/ms/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/ms/index.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var w = d * 7;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isFinite(val)) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^(-?(?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|weeks?|w|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'weeks':
+    case 'week':
+    case 'w':
+      return n * w;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (msAbs >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (msAbs >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (msAbs >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  var msAbs = Math.abs(ms);
+  if (msAbs >= d) {
+    return plural(ms, msAbs, d, 'day');
+  }
+  if (msAbs >= h) {
+    return plural(ms, msAbs, h, 'hour');
+  }
+  if (msAbs >= m) {
+    return plural(ms, msAbs, m, 'minute');
+  }
+  if (msAbs >= s) {
+    return plural(ms, msAbs, s, 'second');
+  }
+  return ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, msAbs, n, name) {
+  var isPlural = msAbs >= n * 1.5;
+  return Math.round(ms / n) + ' ' + name + (isPlural ? 's' : '');
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*global Blob,File*/
+
+/**
+ * Module requirements
+ */
+
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-client/node_modules/isarray/index.js");
+var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js");
+var toString = Object.prototype.toString;
+var withNativeBlob = typeof Blob === 'function' || (typeof Blob !== 'undefined' && toString.call(Blob) === '[object BlobConstructor]');
+var withNativeFile = typeof File === 'function' || (typeof File !== 'undefined' && toString.call(File) === '[object FileConstructor]');
+
+/**
+ * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
+ * Anything with blobs or files should be fed through removeBlobs before coming
+ * here.
+ *
+ * @param {Object} packet - socket.io event packet
+ * @return {Object} with deconstructed packet and list of buffers
+ * @api public
+ */
+
+exports.deconstructPacket = function(packet) {
+  var buffers = [];
+  var packetData = packet.data;
+  var pack = packet;
+  pack.data = _deconstructPacket(packetData, buffers);
+  pack.attachments = buffers.length; // number of binary 'attachments'
+  return {packet: pack, buffers: buffers};
+};
+
+function _deconstructPacket(data, buffers) {
+  if (!data) return data;
+
+  if (isBuf(data)) {
+    var placeholder = { _placeholder: true, num: buffers.length };
+    buffers.push(data);
+    return placeholder;
+  } else if (isArray(data)) {
+    var newData = new Array(data.length);
+    for (var i = 0; i < data.length; i++) {
+      newData[i] = _deconstructPacket(data[i], buffers);
+    }
+    return newData;
+  } else if (typeof data === 'object' && !(data instanceof Date)) {
+    var newData = {};
+    for (var key in data) {
+      newData[key] = _deconstructPacket(data[key], buffers);
+    }
+    return newData;
+  }
+  return data;
+}
+
+/**
+ * Reconstructs a binary packet from its placeholder packet and buffers
+ *
+ * @param {Object} packet - event packet with placeholders
+ * @param {Array} buffers - binary buffers to put in placeholder positions
+ * @return {Object} reconstructed packet
+ * @api public
+ */
+
+exports.reconstructPacket = function(packet, buffers) {
+  packet.data = _reconstructPacket(packet.data, buffers);
+  packet.attachments = undefined; // no longer useful
+  return packet;
+};
+
+function _reconstructPacket(data, buffers) {
+  if (!data) return data;
+
+  if (data && data._placeholder) {
+    return buffers[data.num]; // appropriate buffer (should be natural order anyway)
+  } else if (isArray(data)) {
+    for (var i = 0; i < data.length; i++) {
+      data[i] = _reconstructPacket(data[i], buffers);
+    }
+  } else if (typeof data === 'object') {
+    for (var key in data) {
+      data[key] = _reconstructPacket(data[key], buffers);
+    }
+  }
+
+  return data;
+}
+
+/**
+ * Asynchronously removes Blobs or Files from data via
+ * FileReader's readAsArrayBuffer method. Used before encoding
+ * data as msgpack. Calls callback with the blobless data.
+ *
+ * @param {Object} data
+ * @param {Function} callback
+ * @api private
+ */
+
+exports.removeBlobs = function(data, callback) {
+  function _removeBlobs(obj, curKey, containingObject) {
+    if (!obj) return obj;
+
+    // convert any blob
+    if ((withNativeBlob && obj instanceof Blob) ||
+        (withNativeFile && obj instanceof File)) {
+      pendingBlobs++;
+
+      // async filereader
+      var fileReader = new FileReader();
+      fileReader.onload = function() { // this.result == arraybuffer
+        if (containingObject) {
+          containingObject[curKey] = this.result;
+        }
+        else {
+          bloblessData = this.result;
+        }
+
+        // if nothing pending its callback time
+        if(! --pendingBlobs) {
+          callback(bloblessData);
+        }
+      };
+
+      fileReader.readAsArrayBuffer(obj); // blob -> arraybuffer
+    } else if (isArray(obj)) { // handle array
+      for (var i = 0; i < obj.length; i++) {
+        _removeBlobs(obj[i], i, obj);
+      }
+    } else if (typeof obj === 'object' && !isBuf(obj)) { // and object
+      for (var key in obj) {
+        _removeBlobs(obj[key], key, obj);
+      }
+    }
+  }
+
+  var pendingBlobs = 0;
+  var bloblessData = data;
+  _removeBlobs(bloblessData);
+  if (!pendingBlobs) {
+    callback(bloblessData);
+  }
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/index.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/index.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * Module dependencies.
+ */
+
+var debug = __webpack_require__(/*! debug */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js")('socket.io-parser');
+var Emitter = __webpack_require__(/*! component-emitter */ "./node_modules/socket.io-client/node_modules/component-emitter/index.js");
+var binary = __webpack_require__(/*! ./binary */ "./node_modules/socket.io-client/node_modules/socket.io-parser/binary.js");
+var isArray = __webpack_require__(/*! isarray */ "./node_modules/socket.io-client/node_modules/isarray/index.js");
+var isBuf = __webpack_require__(/*! ./is-buffer */ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js");
+
+/**
+ * Protocol version.
+ *
+ * @api public
+ */
+
+exports.protocol = 4;
+
+/**
+ * Packet types.
+ *
+ * @api public
+ */
+
+exports.types = [
+  'CONNECT',
+  'DISCONNECT',
+  'EVENT',
+  'ACK',
+  'ERROR',
+  'BINARY_EVENT',
+  'BINARY_ACK'
+];
+
+/**
+ * Packet type `connect`.
+ *
+ * @api public
+ */
+
+exports.CONNECT = 0;
+
+/**
+ * Packet type `disconnect`.
+ *
+ * @api public
+ */
+
+exports.DISCONNECT = 1;
+
+/**
+ * Packet type `event`.
+ *
+ * @api public
+ */
+
+exports.EVENT = 2;
+
+/**
+ * Packet type `ack`.
+ *
+ * @api public
+ */
+
+exports.ACK = 3;
+
+/**
+ * Packet type `error`.
+ *
+ * @api public
+ */
+
+exports.ERROR = 4;
+
+/**
+ * Packet type 'binary event'
+ *
+ * @api public
+ */
+
+exports.BINARY_EVENT = 5;
+
+/**
+ * Packet type `binary ack`. For acks with binary arguments.
+ *
+ * @api public
+ */
+
+exports.BINARY_ACK = 6;
+
+/**
+ * Encoder constructor.
+ *
+ * @api public
+ */
+
+exports.Encoder = Encoder;
+
+/**
+ * Decoder constructor.
+ *
+ * @api public
+ */
+
+exports.Decoder = Decoder;
+
+/**
+ * A socket.io Encoder instance
+ *
+ * @api public
+ */
+
+function Encoder() {}
+
+var ERROR_PACKET = exports.ERROR + '"encode error"';
+
+/**
+ * Encode a packet as a single string if non-binary, or as a
+ * buffer sequence, depending on packet type.
+ *
+ * @param {Object} obj - packet object
+ * @param {Function} callback - function to handle encodings (likely engine.write)
+ * @return Calls callback with Array of encodings
+ * @api public
+ */
+
+Encoder.prototype.encode = function(obj, callback){
+  debug('encoding packet %j', obj);
+
+  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
+    encodeAsBinary(obj, callback);
+  } else {
+    var encoding = encodeAsString(obj);
+    callback([encoding]);
+  }
+};
+
+/**
+ * Encode packet as string.
+ *
+ * @param {Object} packet
+ * @return {String} encoded
+ * @api private
+ */
+
+function encodeAsString(obj) {
+
+  // first is type
+  var str = '' + obj.type;
+
+  // attachments if we have them
+  if (exports.BINARY_EVENT === obj.type || exports.BINARY_ACK === obj.type) {
+    str += obj.attachments + '-';
+  }
+
+  // if we have a namespace other than `/`
+  // we append it followed by a comma `,`
+  if (obj.nsp && '/' !== obj.nsp) {
+    str += obj.nsp + ',';
+  }
+
+  // immediately followed by the id
+  if (null != obj.id) {
+    str += obj.id;
+  }
+
+  // json data
+  if (null != obj.data) {
+    var payload = tryStringify(obj.data);
+    if (payload !== false) {
+      str += payload;
+    } else {
+      return ERROR_PACKET;
+    }
+  }
+
+  debug('encoded %j as %s', obj, str);
+  return str;
+}
+
+function tryStringify(str) {
+  try {
+    return JSON.stringify(str);
+  } catch(e){
+    return false;
+  }
+}
+
+/**
+ * Encode packet as 'buffer sequence' by removing blobs, and
+ * deconstructing packet into object with placeholders and
+ * a list of buffers.
+ *
+ * @param {Object} packet
+ * @return {Buffer} encoded
+ * @api private
+ */
+
+function encodeAsBinary(obj, callback) {
+
+  function writeEncoding(bloblessData) {
+    var deconstruction = binary.deconstructPacket(bloblessData);
+    var pack = encodeAsString(deconstruction.packet);
+    var buffers = deconstruction.buffers;
+
+    buffers.unshift(pack); // add packet info to beginning of data list
+    callback(buffers); // write all the buffers
+  }
+
+  binary.removeBlobs(obj, writeEncoding);
+}
+
+/**
+ * A socket.io Decoder instance
+ *
+ * @return {Object} decoder
+ * @api public
+ */
+
+function Decoder() {
+  this.reconstructor = null;
+}
+
+/**
+ * Mix in `Emitter` with Decoder.
+ */
+
+Emitter(Decoder.prototype);
+
+/**
+ * Decodes an encoded packet string into packet JSON.
+ *
+ * @param {String} obj - encoded packet
+ * @return {Object} packet
+ * @api public
+ */
+
+Decoder.prototype.add = function(obj) {
+  var packet;
+  if (typeof obj === 'string') {
+    packet = decodeString(obj);
+    if (exports.BINARY_EVENT === packet.type || exports.BINARY_ACK === packet.type) { // binary packet's json
+      this.reconstructor = new BinaryReconstructor(packet);
+
+      // no attachments, labeled binary but no binary data to follow
+      if (this.reconstructor.reconPack.attachments === 0) {
+        this.emit('decoded', packet);
+      }
+    } else { // non-binary full packet
+      this.emit('decoded', packet);
+    }
+  } else if (isBuf(obj) || obj.base64) { // raw binary data
+    if (!this.reconstructor) {
+      throw new Error('got binary data when not reconstructing a packet');
+    } else {
+      packet = this.reconstructor.takeBinaryData(obj);
+      if (packet) { // received final buffer
+        this.reconstructor = null;
+        this.emit('decoded', packet);
+      }
+    }
+  } else {
+    throw new Error('Unknown type: ' + obj);
+  }
+};
+
+/**
+ * Decode a packet String (JSON data)
+ *
+ * @param {String} str
+ * @return {Object} packet
+ * @api private
+ */
+
+function decodeString(str) {
+  var i = 0;
+  // look up type
+  var p = {
+    type: Number(str.charAt(0))
+  };
+
+  if (null == exports.types[p.type]) {
+    return error('unknown packet type ' + p.type);
+  }
+
+  // look up attachments if type binary
+  if (exports.BINARY_EVENT === p.type || exports.BINARY_ACK === p.type) {
+    var buf = '';
+    while (str.charAt(++i) !== '-') {
+      buf += str.charAt(i);
+      if (i == str.length) break;
+    }
+    if (buf != Number(buf) || str.charAt(i) !== '-') {
+      throw new Error('Illegal attachments');
+    }
+    p.attachments = Number(buf);
+  }
+
+  // look up namespace (if any)
+  if ('/' === str.charAt(i + 1)) {
+    p.nsp = '';
+    while (++i) {
+      var c = str.charAt(i);
+      if (',' === c) break;
+      p.nsp += c;
+      if (i === str.length) break;
+    }
+  } else {
+    p.nsp = '/';
+  }
+
+  // look up id
+  var next = str.charAt(i + 1);
+  if ('' !== next && Number(next) == next) {
+    p.id = '';
+    while (++i) {
+      var c = str.charAt(i);
+      if (null == c || Number(c) != c) {
+        --i;
+        break;
+      }
+      p.id += str.charAt(i);
+      if (i === str.length) break;
+    }
+    p.id = Number(p.id);
+  }
+
+  // look up json data
+  if (str.charAt(++i)) {
+    var payload = tryParse(str.substr(i));
+    var isPayloadValid = payload !== false && (p.type === exports.ERROR || isArray(payload));
+    if (isPayloadValid) {
+      p.data = payload;
+    } else {
+      return error('invalid payload');
+    }
+  }
+
+  debug('decoded %s as %j', str, p);
+  return p;
+}
+
+function tryParse(str) {
+  try {
+    return JSON.parse(str);
+  } catch(e){
+    return false;
+  }
+}
+
+/**
+ * Deallocates a parser's resources
+ *
+ * @api public
+ */
+
+Decoder.prototype.destroy = function() {
+  if (this.reconstructor) {
+    this.reconstructor.finishedReconstruction();
+  }
+};
+
+/**
+ * A manager of a binary event's 'buffer sequence'. Should
+ * be constructed whenever a packet of type BINARY_EVENT is
+ * decoded.
+ *
+ * @param {Object} packet
+ * @return {BinaryReconstructor} initialized reconstructor
+ * @api private
+ */
+
+function BinaryReconstructor(packet) {
+  this.reconPack = packet;
+  this.buffers = [];
+}
+
+/**
+ * Method to be called when binary data received from connection
+ * after a BINARY_EVENT packet.
+ *
+ * @param {Buffer | ArrayBuffer} binData - the raw binary data received
+ * @return {null | Object} returns null if more binary data is expected or
+ *   a reconstructed packet object if all buffers have been received.
+ * @api private
+ */
+
+BinaryReconstructor.prototype.takeBinaryData = function(binData) {
+  this.buffers.push(binData);
+  if (this.buffers.length === this.reconPack.attachments) { // done with buffer list
+    var packet = binary.reconstructPacket(this.reconPack, this.buffers);
+    this.finishedReconstruction();
+    return packet;
+  }
+  return null;
+};
+
+/**
+ * Cleans up binary packet reconstruction variables.
+ *
+ * @api private
+ */
+
+BinaryReconstructor.prototype.finishedReconstruction = function() {
+  this.reconPack = null;
+  this.buffers = [];
+};
+
+function error(msg) {
+  return {
+    type: exports.ERROR,
+    data: 'parser error: ' + msg
+  };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/is-buffer.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(Buffer) {
+module.exports = isBuf;
+
+var withNativeBuffer = typeof Buffer === 'function' && typeof Buffer.isBuffer === 'function';
+var withNativeArrayBuffer = typeof ArrayBuffer === 'function';
+
+var isView = function (obj) {
+  return typeof ArrayBuffer.isView === 'function' ? ArrayBuffer.isView(obj) : (obj.buffer instanceof ArrayBuffer);
+};
+
+/**
+ * Returns true if obj is a buffer or an arraybuffer.
+ *
+ * @api private
+ */
+
+function isBuf(obj) {
+  return (withNativeBuffer && Buffer.isBuffer(obj)) ||
+          (withNativeArrayBuffer && (obj instanceof ArrayBuffer || isView(obj)));
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../buffer/index.js */ "./node_modules/buffer/index.js").Buffer))
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/browser.js ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(/*! ./debug */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js");
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  '#0000CC', '#0000FF', '#0033CC', '#0033FF', '#0066CC', '#0066FF', '#0099CC',
+  '#0099FF', '#00CC00', '#00CC33', '#00CC66', '#00CC99', '#00CCCC', '#00CCFF',
+  '#3300CC', '#3300FF', '#3333CC', '#3333FF', '#3366CC', '#3366FF', '#3399CC',
+  '#3399FF', '#33CC00', '#33CC33', '#33CC66', '#33CC99', '#33CCCC', '#33CCFF',
+  '#6600CC', '#6600FF', '#6633CC', '#6633FF', '#66CC00', '#66CC33', '#9900CC',
+  '#9900FF', '#9933CC', '#9933FF', '#99CC00', '#99CC33', '#CC0000', '#CC0033',
+  '#CC0066', '#CC0099', '#CC00CC', '#CC00FF', '#CC3300', '#CC3333', '#CC3366',
+  '#CC3399', '#CC33CC', '#CC33FF', '#CC6600', '#CC6633', '#CC9900', '#CC9933',
+  '#CCCC00', '#CCCC33', '#FF0000', '#FF0033', '#FF0066', '#FF0099', '#FF00CC',
+  '#FF00FF', '#FF3300', '#FF3333', '#FF3366', '#FF3399', '#FF33CC', '#FF33FF',
+  '#FF6600', '#FF6633', '#FF9900', '#FF9933', '#FFCC00', '#FFCC33'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // Internet Explorer and Edge do not support colors.
+  if (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/(edge|trident)\/(\d+)/)) {
+    return false;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = process.env.DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../process/browser.js */ "./node_modules/process/browser.js")))
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/debug/src/debug.js ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/**
+ * This is the common logic for both the Node.js and web browser
+ * implementations of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = createDebug.debug = createDebug['default'] = createDebug;
+exports.coerce = coerce;
+exports.disable = disable;
+exports.enable = enable;
+exports.enabled = enabled;
+exports.humanize = __webpack_require__(/*! ms */ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js");
+
+/**
+ * Active `debug` instances.
+ */
+exports.instances = [];
+
+/**
+ * The currently active debug mode names, and names to skip.
+ */
+
+exports.names = [];
+exports.skips = [];
+
+/**
+ * Map of special "%n" handling functions, for the debug "format" argument.
+ *
+ * Valid key names are a single, lower or upper-case letter, i.e. "n" and "N".
+ */
+
+exports.formatters = {};
+
+/**
+ * Select a color.
+ * @param {String} namespace
+ * @return {Number}
+ * @api private
+ */
+
+function selectColor(namespace) {
+  var hash = 0, i;
+
+  for (i in namespace) {
+    hash  = ((hash << 5) - hash) + namespace.charCodeAt(i);
+    hash |= 0; // Convert to 32bit integer
+  }
+
+  return exports.colors[Math.abs(hash) % exports.colors.length];
+}
+
+/**
+ * Create a debugger with the given `namespace`.
+ *
+ * @param {String} namespace
+ * @return {Function}
+ * @api public
+ */
+
+function createDebug(namespace) {
+
+  var prevTime;
+
+  function debug() {
+    // disabled?
+    if (!debug.enabled) return;
+
+    var self = debug;
+
+    // set `diff` timestamp
+    var curr = +new Date();
+    var ms = curr - (prevTime || curr);
+    self.diff = ms;
+    self.prev = prevTime;
+    self.curr = curr;
+    prevTime = curr;
+
+    // turn the `arguments` into a proper Array
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+
+    args[0] = exports.coerce(args[0]);
+
+    if ('string' !== typeof args[0]) {
+      // anything else let's inspect with %O
+      args.unshift('%O');
+    }
+
+    // apply any `formatters` transformations
+    var index = 0;
+    args[0] = args[0].replace(/%([a-zA-Z%])/g, function(match, format) {
+      // if we encounter an escaped % then don't increase the array index
+      if (match === '%%') return match;
+      index++;
+      var formatter = exports.formatters[format];
+      if ('function' === typeof formatter) {
+        var val = args[index];
+        match = formatter.call(self, val);
+
+        // now we need to remove `args[index]` since it's inlined in the `format`
+        args.splice(index, 1);
+        index--;
+      }
+      return match;
+    });
+
+    // apply env-specific formatting (colors, etc.)
+    exports.formatArgs.call(self, args);
+
+    var logFn = debug.log || exports.log || console.log.bind(console);
+    logFn.apply(self, args);
+  }
+
+  debug.namespace = namespace;
+  debug.enabled = exports.enabled(namespace);
+  debug.useColors = exports.useColors();
+  debug.color = selectColor(namespace);
+  debug.destroy = destroy;
+
+  // env-specific initialization logic for debug instances
+  if ('function' === typeof exports.init) {
+    exports.init(debug);
+  }
+
+  exports.instances.push(debug);
+
+  return debug;
+}
+
+function destroy () {
+  var index = exports.instances.indexOf(this);
+  if (index !== -1) {
+    exports.instances.splice(index, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/**
+ * Enables a debug mode by namespaces. This can include modes
+ * separated by a colon and wildcards.
+ *
+ * @param {String} namespaces
+ * @api public
+ */
+
+function enable(namespaces) {
+  exports.save(namespaces);
+
+  exports.names = [];
+  exports.skips = [];
+
+  var i;
+  var split = (typeof namespaces === 'string' ? namespaces : '').split(/[\s,]+/);
+  var len = split.length;
+
+  for (i = 0; i < len; i++) {
+    if (!split[i]) continue; // ignore empty strings
+    namespaces = split[i].replace(/\*/g, '.*?');
+    if (namespaces[0] === '-') {
+      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+    } else {
+      exports.names.push(new RegExp('^' + namespaces + '$'));
+    }
+  }
+
+  for (i = 0; i < exports.instances.length; i++) {
+    var instance = exports.instances[i];
+    instance.enabled = exports.enabled(instance.namespace);
+  }
+}
+
+/**
+ * Disable debug output.
+ *
+ * @api public
+ */
+
+function disable() {
+  exports.enable('');
+}
+
+/**
+ * Returns true if the given mode name is enabled, false otherwise.
+ *
+ * @param {String} name
+ * @return {Boolean}
+ * @api public
+ */
+
+function enabled(name) {
+  if (name[name.length - 1] === '*') {
+    return true;
+  }
+  var i, len;
+  for (i = 0, len = exports.skips.length; i < len; i++) {
+    if (exports.skips[i].test(name)) {
+      return false;
+    }
+  }
+  for (i = 0, len = exports.names.length; i < len; i++) {
+    if (exports.names[i].test(name)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * Coerce `val`.
+ *
+ * @param {Mixed} val
+ * @return {Mixed}
+ * @api private
+ */
+
+function coerce(val) {
+  if (val instanceof Error) return val.stack || val.message;
+  return val;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/socket.io-client/node_modules/socket.io-parser/node_modules/ms/index.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Helpers.
+ */
+
+var s = 1000;
+var m = s * 60;
+var h = m * 60;
+var d = h * 24;
+var y = d * 365.25;
+
+/**
+ * Parse or format the given `val`.
+ *
+ * Options:
+ *
+ *  - `long` verbose formatting [false]
+ *
+ * @param {String|Number} val
+ * @param {Object} [options]
+ * @throws {Error} throw an error if val is not a non-empty string or a number
+ * @return {String|Number}
+ * @api public
+ */
+
+module.exports = function(val, options) {
+  options = options || {};
+  var type = typeof val;
+  if (type === 'string' && val.length > 0) {
+    return parse(val);
+  } else if (type === 'number' && isNaN(val) === false) {
+    return options.long ? fmtLong(val) : fmtShort(val);
+  }
+  throw new Error(
+    'val is not a non-empty string or a valid number. val=' +
+      JSON.stringify(val)
+  );
+};
+
+/**
+ * Parse the given `str` and return milliseconds.
+ *
+ * @param {String} str
+ * @return {Number}
+ * @api private
+ */
+
+function parse(str) {
+  str = String(str);
+  if (str.length > 100) {
+    return;
+  }
+  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(
+    str
+  );
+  if (!match) {
+    return;
+  }
+  var n = parseFloat(match[1]);
+  var type = (match[2] || 'ms').toLowerCase();
+  switch (type) {
+    case 'years':
+    case 'year':
+    case 'yrs':
+    case 'yr':
+    case 'y':
+      return n * y;
+    case 'days':
+    case 'day':
+    case 'd':
+      return n * d;
+    case 'hours':
+    case 'hour':
+    case 'hrs':
+    case 'hr':
+    case 'h':
+      return n * h;
+    case 'minutes':
+    case 'minute':
+    case 'mins':
+    case 'min':
+    case 'm':
+      return n * m;
+    case 'seconds':
+    case 'second':
+    case 'secs':
+    case 'sec':
+    case 's':
+      return n * s;
+    case 'milliseconds':
+    case 'millisecond':
+    case 'msecs':
+    case 'msec':
+    case 'ms':
+      return n;
+    default:
+      return undefined;
+  }
+}
+
+/**
+ * Short format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtShort(ms) {
+  if (ms >= d) {
+    return Math.round(ms / d) + 'd';
+  }
+  if (ms >= h) {
+    return Math.round(ms / h) + 'h';
+  }
+  if (ms >= m) {
+    return Math.round(ms / m) + 'm';
+  }
+  if (ms >= s) {
+    return Math.round(ms / s) + 's';
+  }
+  return ms + 'ms';
+}
+
+/**
+ * Long format for `ms`.
+ *
+ * @param {Number} ms
+ * @return {String}
+ * @api private
+ */
+
+function fmtLong(ms) {
+  return plural(ms, d, 'day') ||
+    plural(ms, h, 'hour') ||
+    plural(ms, m, 'minute') ||
+    plural(ms, s, 'second') ||
+    ms + ' ms';
+}
+
+/**
+ * Pluralization helper.
+ */
+
+function plural(ms, n, name) {
+  if (ms < n) {
+    return;
+  }
+  if (ms < n * 1.5) {
+    return Math.floor(ms / n) + ' ' + name;
+  }
+  return Math.ceil(ms / n) + ' ' + name + 's';
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/timers-browserify/main.js":
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
+            (typeof self !== "undefined" && self) ||
+            window;
+var apply = Function.prototype.apply;
+
+// DOM APIs, for completeness
+
+exports.setTimeout = function() {
+  return new Timeout(apply.call(setTimeout, scope, arguments), clearTimeout);
+};
+exports.setInterval = function() {
+  return new Timeout(apply.call(setInterval, scope, arguments), clearInterval);
+};
+exports.clearTimeout =
+exports.clearInterval = function(timeout) {
+  if (timeout) {
+    timeout.close();
+  }
+};
+
+function Timeout(id, clearFn) {
+  this._id = id;
+  this._clearFn = clearFn;
+}
+Timeout.prototype.unref = Timeout.prototype.ref = function() {};
+Timeout.prototype.close = function() {
+  this._clearFn.call(scope, this._id);
+};
+
+// Does not start the time, just sets up the members needed.
+exports.enroll = function(item, msecs) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = msecs;
+};
+
+exports.unenroll = function(item) {
+  clearTimeout(item._idleTimeoutId);
+  item._idleTimeout = -1;
+};
+
+exports._unrefActive = exports.active = function(item) {
+  clearTimeout(item._idleTimeoutId);
+
+  var msecs = item._idleTimeout;
+  if (msecs >= 0) {
+    item._idleTimeoutId = setTimeout(function onTimeout() {
+      if (item._onTimeout)
+        item._onTimeout();
+    }, msecs);
+  }
+};
+
+// setimmediate attaches itself to the global object
+__webpack_require__(/*! setimmediate */ "./node_modules/setimmediate/setImmediate.js");
+// On some exotic environments, it's not clear which object `setimmediate` was
+// able to install onto.  Search each possibility in the same order as the
+// `setimmediate` library.
+exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
+                       (typeof global !== "undefined" && global.setImmediate) ||
+                       (this && this.setImmediate);
+exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
+                         (typeof global !== "undefined" && global.clearImmediate) ||
+                         (this && this.clearImmediate);
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/to-array/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/to-array/index.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = toArray
+
+function toArray(list, index) {
+    var array = []
+
+    index = index || 0
+
+    for (var i = index || 0; i < list.length; i++) {
+        array[i - index] = list[i]
+    }
+
+    return array
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ChatComponent.vue?vue&type=template&id=80d584ac&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ChatComponent.vue?vue&type=template&id=80d584ac& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "chat-room-section" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col messages" },
+          _vm._l(_vm.conversations, function(conversation) {
+            return _c("div", { staticClass: "message" }, [
+              _c("p", { staticClass: "sender-name" }, [
+                _vm._v(_vm._s(conversation.user.name))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "m-0" }, [
+                _vm._v(_vm._s(conversation.message))
+              ])
+            ])
+          }),
+          0
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row writing-section" }, [
+        _c("div", { staticClass: "col-11" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message,
+                expression: "message"
+              }
+            ],
+            staticClass: "chat-input form-control",
+            attrs: { type: "text", placeholder: "Enter a message..." },
+            domProps: { value: _vm.message },
+            on: {
+              keyup: function($event) {
+                if (
+                  !$event.type.indexOf("key") &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
+                return _vm.storeMessage($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.message = $event.target.value
+              }
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-1 p-0" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-send",
+              attrs: { type: "button" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.storeMessage($event)
+                }
+              }
+            },
+            [_c("i", { staticClass: "fas fa-paper-plane" })]
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/VideoComponent.vue?vue&type=template&id=26d38626&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/VideoComponent.vue?vue&type=template&id=26d38626& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "text-center" },
+    [
+      this.$data.isSharing
+        ? _c("div", { staticClass: "alert alert-primary text-center" }, [
+            _vm._v("You have shared your screen with success!")
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c("webrtc", {
+        ref: "webrtc",
+        attrs: {
+          width: "100%",
+          "room-id": _vm.room.secret,
+          "enable-video": false
+        },
+        on: {
+          "share-started": _vm.announceShare,
+          "share-stopped": _vm.cancelShare
+        }
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-center my-3" }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", on: { click: _vm.shareScreen } },
+          [_vm._v("Share your screen")]
+        ),
+        _vm._v(" "),
+        this.$data.exited
+          ? _c(
+              "button",
+              { staticClass: "btn btn-primary", on: { click: _vm.leaveCall } },
+              [_vm._v("Cancel the call")]
+            )
+          : !this.$data.exited
+          ? _c(
+              "a",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { href: "/room/join/" + this.$props.room.secret }
+              },
+              [_vm._v("Rejoin the call")]
+            )
+          : _vm._e()
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "video-section" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col text-center" },
+          _vm._l(_vm.videoList, function(item) {
+            return _c("div", { key: item.id, attrs: { video: item } }, [
+              _c("video", {
+                ref: "videos",
+                refInFor: true,
+                attrs: {
+                  width: "250",
+                  height: "150",
+                  controls: "",
+                  autoplay: "",
+                  id: item.id
+                },
+                domProps: { muted: item.muted }
+              })
+            ])
+          }),
+          0
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(0)
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col video-controls" }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-close-call", attrs: { type: "button" } },
+          [_c("i", { staticClass: "fas fa-phone-slash" })]
+        ),
+        _c(
+          "button",
+          { staticClass: "btn btn-microphone", attrs: { type: "button" } },
+          [_c("i", { staticClass: "fas fa-microphone" })]
+        ),
+        _c(
+          "button",
+          { staticClass: "btn btn-screen-share", attrs: { type: "button" } },
+          [_c("i", { staticClass: "fas fa-desktop" })]
+        )
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
   // Vue.extend constructor export interop
   var options = typeof scriptExports === 'function'
     ? scriptExports.options
     : scriptExports
 
   // render functions
-  if (compiledTemplate) {
-    options.render = compiledTemplate.render
-    options.staticRenderFns = compiledTemplate.staticRenderFns
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
   }
 
   // scopedId
   if (scopeId) {
-    options._scopeId = scopeId
+    options._scopeId = 'data-v-' + scopeId
   }
 
-  // inject cssModules
-  if (cssModules) {
-    var computed = Object.create(options.computed || null)
-    Object.keys(cssModules).forEach(function (key) {
-      var module = cssModules[key]
-      computed[key] = function () { return module }
-    })
-    options.computed = computed
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () {
+        injectStyles.call(
+          this,
+          (options.functional ? this.parent : this).$root.$options.shadowRoot
+        )
+      }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functional component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
   }
 
   return {
-    esModule: esModule,
     exports: scriptExports,
     options: options
   }
 }
 
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "video-list"
-  }, _vm._l((_vm.videoList), function(item) {
-    return _c('div', {
-      key: item.id,
-      staticClass: "video-item",
-      attrs: {
-        "video": item
-      }
-    }, [_c('video', {
-      ref: "videos",
-      refInFor: true,
-      attrs: {
-        "controls": "",
-        "autoplay": "",
-        "playsinline": "",
-        "height": _vm.cameraHeight,
-        "id": item.id
-      },
-      domProps: {
-        "muted": item.muted
-      }
-    })])
-  }), 0)
-},staticRenderFns: []}
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(5);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(12)("62bb3ac2", content, true);
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-  Modified by Evan You @yyx990803
-*/
-
-var hasDocument = typeof document !== 'undefined'
-
-if (typeof DEBUG !== 'undefined' && DEBUG) {
-  if (!hasDocument) {
-    throw new Error(
-    'vue-style-loader cannot be used in a non-browser environment. ' +
-    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
-  ) }
-}
-
-var listToStyles = __webpack_require__(13)
-
-/*
-type StyleObject = {
-  id: number;
-  parts: Array<StyleObjectPart>
-}
-
-type StyleObjectPart = {
-  css: string;
-  media: string;
-  sourceMap: ?string
-}
-*/
-
-var stylesInDom = {/*
-  [id: number]: {
-    id: number,
-    refs: number,
-    parts: Array<(obj?: StyleObjectPart) => void>
-  }
-*/}
-
-var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
-var singletonElement = null
-var singletonCounter = 0
-var isProduction = false
-var noop = function () {}
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-// tags it will allow on a page
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
-
-module.exports = function (parentId, list, _isProduction) {
-  isProduction = _isProduction
-
-  var styles = listToStyles(parentId, list)
-  addStylesToDom(styles)
-
-  return function update (newList) {
-    var mayRemove = []
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i]
-      var domStyle = stylesInDom[item.id]
-      domStyle.refs--
-      mayRemove.push(domStyle)
-    }
-    if (newList) {
-      styles = listToStyles(parentId, newList)
-      addStylesToDom(styles)
-    } else {
-      styles = []
-    }
-    for (var i = 0; i < mayRemove.length; i++) {
-      var domStyle = mayRemove[i]
-      if (domStyle.refs === 0) {
-        for (var j = 0; j < domStyle.parts.length; j++) {
-          domStyle.parts[j]()
-        }
-        delete stylesInDom[domStyle.id]
-      }
-    }
-  }
-}
-
-function addStylesToDom (styles /* Array<StyleObject> */) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i]
-    var domStyle = stylesInDom[item.id]
-    if (domStyle) {
-      domStyle.refs++
-      for (var j = 0; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j])
-      }
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j]))
-      }
-      if (domStyle.parts.length > item.parts.length) {
-        domStyle.parts.length = item.parts.length
-      }
-    } else {
-      var parts = []
-      for (var j = 0; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j]))
-      }
-      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
-    }
-  }
-}
-
-function createStyleElement () {
-  var styleElement = document.createElement('style')
-  styleElement.type = 'text/css'
-  head.appendChild(styleElement)
-  return styleElement
-}
-
-function addStyle (obj /* StyleObjectPart */) {
-  var update, remove
-  var styleElement = document.querySelector('style[data-vue-ssr-id~="' + obj.id + '"]')
-
-  if (styleElement) {
-    if (isProduction) {
-      // has SSR styles and in production mode.
-      // simply do nothing.
-      return noop
-    } else {
-      // has SSR styles but in dev mode.
-      // for some reason Chrome can't handle source map in server-rendered
-      // style tags - source maps in <style> only works if the style tag is
-      // created and inserted dynamically. So we remove the server rendered
-      // styles and inject new ones.
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  if (isOldIE) {
-    // use singleton mode for IE9.
-    var styleIndex = singletonCounter++
-    styleElement = singletonElement || (singletonElement = createStyleElement())
-    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
-    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
-  } else {
-    // use multi-style-tag mode in all other cases
-    styleElement = createStyleElement()
-    update = applyToTag.bind(null, styleElement)
-    remove = function () {
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  update(obj)
-
-  return function updateStyle (newObj /* StyleObjectPart */) {
-    if (newObj) {
-      if (newObj.css === obj.css &&
-          newObj.media === obj.media &&
-          newObj.sourceMap === obj.sourceMap) {
-        return
-      }
-      update(obj = newObj)
-    } else {
-      remove()
-    }
-  }
-}
-
-var replaceText = (function () {
-  var textStore = []
-
-  return function (index, replacement) {
-    textStore[index] = replacement
-    return textStore.filter(Boolean).join('\n')
-  }
-})()
-
-function applyToSingletonTag (styleElement, index, remove, obj) {
-  var css = remove ? '' : obj.css
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = replaceText(index, css)
-  } else {
-    var cssNode = document.createTextNode(css)
-    var childNodes = styleElement.childNodes
-    if (childNodes[index]) styleElement.removeChild(childNodes[index])
-    if (childNodes.length) {
-      styleElement.insertBefore(cssNode, childNodes[index])
-    } else {
-      styleElement.appendChild(cssNode)
-    }
-  }
-}
-
-function applyToTag (styleElement, obj) {
-  var css = obj.css
-  var media = obj.media
-  var sourceMap = obj.sourceMap
-
-  if (media) {
-    styleElement.setAttribute('media', media)
-  }
-
-  if (sourceMap) {
-    // https://developer.chrome.com/devtools/docs/javascript-debugging
-    // this makes source maps inside style tags work properly in Chrome
-    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
-    // http://stackoverflow.com/a/26603875
-    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
-  }
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild)
-    }
-    styleElement.appendChild(document.createTextNode(css))
-  }
-}
-
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles (parentId, list) {
-  var styles = []
-  var newStyles = {}
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i]
-    var id = item[0]
-    var css = item[1]
-    var media = item[2]
-    var sourceMap = item[3]
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    }
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] })
-    } else {
-      newStyles[id].parts.push(part)
-    }
-  }
-  return styles
-}
-
-
-/***/ })
-/******/ ]);
-});
 
 /***/ }),
 
@@ -73226,19 +72567,24 @@ module.exports = yeast;
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_WebRTC_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/WebRTC.vue */ "./resources/js/components/WebRTC.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // window.WebRTC = require('vue-webrtc');
 
-window.WebRTC = __webpack_require__(/*! vue-webrtc */ "./node_modules/vue-webrtc/dist/index.js");
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-window.Vue.use(window.WebRTC);
+
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // window.Vue.use(window.WebRTC);
+
+
+Vue.component(_components_WebRTC_vue__WEBPACK_IMPORTED_MODULE_0__["default"].name, _components_WebRTC_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -73445,6 +72791,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoComponent_vue_vue_type_template_id_26d38626___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_VideoComponent_vue_vue_type_template_id_26d38626___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/WebRTC.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/WebRTC.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WebRTC.vue?vue&type=template&id=5e771bd0& */ "./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0&");
+/* harmony import */ var _WebRTC_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WebRTC.vue?vue&type=script&lang=js& */ "./resources/js/components/WebRTC.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _WebRTC_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/WebRTC.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/WebRTC.vue?vue&type=script&lang=js&":
+/*!*********************************************************************!*\
+  !*** ./resources/js/components/WebRTC.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WebRTC_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./WebRTC.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WebRTC.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_WebRTC_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./WebRTC.vue?vue&type=template&id=5e771bd0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/WebRTC.vue?vue&type=template&id=5e771bd0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_WebRTC_vue_vue_type_template_id_5e771bd0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

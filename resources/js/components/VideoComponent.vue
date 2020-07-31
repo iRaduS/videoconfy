@@ -1,7 +1,7 @@
 <template>
     <div class="text-center">
         <div class="alert alert-primary text-center" v-if="this.$data.isSharing">You have shared your screen with success!</div>
-        <vue-webrtc ref="webrtc" width="100%" :room-id="room.secret" :enable-video="false" @share-started="announceShare" @share-stopped="cancelShare" />
+        <webrtc ref="webrtc" width="100%" :room-id="room.secret" :enable-video="false" @share-started="announceShare" @share-stopped="cancelShare" />
 
         <div class="text-center my-3">
             <button class="btn btn-danger" @click="shareScreen">Share your screen</button>

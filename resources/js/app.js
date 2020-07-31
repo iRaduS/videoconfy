@@ -6,11 +6,15 @@
 
 require('./bootstrap');
 
-window.WebRTC = require('vue-webrtc');
+// window.WebRTC = require('vue-webrtc');
 window.Vue = require('vue');
 
-window.Vue.use(window.WebRTC);
+// window.Vue.use(window.WebRTC);
 
+
+
+import WebRTC from './components/WebRTC.vue'
+Vue.component(WebRTC.name, WebRTC);
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

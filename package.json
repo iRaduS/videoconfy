@@ -24,8 +24,9 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "adapterjs": "^0.15.5",
         "laravel-echo": "^1.8.0",
         "pusher-js": "^6.0.3",
-        "vue-webrtc": "^1.2.2"
+        "rtcmulticonnection": "^3.7.0"
     }
 }
