@@ -1,0 +1,38 @@
+.auth-section {
+    border-bottom: 1px solid rgb(241,241,241);
+}
+.sign-card {
+    margin: 4em auto;
+    max-width: 400px;
+    .title {
+        text-align: center;
+    }
+    h4 {
+        color: #0c63ce;
+    }
+}
+.form-control {
+    border-radius: 4px;
+    border: 0;
+    background-color: rgb(249,249,249);
+    &:focus {
+        box-shadow: none;
+        background-color: rgb(246,246,246);
+    }
+}
+.auth-form {
+    label {
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        color: #0c63ce;
+    }
+    p {
+        color: gray;
+        font-size: 14px;
+        margin-bottom: .5em;
+    }
+    input {
+        margin-bottom: 1em;
+    }
+}

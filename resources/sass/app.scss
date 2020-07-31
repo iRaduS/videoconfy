@@ -1,0 +1,93 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Pages
+@import 'auth';
+
+.fantastik-nav {
+    font-weight: 500;
+    font-family: roboto, arial;
+    font-size: 14px !important;
+    border-bottom: 1px solid rgb(241,241,241);
+    text-transform: uppercase;
+    background-color: white;
+    .btn.btn-nav {
+        background-color: rgb(255,122,0);
+        color: white;
+        font-size: 14px;
+        margin: 0 1em;
+        font-weight: 500;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .navbar-toggler {
+        border: 0;
+    }
+}
+.welcome-section {
+    min-height: 400px;
+    background-image: url(../images/section.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    opacity: 1;
+    display: table;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: #fff;
+    width: 100%;
+    .container {
+        position: relative;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        z-index: 1;
+        background: rgba(0,11,28,0.25);
+        width: 100%;
+    }
+    .btn {
+        margin: 1em;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .btn.btn-meet {
+        background-color: rgb(255,122,0);
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    .btn.btn-join {
+        border: 2px solid white;
+    }
+}
+.covid-section {
+    padding: 20px;
+    text-align: center;
+    background: #0080ff;
+    font-size: 20px;
+    color: white;
+    p {
+        font-size: 16px;
+    }
+}
+.room-section {
+    min-height: 100vh;
+    min-width: 100%;
+}
+.photo-section {
+    background-image: url(../images/headway.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+
+
+
