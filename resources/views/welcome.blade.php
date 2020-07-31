@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col">
                             <a class="btn btn-meet text-white" role="button" href="{{ route('room.index') }}">Start meeting</a>
-                            <a class="btn btn-join text-white" role="button" href="{{ route('room.index') }}">Join a meeting</a>
+                            <a class="btn btn-join text-white" role="button" href="{{ route('room.joinable') }}">Join a meeting</a>
                         </div>
                     </div>
                 </div>

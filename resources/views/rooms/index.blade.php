@@ -1,15 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="room-section">
-    <div class="row no-gutters" style="height: 100vh;">
-        <div class="col-lg-6 col-md-12 d-flex align-items-center">
-            <div class="container text-center">
+<div class="container">
+	<div class="row align-items-center">
+		<div class="col-md-6">
+			<div class="code-card">
+				<div class="text-center mb-5">
+					<h2 class="m-0">Create a meeting</h2>
+					<p>Create a conference by entering its name and description!</p>
+				</div>
                 <form method="POST" action="{{ route('room.create') }}">
                     @csrf
                     <div class="mb-3">
                         <div class="mb-3">
-                            <label for="name">{{ __('Name') }}</label>
+                            <label for="name">{{ __('Name for your room') }}</label>
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                             @error('name')
@@ -19,7 +23,7 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="description">{{ __('Description') }}</label>
+                            <label for="description">{{ __('A small description for your room') }}</label>
                             <input id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" value="{{ old('description') }}" required autocomplete="description" autofocus>
 
                             @error('description')
@@ -29,42 +33,43 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-code w-100">
                                 {{ __('Create new room') }}
                             </button>
                         </div>
                     </div>
                 </form>
-
-                @if (count($rooms))
-                <div class="table-responsive my-5">
-                    <table class="table">
-                        <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Options</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($rooms as $room)
-                            <tr class="bg-light">
-                                <th scope="row">{{ $room->id }}</th>
-                                <td>{{ $room->name }}</td>
-                                <td>{{ $room->description }}</td>
-                                <td>
-                                    <a href="{{ route('room.join', ['secret' => $room->secret]) }}" class="btn btn-primary">Join</a>
-                                </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-                @endif
             </div>
         </div>
-        <div class="col-lg-6 photo-section"></div>
+        <div class="col-md-6">
+            @if (count($rooms))
+            <div class="table-responsive my-5">
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Options</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($rooms as $room)
+                        <tr class="bg-light">
+                            <th scope="row">{{ $room->id }}</th>
+                            <td>{{ $room->name }}</td>
+                            <td>{{ $room->description }}</td>
+                            <td class="d-flex">
+                                <a href="{{ route('room.join', ['secret' => $room->secret]) }}" class="mr-1 btn btn-primary">Join</a>
+                                <a href="{{ route('room.open', ['room' => $room->id]) }}" class="mr-1 btn btn-primary">{{ $room->closed ? 'Open chat' : 'Close chat' }}</a>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+            @endif
+        </div>
     </div>
 </div>
 @endsection

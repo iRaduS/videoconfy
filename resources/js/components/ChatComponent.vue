@@ -1,25 +1,20 @@
 <template>
-    <div>
-                    <ul class="chat">
-                        <li v-for="conversation in conversations">
-                            <div class="chat-body clearfix">
-                                <div class="header">
-                                    <strong class="primary-font">{{ conversation.user.name }}</strong>
-                                </div>
-                                <p>
-                                    {{ conversation.message }}
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." v-model="message" @keyup.enter="storeMessage" autofocus />
-                        <span class="input-group-btn">
-                            <button class="btn btn-warning btn-sm" id="btn-chat" @click.prevent="storeMessage">
-                                Send</button>
-                        </span>
+        <section class="chat-room-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col messages">
+                        <div class="message" v-for="conversation in conversations">
+                            <p class="sender-name">{{ conversation.user.name }}</p>
+                            <p class="m-0">{{ conversation.message }}</p>
+                        </div>
                     </div>
-    </div>
+                </div>
+                <div class="row writing-section">
+                    <div class="col-11"><input type="text" class="chat-input form-control" v-model="message" @keyup.enter="storeMessage" placeholder="Enter a message..." /></div>
+                    <div class="col-1 p-0"><button class="btn btn-send" type="button" @click.prevent="storeMessage"><i class="fas fa-paper-plane"></i></button></div>
+                </div>
+            </div>
+        </section>
 </template>
 
 <script>

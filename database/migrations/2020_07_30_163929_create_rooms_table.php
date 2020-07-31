@@ -18,6 +18,8 @@ class CreateRoomsTable extends Migration
             $table->string('name')->unique();
             $table->string('description');
             $table->string('secret')->unique();
+            $table->string('chat_secret')->unique();
+            $table->boolean('closed')->default(true);
             $table->timestamps();
         });
     }

@@ -2006,11 +2006,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['room'],
   data: function data() {
@@ -2069,19 +2064,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 window.io = socket_io_client__WEBPACK_IMPORTED_MODULE_0__;
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['room'],
   mounted: function mounted() {
+    this.$data.exited = true;
     this.$refs.webrtc.join();
   },
   data: function data() {
     return {
-      isSharing: false
+      isSharing: false,
+      exited: true
     };
   },
   methods: {
+    leaveCall: function leaveCall() {
+      this.$data.exited = false;
+      this.$refs.webrtc.leave();
+    },
     shareScreen: function shareScreen() {
       this.$refs.webrtc.shareScreen();
     },
@@ -53879,84 +53884,77 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c(
-      "ul",
-      { staticClass: "chat" },
-      _vm._l(_vm.conversations, function(conversation) {
-        return _c("li", [
-          _c("div", { staticClass: "chat-body clearfix" }, [
-            _c("div", { staticClass: "header" }, [
-              _c("strong", { staticClass: "primary-font" }, [
-                _vm._v(_vm._s(conversation.user.name))
-              ])
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "\n                                " +
-                  _vm._s(conversation.message) +
-                  "\n                            "
-              )
-            ])
-          ])
-        ])
-      }),
-      0
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "input-group" }, [
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.message,
-            expression: "message"
-          }
-        ],
-        staticClass: "form-control input-sm",
-        attrs: {
-          id: "btn-input",
-          type: "text",
-          placeholder: "Type your message here...",
-          autofocus: ""
-        },
-        domProps: { value: _vm.message },
-        on: {
-          keyup: function($event) {
-            if (
-              !$event.type.indexOf("key") &&
-              _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
-            ) {
-              return null
-            }
-            return _vm.storeMessage($event)
-          },
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.message = $event.target.value
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("span", { staticClass: "input-group-btn" }, [
+  return _c("section", { staticClass: "chat-room-section" }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
         _c(
-          "button",
-          {
-            staticClass: "btn btn-warning btn-sm",
-            attrs: { id: "btn-chat" },
+          "div",
+          { staticClass: "col messages" },
+          _vm._l(_vm.conversations, function(conversation) {
+            return _c("div", { staticClass: "message" }, [
+              _c("p", { staticClass: "sender-name" }, [
+                _vm._v(_vm._s(conversation.user.name))
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "m-0" }, [
+                _vm._v(_vm._s(conversation.message))
+              ])
+            ])
+          }),
+          0
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row writing-section" }, [
+        _c("div", { staticClass: "col-11" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message,
+                expression: "message"
+              }
+            ],
+            staticClass: "chat-input form-control",
+            attrs: { type: "text", placeholder: "Enter a message..." },
+            domProps: { value: _vm.message },
             on: {
-              click: function($event) {
-                $event.preventDefault()
+              keyup: function($event) {
+                if (
+                  !$event.type.indexOf("key") &&
+                  _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+                ) {
+                  return null
+                }
                 return _vm.storeMessage($event)
+              },
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.message = $event.target.value
               }
             }
-          },
-          [_vm._v("\n                            Send")]
-        )
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-1 p-0" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-send",
+              attrs: { type: "button" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.storeMessage($event)
+                }
+              }
+            },
+            [_c("i", { staticClass: "fas fa-paper-plane" })]
+          )
+        ])
       ])
     ])
   ])
@@ -53985,27 +53983,51 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "text-center" },
     [
       this.$data.isSharing
         ? _c("div", { staticClass: "alert alert-primary text-center" }, [
-            _vm._v("Ai deschis partajarea ecranului!")
+            _vm._v("You have shared your screen with success!")
           ])
         : _vm._e(),
       _vm._v(" "),
       _c("vue-webrtc", {
         ref: "webrtc",
-        attrs: { width: "100%", "room-id": _vm.room.secret },
+        attrs: {
+          width: "100%",
+          "room-id": _vm.room.secret,
+          "enable-video": false
+        },
         on: {
           "share-started": _vm.announceShare,
           "share-stopped": _vm.cancelShare
         }
       }),
       _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-danger", on: { click: _vm.shareScreen } },
-        [_vm._v("Partajeaza ecran")]
-      )
+      _c("div", { staticClass: "text-center my-3" }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-danger", on: { click: _vm.shareScreen } },
+          [_vm._v("Share your screen")]
+        ),
+        _vm._v(" "),
+        this.$data.exited
+          ? _c(
+              "button",
+              { staticClass: "btn btn-primary", on: { click: _vm.leaveCall } },
+              [_vm._v("Cancel the call")]
+            )
+          : !this.$data.exited
+          ? _c(
+              "a",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { href: "/room/join/" + this.$props.room.secret }
+              },
+              [_vm._v("Rejoin the call")]
+            )
+          : _vm._e()
+      ])
     ],
     1
   )
@@ -73446,8 +73468,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\iRaduS\fantastik\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\iRaduS\fantastik\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/iradus/videoconfy/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/iradus/videoconfy/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ }),

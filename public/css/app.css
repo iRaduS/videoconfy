@@ -11066,3 +11066,114 @@ a.text-dark:focus {
   background-color: #000000;
 }
 
+.code-input {
+  height: 2.6em;
+  font-size: 20px;
+}
+
+.code-card {
+  max-width: 400px;
+  margin: 2em auto;
+}
+
+.btn.btn-code {
+  background-color: #ff7a00;
+  color: white;
+}
+
+.video-section {
+  background-color: #1b1b1b;
+  min-height: 2em;
+  padding: 1.5em 0;
+}
+
+.video-controls {
+  background-color: #1b1b1b;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.video-controls .btn,
+.chat-room-section .btn {
+  margin: 0 0.5em;
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 50em;
+}
+
+.btn.btn-close-call {
+  background-color: red;
+}
+
+.btn.btn-close-call:hover {
+  background-color: #da1818;
+}
+
+.btn.btn-microphone {
+  background-color: white;
+  color: #1e1e1e;
+}
+
+.btn.btn-microphone:hover {
+  background-color: #f0f0f0;
+}
+
+.btn.btn-screen-share {
+  background-color: white;
+  color: #1e1e1e;
+}
+
+.btn.btn-screen-share:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-room-section {
+  padding: 2em 0;
+}
+
+.messages {
+  height: 460px;
+  overflow-y: scroll;
+}
+
+.chat-input {
+  width: 100%;
+  border: 0;
+  background-color: #f2f2f2;
+  height: 42px;
+  border-radius: 50px;
+}
+
+.chat-input:focus {
+  border: 0;
+  box-shadow: none;
+  background-color: #eeeeee;
+}
+
+.btn.btn-send {
+  background-color: #0080FF;
+  height: 42px;
+  width: 42px;
+  margin-left: -50px;
+}
+
+.message {
+  width: auto;
+  margin: 1em auto;
+  background-color: whitesmoke;
+  color: #444444;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.sender-name {
+  color: #0080FF;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.writing-section {
+  margin-top: 1em;
+}
+

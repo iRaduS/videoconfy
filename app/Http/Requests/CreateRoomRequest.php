@@ -24,8 +24,8 @@ class CreateRoomRequest extends FormRequest
     public function rules()
     {
         return [
-            'room_name' => ['required', 'string', 'between:8,32', 'unique:rooms,name'],
-            'room_description' => ['required', 'string', 'between:8,128'],
+            'name' => ['required', 'string', 'between:8,32', 'unique:rooms,name'],
+            'description' => ['required', 'string', 'between:8,128'],
         ];
     }
 }
