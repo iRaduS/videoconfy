@@ -42,7 +42,6 @@
             listenIncommingMessage() {
                 Echo.private('rooms.' + this.$data.room_id)
                     .listen('NewMessage', (e) => {
-                        console.log('se apeleaza');
                         this.$data.conversations.push(e);
                     });
             }
